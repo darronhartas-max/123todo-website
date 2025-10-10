@@ -1,23 +1,48 @@
 ---
-
+// Cookie/Terms Popup Announcement
 ---
 
 <div
-  class="dark text-muted text-sm bg-black dark:bg-transparent dark:border-b dark:border-slate-800 dark:text-slate-400 hidden md:flex gap-1 overflow-hidden px-3 py-2 relative text-ellipsis whitespace-nowrap"
+  id="cookie-banner"
+  class="fixed bottom-0 left-0 right-0 bg-blue-900 dark:bg-slate-900 text-white px-4 py-4 shadow-lg z-50 hidden"
 >
-  <span
-    class="dark:bg-slate-700 bg-white/40 dark:text-slate-300 font-semibold px-1 py-0.5 text-xs mr-0.5 rtl:mr-0 rtl:ml-0.5 inline-block"
-    >NEW</span
-  >
-  <a href="https://astro.build/blog/astro-5120/" class="text-muted hover:underline dark:text-slate-400 font-medium"
-    >Astro v5.12 is now available! »</a
-  >
-  <a
-    target="_blank"
-    rel="noopener"
-    class="ltr:ml-auto rtl:mr-auto w-[5.6rem] h-[1.25rem] ml-auto bg-contain inline-block bg-[url(https://img.shields.io/github/stars/arthelokyo/astrowind.svg?style=social&label=Stars&maxAge=86400)]"
-    title="If you like AstroWind, give us a star."
-    href="https://github.com/arthelokyo/astrowind"
-  >
-  </a>
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+    <div class="flex-1 text-sm md:text-base">
+      <p>
+        <strong>Privacy Notice:</strong> 123 ToDo uses no cookies and collects no personal data.
+        By using this website, you agree to our
+        <a href="/terms" class="underline hover:text-blue-200">Terms of Service</a> and
+        <a href="/privacy" class="underline hover:text-blue-200">Privacy Policy</a>.
+      </p>
+    </div>
+    <button
+      id="accept-cookies"
+      class="bg-white text-blue-900 hover:bg-blue-50 px-6 py-2 rounded-md font-semibold whitespace-nowrap transition"
+    >
+      Got It
+    </button>
+  </div>
 </div>
+
+<script>
+  // Cookie banner logic
+  const banner = document.getElementById('cookie-banner');
+  const acceptButton = document.getElementById('accept-cookies');
+
+  // Check if user has already acknowledged
+  const hasAcknowledged = localStorage.getItem('cookie-banner-acknowledged');
+
+  if (!hasAcknowledged && banner) {
+    banner.classList.remove('hidden');
+  }
+
+  // Handle acceptance
+  if (acceptButton) {
+    acceptButton.addEventListener('click', () => {
+      localStorage.setItem('cookie-banner-acknowledged', 'true');
+      if (banner) {
+        banner.classList.add('hidden');
+      }
+    });
+  }
+</script>

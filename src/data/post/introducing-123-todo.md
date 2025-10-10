@@ -1,7 +1,7 @@
 ---
 publishDate: 2025-10-10T00:00:00Z
 title: 'Introducing 123 ToDo: Privacy-First Task Management'
-excerpt: 'We built a free, privacy-first task manager that works offline and never tracks you. Here's why.'
+excerpt: 'We built a free, privacy-first task manager that works offline and never tracks you. Here is why.'
 image: ~/assets/images/blog-launch.jpg
 category: Announcements
 tags:
@@ -41,13 +41,13 @@ All your tasks are stored locally in your browser. Nothing is sent to our server
 
 This isn't just a privacy feature - it's our core architecture. Your data never leaves your device.
 
-### =ñ Works Offline, Anywhere
+### =ï¿½ Works Offline, Anywhere
 
 Since everything runs locally, 123 ToDo works perfectly offline. Install it as a Progressive Web App (PWA) on your phone or desktop, and use it anywhere - on a plane, in the subway, or in the middle of nowhere.
 
 Internet connection optional.
 
-### <¯ Priority-Based Organization
+### <ï¿½ Priority-Based Organization
 
 Stay focused with our 4-level priority system:
 
@@ -58,15 +58,15 @@ Stay focused with our 4-level priority system:
 
 This simple system helps you focus on what actually matters instead of drowning in an endless list.
 
-### <Æ Motivation Built-In
+### <ï¿½ Motivation Built-In
 
 Completing tasks feels good. We make it feel even better with achievement milestones at 5, 10, and 15 completed tasks per day. Small celebrations keep you motivated without being annoying.
 
-### =¾ Your Data, Your Control
+### =ï¿½ Your Data, Your Control
 
 Export your tasks to JSON anytime. Import on another device. Keep backups wherever you want. You own your data - not us.
 
-### <“ Actually Free
+### <ï¿½ Actually Free
 
 No "freemium" tricks. No subscription upsells. No artificial limits. Every feature we build is available to everyone, forever.
 
@@ -140,7 +140,7 @@ If 123 ToDo helps you stay organized and productive, the best way to support us 
 
 Ready to take control of your tasks and your data?
 
-**[Start using 123 ToDo ’](https://app.123todo.com)**
+**[Start using 123 ToDo ï¿½](https://app.123todo.com)**
 
 No signup. No tracking. No credit card. Just open it and start organizing.
 
@@ -167,4 +167,4 @@ A: Technical users can inspect the code. Non-technical users can use browser dev
 
 Welcome to 123 ToDo. We hope it helps you get more done with less stress.
 
-**[Get started at app.123todo.com ’](https://app.123todo.com)**
+**[Get started at app.123todo.com ï¿½](https://app.123todo.com)**

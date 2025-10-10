@@ -77,7 +77,7 @@ const metadata = {
         <li><strong class="text-purple-600">On Hold (Priority 4)</strong> - Tasks that are paused or waiting on something else. These appear in purple.</li>
       </ul>
 
-      <h3>✏️ Adding and Editing Tasks</h3>
+      <h3> Adding and Editing Tasks</h3>
       <p><strong>To add a new task:</strong></p>
       <ol>
         <li>Click the "Add Task" button in any priority section</li>
@@ -93,31 +93,31 @@ const metadata = {
         <li>Click "Update Task" to save changes</li>
       </ol>
 
-      <h3>✅ Completing Tasks</h3>
+      <h3> Completing Tasks</h3>
       <p>
         Click the checkbox next to any task to mark it complete. Completed tasks move to the Archive
         section at the bottom of the page. You can restore archived tasks anytime by clicking the
         restore icon.
       </p>
 
-      <h3>↕️ Reordering Tasks</h3>
+      <h3><� Reordering Tasks</h3>
       <p>
         Tasks can be reordered within their priority level using drag and drop:
       </p>
       <ul>
-        <li>Click and hold the "drag" icon (⋮⋮) on the left side of any task</li>
+        <li>Click and hold the "drag" icon (��) on the left side of any task</li>
         <li>Drag the task up or down within its priority section</li>
         <li>Release to drop it in the new position</li>
       </ul>
       <p><em>Note: You cannot drag tasks between different priority levels. Use the Edit feature to change a task's priority.</em></p>
 
-      <h3>🗑️ Deleting Tasks</h3>
+      <h3>=� Deleting Tasks</h3>
       <p>
         To permanently delete a task, click the trash icon. You'll see a confirmation prompt.
         <strong>Deleted tasks cannot be recovered.</strong>
       </p>
 
-      <h3>📦 Archive System</h3>
+      <h3>=� Archive System</h3>
       <p>
         Completed tasks are automatically moved to the Archive section at the bottom of the page.
         The archive shows:
@@ -128,21 +128,21 @@ const metadata = {
         <li>Options to restore (move back to active) or permanently delete</li>
       </ul>
 
-      <h3>🏆 Achievement Milestones</h3>
+      <h3><� Achievement Milestones</h3>
       <p>
         Stay motivated with daily achievement celebrations! 123 ToDo tracks how many tasks you
         complete each day and celebrates when you hit milestones:
       </p>
       <ul>
-        <li><strong>5 tasks</strong> - Bronze milestone 🥉</li>
-        <li><strong>10 tasks</strong> - Silver milestone 🥈</li>
-        <li><strong>15 tasks</strong> - Gold milestone 🥇</li>
+        <li><strong>5 tasks</strong> - Bronze milestone >I</li>
+        <li><strong>10 tasks</strong> - Silver milestone >H</li>
+        <li><strong>15 tasks</strong> - Gold milestone >G</li>
       </ul>
       <p>
         Milestones reset daily at midnight, giving you fresh motivation every day.
       </p>
 
-      <h3>💾 Export and Import</h3>
+      <h3>=� Export and Import</h3>
       <p><strong>Exporting your data:</strong></p>
       <ol>
         <li>Click the "Export Data" button in the header</li>
@@ -158,11 +158,11 @@ const metadata = {
       </ol>
 
       <p>
-        <strong>⚠️ Important:</strong> Importing data will replace your current tasks. Export your
+        <strong>� Important:</strong> Importing data will replace your current tasks. Export your
         current data first if you want to keep it!
       </p>
 
-      <h3>📱 PWA Installation</h3>
+      <h3>=� PWA Installation</h3>
       <p><strong>On Desktop (Chrome, Edge, Brave):</strong></p>
       <ol>
         <li>Visit app.123todo.com</li>
@@ -187,13 +187,13 @@ const metadata = {
         <li>Tap "Add" to confirm</li>
       </ol>
 
-      <h3>💾 Data Backup Reminders</h3>
+      <h3>= Data Backup Reminders</h3>
       <p>
         123 ToDo will remind you weekly to backup your data. Since all tasks are stored locally
         in your browser, regular backups are essential to prevent data loss.
       </p>
 
-      <h3>🎨 Theme Options</h3>
+      <h3><� Theme Options</h3>
       <p>
         123 ToDo automatically adapts to your system's light or dark mode preference. If you change
         your system theme, the app will update automatically.
@@ -311,7 +311,7 @@ const metadata = {
 
     <div class="prose prose-lg dark:prose-invert max-w-none">
 
-      <h3>🔄 Tasks disappeared after browser update</h3>
+      <h3>=' Tasks disappeared after browser update</h3>
       <p>
         Browser updates shouldn't clear localStorage, but it can happen. If this occurs:
       </p>
@@ -321,7 +321,7 @@ const metadata = {
         <li>Going forward, export data weekly</li>
       </ol>
 
-      <h3>📡 App not working offline</h3>
+      <h3>=' App not working offline</h3>
       <p>
         Ensure you've visited the app while online at least once. Service workers need to cache
         the app files initially. If still having issues:
@@ -333,17 +333,17 @@ const metadata = {
         <li>Try going offline again</li>
       </ol>
 
-      <h3>🔧 Can't install as PWA</h3>
+      <h3>=' Can't install as PWA</h3>
       <p>
         PWA installation requirements vary by browser:
       </p>
       <ul>
         <li><strong>Chrome/Edge:</strong> Look for install icon in address bar</li>
-        <li><strong>Safari iOS:</strong> Use Share → Add to Home Screen</li>
+        <li><strong>Safari iOS:</strong> Use Share � Add to Home Screen</li>
         <li><strong>Firefox:</strong> Limited PWA support, use browser bookmarks instead</li>
       </ul>
 
-      <h3>📥 Import not working</h3>
+      <h3>=' Import not working</h3>
       <p>
         If import fails:
       </p>
@@ -354,7 +354,7 @@ const metadata = {
         <li>If corrupted, you may need to manually recreate tasks</li>
       </ol>
 
-      <h3>🖱️ Drag and drop not working</h3>
+      <h3>=' Drag and drop not working</h3>
       <p>
         Drag and drop works on desktop only. Mobile touch devices don't support drag and drop
         for task reordering. Use Edit to change priorities on mobile.

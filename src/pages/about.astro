@@ -11,7 +11,12 @@ const metadata = {
 
 <Layout metadata={metadata}>
   <!-- Hero Section -->
-  <Hero>
+  <Hero
+    image={{
+      src: '~/assets/images/default.png',
+      alt: 'About 123 ToDo'
+    }}
+  >
     <Fragment slot="title">
       About <span class="text-accent dark:text-white">123 ToDo</span>
     </Fragment>

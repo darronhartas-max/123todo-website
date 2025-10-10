@@ -14,19 +14,6 @@ export const headerData = {
       text: 'Blog',
       href: getBlogPermalink(),
     },
-    {
-      text: 'Legal',
-      links: [
-        {
-          text: 'Terms of Service',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy Policy',
-          href: getPermalink('/privacy'),
-        },
-      ],
-    },
   ],
   actions: [{ text: 'Open App', href: 'https://app.123todo.com', target: '_blank' }],
 };

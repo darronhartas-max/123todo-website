@@ -30,10 +30,7 @@ docker compose build todo-app
 docker compose up -d todo-app
 ```
 
-**Note**: Container should already be on traefik_proxy network. If you get bad gateway, run:
-```bash
-docker network connect traefik_proxy todo-app
-```
+**Note**: Container is configured to automatically connect to both `web` and `traefik_proxy` networks in docker-compose.yml. No manual network connection needed.
 
 ### 4. Verify deployment
 - Visit: https://123todo.com (hard refresh: Cmd+Shift+R)

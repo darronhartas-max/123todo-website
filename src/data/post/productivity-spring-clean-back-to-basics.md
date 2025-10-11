@@ -2,7 +2,7 @@
 publishDate: 2025-10-25T00:00:00Z
 title: 'The Productivity Spring Clean: How to Get Back to Basics and Actually Get Things Done'
 excerpt: 'Drowning in productivity tools? Multiple apps, complex systems, zero results? Time to strip it all away and rediscover the power of simple.'
-image: ~/assets/images/default.png
+image: ~/assets/images/blog-spring-clean.svg
 category: Tips & Tricks
 tags:
   - productivity

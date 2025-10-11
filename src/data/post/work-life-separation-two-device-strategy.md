@@ -2,7 +2,7 @@
 publishDate: 2025-10-28T00:00:00Z
 title: "Stop Bringing Work Home: The Two-Device Strategy for Perfect Work-Life Separation"
 excerpt: "Tired of your partner's frustrated sighs when you're 'working' at dinner? Learn how separating business and personal tasks across two devices can save your sanity (and your relationship)."
-image: ~/assets/images/default.png
+image: ~/assets/images/blog-work-life-balance.svg
 category: Tips & Tricks
 tags:
   - work-life-balance

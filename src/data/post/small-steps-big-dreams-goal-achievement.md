@@ -2,7 +2,7 @@
 publishDate: 2025-10-22T00:00:00Z
 title: "Small Steps, Big Dreams: How Daily Progress Builds Extraordinary Success"
 excerpt: "Great achievements aren't accidents - they're the sum of small, consistent actions guided by a clear vision. Learn the proven formula for turning ambitious goals into reality."
-image: ~/assets/images/default.png
+image: ~/assets/images/blog-small-steps.svg
 category: Tips & Tricks
 tags:
   - goals

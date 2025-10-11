@@ -2,7 +2,7 @@
 publishDate: 2025-10-18T00:00:00Z
 title: "The Beginner's Guide to Time Management: Your Fresh Start Starts Today"
 excerpt: 'Feeling overwhelmed? Discover the science-backed benefits of writing down your tasks and how the simplest time management system can transform your life - no experience required.'
-image: ~/assets/images/default.png
+image: ~/assets/images/blog-beginners-time.svg
 category: Tutorials
 tags:
   - time-management

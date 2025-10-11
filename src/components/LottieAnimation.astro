@@ -7,11 +7,14 @@ export interface Props {
 
 const { src, alt = 'Animation', class: className = '' } = Astro.props;
 
+// Convert the path alias to a relative path
+const relativePath = src.replace('~/', '../');
+
 // Import the JSON animation data at build time
-const animationModule = await import(/* @vite-ignore */ src);
+const animationModule = await import(/* @vite-ignore */ relativePath);
 const animationData = animationModule.default || animationModule;
 
-// Convert to base64 data URI to embed in lottie-player
+// Convert to JSON string to embed in lottie-player
 const animationJson = JSON.stringify(animationData);
 ---
 

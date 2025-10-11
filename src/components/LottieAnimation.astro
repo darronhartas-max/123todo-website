@@ -6,61 +6,32 @@ export interface Props {
 }
 
 const { src, alt = 'Animation', class: className = '' } = Astro.props;
-const animationId = `lottie-${Math.random().toString(36).substr(2, 9)}`;
 
-// Directly import the JSON file - Astro will handle this at build time
-let animationData;
-try {
-  const module = await import(/* @vite-ignore */ src);
-  animationData = module.default || module;
-} catch (e) {
-  console.error('Failed to import animation:', e);
-}
+// Import the JSON animation data at build time
+const animationModule = await import(/* @vite-ignore */ src);
+const animationData = animationModule.default || animationModule;
+
+// Convert to base64 data URI to embed in lottie-player
+const animationJson = JSON.stringify(animationData);
 ---
 
-{animationData && (
-  <div id={animationId} class={`lottie-animation ${className}`} role="img" aria-label={alt}></div>
+<!-- Use lottie-player web component -->
+<script is:inline src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-  <script is:inline define:vars={{ animationId, animationData }}>
-    (function() {
-      // Wait for lottie-web to load
-      function initLottie() {
-        if (typeof window.lottie !== 'undefined') {
-          const container = document.getElementById(animationId);
-          if (container && animationData) {
-            window.lottie.loadAnimation({
-              container: container,
-              renderer: 'svg',
-              loop: true,
-              autoplay: true,
-              animationData: animationData
-            });
-          }
-        } else {
-          // If lottie not loaded yet, try again in 100ms
-          setTimeout(initLottie, 100);
-        }
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initLottie);
-      } else {
-        initLottie();
-      }
-    })();
-  </script>
-
-  <script>
-    import lottie from 'lottie-web';
-    // Make lottie available globally for the inline script
-    window.lottie = lottie;
-  </script>
-)}
+<lottie-player
+  class={className}
+  autoplay
+  loop
+  mode="normal"
+  style="width: 100%; height: 500px;"
+  aria-label={alt}
+>
+  <script is:inline type="application/json" set:html={animationJson}></script>
+</lottie-player>
 
 <style>
-  .lottie-animation {
-    width: 100%;
-    height: auto;
-    min-height: 300px;
+  lottie-player {
+    max-width: 100%;
+    margin: 0 auto;
   }
 </style>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F1F5F9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E2E8F0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#bgGrad4)"/>
+
+  <!-- Prioritization sorting - descending bars -->
+  <g transform="translate(100, 50)">
+    <rect x="0" y="0" width="50" height="180" rx="5" fill="#64748B"/>
+    <text x="25" y="200" text-anchor="middle" font-size="20" font-weight="bold" fill="#64748B">1</text>
+
+    <rect x="70" y="30" width="50" height="150" rx="5" fill="#94A3B8"/>
+    <text x="95" y="200" text-anchor="middle" font-size="20" font-weight="bold" fill="#94A3B8">2</text>
+
+    <rect x="140" y="60" width="50" height="120" rx="5" fill="#CBD5E1"/>
+    <text x="165" y="200" text-anchor="middle" font-size="20" font-weight="bold" fill="#CBD5E1">3</text>
+
+    <rect x="210" y="100" width="50" height="80" rx="5" fill="#E2E8F0"/>
+    <text x="235" y="200" text-anchor="middle" font-size="20" font-weight="bold" fill="#CBD5E1">4</text>
+  </g>
+</svg>

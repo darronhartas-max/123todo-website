@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <defs>
+    <linearGradient id="bgGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F1F5F9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E2E8F0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#bgGrad6)"/>
+
+  <!-- Stairs showing progress -->
+  <g transform="translate(50, 250)">
+    <!-- Step 1 -->
+    <rect x="0" y="-40" width="60" height="40" fill="#E2E8F0"/>
+
+    <!-- Step 2 -->
+    <rect x="60" y="-80" width="60" height="80" fill="#CBD5E1"/>
+
+    <!-- Step 3 -->
+    <rect x="120" y="-120" width="60" height="120" fill="#94A3B8"/>
+
+    <!-- Step 4 -->
+    <rect x="180" y="-160" width="60" height="160" fill="#64748B"/>
+
+    <!-- Trophy/star at top -->
+    <g transform="translate(265, -180)">
+      <path d="M 0 -20 L 6 -6 L 20 -4 L 10 6 L 12 20 L 0 13 L -12 20 L -10 6 L -20 -4 L -6 -6 Z" fill="#94A3B8"/>
+    </g>
+  </g>
+</svg>

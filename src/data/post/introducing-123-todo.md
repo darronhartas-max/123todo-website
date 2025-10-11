@@ -2,7 +2,7 @@
 publishDate: 2025-10-10T00:00:00Z
 title: 'Introducing 123 ToDo: Privacy-First Task Management'
 excerpt: 'We built a free, privacy-first task manager that works offline and never tracks you. Here is why.'
-image: ~/assets/images/blog-launch.jpg
+image: ~/assets/images/blog-launch-rocket.svg
 category: Announcements
 tags:
   - launch

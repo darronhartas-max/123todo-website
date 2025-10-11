@@ -170,4 +170,31 @@ Transform 123todo.com from a single-page app into a full marketing website with 
 ---
 
 **Created**: 2025-10-10
-**Status**: Planning Phase
+**Last Updated**: 2025-10-11
+**Status**: ✅ Deployed to Production
+
+## Deployment Information
+
+### Live URLs
+- **Marketing Website**: https://www.123todo.com
+- **React App**: https://app.123todo.com
+
+### Deployment Configuration
+- **VPS IP**: 51.195.136.55
+- **SSH Port**: 9947
+- **Deploy Path (Marketing)**: `/home/debian/wordpress-docker/todo-app/`
+- **Deploy Path (React App)**: `/home/debian/wordpress-docker/app-123todo/`
+- **Deployment Method**: FileZilla upload + Docker rebuild
+
+### Current Deployment (2025-10-11)
+- ✅ All 7 custom blog post SVG images deployed
+- ✅ Updated blog post markdown files
+- ✅ Optimized images (compressed 146-312kB → 12-110kB)
+- ✅ 42 pages generated
+- ✅ Blog posts: Introducing 123 ToDo, Task Prioritization, Beginner's Guide, Building Habits, Spring Clean, Small Steps, Work-Life Balance
+
+### Deployment Process
+1. Build: `npm run build` (generates `dist/` folder)
+2. Upload: FileZilla to `/home/debian/wordpress-docker/todo-app/`
+3. Rebuild: `docker compose build --no-cache todo-app`
+4. Restart: `docker compose up -d todo-app`

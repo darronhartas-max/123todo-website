@@ -7,9 +7,28 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 
 const metadata = {
-  title: '123 ToDo - Simple, Powerful Task Management',
-  description: 'Priority-based task management with offline support, achievement tracking, and zero tracking. Your tasks, your control.',
+  title: '123 ToDo - FREE Simple, Powerful Task Management',
+  description: 'FREE priority-based task management with offline support, achievement tracking, and zero tracking. Your tasks, your control.',
   ignoreTitleTemplate: true,
+  openGraph: {
+    basic: {
+      title: '123 ToDo - FREE Simple, Powerful Task Management',
+      type: 'website',
+      image: 'https://www.123todo.com/social-share.svg',
+    },
+    image: {
+      url: 'https://www.123todo.com/social-share.svg',
+      width: 1200,
+      height: 630,
+      alt: '123 ToDo - FREE Simple Task Management',
+    }
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '123 ToDo - FREE Simple, Powerful Task Management',
+    description: 'FREE priority-based task management with offline support, achievement tracking, and zero tracking.',
+    image: 'https://www.123todo.com/social-share.svg',
+  }
 };
 ---
 

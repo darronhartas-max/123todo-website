@@ -17,10 +17,7 @@ metadata:
     follow: true
   openGraph:
     site_name: 123 ToDo
-    images:
-      - url: '/social-share.svg'
-        width: 1200
-        height: 630
+    images: []
     type: website
   twitter:
     handle: '@123todo'

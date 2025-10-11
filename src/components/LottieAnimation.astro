@@ -8,39 +8,54 @@ export interface Props {
 const { src, alt = 'Animation', class: className = '' } = Astro.props;
 const animationId = `lottie-${Math.random().toString(36).substr(2, 9)}`;
 
-// Import the JSON file at build time
-const modules = import.meta.glob('~/assets/**/*.json');
-const animationData = await modules[src]?.();
+// Directly import the JSON file - Astro will handle this at build time
+let animationData;
+try {
+  const module = await import(/* @vite-ignore */ src);
+  animationData = module.default || module;
+} catch (e) {
+  console.error('Failed to import animation:', e);
+}
 ---
 
-<div id={animationId} class={`lottie-animation ${className}`} role="img" aria-label={alt} data-animation={JSON.stringify(animationData?.default || animationData)}></div>
+{animationData && (
+  <div id={animationId} class={`lottie-animation ${className}`} role="img" aria-label={alt}></div>
 
-<script>
-  import lottie from 'lottie-web';
-
-  document.addEventListener('DOMContentLoaded', () => {
-    const containers = document.querySelectorAll('.lottie-animation[data-animation]');
-
-    containers.forEach((container) => {
-      try {
-        const animationDataStr = container.getAttribute('data-animation');
-        if (animationDataStr) {
-          const animationData = JSON.parse(animationDataStr);
-
-          lottie.loadAnimation({
-            container: container as HTMLElement,
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            animationData: animationData
-          });
+  <script is:inline define:vars={{ animationId, animationData }}>
+    (function() {
+      // Wait for lottie-web to load
+      function initLottie() {
+        if (typeof window.lottie !== 'undefined') {
+          const container = document.getElementById(animationId);
+          if (container && animationData) {
+            window.lottie.loadAnimation({
+              container: container,
+              renderer: 'svg',
+              loop: true,
+              autoplay: true,
+              animationData: animationData
+            });
+          }
+        } else {
+          // If lottie not loaded yet, try again in 100ms
+          setTimeout(initLottie, 100);
         }
-      } catch (error) {
-        console.error('Failed to load Lottie animation:', error);
       }
-    });
-  });
-</script>
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLottie);
+      } else {
+        initLottie();
+      }
+    })();
+  </script>
+
+  <script>
+    import lottie from 'lottie-web';
+    // Make lottie available globally for the inline script
+    window.lottie = lottie;
+  </script>
+)}
 
 <style>
   .lottie-animation {

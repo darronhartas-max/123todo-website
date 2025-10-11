@@ -7,30 +7,22 @@ export interface Props {
 
 const { src, alt = 'Animation', class: className = '' } = Astro.props;
 
-// Convert the path alias to a relative path
-const relativePath = src.replace('~/', '../');
-
-// Import the JSON animation data at build time
-const animationModule = await import(/* @vite-ignore */ relativePath);
-const animationData = animationModule.default || animationModule;
-
-// Convert to JSON string to embed in lottie-player
-const animationJson = JSON.stringify(animationData);
+// Just use the filename from public folder
+const fileName = src.split('/').pop();
 ---
 
-<!-- Use lottie-player web component -->
+<!-- Use lottie-player web component with src attribute -->
 <script is:inline src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 <lottie-player
+  src={`/${fileName}`}
+  background="transparent"
+  speed="1"
   class={className}
-  autoplay
   loop
-  mode="normal"
+  autoplay
   style="width: 100%; height: 500px;"
-  aria-label={alt}
->
-  <script is:inline type="application/json" set:html={animationJson}></script>
-</lottie-player>
+></lottie-player>
 
 <style>
   lottie-player {

@@ -9,18 +9,18 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: 123 ToDo - Simple, Powerful Task Management
+    default: 123 ToDo - FREE Simple, Powerful Task Management
     template: '%s | 123 ToDo'
-  description: "Priority-based task management with offline support, achievement tracking, and zero tracking. Your tasks, your control."
+  description: "FREE priority-based task management with offline support, achievement tracking, and zero tracking. Your tasks, your control."
   robots:
     index: true
     follow: true
   openGraph:
     site_name: 123 ToDo
     images:
-      - url: '~/assets/images/123todo-og.png'
+      - url: 'https://www.123todo.com/social-share.svg'
         width: 1200
-        height: 628
+        height: 630
     type: website
   twitter:
     handle: '@123todo'

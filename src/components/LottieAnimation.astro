@@ -7,39 +7,39 @@ export interface Props {
 
 const { src, alt = 'Animation', class: className = '' } = Astro.props;
 const animationId = `lottie-${Math.random().toString(36).substr(2, 9)}`;
+
+// Import the JSON file at build time
+const modules = import.meta.glob('~/assets/**/*.json');
+const animationData = await modules[src]?.();
 ---
 
-<div id={animationId} class={`lottie-animation ${className}`} role="img" aria-label={alt}></div>
+<div id={animationId} class={`lottie-animation ${className}`} role="img" aria-label={alt} data-animation={JSON.stringify(animationData?.default || animationData)}></div>
 
-<script define:vars={{ animationId, src }}>
+<script>
   import lottie from 'lottie-web';
 
-  async function loadAnimation() {
-    try {
-      // Import the animation JSON
-      const animationModule = await import(/* @vite-ignore */ src);
-      const animationData = animationModule.default || animationModule;
+  document.addEventListener('DOMContentLoaded', () => {
+    const containers = document.querySelectorAll('.lottie-animation[data-animation]');
 
-      const container = document.getElementById(animationId);
-      if (container) {
-        lottie.loadAnimation({
-          container: container,
-          renderer: 'svg',
-          loop: true,
-          autoplay: true,
-          animationData: animationData
-        });
+    containers.forEach((container) => {
+      try {
+        const animationDataStr = container.getAttribute('data-animation');
+        if (animationDataStr) {
+          const animationData = JSON.parse(animationDataStr);
+
+          lottie.loadAnimation({
+            container: container as HTMLElement,
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            animationData: animationData
+          });
+        }
+      } catch (error) {
+        console.error('Failed to load Lottie animation:', error);
       }
-    } catch (error) {
-      console.error('Failed to load Lottie animation:', error);
-    }
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', loadAnimation);
-  } else {
-    loadAnimation();
-  }
+    });
+  });
 </script>
 
 <style>

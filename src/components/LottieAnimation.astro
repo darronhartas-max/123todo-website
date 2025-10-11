@@ -1,0 +1,51 @@
+---
+export interface Props {
+  src: string;
+  alt?: string;
+  class?: string;
+}
+
+const { src, alt = 'Animation', class: className = '' } = Astro.props;
+const animationId = `lottie-${Math.random().toString(36).substr(2, 9)}`;
+---
+
+<div id={animationId} class={`lottie-animation ${className}`} role="img" aria-label={alt}></div>
+
+<script define:vars={{ animationId, src }}>
+  import lottie from 'lottie-web';
+
+  async function loadAnimation() {
+    try {
+      // Import the animation JSON
+      const animationModule = await import(/* @vite-ignore */ src);
+      const animationData = animationModule.default || animationModule;
+
+      const container = document.getElementById(animationId);
+      if (container) {
+        lottie.loadAnimation({
+          container: container,
+          renderer: 'svg',
+          loop: true,
+          autoplay: true,
+          animationData: animationData
+        });
+      }
+    } catch (error) {
+      console.error('Failed to load Lottie animation:', error);
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadAnimation);
+  } else {
+    loadAnimation();
+  }
+</script>
+
+<style>
+  .lottie-animation {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+  }
+</style>

@@ -60,6 +60,6 @@ export const footerData = {
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
   ],
   footNote: `
-    © ${new Date().getFullYear()} 123 ToDo. All rights reserved. | Website by <a href="https://www.2headsdesign.co.uk" target="_blank" rel="noopener" class="hover:underline">TWO Design & Marketing</a>
+    Copyright © Darron Hartas ${new Date().getFullYear()}. All rights reserved. | Website by <a href="https://www.2headsdesign.co.uk" target="_blank" rel="noopener" class="hover:underline">TWO Design & Marketing</a>
   `,
 };

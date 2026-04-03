@@ -39,3 +39,29 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run check
+
+  deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: [build, check]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Deploy to VPS
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USERNAME }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          port: ${{ secrets.VPS_PORT }}
+          script: |
+            cd /home/debian/wordpress-docker/todo-app/
+            # Update source code from the repo (assumes git is set up on VPS)
+            if [ -d .git ]; then
+              git pull origin main
+            else
+              echo "Warning: .git directory not found on VPS. Skipping git pull."
+            fi
+            # Rebuild and restart the container
+            docker compose build --no-cache astrowind
+            docker compose up -d astrowind

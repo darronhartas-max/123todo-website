@@ -69,5 +69,7 @@ jobs:
           port: ${{ secrets.VPS_PORT }}
           script: |
             cd /home/debian/wordpress-docker/todo-app/
+            docker compose down || true
+            docker rm -f astrowind || true
             docker compose build --no-cache astrowind
             docker compose up -d astrowind

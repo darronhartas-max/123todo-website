@@ -56,8 +56,9 @@ jobs:
           username: ${{ secrets.VPS_USERNAME }}
           password: ${{ secrets.VPS_PASSWORD }}
           port: ${{ secrets.VPS_PORT }}
-          source: "src,public,package.json,package-lock.json,astro.config.mjs,tailwind.config.mjs,tsconfig.json,Dockerfile,docker-compose.yml,nginx"
+          source: "src,public,package.json,package-lock.json,astro.config.ts,tailwind.config.js,tsconfig.json,Dockerfile,docker-compose.yml,nginx"
           target: "/home/debian/wordpress-docker/todo-app/"
+          rm: true
 
       - name: Restart Docker Container
         uses: appleboy/ssh-action@master

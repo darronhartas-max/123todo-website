@@ -43,6 +43,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          
+      - name: Build Site
+        run: |
+          npm ci
+          npm run build
+      
       - name: Prepare VPS Directory
         uses: appleboy/ssh-action@master
         with:
@@ -52,18 +63,18 @@ jobs:
           port: ${{ secrets.VPS_PORT }}
           script: mkdir -p /home/debian/wordpress-docker/todo-app/
 
-      - name: Upload files to VPS
+      - name: Upload "dist" to VPS
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USERNAME }}
           password: ${{ secrets.VPS_PASSWORD }}
           port: ${{ secrets.VPS_PORT }}
-          source: "src,public,package.json,package-lock.json,astro.config.ts,tailwind.config.js,tsconfig.json,Dockerfile,docker-compose.yml,nginx,vendor,.dockerignore"
+          source: "dist/"
           target: "/home/debian/wordpress-docker/todo-app/"
           rm: true
 
-      - name: Deploy and Debug
+      - name: Restart Nginx Container
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.VPS_HOST }}
@@ -71,16 +82,5 @@ jobs:
           password: ${{ secrets.VPS_PASSWORD }}
           port: ${{ secrets.VPS_PORT }}
           script: |
-            echo "==== Parent docker-compose.yml ===="
-            cat /home/debian/wordpress-docker/docker-compose.yml || echo "Not found"
-            
-            echo "==== Starting deployment ===="
             cd /home/debian/wordpress-docker
-            docker compose build --no-cache todo-app
-            docker compose stop todo-app || true
-            docker compose rm -f todo-app || true
-            docker compose up -d todo-app
-            
-            echo "==== Checking container contents ===="
-            docker exec todo-app ls -la /usr/share/nginx/html || echo "Failed to ls html"
-            docker exec todo-app cat /usr/share/nginx/html/index.html | head -n 10 || echo "Failed to cat index.html"
+            docker compose restart todo-app

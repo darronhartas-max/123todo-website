@@ -1,9 +1,11 @@
 # 123 ToDo Website Development Plan
 
 ## Project Overview
+
 Transform 123todo.com from a single-page app into a full marketing website with integrated React app.
 
 ## Tech Stack
+
 - **Framework**: Astro 5.x
 - **Theme**: AstroWind (landing page template)
 - **Styling**: TailwindCSS
@@ -63,6 +65,7 @@ Transform 123todo.com from a single-page app into a full marketing website with 
 ## Content Strategy
 
 ### Home Page Content
+
 - **Hero**: "Simple, Powerful Task Management"
 - **Subtitle**: "Organize your life with priority-based tasks, offline support, and achievement tracking"
 - **Features**:
@@ -76,6 +79,7 @@ Transform 123todo.com from a single-page app into a full marketing website with 
   - Beautiful & Fast (React 19)
 
 ### Blog Topics (Initial Posts)
+
 1. "Why We Built 123 ToDo: A Privacy-First Task Manager"
 2. "Getting the Most Out of Priority-Based Task Management"
 3. "How to Use 123 ToDo as a PWA on Your Phone"
@@ -85,6 +89,7 @@ Transform 123todo.com from a single-page app into a full marketing website with 
 ## Technical Implementation
 
 ### File Structure
+
 ```
 123todo-website/
 ├── src/
@@ -112,12 +117,14 @@ Transform 123todo.com from a single-page app into a full marketing website with 
 ```
 
 ### React App Integration
+
 1. Extract TodoApp component from existing app
 2. Make it embeddable (remove outer chrome if needed)
 3. Import in Astro with `client:load` directive
 4. Maintain all existing functionality
 
 ### SEO Strategy
+
 - Meta tags for all pages
 - OpenGraph images
 - Sitemap generation (built-in)
@@ -127,11 +134,13 @@ Transform 123todo.com from a single-page app into a full marketing website with 
 ## Deployment Plan
 
 ### Option 1: Subdomain (Recommended)
+
 - Main site: `www.123todo.com` (Astro)
 - App: `app.123todo.com` (Current React app)
 - Easier to manage separately
 
 ### Option 2: Single Domain
+
 - Main site: `123todo.com` (Astro)
 - App embedded at: `123todo.com/app`
 - Requires routing configuration
@@ -178,10 +187,12 @@ Transform 123todo.com from a single-page app into a full marketing website with 
 ## Deployment Information
 
 ### Live URLs
+
 - **Marketing Website**: https://www.123todo.com
 - **React App**: https://app.123todo.com
 
 ### Deployment Configuration
+
 - **VPS IP**: 51.195.136.55
 - **SSH Port**: 9947
 - **Deploy Path (Marketing)**: `/home/debian/wordpress-docker/todo-app/`
@@ -189,6 +200,7 @@ Transform 123todo.com from a single-page app into a full marketing website with 
 - **Deployment Method**: FileZilla upload + Docker rebuild
 
 ### Current Deployment (2025-10-11)
+
 - ✅ All 7 custom blog post SVG images deployed
 - ✅ Updated blog post markdown files
 - ✅ Optimized images (compressed 146-312kB → 12-110kB)
@@ -196,6 +208,7 @@ Transform 123todo.com from a single-page app into a full marketing website with 
 - ✅ Blog posts: Introducing 123 ToDo, Task Prioritization, Beginner's Guide, Building Habits, Spring Clean, Small Steps, Work-Life Balance
 
 ### Deployment Process
+
 1. Build: `npm run build` (generates `dist/` folder)
 2. Upload: FileZilla to `/home/debian/wordpress-docker/todo-app/`
 3. Rebuild: `docker compose build --no-cache todo-app`

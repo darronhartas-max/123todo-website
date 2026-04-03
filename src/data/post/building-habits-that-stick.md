@@ -82,11 +82,13 @@ When this loop repeats enough times, it becomes automatic - a neural pathway so 
 **Here's the problem:** Most people focus only on the routine (the behavior) and ignore the cue and reward.
 
 **Example of why you fail:**
+
 - **What you try:** "I'm going to use my task manager every day!"
 - **What happens:** You forget. There's no cue triggering the behavior. No reward reinforcing it.
 - **Result:** Within a week, abandoned.
 
 **Example of what actually works:**
+
 - **Cue:** "Right after I pour my morning coffee" (specific trigger)
 - **Routine:** "I spend 2 minutes reviewing my tasks"
 - **Reward:** "I feel prepared and in control for my day" (emotional benefit)
@@ -132,6 +134,7 @@ Let's look at actual transformations - because sometimes you need to see it's po
 **The Breakthrough:** Radically simplified. One commitment: "Add tomorrow's top 3 tasks before bed. Takes 90 seconds."
 
 **What Happened:**
+
 - Week 1: Built the tiny habit. 90 seconds, every night.
 - Week 3: Started adding more tasks because it felt natural
 - Week 5: Began prioritizing tasks with Must/Should/Could
@@ -151,6 +154,7 @@ Let's look at actual transformations - because sometimes you need to see it's po
 **The Breakthrough:** Started with ONE category: Must Do Today. That's it. Everything else was noise.
 
 **What Happened:**
+
 - Week 1: Each morning, identified 3 Must Dos (2 work, 1 personal/family)
 - Week 2: Started completing those 3 tasks daily. First time in years everything critical got done
 - Week 4: Added Should Do category for important-not-urgent items
@@ -171,6 +175,7 @@ Let's look at actual transformations - because sometimes you need to see it's po
 **The Breakthrough:** "No planning sessions over 5 minutes. Planning is not working. Only completing tasks counts."
 
 **What Happened:**
+
 - Week 1: Forced himself to write down tasks in under 5 minutes, then immediately start working
 - Week 2: Noticed he was actually completing more with less planning
 - Week 3: Realized most detailed planning was procrastination disguised as productivity
@@ -191,6 +196,7 @@ Let's look at actual transformations - because sometimes you need to see it's po
 **The Breakthrough:** A mentor challenged her: "You have time to fix the problems caused by disorganization, but not time to prevent them?"
 
 **What Happened:**
+
 - Week 1: Started using 5 minutes during morning coffee to review priorities
 - Week 2: Stopped missing meeting prep. Colleagues noticed she was "more prepared"
 - Month 1: Delegated 3 recurring tasks she didn't realize she was still doing
@@ -217,6 +223,7 @@ Not "complete all priorities" → "Complete 1 Must Do task"
 **Why this works:** Zero barriers = zero excuses. You can't talk yourself out of 30 seconds.
 
 **Your first habit (choose one):**
+
 - Each morning after coffee, open 123 ToDo and write down your #1 priority (30 seconds)
 - Before bed, list tomorrow's top 3 tasks (90 seconds)
 - After lunch, check off completed tasks (15 seconds)
@@ -230,6 +237,7 @@ Peter Gollwitzer's research shows that "if-then" plans (implementation intention
 **The formula:** "After [existing habit], I will [new tiny habit]"
 
 **Examples:**
+
 - "After I pour my morning coffee, I will write down my top 3 tasks"
 - "After I sit down at my desk, I will open 123 ToDo and check my Must Dos"
 - "After I close my laptop for the day, I will review what I completed"
@@ -246,18 +254,21 @@ Research by Wendy Wood shows that **context and environment matter more than mot
 **For task management:**
 
 **Make it obvious:**
+
 - Keep 123 ToDo on your phone's home screen (not buried in a folder)
 - If using desktop, bookmark directly to app
 - Set a daily reminder at your anchor time
 - Write "Check tasks" on a post-it at your desk
 
 **Remove friction:**
+
 - One tap to open = easy
 - Simple interface = no decision fatigue
 - Works offline = no barriers
 - No login required = immediate access
 
 **Compare to complex systems:**
+
 - Multiple taps to find app = friction
 - Complicated interface = decision fatigue
 - Requires internet = barrier when offline
@@ -274,12 +285,14 @@ Charles Duhigg's research in "The Power of Habit" emphasizes: **Habits stick whe
 **The solution:** Create immediate micro-rewards.
 
 **In 123 ToDo:**
+
 - Checking off a task = visual satisfaction + dopamine hit
 - Seeing empty Must Do list = sense of accomplishment
 - Milestone celebrations (5, 10, 15 tasks) = gamified rewards
 - Watching task counter decrease = progress visualization
 
 **Add your own rewards:**
+
 - Tiny celebration (fist pump, "yes!", smile)
 - Physical check mark on paper list (satisfying)
 - Tell someone "Crossed off my top priority!"
@@ -298,18 +311,21 @@ Successful people: "When I miss a day, I'll restart immediately without guilt"
 **Implementation:**
 
 **When you miss a day:**
+
 1. Don't spiral into guilt (waste of energy)
 2. Don't "make up for it" with extra tasks (overwhelm)
 3. Simply restart the next day
 4. One missed day does NOT erase progress
 
 **When motivation drops:**
+
 1. Return to your tiny habit (the bare minimum version)
 2. Complete just that one small action
 3. Usually you'll do more, but minimum is okay
 4. Consistency > intensity
 
 **When life gets chaotic:**
+
 1. Reduce to absolute minimum (e.g., just Must Dos)
 2. Lower the bar temporarily (1 task instead of 3)
 3. Maintain the habit, even in smallest form
@@ -396,12 +412,14 @@ Research by the Bureau of Labor Statistics shows average American daily time all
 If you genuinely only have 2-5 minutes daily, that's enough. Here's proof:
 
 **2 minutes daily for task management:**
+
 - Day 1-30: Write down top 3 priorities (2 min/day = 60 minutes total)
 - Result: 90+ tasks completed that would have been forgotten or delayed
 
 **Time ROI:** Invested 60 minutes. Prevented hours of scrambling, missed deadlines, and mental overwhelm.
 
 **5 minutes daily for task management:**
+
 - Morning: Review and prioritize (3 min)
 - Evening: Update and plan tomorrow (2 min)
 - Result: Consistent execution on important work. Reduced stress. Better sleep.
@@ -413,6 +431,7 @@ If you genuinely only have 2-5 minutes daily, that's enough. Here's proof:
 Most people don't need NEW time. They need to **redirect existing time.**
 
 **Dead time you can reclaim:**
+
 - Waiting for coffee to brew (2 minutes) → Review tasks
 - Commute on train/bus (5 minutes) → Plan priorities
 - Before meeting starts (3 minutes) → Check off completed tasks
@@ -430,26 +449,31 @@ James Clear's research shows that **habits compound exponentially over time.**
 Let's apply this to task management:
 
 ### Month 1: Foundation
+
 - Habit: Write down tasks daily (2 min/day)
 - Direct result: 60+ tasks captured instead of forgotten
 - Indirect result: Reduced mental clutter, better sleep
 
 ### Month 2: Expansion
+
 - Habit: Prioritize tasks daily (add 1 min/day)
 - Direct result: Focus on what matters
 - Indirect result: Important projects progressing
 
 ### Month 3: Optimization
+
 - Habit: Review weekly progress (add 5 min/week)
 - Direct result: Pattern recognition, improved planning
 - Indirect result: Strategic thinking improving
 
 ### Month 6: Transformation
+
 - Cumulative habits: 5-7 min daily
 - Direct result: Consistent execution on priorities
 - Indirect result: Promotion, project success, career advancement
 
 ### Year 1: Identity Shift
+
 - You're no longer "trying to be organized"
 - You ARE an organized person
 - This is simply how you operate
@@ -469,6 +493,7 @@ Ready to be the person who sticks with it? Here's your proven system.
 **Your commitment:** Write down 3 tasks every morning after [your existing habit]
 
 **Rules:**
+
 - Must be after an existing habit (coffee, shower, desk sitting, etc.)
 - Must take under 2 minutes
 - Quality doesn't matter - just do it
@@ -491,6 +516,7 @@ Ready to be the person who sticks with it? Here's your proven system.
 **Your commitment:** Same habit + planning for obstacles
 
 **Prepare for:**
+
 - Busy day → Still write 3 tasks (even if shorter)
 - Forgot morning → Do it at lunch
 - Traveling → Use phone instead of computer
@@ -503,6 +529,7 @@ Ready to be the person who sticks with it? Here's your proven system.
 **Your commitment:** Core habit + one small addition
 
 **Choose ONE addition:**
+
 - Start prioritizing tasks (Must/Should/Could)
 - Complete top task before checking email
 - Review completed tasks at day end
@@ -516,6 +543,7 @@ Ready to be the person who sticks with it? Here's your proven system.
 **Your commitment:** Full system running consistently
 
 **What you're doing now:**
+
 - Morning: Quick task review and prioritization (3 min)
 - During day: Complete Must Dos first
 - Evening: Brief review of what got done (1 min)
@@ -527,6 +555,7 @@ Ready to be the person who sticks with it? Here's your proven system.
 **Your job:** Maintain consistency while life improves around you
 
 **What you'll notice:**
+
 - Projects completing
 - Deadlines met comfortably
 - Stress reducing
@@ -542,6 +571,7 @@ Here's what nobody tells you about building lasting habits:
 **It's about designing systems so good that you'd have to actively fight against them to fail.**
 
 When you:
+
 - Start tiny (impossible to fail)
 - Anchor to existing habits (automatic trigger)
 - Remove all friction (effortless to do)
@@ -604,7 +634,7 @@ Example: "After I pour my morning coffee, I will open 123 ToDo and write down my
 
 **Your commitment:**
 
-After I _________________, I will _________________ for _________________.
+After I **\*\*\*\***\_**\*\*\*\***, I will **\*\*\*\***\_**\*\*\*\*** for **\*\*\*\***\_**\*\*\*\***.
 
 **Start date:** Tomorrow (don't wait - tomorrow is your Day 1)
 
@@ -616,4 +646,4 @@ After I _________________, I will _________________ for _________________.
 
 **Welcome to the community of people who stick with it. We believe in you.** 🎯
 
-*Need support on your habit-building journey? Struggling with consistency? Want to share your wins? Email us at [support@123todo.com](mailto:support@123todo.com) - we're here to help you succeed.*
+_Need support on your habit-building journey? Struggling with consistency? Want to share your wins? Email us at [support@123todo.com](mailto:support@123todo.com) - we're here to help you succeed._

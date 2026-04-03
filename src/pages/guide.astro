@@ -16,7 +16,7 @@ const metadata = {
   <Hero
     image={{
       src: '~/assets/images/frustrated.jpg',
-      alt: 'Frustrated with task management - let us help'
+      alt: 'Frustrated with task management - let us help',
     }}
   >
     <Fragment slot="title">
@@ -24,9 +24,7 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="text-lg">
-        Everything you need to know to master 123 ToDo
-      </span>
+      <span class="text-lg"> Everything you need to know to master 123 ToDo </span>
     </Fragment>
   </Hero>
 
@@ -50,7 +48,7 @@ const metadata = {
       {
         title: 'Step 3: <span class="font-medium">Organize and Complete</span>',
         description:
-          'Drag tasks to reorder them within priorities. Click the checkbox to mark tasks complete. That\'s it - you\'re managing tasks!',
+          "Drag tasks to reorder them within priorities. Click the checkbox to mark tasks complete. That's it - you're managing tasks!",
         icon: 'tabler:check',
       },
       {
@@ -76,16 +74,25 @@ const metadata = {
     </div>
 
     <div class="prose prose-lg dark:prose-invert max-w-none">
-
       <h3>🎯 Priority System</h3>
-      <p>
-        123 ToDo uses a 4-level priority system to help you focus on what matters most:
-      </p>
+      <p>123 ToDo uses a 4-level priority system to help you focus on what matters most:</p>
       <ul>
-        <li><strong class="text-red-600">Must Do (Priority 1)</strong> - Critical tasks that must be completed today. These appear in red.</li>
-        <li><strong class="text-orange-600">Should Do (Priority 2)</strong> - Important tasks that should be done soon. These appear in orange.</li>
-        <li><strong class="text-gray-600">Could Do (Priority 3)</strong> - Nice-to-have tasks with no urgent deadline. These appear in gray.</li>
-        <li><strong class="text-purple-600">On Hold (Priority 4)</strong> - Tasks that are paused or waiting on something else. These appear in purple.</li>
+        <li>
+          <strong class="text-red-600">Must Do (Priority 1)</strong> - Critical tasks that must be completed today. These
+          appear in red.
+        </li>
+        <li>
+          <strong class="text-orange-600">Should Do (Priority 2)</strong> - Important tasks that should be done soon. These
+          appear in orange.
+        </li>
+        <li>
+          <strong class="text-gray-600">Could Do (Priority 3)</strong> - Nice-to-have tasks with no urgent deadline. These
+          appear in gray.
+        </li>
+        <li>
+          <strong class="text-purple-600">On Hold (Priority 4)</strong> - Tasks that are paused or waiting on something else.
+          These appear in purple.
+        </li>
       </ul>
 
       <h3>✏️ Adding and Editing Tasks</h3>
@@ -106,21 +113,23 @@ const metadata = {
 
       <h3>✅ Completing Tasks</h3>
       <p>
-        Click the checkbox next to any task to mark it complete. Completed tasks move to the Archive
-        section at the bottom of the page. You can restore archived tasks anytime by clicking the
-        restore icon.
+        Click the checkbox next to any task to mark it complete. Completed tasks move to the Archive section at the
+        bottom of the page. You can restore archived tasks anytime by clicking the restore icon.
       </p>
 
       <h3>↕️ Reordering Tasks</h3>
-      <p>
-        Tasks can be reordered within their priority level using drag and drop:
-      </p>
+      <p>Tasks can be reordered within their priority level using drag and drop:</p>
       <ul>
         <li>Click and hold the "drag" icon (⋮⋮) on the left side of any task</li>
         <li>Drag the task up or down within its priority section</li>
         <li>Release to drop it in the new position</li>
       </ul>
-      <p><em>Note: You cannot drag tasks between different priority levels. Use the Edit feature to change a task's priority.</em></p>
+      <p>
+        <em
+          >Note: You cannot drag tasks between different priority levels. Use the Edit feature to change a task's
+          priority.</em
+        >
+      </p>
 
       <h3>🗑️ Deleting Tasks</h3>
       <p>
@@ -130,8 +139,7 @@ const metadata = {
 
       <h3>📦 Archive System</h3>
       <p>
-        Completed tasks are automatically moved to the Archive section at the bottom of the page.
-        The archive shows:
+        Completed tasks are automatically moved to the Archive section at the bottom of the page. The archive shows:
       </p>
       <ul>
         <li>All completed tasks with their original priority colors</li>
@@ -141,17 +149,15 @@ const metadata = {
 
       <h3>🏆 Achievement Milestones</h3>
       <p>
-        Stay motivated with daily achievement celebrations! 123 ToDo tracks how many tasks you
-        complete each day and celebrates when you hit milestones:
+        Stay motivated with daily achievement celebrations! 123 ToDo tracks how many tasks you complete each day and
+        celebrates when you hit milestones:
       </p>
       <ul>
         <li><strong>5 tasks</strong> - Bronze milestone 🥉</li>
         <li><strong>10 tasks</strong> - Silver milestone 🥈</li>
         <li><strong>15 tasks</strong> - Gold milestone 🥇</li>
       </ul>
-      <p>
-        Milestones reset daily at midnight, giving you fresh motivation every day.
-      </p>
+      <p>Milestones reset daily at midnight, giving you fresh motivation every day.</p>
 
       <h3>📦 Data Import & Migration</h3>
       <p><strong>Migrating from Todoist:</strong></p>
@@ -169,15 +175,15 @@ const metadata = {
       </ol>
 
       <p>
-        <strong>⚠️ Important:</strong> Importing data will merge or replace your current tasks depending on the source. Export your
-        current data first if you want to keep a secondary copy!
+        <strong>⚠️ Important:</strong> Importing data will merge or replace your current tasks depending on the source. Export
+        your current data first if you want to keep a secondary copy!
       </p>
 
       <h3>🛡️ Shadow Backups (Automatic)</h3>
       <p>
-        123 ToDo includes a built-in <strong>Shadow Backup</strong> system for extra peace of mind. Every 24 hours, the app 
-        automatically saves a "hidden" snapshot of your tasks internally. If your main task list is ever accidentally 
-        cleared, this secondary restore point ensures you never lose more than a day's work.
+        123 ToDo includes a built-in <strong>Shadow Backup</strong> system for extra peace of mind. Every 24 hours, the app
+        automatically saves a "hidden" snapshot of your tasks internally. If your main task list is ever accidentally cleared,
+        this secondary restore point ensures you never lose more than a day's work.
       </p>
 
       <h3>📱 PWA Installation</h3>
@@ -207,16 +213,15 @@ const metadata = {
 
       <h3>💾 Data Backup Reminders</h3>
       <p>
-        123 ToDo will remind you weekly to backup your data. Since all tasks are stored locally
-        in your browser, regular backups are essential to prevent data loss.
+        123 ToDo will remind you weekly to backup your data. Since all tasks are stored locally in your browser, regular
+        backups are essential to prevent data loss.
       </p>
 
       <h3>🎨 Theme Options</h3>
       <p>
-        123 ToDo automatically adapts to your system's light or dark mode preference. If you change
-        your system theme, the app will update automatically.
+        123 ToDo automatically adapts to your system's light or dark mode preference. If you change your system theme,
+        the app will update automatically.
       </p>
-
     </div>
   </section>
 
@@ -239,12 +244,13 @@ const metadata = {
       },
       {
         title: 'Weekly Reviews',
-        description: 'Every Sunday, review Could Do tasks. Promote important ones or delete tasks you\'ll never do.',
+        description: "Every Sunday, review Could Do tasks. Promote important ones or delete tasks you'll never do.",
         icon: 'tabler:calendar-week',
       },
       {
         title: 'Archive Review',
-        description: 'Periodically review your archive to see progress. Permanently delete old completed tasks to declutter.',
+        description:
+          'Periodically review your archive to see progress. Permanently delete old completed tasks to declutter.',
         icon: 'tabler:archive',
       },
       {
@@ -254,7 +260,8 @@ const metadata = {
       },
       {
         title: 'Break Down Big Tasks',
-        description: 'Large projects? Break them into smaller, actionable tasks. "Launch website" becomes 5 specific tasks.',
+        description:
+          'Large projects? Break them into smaller, actionable tasks. "Launch website" becomes 5 specific tasks.',
         icon: 'tabler:list-details',
       },
     ]}
@@ -270,7 +277,7 @@ const metadata = {
       {
         title: 'Where is my data stored?',
         description:
-          'All your tasks are stored locally in your browser\'s localStorage. Nothing is sent to our servers. Your data stays on your device.',
+          "All your tasks are stored locally in your browser's localStorage. Nothing is sent to our servers. Your data stays on your device.",
       },
       {
         title: 'Can I sync between devices?',
@@ -295,10 +302,10 @@ const metadata = {
       {
         title: 'How many tasks can I create?',
         description:
-          'There\'s no hard limit, but browsers typically limit localStorage to 5-10MB. In practice, this allows thousands of tasks.',
+          "There's no hard limit, but browsers typically limit localStorage to 5-10MB. In practice, this allows thousands of tasks.",
       },
       {
-        title: 'Can I change a task\'s priority after creating it?',
+        title: "Can I change a task's priority after creating it?",
         description:
           'Yes! Click the edit icon (pencil) next to any task, then select a new priority level using the colored buttons.',
       },
@@ -310,12 +317,11 @@ const metadata = {
       {
         title: 'Do you track how I use the app?',
         description:
-          'No. We don\'t use analytics, cookies, or any tracking. We have no idea how you use 123 ToDo, and we like it that way.',
+          "No. We don't use analytics, cookies, or any tracking. We have no idea how you use 123 ToDo, and we like it that way.",
       },
       {
         title: 'How do I report bugs or request features?',
-        description:
-          'Visit our website at www.123todo.com for contact information and support options.',
+        description: 'Visit our website at www.123todo.com for contact information and support options.',
       },
       {
         title: 'Why is there a 200 character limit for tasks?',
@@ -333,11 +339,8 @@ const metadata = {
     </div>
 
     <div class="prose prose-lg dark:prose-invert max-w-none">
-
       <h3>🔄 Tasks disappeared after browser update</h3>
-      <p>
-        Browser updates shouldn't clear localStorage, but it can happen. If this occurs:
-      </p>
+      <p>Browser updates shouldn't clear localStorage, but it can happen. If this occurs:</p>
       <ol>
         <li>Check if you have an exported backup file</li>
         <li>Use Import Data to restore from backup</li>
@@ -346,8 +349,8 @@ const metadata = {
 
       <h3>📡 App not working offline</h3>
       <p>
-        Ensure you've visited the app while online at least once. Service workers need to cache
-        the app files initially. If still having issues:
+        Ensure you've visited the app while online at least once. Service workers need to cache the app files initially.
+        If still having issues:
       </p>
       <ol>
         <li>Visit app.123todo.com while online</li>
@@ -357,9 +360,7 @@ const metadata = {
       </ol>
 
       <h3>🔧 Can't install as PWA</h3>
-      <p>
-        PWA installation requirements vary by browser:
-      </p>
+      <p>PWA installation requirements vary by browser:</p>
       <ul>
         <li><strong>Chrome/Edge:</strong> Look for install icon in address bar</li>
         <li><strong>Safari iOS:</strong> Use Share → Add to Home Screen</li>
@@ -367,9 +368,7 @@ const metadata = {
       </ul>
 
       <h3>📥 Import not working</h3>
-      <p>
-        If import fails:
-      </p>
+      <p>If import fails:</p>
       <ol>
         <li>Ensure you're importing a file exported from 123 ToDo (not edited manually)</li>
         <li>Check that the file is valid JSON</li>
@@ -379,10 +378,9 @@ const metadata = {
 
       <h3>🖱️ Drag and drop not working</h3>
       <p>
-        Drag and drop works on desktop only. Mobile touch devices don't support drag and drop
-        for task reordering. Use Edit to change priorities on mobile.
+        Drag and drop works on desktop only. Mobile touch devices don't support drag and drop for task reordering. Use
+        Edit to change priorities on mobile.
       </p>
-
     </div>
   </section>
 
@@ -397,9 +395,7 @@ const metadata = {
       },
     ]}
   >
-    <Fragment slot="title">
-      Ready to get organized?
-    </Fragment>
+    <Fragment slot="title"> Ready to get organized? </Fragment>
 
     <Fragment slot="subtitle">
       Now that you know how to use 123 ToDo, put it to work for you. No signup required.

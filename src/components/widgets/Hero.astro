@@ -19,7 +19,12 @@ const {
 } = Astro.props;
 
 // Check if image is a Lottie animation (JSON file)
-const isLottie = image && typeof image === 'object' && image.src && image.src.endsWith('.json');
+const isLottie = !!(
+  image &&
+  typeof image === 'object' &&
+  (image as Record<string, unknown>).src &&
+  (image as Record<string, string>).src.endsWith('.json')
+);
 ---
 
 <section class="relative md:-mt-[76px] not-prose" {...id ? { id } : {}}>
@@ -85,8 +90,8 @@ const isLottie = image && typeof image === 'object' && image.src && image.src.en
                 <Fragment set:html={image} />
               ) : isLottie ? (
                 <LottieAnimation
-                  src={image.src}
-                  alt={image.alt || 'Animation'}
+                  src={(image as Record<string, string>).src}
+                  alt={(image as Record<string, string>).alt || 'Animation'}
                   class="mx-auto w-full"
                 />
               ) : (
@@ -97,7 +102,7 @@ const isLottie = image && typeof image === 'object' && image.src && image.src.en
                   loading="eager"
                   width={1024}
                   height={576}
-                  {...image}
+                  {...(image as Record<string, unknown>)}
                 />
               )}
             </div>

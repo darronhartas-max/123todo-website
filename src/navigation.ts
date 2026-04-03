@@ -39,7 +39,11 @@ export const footerData = {
       title: 'Support',
       links: [
         { text: 'Report a Bug', href: 'mailto:support@123todo.com?subject=Bug%20Report', target: '_blank' },
-        { text: 'Suggest Enhancement', href: 'mailto:support@123todo.com?subject=Feature%20Suggestion', target: '_blank' },
+        {
+          text: 'Suggest Enhancement',
+          href: 'mailto:support@123todo.com?subject=Feature%20Suggestion',
+          target: '_blank',
+        },
       ],
     },
     {

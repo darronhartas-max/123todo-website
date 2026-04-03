@@ -3,7 +3,6 @@ import type { InferGetStaticPropsType, GetStaticPaths } from 'astro';
 
 import Layout from '~/layouts/PageLayout.astro';
 import BlogList from '~/components/blog/List.astro';
-import Headline from '~/components/blog/Headline.astro';
 import Pagination from '~/components/blog/Pagination.astro';
 import Hero from '~/components/widgets/Hero.astro';
 // import PostTags from "~/components/blog/Tags.astro";
@@ -41,7 +40,7 @@ const metadata = {
   <Hero
     image={{
       src: '~/assets/images/alarm-clock.jpg',
-      alt: 'Time Management and Productivity Insights'
+      alt: 'Time Management and Productivity Insights',
     }}
   >
     <Fragment slot="title">
@@ -50,8 +49,8 @@ const metadata = {
 
     <Fragment slot="subtitle">
       <span class="text-lg">
-        Practical advice, proven strategies, and inspiration to help you get more done with less stress.
-        Master your time, build lasting habits, and achieve your goals.
+        Practical advice, proven strategies, and inspiration to help you get more done with less stress. Master your
+        time, build lasting habits, and achieve your goals.
       </span>
     </Fragment>
   </Hero>

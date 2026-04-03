@@ -8,27 +8,22 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 
 const metadata = {
   title: '123 ToDo - FREE Simple, Powerful Task Management',
-  description: 'FREE priority-based task management with offline support, achievement tracking, and zero tracking. Your tasks, your control.',
+  description:
+    'FREE priority-based task management with offline support, achievement tracking, and zero tracking. Your tasks, your control.',
   ignoreTitleTemplate: true,
   openGraph: {
-    basic: {
-      title: '123 ToDo - FREE Simple, Powerful Task Management',
-      type: 'website',
-      image: 'https://www.123todo.com/social-share.svg',
-    },
-    image: {
-      url: 'https://www.123todo.com/social-share.svg',
-      width: 1200,
-      height: 630,
-      alt: '123 ToDo - FREE Simple Task Management',
-    }
+    images: [
+      {
+        url: 'https://www.123todo.com/social-share.svg',
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: 'website',
   },
   twitter: {
-    card: 'summary_large_image',
-    title: '123 ToDo - FREE Simple, Powerful Task Management',
-    description: 'FREE priority-based task management with offline support, achievement tracking, and zero tracking.',
-    image: 'https://www.123todo.com/social-share.svg',
-  }
+    cardType: 'summary_large_image',
+  },
 };
 ---
 
@@ -44,23 +39,26 @@ const metadata = {
       },
       {
         text: 'Learn More',
-        href: '#features'
+        href: '#features',
       },
     ]}
     image={{
       src: '~/assets/images/productive-man.json',
-      alt: 'Person organizing tasks with 123 ToDo - effective time management'
+      alt: 'Person organizing tasks with 123 ToDo - effective time management',
     }}
   >
     <Fragment slot="title">
-      Simple, Powerful <br/>
+      Simple, Powerful <br />
       <span class="text-accent dark:text-white highlight">Task Management</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="text-lg">
-        Priority-based organization with **Shadow Backups** and **Mobile-First Persistence**. <br/>
-        <span class="font-semibold text-accent dark:text-white">Your tasks, your phone, your control.</span> <span class="text-purple-600 dark:text-purple-400 font-bold underline decoration-2 underline-offset-4">TOTALLY FREE.</span> No accounts, no hassle.
+        Priority-based organization with **Shadow Backups** and **Mobile-First Persistence**. <br />
+        <span class="font-semibold text-accent dark:text-white">Your tasks, your phone, your control.</span>
+        <span class="text-purple-600 dark:text-purple-400 font-bold underline decoration-2 underline-offset-4"
+          >TOTALLY FREE.</span
+        > No accounts, no hassle.
       </span>
     </Fragment>
   </Hero>
@@ -72,42 +70,49 @@ const metadata = {
     title="Everything you need to stay organized"
     subtitle="Built with simplicity and privacy in mind"
     classes={{
-      container: '!py-6 md:!py-8'
+      container: '!py-6 md:!py-8',
     }}
     items={[
       {
         title: 'Priority-Based Organization',
-        description: 'Organize tasks with our 4-level priority system: Must Do, Should Do, Could Do, and On Hold. Focus on what matters most.',
+        description:
+          'Organize tasks with our 4-level priority system: Must Do, Should Do, Could Do, and On Hold. Focus on what matters most.',
         icon: 'tabler:list-check',
       },
       {
         title: 'Mobile-First Persistence',
-        description: 'Install as a PWA on your mobile phone or desktop. We request persistent storage to ensure the OS never clears your tasks.',
+        description:
+          'Install as a PWA on your mobile phone or desktop. We request persistent storage to ensure the OS never clears your tasks.',
         icon: 'tabler:device-mobile-bolt',
       },
       {
         title: 'Achievement Milestones',
-        description: 'Stay motivated with milestone celebrations at 5, 10, and 15 completed tasks per day. Track your productivity journey.',
+        description:
+          'Stay motivated with milestone celebrations at 5, 10, and 15 completed tasks per day. Track your productivity journey.',
         icon: 'tabler:trophy',
       },
       {
         title: 'Zero Tracking',
-        description: 'No analytics, no cookies, no tracking. Your data never leaves your device. Privacy-first by design.',
+        description:
+          'No analytics, no cookies, no tracking. Your data never leaves your device. Privacy-first by design.',
         icon: 'tabler:shield-check',
       },
       {
         title: 'Shadow Backups',
-        description: 'Enjoy peace of mind with automatic daily snapshots of your task list, stored internally as a secondary recovery point.',
+        description:
+          'Enjoy peace of mind with automatic daily snapshots of your task list, stored internally as a secondary recovery point.',
         icon: 'tabler:history',
       },
       {
         title: 'Todoist Import',
-        description: 'Migrating is easy. Import your existing Todoist projects and tasks directly via CSV into our organized priority system.',
+        description:
+          'Migrating is easy. Import your existing Todoist projects and tasks directly via CSV into our organized priority system.',
         icon: 'tabler:file-import',
       },
       {
         title: 'Premium Typography',
-        description: 'A clean, high-accessibility interface with standard font sizing (1.1rem) designed specifically for legibility on all screens.',
+        description:
+          'A clean, high-accessibility interface with standard font sizing (1.1rem) designed specifically for legibility on all screens.',
         icon: 'tabler:typography',
       },
     ]}
@@ -134,16 +139,14 @@ const metadata = {
     ]}
     image={{
       src: '~/assets/images/screenshot-123todo-1.png',
-      alt: '123 ToDo app screenshot showing task organization'
+      alt: '123 ToDo app screenshot showing task organization',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        No learning curve required
-      </h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">No learning curve required</h3>
       <p class="text-lg">
-        Start managing your tasks immediately. 123 ToDo is designed to be intuitive and straightforward,
-        so you can focus on getting things done instead of learning software.
+        Start managing your tasks immediately. 123 ToDo is designed to be intuitive and straightforward, so you can
+        focus on getting things done instead of learning software.
       </p>
     </Fragment>
 
@@ -159,20 +162,21 @@ const metadata = {
     items={[
       {
         title: 'Local Storage Only',
-        description: 'All tasks are stored in your browser\'s localStorage. Nothing is sent to our servers.',
+        description: "All tasks are stored in your browser's localStorage. Nothing is sent to our servers.",
       },
       {
         title: 'No Registration Required',
-        description: 'No email, no password, no account. Start using immediately without giving up personal information.',
+        description:
+          'No email, no password, no account. Start using immediately without giving up personal information.',
       },
       {
         title: 'Open Source Approach',
-        description: 'Built with transparency in mind. You can inspect the code and verify there\'s no tracking.',
+        description: "Built with transparency in mind. You can inspect the code and verify there's no tracking.",
       },
     ]}
     image={{
       src: '~/assets/images/happy-at-desk.jpg',
-      alt: 'Happy person working at desk with secure task management'
+      alt: 'Happy person working at desk with secure task management',
     }}
   >
     <Fragment slot="content">
@@ -180,8 +184,8 @@ const metadata = {
         Built for privacy, designed for simplicity
       </h3>
       <p class="text-lg">
-        In an age of constant surveillance, 123 ToDo offers a refreshing alternative. We don't want your data,
-        and we don't need it to provide you with excellent task management.
+        In an age of constant surveillance, 123 ToDo offers a refreshing alternative. We don't want your data, and we
+        don't need it to provide you with excellent task management.
       </p>
     </Fragment>
   </Content>
@@ -203,12 +207,8 @@ const metadata = {
       },
     ]}
   >
-    <Fragment slot="title">
-      Ready to simplify your life?
-    </Fragment>
+    <Fragment slot="title"> Ready to simplify your life? </Fragment>
 
-    <Fragment slot="subtitle">
-      Start organizing your tasks today. No signup required, completely free.
-    </Fragment>
+    <Fragment slot="subtitle"> Start organizing your tasks today. No signup required, completely free. </Fragment>
   </CallToAction>
 </Layout>

@@ -11,7 +11,7 @@ metadata:
   title:
     default: 123 ToDo - FREE Simple, Powerful Task Management
     template: '%s | 123 ToDo'
-  description: "FREE priority-based task management with offline support, achievement tracking, and zero tracking. Your tasks, your control."
+  description: 'FREE priority-based task management with offline support, achievement tracking, and zero tracking. Your tasks, your control.'
   robots:
     index: true
     follow: true

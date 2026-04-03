@@ -4,7 +4,7 @@ Copy this template to create new blog posts in `src/data/post/`
 
 ## Template File
 
-```markdown
+````markdown
 ---
 publishDate: 2025-10-10T00:00:00Z
 title: 'Your Catchy Blog Post Title'
@@ -31,7 +31,7 @@ Start with a hook that grabs attention. Explain what this post is about and why 
 Your content here. Use markdown formatting:
 
 - **Bold text** for emphasis
-- *Italic text* for subtle emphasis
+- _Italic text_ for subtle emphasis
 - [Links](https://app.123todo.com) to other pages
 - `inline code` for technical terms
 
@@ -49,8 +49,9 @@ Include images, code blocks, and other rich content:
 
 ```javascript
 // Code example
-const example = "code block";
+const example = 'code block';
 ```
+````
 
 > Blockquotes for important callouts or quotes
 
@@ -69,7 +70,8 @@ A: Your answer here.
 
 **Q: Another question?**
 A: Another answer here.
-```
+
+````
 
 ---
 
@@ -187,13 +189,15 @@ The blog index is at: `https://www.123todo.com/blog`
 
 ```language
 code block
-```
+````
 
 ---
 
 Horizontal rule
+
 ```
 
 ---
 
 **Ready to create your first blog post? Just copy the template above!**
+```

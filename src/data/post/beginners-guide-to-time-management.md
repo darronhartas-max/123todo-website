@@ -92,12 +92,14 @@ The complicated systems fail because they add friction to these three simple ste
 ### Why "Just Write It Down" Actually Works
 
 Let's be clear about what we mean by writing things down. We're not talking about:
+
 - Complex planning sessions
 - Detailed project management software (unless you need it)
 - Hour-long organizing marathons
 - Perfect systems with zero flexibility
 
 We're talking about:
+
 - **Brain dump**: What's on your mind? Write it down.
 - **Quick categorization**: Is this urgent? Important? Optional?
 - **Get started**: Pick the top item and do it.
@@ -115,6 +117,7 @@ Ready to experience this for yourself? Here's your beginner-friendly, no-stress 
 **Your mission:** Write down absolutely everything that's occupying mental space.
 
 Grab your phone, open 123 ToDo (or paper if you prefer), and just start listing:
+
 - Work tasks
 - Personal errands
 - Things you've been meaning to do
@@ -159,6 +162,7 @@ That's it. You're not creating complex categories. You're not building elaborate
 That's all. Just one. Pick the top item from your Must Do list and complete it. Then, if you feel like it, do another. But your only goal is one.
 
 **Here's what happens:**
+
 1. You'll complete that task (because one task is manageable)
 2. You'll check it off your list
 3. You'll get a dopamine hit (that feel-good reward)
@@ -174,11 +178,13 @@ This is the power of starting small. One task removes the overwhelm. One task pr
 **Your mission:** Repeat the process daily.
 
 Each morning (or evening before):
+
 - Quick brain dump: What's new?
 - Quick prioritization: Must, Should, Could, or On Hold?
 - Complete your #1 Must Do first
 
 **What you'll notice by the end of Week 1:**
+
 - Less mental clutter
 - Better focus during work
 - Feeling more in control
@@ -231,6 +237,7 @@ Let's dive deeper into why the simplest approach is actually the most powerful.
 Your brain has limited processing capacity. Think of it as a mental battery that depletes throughout the day. Every decision, every choice, every moment of uncertainty drains that battery.
 
 Complex time management systems require constant decisions:
+
 - Which category does this go in?
 - What color code should I use?
 - Is this priority level 3A or 3B?
@@ -280,6 +287,7 @@ You're not overwhelmed by options. You're gently guided toward effectiveness.
 ### Visual Clarity
 
 Color-coded priorities mean instant visual understanding:
+
 - Red = urgent (Must Do)
 - Orange = important (Should Do)
 - Gray = optional (Could Do)
@@ -309,39 +317,43 @@ Because time management shouldn't require a monthly fee.
 
 ### Sarah, Marketing Manager
 
-*"I was drowning. Meetings, deadlines, personal stuff - it was all floating around in my head 24/7. I started using 123 ToDo just to shut my brain up at night. Within three days, I was sleeping better. Within a week, my boss noticed I was hitting deadlines more consistently. Two months later, I got promoted. I genuinely think the simple act of writing things down was the difference."*
+_"I was drowning. Meetings, deadlines, personal stuff - it was all floating around in my head 24/7. I started using 123 ToDo just to shut my brain up at night. Within three days, I was sleeping better. Within a week, my boss noticed I was hitting deadlines more consistently. Two months later, I got promoted. I genuinely think the simple act of writing things down was the difference."_
 
 ### Marcus, College Student
 
-*"I thought I needed some complicated planner system. Tried bullet journaling, fancy apps, everything. Too much work. Then I tried 123 ToDo on a whim. It's so stupid simple that I actually use it. Assignments go in Must Do. Study sessions in Should Do. That's it. My GPA went from 2.8 to 3.6 in one semester. Turns out I'm not disorganized - I just needed to stop overcomplicting things."*
+_"I thought I needed some complicated planner system. Tried bullet journaling, fancy apps, everything. Too much work. Then I tried 123 ToDo on a whim. It's so stupid simple that I actually use it. Assignments go in Must Do. Study sessions in Should Do. That's it. My GPA went from 2.8 to 3.6 in one semester. Turns out I'm not disorganized - I just needed to stop overcomplicting things."_
 
 ### Jennifer, Parent of Three
 
-*"Managing three kids' schedules plus my own was impossible. I was constantly forgetting permission slips, appointments, everything. My therapist suggested writing things down instead of trying to remember everything. Started with paper lists, then switched to 123 ToDo so I always have it with me. Game changer. I feel like a functional human again instead of a stressed mess."*
+_"Managing three kids' schedules plus my own was impossible. I was constantly forgetting permission slips, appointments, everything. My therapist suggested writing things down instead of trying to remember everything. Started with paper lists, then switched to 123 ToDo so I always have it with me. Game changer. I feel like a functional human again instead of a stressed mess."_
 
 ## Your 30-Day Challenge: Transform Your Life
 
 Ready to commit? Here's your structured challenge to make time management a lasting habit.
 
 ### Week 1: Foundation
+
 - Daily brain dumps
 - Simple prioritization
 - Complete at least 1 Must Do task per day
 - Goal: Build the habit of writing things down
 
 ### Week 2: Consistency
+
 - Morning routine: Review and update your list
 - Complete 2-3 Must Do tasks daily
 - Start tackling Should Do tasks
 - Goal: Make checking your list automatic
 
 ### Week 3: Optimization
+
 - Notice which tasks keep getting postponed (maybe they're not important?)
 - Start saying no to Could Do tasks that don't serve you
 - Experiment with when you plan (morning vs evening)
 - Goal: Refine your system to fit your life
 
 ### Week 4: Mastery
+
 - You're not thinking about the system anymore - you're just using it
 - Tasks get done without stress
 - You feel in control
@@ -433,6 +445,6 @@ Three tasks. Thirty seconds. One small step that could change everything.
 
 ---
 
-*Still have questions? Wondering if this is right for you? We'd love to hear from you at [support@123todo.com](mailto:support@123todo.com). Time management should be simple - and we're here to help you make it that way.*
+_Still have questions? Wondering if this is right for you? We'd love to hear from you at [support@123todo.com](mailto:support@123todo.com). Time management should be simple - and we're here to help you make it that way._
 
 **Welcome to your fresh start. We're excited to be part of your journey.** 🎯

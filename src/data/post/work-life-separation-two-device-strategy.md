@@ -1,6 +1,6 @@
 ---
 publishDate: 2025-10-28T00:00:00Z
-title: "Stop Bringing Work Home: The Two-Device Strategy for Perfect Work-Life Separation"
+title: 'Stop Bringing Work Home: The Two-Device Strategy for Perfect Work-Life Separation'
 excerpt: "Tired of your partner's frustrated sighs when you're 'working' at dinner? Learn how separating business and personal tasks across two devices can save your sanity (and your relationship)."
 image: ~/assets/images/blog-work-life-balance.svg
 category: Tips & Tricks
@@ -42,6 +42,7 @@ Let's paint a picture of your current reality.
 It's 8pm. You're finally sitting down after a long day. Your partner is telling you about their day. Your phone buzzes. You glance down.
 
 Is it:
+
 - A client emergency?
 - Your sister's text about weekend plans?
 - A project deadline reminder?
@@ -71,7 +72,7 @@ But when you're self-employed, everything is intertwined:
 
 **Your brain becomes an impossible game of mental Jenga, constantly trying to balance business and personal without letting anything fall.**
 
-And here's what makes it worse: You can't just "turn off work mode" because that dentist appointment reminder is on the same list as the client proposal deadline. You can't leave work at the office because *you* are the office.
+And here's what makes it worse: You can't just "turn off work mode" because that dentist appointment reminder is on the same list as the client proposal deadline. You can't leave work at the office because _you_ are the office.
 
 ## The Hidden Cost of Mixing Work and Life
 
@@ -81,9 +82,10 @@ This constant mental mixing isn't just annoying. It's expensive.
 
 Research from the American Psychological Association shows that **work-life interference is one of the top sources of relationship conflict.**
 
-Your partner doesn't just miss your physical presence. They miss your *mental* presence.
+Your partner doesn't just miss your physical presence. They miss your _mental_ presence.
 
 When you're checking "both" lists constantly, you're never fully present anywhere:
+
 - At dinner but mentally reviewing tomorrow's client meeting
 - Playing with your kids but thinking about that invoice you forgot to send
 - Watching a movie but wondering if you responded to that important email
@@ -95,9 +97,10 @@ When you're checking "both" lists constantly, you're never fully present anywher
 Dr. Sophie Leroy's research on "attention residue" reveals that **switching between different types of tasks leaves cognitive residue that reduces performance on both.**
 
 When your business tasks and personal tasks share the same list, your brain is constantly context-switching:
+
 - "Send client proposal" → "Buy anniversary gift" → "Review project budget" → "Schedule dentist appointment"
 
-Each switch costs mental energy. By the end of the day, you're exhausted but haven't fully completed *anything.*
+Each switch costs mental energy. By the end of the day, you're exhausted but haven't fully completed _anything._
 
 ### Cost #3: Nothing Gets the Attention It Deserves
 
@@ -144,12 +147,14 @@ No more personal distractions popping up during focused work time. They're on a 
 ### How This Looks in Practice
 
 **Morning at the Desk (Business Mode):**
+
 - Open 123 ToDo on desktop
 - Review business Must Dos: Client presentation, invoice follow-up, project planning
 - Tackle top priorities with full focus
 - No personal tasks visible to distract you
 
 **Evening at Home (Personal Mode):**
+
 - Open 123 ToDo on phone
 - Review personal Must Dos: Pick up groceries, call mom, book restaurant
 - Handle personal life with full attention
@@ -246,6 +251,7 @@ Ready to save your sanity (and possibly your relationship)? Here's your implemen
 ### Step 1: The Great Migration (15 Minutes)
 
 **On your desktop/laptop:**
+
 - Open 123 ToDo
 - Add all business-related tasks:
   - Client work
@@ -256,6 +262,7 @@ Ready to save your sanity (and possibly your relationship)? Here's your implemen
   - Any work that pays you
 
 **On your phone:**
+
 - Open 123 ToDo
 - Add all personal tasks:
   - Family commitments
@@ -270,12 +277,14 @@ Ready to save your sanity (and possibly your relationship)? Here's your implemen
 ### Step 2: Create the Boundaries (Immediate)
 
 **Work Hours:**
+
 - Desktop open = Work mode
 - Focus on business tasks only
 - Phone can be in another room if needed
 - Full concentration on income-generating activities
 
 **Personal Time:**
+
 - Laptop closed = Life mode
 - Focus on personal tasks only
 - Desktop stays physically closed
@@ -284,6 +293,7 @@ Ready to save your sanity (and possibly your relationship)? Here's your implemen
 **The Physical Act of Closing the Laptop:**
 
 This is more important than it seems. When you physically close your laptop at end of workday, you're:
+
 - Symbolically closing work
 - Creating a visual boundary
 - Removing work tasks from your environment
@@ -296,11 +306,13 @@ This is more important than it seems. When you physically close your laptop at e
 Expect discomfort. Your brain is used to mixing everything.
 
 **When you want to check work tasks during personal time:**
+
 - Remind yourself: "It's on the laptop. The laptop is closed."
 - Ask: "Is this truly an emergency, or just anxiety?"
 - 99% of the time, it can wait
 
 **When personal thoughts intrude during work time:**
+
 - Add them to phone 123 ToDo during a break
 - Return to work tasks
 - Trust that you'll handle personal items during personal time
@@ -385,11 +397,13 @@ You face unique challenges. Here's how to make this work for your specific situa
 **Solution:** Create artificial boundaries.
 
 **Spatial Boundary:**
+
 - Designate a work space (even if it's just a specific chair)
 - Desktop 123 ToDo only accessed in that space
 - When you leave that space, you leave work
 
 **Temporal Boundary:**
+
 - Set work hours (even if flexible)
 - Desktop closed outside those hours
 - Emergency exceptions are rare, not routine
@@ -404,6 +418,7 @@ You face unique challenges. Here's how to make this work for your specific situa
 - Don't let the task notification sit on your phone creating anxiety
 
 **Example:**
+
 - Client texts at 7pm about project change
 - You read it, acknowledge receipt
 - You don't add it to any task list until tomorrow morning
@@ -415,11 +430,13 @@ You face unique challenges. Here's how to make this work for your specific situa
 **Solution:** Choose the dominant category.
 
 **Mostly business?** → Desktop
+
 - Buying business insurance (even though it affects personal finances)
 - Business travel planning (even though you'll personally be traveling)
 - Professional development (even though it's personal growth)
 
 **Mostly personal?** → Phone
+
 - Personal tax preparation (even though it includes business income)
 - Buying work clothes (even though they're for business)
 - Lunch with a friend who might become a client (if primarily social)
@@ -440,6 +457,7 @@ In 15+ years of running businesses, here's what we've learned:
 If it's really urgent, clients will call. If they're just adding to your task list, it can wait until your work hours.
 
 **Establish this boundary with clients:**
+
 - "I check my task management system during business hours (9am-6pm)"
 - "If something needs immediate attention outside those hours, please call me"
 - "Otherwise, I'll handle it first thing the next business day"
@@ -451,11 +469,13 @@ If it's really urgent, clients will call. If they're just adding to your task li
 Let's be honest about what's really happening when your partner says "Stop working."
 
 **They don't want you to:**
+
 - Fail at your business
 - Ignore important work
 - Miss real deadlines
 
 **They want you to:**
+
 - Be mentally present during personal time
 - Stop the constant phone checking
 - Prioritize relationship moments over non-urgent work
@@ -470,21 +490,25 @@ When you're together, work tasks are invisible (on the closed laptop). They can 
 ## Your 7-Day Challenge: Try It Before You Dismiss It
 
 **Day 1: The Setup**
+
 - Separate tasks across devices (15 minutes)
 - Explain new system to partner/family
 - Commit to the experiment
 
 **Days 2-3: The Adjustment**
+
 - Follow the rules strictly
 - Notice discomfort
 - Resist urge to "just check"
 
 **Days 4-5: The Shift**
+
 - Context-switching anxiety decreases
 - Presence improves
 - Productivity paradoxically increases
 
 **Days 6-7: The Proof**
+
 - Ask your partner: "Have you noticed a difference?"
 - Their answer will tell you everything
 
@@ -539,10 +563,11 @@ The room laughed. Sarah and James both cried.
 If you're reading this, someone in your life has probably expressed frustration about work bleeding into personal time.
 
 Maybe they've said:
+
 - "Are you working again?"
 - "You're always on that phone"
 - "I feel like I'm competing with your business for your attention"
-- "You're here but you're not *here*"
+- "You're here but you're not _here_"
 
 **They're right. And it's not entirely your fault.**
 
@@ -607,6 +632,6 @@ A: Even more reason to separate. Hustle culture leads to burnout. Sustainable su
 
 ---
 
-*Has work-life mixing strained your relationships? Ready to try the two-device strategy? Share your story or ask questions at [support@123todo.com](mailto:support@123todo.com) - we'd love to hear from you.* 💼📱
+_Has work-life mixing strained your relationships? Ready to try the two-device strategy? Share your story or ask questions at [support@123todo.com](mailto:support@123todo.com) - we'd love to hear from you._ 💼📱
 
 **Remember: You can build a successful business without sacrificing the people who matter most. You just need the right boundaries.** ❤️

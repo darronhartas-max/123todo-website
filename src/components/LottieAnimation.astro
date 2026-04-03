@@ -5,7 +5,7 @@ export interface Props {
   class?: string;
 }
 
-const { src, alt = 'Animation', class: className = '' } = Astro.props;
+const { src, class: className = '' } = Astro.props;
 
 // Just use the filename from public folder
 const fileName = src.split('/').pop();
@@ -21,8 +21,7 @@ const fileName = src.split('/').pop();
   class={className}
   loop
   autoplay
-  style="width: 100%; height: 350px;"
-></lottie-player>
+  style="width: 100%; height: 350px;"></lottie-player>
 
 <style>
   lottie-player {

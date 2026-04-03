@@ -59,7 +59,7 @@ The tool that promised simplicity has become complex. But you've invested time, 
 
 You stop using the tool consistently. Tasks pile up unorganized. The system breaks down. But you can't abandon it - that would mean admitting failure. So it sits there, a digital monument to good intentions.
 
-Meanwhile, you start looking at new tools. "Maybe the problem isn't me. Maybe I just need a *better* system."
+Meanwhile, you start looking at new tools. "Maybe the problem isn't me. Maybe I just need a _better_ system."
 
 **You confuse the tool for the problem.**
 
@@ -82,6 +82,7 @@ Research by the American Psychological Association shows that **task-switching a
 Let's calculate your actual cost:
 
 **Scenario:** You use 3 different productivity tools
+
 - Morning: Check Tool A for work tasks (5 min)
 - Midday: Check Tool B for personal tasks (3 min)
 - Throughout day: Migrate tasks between tools (10 min)
@@ -95,6 +96,7 @@ Let's calculate your actual cost:
 **Annual cost:** 150+ hours (nearly four full work weeks) spent managing how you work instead of actually working
 
 **What you could have done with 150 hours:**
+
 - Completed 3-5 major projects
 - Learned a new skill to fluency
 - Read 50 books
@@ -104,6 +106,7 @@ Let's calculate your actual cost:
 ### Mental Cost: Decision Fatigue
 
 Every tool requires decisions:
+
 - Which tool do I use for this?
 - Where did I put that task?
 - Which view should I use?
@@ -121,6 +124,7 @@ More tools = more choices = less action.
 The most expensive cost is invisible: **all the actual work you're not doing because you're managing your productivity system.**
 
 Think about it:
+
 - That project you've been "organizing" for three weeks
 - That idea you haven't started because you're still "setting up the workflow"
 - That goal that's perfectly categorized but never pursued
@@ -134,6 +138,7 @@ Let's look at real people who broke free from productivity tool chaos.
 ### Emma's Story: From 9 Apps to 1
 
 **Background:** 38-year-old marketing director. Self-described "productivity junkie." Used 9 different productivity tools simultaneously:
+
 - Todoist (work tasks)
 - Things 3 (personal tasks)
 - Notion (projects and knowledge base)
@@ -149,6 +154,7 @@ Let's look at real people who broke free from productivity tool chaos.
 **The Breaking Point:** Missed her daughter's school play because the task was in Todoist but the calendar event was in a different app she didn't check that day.
 
 **The Spring Clean:**
+
 - **Week 1:** Exported all tasks from all 9 apps into a single text file
 - **Week 2:** Deleted 8 of the 9 apps (kept only calendar for time-specific events)
 - **Week 3:** Started fresh with 123 ToDo - simple Must/Should/Could prioritization
@@ -164,6 +170,7 @@ Let's look at real people who broke free from productivity tool chaos.
 ### Marcus's Story: The Notion Workspace Nightmare
 
 **Background:** 29-year-old freelance designer. Built an elaborate Notion workspace with:
+
 - 12 different databases
 - Custom relational properties
 - Automated workflows
@@ -179,6 +186,7 @@ Let's look at real people who broke free from productivity tool chaos.
 **The Realization:** "I spent three months building a productivity system and three more months maintaining it. I'd created a second full-time job - being my own system administrator."
 
 **The Spring Clean:**
+
 - Closed Notion completely
 - Took a week off from all productivity tools (just used phone reminders for critical tasks)
 - Realized he completed MORE during that "tool-free" week
@@ -193,6 +201,7 @@ Let's look at real people who broke free from productivity tool chaos.
 ### Rachel's Story: The Spring Clean That Saved Her Career
 
 **Background:** 45-year-old operations manager at tech startup. Used:
+
 - Company-mandated Asana (team projects)
 - Personal Trello (individual tasks)
 - Bullet journal (weekly planning)
@@ -205,6 +214,7 @@ Let's look at real people who broke free from productivity tool chaos.
 **The Wake-Up Call:** Her boss said, "You're clearly working hard, but nothing's getting done. Something needs to change immediately."
 
 **The Spring Clean:**
+
 - Everything went into ONE system (kept required Asana for team, added 123 ToDo for personal)
 - Threw away sticky notes
 - Archived the bullet journal
@@ -212,6 +222,7 @@ Let's look at real people who broke free from productivity tool chaos.
 - Email stopped being a task manager
 
 **Rachel after 2 months:**
+
 - Performance review went from "needs improvement" to "exceeds expectations"
 - Promoted to senior ops manager within 4 months
 - Team adopted her simplified approach
@@ -221,6 +232,7 @@ Let's look at real people who broke free from productivity tool chaos.
 ### David's Story: The Productivity YouTuber Paradox
 
 **Background:** 32-year-old "productivity enthusiast" who watched hundreds of hours of productivity YouTube videos and tried every system mentioned:
+
 - GTD (Getting Things Done)
 - Zettelkasten
 - Personal Kanban
@@ -236,12 +248,14 @@ Let's look at real people who broke free from productivity tool chaos.
 **The Irony:** "I was an expert on productivity systems but terrible at actually being productive."
 
 **The Spring Clean:**
+
 - Unsubscribed from all productivity YouTube channels and newsletters
 - Deleted all productivity apps except one
 - Banned himself from researching new systems for 90 days
 - Committed to the simplest possible approach: Write tasks, do tasks, repeat
 
 **David after 90 days:**
+
 - Completed first novel draft (been "planning to write" for 4 years)
 - Launched side business (been "organizing the project" for 2 years)
 - Learned Spanish to conversational level (been "setting up a learning system" for 18 months)
@@ -257,6 +271,7 @@ Ready for your productivity spring clean? Here's how to do it right.
 **Your mission:** List every productivity tool, app, and system you currently use or have accounts for.
 
 Include:
+
 - Task management apps (all of them)
 - Note-taking apps
 - Calendar apps
@@ -270,10 +285,11 @@ Include:
 **Be honest.** Include the ones you paid for but don't use. The ones you "might need someday." The ones with data you "should migrate."
 
 **My current productivity stack:**
-1. _________________
-2. _________________
-3. _________________
-(keep going until you've listed everything)
+
+1. ***
+2. ***
+3. ***
+   (keep going until you've listed everything)
 
 **Now count them.** If you have more than 3, you're drowning in complexity.
 
@@ -310,6 +326,7 @@ Just delete it.
 Now you need exactly ONE system for task management. One place where all tasks live.
 
 **The criteria:**
+
 - ✅ Simple (you can explain it in one sentence)
 - ✅ Fast (adding a task takes under 10 seconds)
 - ✅ Accessible (works on all your devices)
@@ -317,6 +334,7 @@ Now you need exactly ONE system for task management. One place where all tasks l
 - ✅ Clear (you can see priorities at a glance)
 
 **What you DON'T need:**
+
 - ❌ Complex features "for power users"
 - ❌ Extensive customization options
 - ❌ Multiple views and perspectives
@@ -331,14 +349,17 @@ Now you need exactly ONE system for task management. One place where all tasks l
 Your entire system comes down to three lists:
 
 **Must Do:** Tasks that truly must happen today (limit: 3-5 tasks)
+
 - If it won't cause real problems by being delayed, it doesn't belong here
 - This list should feel urgent but achievable
 
 **Should Do:** Important tasks without today's deadline (no limit, but stay reasonable)
+
 - These move your goals forward
 - These become tomorrow's Must Dos if important enough
 
 **Could Do:** Nice-to-have tasks with no real urgency (inbox for everything else)
+
 - Prevents forgetting ideas
 - Prevents cluttering urgent lists
 - Okay to delete from here if they stop mattering
@@ -350,11 +371,13 @@ Your entire system comes down to three lists:
 Your system should require MAXIMUM 5 minutes of maintenance daily.
 
 **Morning (3 minutes):**
+
 - Review Must Dos (already should be planned from last night)
 - Adjust if new urgencies appeared
 - Start working on #1 Must Do
 
 **Evening (2 minutes):**
+
 - Check off completed tasks (feels good!)
 - Identify tomorrow's Must Dos
 - Move anything that didn't happen
@@ -370,6 +393,7 @@ These are your guardrails against complexity creep.
 ### Principle #1: If It's Not Written Down, It Doesn't Exist
 
 **No more:**
+
 - "I'll remember that"
 - Email inbox as task list
 - Sticky notes
@@ -388,6 +412,7 @@ Thing someone asked you to do? In the list.
 ### Principle #2: More Features = More Friction
 
 **Complexity doesn't scale.** Every feature added creates:
+
 - One more thing to learn
 - One more decision to make
 - One more way for the system to break
@@ -401,6 +426,7 @@ Thing someone asked you to do? In the list.
 ### Principle #3: Capture Fast, Organize Later
 
 **Your system should allow:**
+
 - Adding a task in under 10 seconds
 - No required fields except the task itself
 - Quick capture from anywhere
@@ -408,6 +434,7 @@ Thing someone asked you to do? In the list.
 **Why:** If capturing a task takes work, you'll avoid it. Then tasks live in your head, causing stress.
 
 **123 ToDo example:**
+
 - Open app (2 seconds)
 - Tap Add Task (1 second)
 - Type task (5 seconds)
@@ -415,6 +442,7 @@ Thing someone asked you to do? In the list.
 - Total: 10 seconds, task captured
 
 **Complex system example:**
+
 - Open app (3 seconds)
 - Navigate to right project (10 seconds)
 - Fill required fields: priority, tags, due date, category (20 seconds)
@@ -446,16 +474,19 @@ Ready to transform your productivity through simplification? Here's your month-l
 ### Days 1-3: The Purge
 
 **Day 1:** Complete the Brutal Audit
+
 - List all productivity tools
 - Be completely honest
 - Include forgotten subscriptions
 
 **Day 2:** Apply the Core Question
+
 - Would I miss this, or feel relieved?
 - Be brutal
 - Sunk cost is not a reason to keep something
 
 **Day 3:** Delete everything that doesn't pass
+
 - Export critical data if needed (be honest about "critical")
 - Cancel subscriptions
 - Uninstall apps
@@ -466,23 +497,27 @@ Ready to transform your productivity through simplification? Here's your month-l
 ### Days 4-7: The Foundation
 
 **Day 4:** Choose your ONE system
+
 - Must meet the 5 criteria (simple, fast, accessible, offline, clear)
 - Resist the urge to compare options for hours
 - Pick one and commit
 
 **Day 5:** Set up the THREE lists only
+
 - Must Do
 - Should Do
 - Could Do
 - Resist creating more categories
 
 **Day 6:** Brain dump everything
+
 - Every task from your head
 - Every task from old systems
 - Get it all into the new system
 - Don't organize yet, just capture
 
 **Day 7:** First prioritization
+
 - Sort everything into Must/Should/Could
 - Be honest about what's truly urgent
 - Feel the clarity
@@ -492,16 +527,19 @@ Ready to transform your productivity through simplification? Here's your month-l
 ### Days 8-14: The New Routine
 
 **Daily practice:**
+
 - Morning: 3 minutes reviewing Must Dos
 - Throughout day: Complete tasks in order (Must → Should → Could)
 - Evening: 2 minutes identifying tomorrow's Must Dos
 
 **Challenges you'll face:**
+
 - Urge to add complexity ("maybe I should add tags...")
 - Desire to check old systems ("what if I missed something?")
 - Tool FOMO ("that new app looks interesting...")
 
 **How to handle:**
+
 - Remind yourself: complexity is what you're escaping
 - Old systems are dead; let them stay dead
 - New tools are distractions; stay focused
@@ -513,12 +551,14 @@ Ready to transform your productivity through simplification? Here's your month-l
 **Not adding features - removing friction.**
 
 **Questions to ask:**
+
 - Is my morning review taking less than 3 minutes? (If not, simplify Must Do criteria)
 - Am I completing my Must Dos daily? (If not, you're adding too many)
 - Does adding tasks feel effortless? (If not, reduce required fields/steps)
 - Am I feeling less stressed? (If not, you might need to reduce task volume)
 
 **Adjustments:**
+
 - Tighten Must Do definition (only truly urgent)
 - Delete Could Dos that no longer matter
 - Streamline your morning review
@@ -528,6 +568,7 @@ Ready to transform your productivity through simplification? Here's your month-l
 ### Days 22-30: The New Normal
 
 **By now:**
+
 - System feels automatic
 - 5 minutes daily maintenance feels easy
 - You're completing more tasks than with complex systems
@@ -535,6 +576,7 @@ Ready to transform your productivity through simplification? Here's your month-l
 - You wonder why you ever needed complexity
 
 **Final optimization:**
+
 - Review weekly: What worked? What friction remains?
 - Simplify further if possible
 - Resist complexity creep
@@ -547,19 +589,19 @@ How do you know if your spring clean worked? Track these simple metrics.
 
 ### Week 0 (Before Spring Clean)
 
-**Tool count:** ___ apps/systems in use
-**Daily maintenance time:** ___ minutes managing tools
-**Tasks completed weekly:** ___
-**Stress level (1-10):** ___
-**Mental clarity (1-10):** ___
+**Tool count:** **\_ apps/systems in use
+**Daily maintenance time:** \_** minutes managing tools
+**Tasks completed weekly:** **\_
+**Stress level (1-10):** \_**
+**Mental clarity (1-10):** \_\_\_
 
 ### Week 4 (After Spring Clean)
 
-**Tool count:** ___ apps/systems in use (goal: 1-2)
-**Daily maintenance time:** ___ minutes managing tools (goal: under 5)
-**Tasks completed weekly:** ___ (should be higher)
-**Stress level (1-10):** ___ (should be lower)
-**Mental clarity (1-10):** ___ (should be higher)
+**Tool count:** **\_ apps/systems in use (goal: 1-2)
+**Daily maintenance time:** \_** minutes managing tools (goal: under 5)
+**Tasks completed weekly:** **\_ (should be higher)
+**Stress level (1-10):** \_** (should be lower)
+**Mental clarity (1-10):** \_\_\_ (should be higher)
 
 ### The Real Success Metrics
 
@@ -603,6 +645,7 @@ Simplicity is easy to achieve but requires vigilance to maintain. Here's how to 
 Create a personal commitment list of things you will NOT do:
 
 **My "Hell No" List:**
+
 - ❌ I will NOT use more than one task management system
 - ❌ I will NOT add features "just in case I need them someday"
 - ❌ I will NOT spend more than 5 minutes daily on system maintenance
@@ -634,12 +677,14 @@ Here's what the productivity industry doesn't want you to know:
 **Simple systems win. Every single time.**
 
 Complex systems:
+
 - Feel productive (you're "organizing!")
 - Look impressive (so many features!)
 - Justify themselves (I paid for this, it must be better!)
 - Create dependence (you need tutorials, templates, communities)
 
 Simple systems:
+
 - Feel almost too easy (is this enough?)
 - Look basic (just three lists?)
 - Require trust (can simplicity really work?)
@@ -648,6 +693,7 @@ Simple systems:
 **But simple systems have one unfair advantage: They work.**
 
 They work because:
+
 - You actually use them (low friction)
 - You don't abandon them (low maintenance)
 - You focus on tasks, not tools (clear purpose)
@@ -699,19 +745,19 @@ Everything you need. Nothing you don't.
 
 **I commit to:**
 
-- [ ] Completing the Brutal Audit by _______________
-- [ ] Deleting all unnecessary productivity tools by _______________
-- [ ] Using only ONE task system starting _______________
+- [ ] Completing the Brutal Audit by **\*\***\_\_\_**\*\***
+- [ ] Deleting all unnecessary productivity tools by **\*\***\_\_\_**\*\***
+- [ ] Using only ONE task system starting **\*\***\_\_\_**\*\***
 - [ ] Maintaining 5-minute maximum daily maintenance
 - [ ] Measuring success after 30 days
 - [ ] Never going back to complexity
 
-**Signature:** ___________________ **Date:** _______________
+**Signature:** **\*\*\*\***\_\_\_**\*\*\*\*** **Date:** **\*\***\_\_\_**\*\***
 
-**Accountability partner:** ___________________ (tell someone about your spring clean)
+**Accountability partner:** **\*\*\*\***\_\_\_**\*\*\*\*** (tell someone about your spring clean)
 
 ---
 
-*Struggling with the spring clean? Need help letting go? Want to share your simplification success? Email us at [support@123todo.com](mailto:support@123todo.com) - we're here to support your journey back to basics.*
+_Struggling with the spring clean? Need help letting go? Want to share your simplification success? Email us at [support@123todo.com](mailto:support@123todo.com) - we're here to support your journey back to basics._
 
 **Here's to simplicity. Here's to clarity. Here's to actually getting things done.** ✨

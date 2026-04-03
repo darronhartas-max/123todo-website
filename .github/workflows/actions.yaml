@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -60,7 +63,7 @@ jobs:
           target: "/home/debian/wordpress-docker/todo-app/"
           rm: true
 
-      - name: Restart Docker Container
+      - name: Deploy and Debug
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.VPS_HOST }}
@@ -68,6 +71,16 @@ jobs:
           password: ${{ secrets.VPS_PASSWORD }}
           port: ${{ secrets.VPS_PORT }}
           script: |
+            echo "==== Parent docker-compose.yml ===="
+            cat /home/debian/wordpress-docker/docker-compose.yml || echo "Not found"
+            
+            echo "==== Starting deployment ===="
             cd /home/debian/wordpress-docker
             docker compose build --no-cache todo-app
+            docker compose stop todo-app || true
+            docker compose rm -f todo-app || true
             docker compose up -d todo-app
+            
+            echo "==== Checking container contents ===="
+            docker exec todo-app ls -la /usr/share/nginx/html || echo "Failed to ls html"
+            docker exec todo-app cat /usr/share/nginx/html/index.html | head -n 10 || echo "Failed to cat index.html"

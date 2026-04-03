@@ -54,10 +54,16 @@ const metadata = {
         icon: 'tabler:check',
       },
       {
-        title: 'Step 4: <span class="font-medium">Install as PWA (Optional)</span>',
+        title: 'Step 4: <span class="font-medium">Install as PWA (Recommended)</span>',
         description:
-          'For offline access, install 123 ToDo as a Progressive Web App using your browser\'s "Install App" or "Add to Home Screen" option.',
+          'For the best mobile experience, install 123 ToDo as a Progressive Web App. This ensures **Persistent Storage** so your tasks are never cleared by the OS.',
         icon: 'tabler:download',
+      },
+      {
+        title: 'Step 5: <span class="font-medium">Import from Todoist</span>',
+        description:
+          'Migrating from Todoist? Click Import and select the "Todoist Export" option to bring your projects into our priority system.',
+        icon: 'tabler:file-import',
       },
     ]}
   />
@@ -147,24 +153,31 @@ const metadata = {
         Milestones reset daily at midnight, giving you fresh motivation every day.
       </p>
 
-      <h3>💾 Export and Import</h3>
-      <p><strong>Exporting your data:</strong></p>
+      <h3>📦 Data Import & Migration</h3>
+      <p><strong>Migrating from Todoist:</strong></p>
       <ol>
-        <li>Click the "Export Data" button in the header</li>
-        <li>A JSON file will download to your device</li>
-        <li>Store this file safely as a backup</li>
+        <li>Click the "Import" button in the footer</li>
+        <li>Select "Todoist Export" from the options</li>
+        <li>Upload your Todoist CSV files to see your projects converted into 123 ToDo categories</li>
       </ol>
 
-      <p><strong>Importing data:</strong></p>
+      <p><strong>Importing 123 ToDo Backups:</strong></p>
       <ol>
-        <li>Click the "Import Data" button in the header</li>
-        <li>Select your previously exported JSON file</li>
-        <li>Confirm to restore your tasks</li>
+        <li>Click the "Import" button in the footer</li>
+        <li>Select "123 ToDo Backup"</li>
+        <li>Choose your previously exported JSON file</li>
       </ol>
 
       <p>
-        <strong>⚠️ Important:</strong> Importing data will replace your current tasks. Export your
-        current data first if you want to keep it!
+        <strong>⚠️ Important:</strong> Importing data will merge or replace your current tasks depending on the source. Export your
+        current data first if you want to keep a secondary copy!
+      </p>
+
+      <h3>🛡️ Shadow Backups (Automatic)</h3>
+      <p>
+        123 ToDo includes a built-in <strong>Shadow Backup</strong> system for extra peace of mind. Every 24 hours, the app 
+        automatically saves a "hidden" snapshot of your tasks internally. If your main task list is ever accidentally 
+        cleared, this secondary restore point ensures you never lose more than a day's work.
       </p>
 
       <h3>📱 PWA Installation</h3>
@@ -262,7 +275,12 @@ const metadata = {
       {
         title: 'Can I sync between devices?',
         description:
-          'Not automatically. 123 ToDo is local-only for privacy. However, you can manually sync by exporting data from one device and importing on another.',
+          'Currently, 123 ToDo is "Local First" for maximum privacy. You can manually sync by exporting and importing. We are actively planning an **Encrypted Sync** upgrade that will allow optional cross-platform updates with end-to-end encryption.',
+      },
+      {
+        title: 'Is my data safe on mobile?',
+        description:
+          'Yes! We use the **Persistent Storage API** on mobile devices. When you install the app as a PWA, we request that the OS never clears your data, making it as robust as a native app.',
       },
       {
         title: 'What happens if I clear my browser data?',

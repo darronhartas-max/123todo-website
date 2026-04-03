@@ -67,11 +67,13 @@ Transform 123todo.com from a single-page app into a full marketing website with 
 - **Subtitle**: "Organize your life with priority-based tasks, offline support, and achievement tracking"
 - **Features**:
   - Priority-Based Organization (4 levels)
-  - Offline PWA Support
-  - Achievement Milestones
+  - Mobile-First Persistence (Storage Manager API)
+  - Shadow Backups (Automatic snapshots)
+  - Achievement Milestones (5, 10, 15 tasks)
   - Zero Tracking / Privacy-First
-  - Export/Import Data
-  - Beautiful & Fast
+  - Export/Import Data (+ Todoist Migration)
+  - Premium Typography & High Accessibility (1.1rem)
+  - Beautiful & Fast (React 19)
 
 ### Blog Topics (Initial Posts)
 1. "Why We Built 123 ToDo: A Privacy-First Task Manager"
@@ -170,8 +172,8 @@ Transform 123todo.com from a single-page app into a full marketing website with 
 ---
 
 **Created**: 2025-10-10
-**Last Updated**: 2025-10-11
-**Status**: ✅ Deployed to Production
+**Last Updated**: 2026-04-03
+**Status**: ✅ UI Refinements & Shadow Backups Deployed
 
 ## Deployment Information
 

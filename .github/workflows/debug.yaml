@@ -1,0 +1,24 @@
+name: Debug VPS
+on: [push]
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug VPS State
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USERNAME }}
+          password: ${{ secrets.VPS_PASSWORD }}
+          port: ${{ secrets.VPS_PORT }}
+          script: |
+            echo "==== Docker ps ===="
+            docker ps
+            echo "==== Traefik logs ===="
+            docker logs traefik --tail 50 || true
+            echo "==== todo-app logs ===="
+            docker logs todo-app --tail 50 || true
+            echo "==== app-123todo logs ===="
+            docker logs app-123todo --tail 50 || true
+            echo "==== Full docker-compose ===="
+            cat /home/debian/wordpress-docker/docker-compose.yml

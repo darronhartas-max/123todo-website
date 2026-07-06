@@ -24,12 +24,12 @@ Today, we're thrilled to introduce **Google Drive Sync**!
 
 Our new Google Drive Sync feature gives you the best of both worlds: the convenience of cloud synchronization and the absolute security of knowing we still don't have access to your data.
 
-When you enable this feature, 123 ToDo connects directly from your device to your personal Google Drive account. But here is the best part: before your data ever leaves your device, it is encrypted using **military-grade AES-256-GCM encryption** combined with a custom passphrase that only you know. 
+When you enable this feature, 123 ToDo connects directly from your device to your personal Google Drive account. But here is the best part: before your data ever leaves your device, it is encrypted using **military-grade AES-256-GCM encryption** combined with a custom passphrase that only you know.
 
 ### Why Google Drive?
 
 - **Privacy First**: We don't act as a middleman. Your device talks directly to Google. We never see your tasks or your Google credentials.
-- **Zero-Knowledge Encryption**: Because your tasks are encrypted with your secret passphrase *before* being uploaded, not even Google can read your tasks!
+- **Zero-Knowledge Encryption**: Because your tasks are encrypted with your secret passphrase _before_ being uploaded, not even Google can read your tasks!
 - **Cross-Device Syncing**: Update a task on your phone, and thanks to our new "Smart Sync" technology, it will automatically check off on your laptop almost instantly when you switch back to it.
 - **Automatic Backups**: Never worry about clearing your browser data or losing a device again.
 

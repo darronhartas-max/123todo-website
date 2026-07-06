@@ -5,7 +5,21 @@
 - **Status**: ✅ Active (Astro marketing website)
 - **Last Deployed**: 2025-10-10
 
-## Quick Deploy (For Updates)
+## Quick Deploy (Automated via GitHub Actions)
+
+The primary way to deploy updates to the live website is by committing and pushing changes to the `main` branch. This triggers the GitHub Action (`.github/workflows/actions.yaml`), which automatically builds and uploads the files to the VPS via SSH.
+
+```bash
+git add .
+git commit -m "Description of your changes"
+git push
+```
+
+*Note: Allow 2-3 minutes for the GitHub Action to complete the build and deployment process.*
+
+## Manual Fallback Deploy (For Emergency Updates)
+
+If the GitHub Action fails, you can manually deploy using the following steps:
 
 ### 1. Build locally
 

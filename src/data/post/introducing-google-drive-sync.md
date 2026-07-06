@@ -22,7 +22,7 @@ Today, we're thrilled to introduce **Google Drive Sync**!
 
 ## How It Works
 
-Our new Google Drive Sync feature gives you the best of both worlds: the convenience of cloud synchronization and the security of knowing we still don't have access to your data. 
+Our new Google Drive Sync feature gives you the best of both worlds: the convenience of cloud synchronization and the security of knowing we still don't have access to your data.
 
 When you enable this feature, 123 ToDo connects directly from your device to your personal Google Drive account. Your tasks are securely synced to a hidden folder in your Drive, which only the app can read.
 
@@ -45,7 +45,7 @@ Setting up Google Drive sync takes just a few seconds:
 
 ## Still Free, Still Private
 
-We want to reiterate our promise to you: 123 ToDo remains completely free and privacy-focused. Adding Google Drive Sync doesn't change our business model because we still don't have one! Since we aren't hosting the servers to sync your data, our costs remain exactly the same. 
+We want to reiterate our promise to you: 123 ToDo remains completely free and privacy-focused. Adding Google Drive Sync doesn't change our business model because we still don't have one! Since we aren't hosting the servers to sync your data, our costs remain exactly the same.
 
 Enjoy the new feature, and let us know what you think!
 

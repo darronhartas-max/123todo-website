@@ -130,7 +130,7 @@ export const blogPostsPerPage = APP_BLOG?.postsPerPage;
 
 /** */
 export const fetchPosts = async (): Promise<Array<Post>> => {
-  if (!_posts) {
+  if (!_posts || import.meta.env.DEV) {
     _posts = await load();
   }
 

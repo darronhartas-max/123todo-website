@@ -54,8 +54,8 @@ const metadata = {
 
     <Fragment slot="subtitle">
       <span class="text-lg">
-        Priority-based organization with **Shadow Backups** and **Mobile-First Persistence**. <br />
-        <span class="font-semibold text-accent dark:text-white">Your tasks, your phone, your control.</span>
+        Priority-based organization with **Cross-Device Google Drive Sync** and **Zero-Knowledge Encryption**. <br />
+        <span class="font-semibold text-accent dark:text-white">Your tasks, everywhere you need them, securely.</span>
         <span class="text-purple-600 dark:text-purple-400 font-bold underline decoration-2 underline-offset-4"
           >TOTALLY FREE.</span
         > No accounts, no hassle.
@@ -80,10 +80,16 @@ const metadata = {
         icon: 'tabler:list-check',
       },
       {
-        title: 'Mobile-First Persistence',
+        title: 'Cross-Device Sync',
         description:
-          'Install as a PWA on your mobile phone or desktop. We request persistent storage to ensure the OS never clears your tasks.',
-        icon: 'tabler:device-mobile-bolt',
+          'Seamlessly sync your tasks across your phone, tablet, and desktop using your personal Google Drive. Completely free, invisible background syncing.',
+        icon: 'tabler:cloud-upload',
+      },
+      {
+        title: 'Zero-Knowledge Encryption',
+        description:
+          'Before your data ever leaves your device, it is encrypted with military-grade AES-256-GCM. Not even Google can read your tasks.',
+        icon: 'tabler:lock',
       },
       {
         title: 'Achievement Milestones',
@@ -161,8 +167,8 @@ const metadata = {
     title="Your data stays yours"
     items={[
       {
-        title: 'Local Storage Only',
-        description: "All tasks are stored in your browser's localStorage. Nothing is sent to our servers.",
+        title: 'Local First + Encrypted Sync',
+        description: "Your tasks live in your browser's local storage by default. When you opt-in to sync, data is encrypted locally before being saved to your personal Google Drive.",
       },
       {
         title: 'No Registration Required',

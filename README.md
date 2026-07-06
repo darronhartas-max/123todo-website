@@ -1,4 +1,4 @@
-# 123 ToDo - Marketing Website (v2.0.1)
+# 123 ToDo - Marketing Website (v2.0.2)
 
 This repository contains the marketing website for **123 ToDo**, a free, privacy-first task management application.
 
@@ -9,9 +9,9 @@ The website is built with [Astro 5.0](https://astro.build/) and [Tailwind CSS](h
 - **Live Marketing Site**: https://www.123todo.com
 - **Web App**: https://app.123todo.com
 
-## Latest Features (v2.0.1)
+## Latest Features (v2.0.2)
 
-Version 2.0.1 introduced a massive upgrade to the application, and the marketing website has been updated to reflect these new capabilities:
+Version 2.0.2 introduced a massive upgrade to the application, and the marketing website has been updated to reflect these new capabilities:
 
 - **Google Drive Sync**: Seamless, cross-device synchronization using personal Google Drive storage.
 - **Client-Side Encryption**: Zero-knowledge AES-256-GCM encryption ensures data is encrypted locally before syncing.

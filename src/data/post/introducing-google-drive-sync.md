@@ -1,7 +1,7 @@
 ---
 publishDate: 2026-07-06T00:00:00Z
 title: 'New Feature: Seamless Google Drive Sync'
-excerpt: 'Keep your tasks backed up and synced across all your devices with our new privacy-first Google Drive integration.'
+excerpt: 'Keep your tasks backed up and synced across all your devices with our new privacy-first Google Drive integration featuring Zero-Knowledge Encryption.'
 image: ~/assets/images/blog-launch-rocket.svg
 category: Announcements
 tags:
@@ -20,17 +20,17 @@ We built 123 ToDo with a core principle: your data belongs to you, and it never 
 
 Today, we're thrilled to introduce **Google Drive Sync**!
 
-## How It Works
+## How It Works (With Zero-Knowledge Encryption)
 
-Our new Google Drive Sync feature gives you the best of both worlds: the convenience of cloud synchronization and the security of knowing we still don't have access to your data.
+Our new Google Drive Sync feature gives you the best of both worlds: the convenience of cloud synchronization and the absolute security of knowing we still don't have access to your data.
 
-When you enable this feature, 123 ToDo connects directly from your device to your personal Google Drive account. Your tasks are securely synced to a hidden folder in your Drive, which only the app can read.
+When you enable this feature, 123 ToDo connects directly from your device to your personal Google Drive account. But here is the best part: before your data ever leaves your device, it is encrypted using **military-grade AES-256-GCM encryption** combined with a custom passphrase that only you know. 
 
 ### Why Google Drive?
 
 - **Privacy First**: We don't act as a middleman. Your device talks directly to Google. We never see your tasks or your Google credentials.
-- **You Are In Control**: The sync file is stored in your personal Google Drive. You can revoke access at any time.
-- **Cross-Device Syncing**: Update a task on your phone, and see it check off on your laptop almost instantly.
+- **Zero-Knowledge Encryption**: Because your tasks are encrypted with your secret passphrase *before* being uploaded, not even Google can read your tasks!
+- **Cross-Device Syncing**: Update a task on your phone, and thanks to our new "Smart Sync" technology, it will automatically check off on your laptop almost instantly when you switch back to it.
 - **Automatic Backups**: Never worry about clearing your browser data or losing a device again.
 
 ## Getting Started
@@ -38,10 +38,12 @@ When you enable this feature, 123 ToDo connects directly from your device to you
 Setting up Google Drive sync takes just a few seconds:
 
 1. Open **[app.123todo.com](https://app.123todo.com)**
-2. Go to Settings (the gear icon)
-3. Click on the new **Sync** tab
-4. Click **Connect to Google Drive** and authorize the app
-5. That's it! Your tasks will now automatically sync in the background.
+2. Click the **"☁️ Google Drive Sync"** button in the footer of the app.
+3. Click **Sign In with Google** and authorize the app.
+4. **Enter your secure passphrase**. Make sure to remember this! You will need to enter the exact same passphrase on any other device you want to sync with.
+5. Click **Start Syncing**.
+
+That's it! Your tasks will now automatically push and pull in the background. When you want to connect your phone, just open the app there, tap the same footer button, log in, and provide your passphrase to decrypt your data.
 
 ## Still Free, Still Private
 
@@ -54,13 +56,13 @@ Enjoy the new feature, and let us know what you think!
 ## FAQs
 
 **Q: Can 123 ToDo read all the files in my Google Drive?**
-A: No. We use a specific, restricted permission that only allows the app to create and access its own specific files in your Drive. It cannot see any of your other personal documents or photos.
+A: No. We use a specific, restricted permission that only allows the app to create and access its own specific hidden sync file in your Drive. It cannot see any of your other personal documents or photos.
 
 **Q: Do I have to use Google Drive Sync?**
 A: Absolutely not. 123 ToDo will continue to work perfectly as a local-only application. Google Drive Sync is an optional feature.
 
-**Q: Will you support other cloud providers like Dropbox or iCloud?**
-A: We're starting with Google Drive as it's the most widely requested, but we are looking into supporting additional cloud providers in the future based on user demand.
+**Q: What if my devices get stuck and stop syncing?**
+A: If you accidentally enter the wrong passphrase on one device, it won't be able to decrypt the tasks. Simply click the sync button to **Sign Out**, and then sign back in on both devices with the exact same passphrase to force a fresh connection.
 
 **Q: Is there any cost for this feature?**
 A: No, this feature is completely free, just like the rest of 123 ToDo.

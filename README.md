@@ -12,6 +12,7 @@ The website is built with [Astro 5.0](https://astro.build/) and [Tailwind CSS](h
 ## Latest Features (v2.0.0)
 
 Version 2.0.0 introduced a massive upgrade to the application, and the marketing website has been updated to reflect these new capabilities:
+
 - **Google Drive Sync**: Seamless, cross-device synchronization using personal Google Drive storage.
 - **Client-Side Encryption**: Zero-knowledge AES-256-GCM encryption ensures data is encrypted locally before syncing.
 - **Silent Authentication**: Persistent sign-in across sessions.
@@ -33,8 +34,9 @@ npm run build
 ## Deployment
 
 Deployment is fully automated via GitHub Actions (`.github/workflows/actions.yaml`). Pushing to the `main` branch will automatically:
+
 1. Build the Astro project.
 2. Transfer files to the VPS (`51.195.136.55`) via SCP.
 3. Rebuild and restart the Docker container (`todo-app`) via SSH.
 
-*Note: The website is deployed to the `todo-app` container, which Traefik routes from `123todo.com` and `www.123todo.com`.*
+_Note: The website is deployed to the `todo-app` container, which Traefik routes from `123todo.com` and `www.123todo.com`._

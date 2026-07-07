@@ -1,6 +1,6 @@
 # 123 ToDo Website Deployment
 
-- **Product**: 123 ToDo Marketing Website & Web App (v2.0.2)
+- **Product**: 123 ToDo Marketing Website & Web App (v2.1.0)
 - **Live URL**: https://123todo.com and https://www.123todo.com
 - **Status**: ✅ Active (Astro marketing website)
 - **Last Deployed**: 2025-10-10
@@ -74,7 +74,7 @@ docker compose up -d todo-app
    - Container: `todo-app`
    - Directory: `/home/debian/wordpress-docker/todo-app/`
 2. **React App**: https://app.123todo.com (React PWA)
-   - The GitHub Action `.github/workflows/deploy.yml` in the `123todo-react` repository handles the build and deployment of the React Web App (v2.0.2 with Google Drive Sync).
+   - The GitHub Action `.github/workflows/deploy.yml` in the `123todo-react` repository handles the build and deployment of the React Web App (v2.1.0 with Layout & Appearance Settings).
    - Target Directory on VPS: `/home/debian/wordpress-docker/app-123todo/`
 
 ## Troubleshooting

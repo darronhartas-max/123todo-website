@@ -152,7 +152,7 @@ No signup. No tracking. No credit card. Just open it and start organizing.
 A: Yes. Every feature, forever. No tricks.
 
 **Q: Can I sync between devices?**
-A: Not automatically - that would require cloud servers and compromise privacy. But you can manually sync by exporting on one device and importing on another.
+A: Yes! We offer a built-in **Google Drive Sync** feature. It connects directly to your personal Google Drive to sync your tasks seamlessly across all your devices. Best of all, it features AES-256-GCM zero-knowledge encryption, meaning your tasks are fully encrypted with your personal passphrase before they ever leave your device.
 
 **Q: What if I lose my data?**
 A: Use the Export feature regularly to backup. We recommend weekly exports. Since data is local-only, we cannot recover it if lost.

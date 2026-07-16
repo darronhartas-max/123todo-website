@@ -66,3 +66,6 @@ A: If you accidentally enter the wrong passphrase on one device, it won't be abl
 
 **Q: Is there any cost for this feature?**
 A: No, this feature is completely free, just like the rest of 123 ToDo.
+
+**Q: I use an iPhone/iPad and it asks me to sign in to Google frequently in the PWA. Can I prevent this?**
+A: Yes! Due to iOS security policies, downloaded PWAs (Home Screen apps) on Apple devices cannot share cookie sessions with Safari. This means that while Android and Desktop PWAs can silently refresh your Google credentials in the background, the iOS PWA will prompt you to re-log in once the short-lived 1-hour session expires. If you want to avoid this, we recommend sticking with the standard web-only version of the app directly in Safari or Chrome on your iPhone/iPad, where background silent renewal works seamlessly.

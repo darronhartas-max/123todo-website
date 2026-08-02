@@ -57,7 +57,6 @@ export const footerData = {
   secondaryLinks: [],
   socialLinks: [
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
   ],
   footNote: `
     Copyright © Unforgettable Management Ltd ${new Date().getFullYear()}. All rights reserved. | Website by <a href="https://www.2headsdesign.co.uk" target="_blank" rel="noopener" class="hover:underline">TWO Design & Marketing</a>

@@ -16,7 +16,7 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="text-lg"> Last updated: October 10, 2025 </span>
+      <span class="text-lg"> Last updated: August 2, 2026 </span>
     </Fragment>
   </Hero>
 
@@ -30,22 +30,24 @@ const metadata = {
         </p>
         <p class="text-green-900 dark:text-green-100">
           123 ToDo is designed from the ground up to respect your privacy. Everything you do in the app stays on your
-          device. We can't see your tasks, and we don't want to.
+          device by default. We can't see your tasks, and we don't want to. The optional Google Drive Sync stores an
+          AES-256 encrypted copy in <em>your own</em> Google Drive — only you hold the decryption key.
         </p>
       </div>
 
       <h2>1. Introduction</h2>
       <p>
-        This Privacy Policy explains how 123 ToDo ("we," "us," or "our") handles your information. Unlike most privacy
-        policies that explain what data is collected, ours explains what we DON'T collect.
+        This Privacy Policy explains how 123 ToDo, operated by <strong>Unforgettable Management Ltd</strong> ("we," "us," or "our"), handles your information. Unlike most privacy
+        policies that explain what data is collected, ours explains what we DON'T collect — and is transparent about
+        the limited, user-controlled data that optionally flows through Google Drive Sync.
       </p>
 
       <h2>2. Information We DON'T Collect</h2>
       <p>123 ToDo does not collect, store, transmit, or process any of the following:</p>
       <ul>
         <li><strong>Personal information</strong> - No names, emails, phone numbers, or addresses</li>
-        <li><strong>Account data</strong> - No usernames, passwords, or login credentials</li>
-        <li><strong>Task data</strong> - Your tasks, notes, and todos remain on your device only</li>
+        <li><strong>Account data</strong> - No usernames, passwords, or login credentials (Google OAuth is handled directly by Google)</li>
+        <li><strong>Task data</strong> - Your tasks, notes, and todos are never sent to our servers in any form</li>
         <li><strong>Usage analytics</strong> - No tracking of how you use the app</li>
         <li><strong>Device information</strong> - No device IDs, operating system info, or hardware details</li>
         <li><strong>Location data</strong> - No GPS coordinates or location tracking</li>
@@ -54,38 +56,63 @@ const metadata = {
       </ul>
 
       <h2>3. How Your Data Is Stored</h2>
-      <p>All data you enter into 123 ToDo is stored exclusively in your browser's localStorage. This means:</p>
+      <p>123 ToDo uses a layered, privacy-first storage approach:</p>
+
+      <h3>Local Storage (Default — All Users)</h3>
       <ul>
-        <li>Data never leaves your device</li>
-        <li>Data is not synced to any cloud service</li>
-        <li>We have zero access to your data</li>
-        <li>Data persists only in your specific browser on your specific device</li>
-        <li>Clearing browser data will delete your tasks permanently</li>
+        <li>Your tasks are stored in your browser's localStorage and IndexedDB</li>
+        <li>Data never leaves your device unless you explicitly enable Google Drive Sync</li>
+        <li>We have zero access to your locally stored data</li>
+        <li>Clearing browser data will delete your local tasks permanently</li>
       </ul>
 
-      <h2>4. No Servers, No Database</h2>
+      <h3>Shadow Backups (Automatic — All Users)</h3>
+      <ul>
+        <li>A secondary copy of your data is maintained automatically within your browser</li>
+        <li>This exists entirely on your device and is not transmitted anywhere</li>
+        <li>It provides a safety net against accidental data loss within the same browser</li>
+      </ul>
+
+      <h3>Google Drive Sync (Optional — User-Initiated)</h3>
+      <ul>
+        <li>If you choose to enable Google Drive Sync, your data is <strong>encrypted on your device</strong> using AES-256 encryption with a passphrase only you know, before being uploaded to your personal Google Drive</li>
+        <li>We never receive, see, or store your unencrypted task data or your passphrase</li>
+        <li>The encrypted file is stored in a dedicated folder in <em>your</em> Google Drive account — not ours</li>
+        <li>This feature requires you to sign in with your Google account via OAuth 2.0 — a standard, secure authentication method managed entirely by Google</li>
+        <li>You can revoke 123 ToDo's Google Drive access at any time via your Google Account security settings</li>
+        <li>Data stored in your Google Drive is subject to <a href="https://policies.google.com/privacy" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a></li>
+      </ul>
+
+      <h2>4. No 123 ToDo Servers — What This Really Means</h2>
       <p>123 ToDo operates entirely client-side in your browser. We do not operate:</p>
       <ul>
-        <li>Application servers that process your data</li>
+        <li>Application servers that process your task data</li>
         <li>Database servers that store your information</li>
         <li>Analytics servers that track your usage</li>
-        <li>Cloud storage services for your tasks</li>
+        <li>Cloud storage services for your tasks (Google Drive Sync uses <em>your</em> Google Drive, not ours)</li>
       </ul>
       <p>
-        The only server interaction occurs when your browser initially loads the app's static files (HTML, CSS,
-        JavaScript). After that, everything runs locally.
+        The only server interaction with our infrastructure occurs when your browser initially loads the app's static
+        files (HTML, CSS, JavaScript). After that, everything runs locally. Google Drive Sync communicates directly
+        between your browser and your Google Drive — we are not an intermediary.
       </p>
 
-      <h2>5. No Third-Party Services</h2>
-      <p>123 ToDo does not integrate with or share data with any third-party services, including:</p>
+      <h2>5. Third-Party Services</h2>
+      <p>123 ToDo's core app does not integrate with any third-party tracking or analytics services. Specifically, we do not use:</p>
       <ul>
-        <li>Analytics services (Google Analytics, etc.)</li>
+        <li>Analytics services (Google Analytics, Mixpanel, etc.)</li>
         <li>Advertising networks</li>
-        <li>Social media platforms</li>
-        <li>Cloud storage providers</li>
-        <li>Payment processors (we don't charge for anything)</li>
-        <li>Email services</li>
+        <li>Social media tracking pixels</li>
+        <li>Payment processors (the app is completely free)</li>
+        <li>Email marketing services</li>
       </ul>
+      <p>
+        <strong>Google Drive (optional sync only):</strong> If you enable Google Drive Sync, your browser communicates
+        with Google's APIs to store your encrypted data in your personal Google Drive. This is governed entirely by
+        <a href="https://policies.google.com/privacy" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a> and
+        <a href="https://policies.google.com/terms" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Terms of Service</a>.
+        We only request the minimum OAuth permissions necessary to read and write a dedicated sync file in your Drive.
+      </p>
 
       <h2>6. Progressive Web App (PWA) Functionality</h2>
       <p>
@@ -94,26 +121,38 @@ const metadata = {
         on your device and does not transmit data to our servers.
       </p>
 
-      <h2>7. Export/Import Feature</h2>
-      <p>123 ToDo includes export and import features for backing up your data. When you export your tasks:</p>
+      <h2>7. Export/Import & Backup Features</h2>
+      <p>123 ToDo provides multiple ways to manage and protect your data:</p>
       <ul>
-        <li>Data is converted to JSON format</li>
-        <li>File is created and saved directly to your device</li>
-        <li>No data is transmitted to our servers during export or import</li>
-        <li>You have complete control over where backup files are stored</li>
+        <li><strong>Manual Export:</strong> Download your tasks as a JSON file saved directly to your device — no data transmitted to us</li>
+        <li><strong>Manual Import:</strong> Restore from a previously exported file or import tasks from Todoist CSV — processed locally on your device</li>
+        <li><strong>Google Drive Sync:</strong> Automatic encrypted backup and cross-device sync via your own Google Drive (opt-in)</li>
+        <li><strong>Shadow Backup:</strong> Automatic local redundancy within your browser</li>
       </ul>
 
-      <h2>8. Browser localStorage Security</h2>
-      <p>Your task data is stored in your browser's localStorage, which:</p>
+      <h2>8. Data Security & Encryption</h2>
+      <p>Your data security depends on the storage method you choose:</p>
+
+      <h3>Local Storage</h3>
       <ul>
-        <li>Is isolated per domain (only 123todo.com can access its own data)</li>
+        <li>Isolated per domain — only 123todo.com can access its own localStorage data</li>
         <li>Cannot be accessed by other websites</li>
         <li>Remains on your device unless you explicitly clear it</li>
-        <li>Is not encrypted by default - it's as secure as your device</li>
+        <li>Security is as strong as your device's own security (screen lock, passwords, biometrics)</li>
       </ul>
+
+      <h3>Google Drive Sync</h3>
+      <ul>
+        <li>Data is encrypted on-device using <strong>AES-256 zero-knowledge encryption</strong> before upload</li>
+        <li>Only you — with your passphrase — can decrypt it. Not even Google can read it</li>
+        <li>Your passphrase is never transmitted, stored, or recoverable by us</li>
+      </ul>
+
       <p>
-        <strong>Security Note:</strong> If someone gains physical or remote access to your device and browser, they could
-        potentially access your localStorage data. Keep your device secure with passwords/biometrics.
+        <strong>Security Note:</strong> If someone gains physical or remote access to your unlocked device and browser, they could
+        potentially access your local localStorage data. Keep your device secure with passwords and biometrics.
+        For enhanced security across devices, Google Drive Sync provides encrypted cloud storage that requires
+        your passphrase to access.
       </p>
 
       <h2>9. No Cookies</h2>
@@ -124,10 +163,13 @@ const metadata = {
         <li>No tracking cookies</li>
         <li>No third-party cookies</li>
       </ul>
+      <p>
+        Google OAuth authentication for Drive Sync uses Google's own secure session management — not cookies set by us.
+      </p>
 
       <h2>10. Children's Privacy</h2>
       <p>
-        Because we don't collect any data, 123 ToDo is safe for users of all ages, including children under 13. We
+        Because we don't collect any personal data, 123 ToDo is safe for users of all ages, including children under 13. We
         comply with COPPA (Children's Online Privacy Protection Act) by virtue of not collecting any personal
         information from anyone.
       </p>
@@ -135,11 +177,12 @@ const metadata = {
       <h2>11. GDPR Compliance</h2>
       <p>For users in the European Union, 123 ToDo is fully GDPR-compliant because:</p>
       <ul>
-        <li>We don't process or control any personal data</li>
-        <li>No consent is needed (nothing to consent to)</li>
+        <li>We don't process or control any personal data on our servers</li>
+        <li>No consent is needed for the core app (nothing to consent to)</li>
+        <li>Google Drive Sync is entirely opt-in and can be revoked at any time</li>
         <li>No data subject access requests are necessary (we have no data)</li>
-        <li>No data portability issues (your data never leaves your device)</li>
-        <li>No right to erasure concerns (you control deletion via browser settings)</li>
+        <li>No data portability issues (your data stays in your hands)</li>
+        <li>No right to erasure concerns (you control deletion via browser settings and Google Drive)</li>
       </ul>
 
       <h2>12. California Privacy Rights (CCPA)</h2>
@@ -152,8 +195,10 @@ const metadata = {
 
       <h2>13. Data Breaches</h2>
       <p>
-        Because we don't collect or store user data on servers, there is no centralized data that could be breached.
-        Your data security depends entirely on your device security, not our infrastructure.
+        Because we don't collect or store user data on our servers, there is no centralized data that could be breached
+        by us. Your local data security depends entirely on your device security. Your Google Drive Sync data is
+        protected by AES-256 encryption, meaning that even if your Google Drive were compromised, your task data
+        would be unreadable without your passphrase.
       </p>
 
       <h2>14. Changes to This Privacy Policy</h2>
@@ -163,11 +208,11 @@ const metadata = {
       </p>
       <p>
         However, our core privacy principle will never change: <strong
-          >We will never collect, store, or transmit your personal data.</strong
+          >We will never collect, store, or transmit your personal data to our own servers.</strong
         >
       </p>
 
-      <h2>15. Open Source Transparency</h2>
+      <h2>15. Transparency</h2>
       <p>
         123 ToDo is built with transparency in mind. You can inspect the source code to verify that we're not tracking
         or collecting data. We encourage technical users to review the code and hold us accountable.
@@ -177,8 +222,10 @@ const metadata = {
       <p>You have complete control over your 123 ToDo data:</p>
       <ul>
         <li><strong>Export</strong> - Download your tasks as JSON anytime</li>
-        <li><strong>Delete</strong> - Clear browser data to remove all tasks</li>
-        <li><strong>Transfer</strong> - Move data between devices using export/import</li>
+        <li><strong>Delete Local</strong> - Clear browser data to remove all local tasks</li>
+        <li><strong>Google Drive Sync</strong> - Encrypted automatic backup and cross-device sync (opt-in)</li>
+        <li><strong>Revoke Google Access</strong> - Remove 123 ToDo's Drive access via your Google Account settings at any time</li>
+        <li><strong>Transfer</strong> - Move data between devices using export/import or Google Drive Sync</li>
         <li><strong>Access</strong> - View all your data directly in the app</li>
       </ul>
 
@@ -192,8 +239,9 @@ const metadata = {
 
       <h2>18. Legal Basis</h2>
       <p>
-        Because 123 ToDo does not collect or process personal data, we do not require a legal basis for data processing
-        under privacy regulations like GDPR.
+        Because 123 ToDo does not collect or process personal data on our own servers, we do not require a legal basis
+        for data processing under privacy regulations like GDPR. The optional Google Drive Sync uses your explicit
+        consent (opt-in) as its legal basis for processing, which you may withdraw at any time.
       </p>
     </div>
   </section>
@@ -203,12 +251,17 @@ const metadata = {
     id="privacy-features"
     tagline="Privacy by Design"
     title="How we protect your privacy"
-    subtitle="Privacy isn't a feature - it's our foundation"
+    subtitle="Privacy isn't a feature — it's our foundation"
     items={[
       {
-        title: 'Local Storage Only',
-        description: 'All tasks stored in your browser. Nothing sent to servers, nothing stored in the cloud.',
+        title: 'Local-First Storage',
+        description: 'All tasks stored in your browser by default. Nothing sent to our servers, ever.',
         icon: 'tabler:database',
+      },
+      {
+        title: 'Zero-Knowledge Encryption',
+        description: 'Google Drive Sync uses AES-256 encryption on your device. Not even we can read your data.',
+        icon: 'tabler:lock',
       },
       {
         title: 'No Tracking',
@@ -216,23 +269,18 @@ const metadata = {
         icon: 'tabler:eye-off',
       },
       {
-        title: 'No Accounts',
+        title: 'No Accounts Required',
         description: 'No email required, no passwords to remember, no personal information collected. Ever.',
         icon: 'tabler:user-off',
       },
       {
         title: 'Offline First',
-        description: 'Works completely offline. No internet connection means no way to leak data.',
+        description: 'Works completely offline. No internet connection required for core functionality.',
         icon: 'tabler:wifi-off',
       },
       {
-        title: 'Open Inspection',
-        description: 'Source code can be inspected. Technical users can verify our privacy claims.',
-        icon: 'tabler:code',
-      },
-      {
         title: 'Your Control',
-        description: 'Export, delete, or modify your data anytime. You own it, you control it.',
+        description: 'Export, sync, delete, or transfer your data anytime. You own it, you control it.',
         icon: 'tabler:shield-check',
       },
     ]}
@@ -246,7 +294,7 @@ const metadata = {
         If you're wondering whether we collect something specific, the answer is almost certainly "no."
       </p>
       <p class="text-lg">
-        When in doubt, remember: <strong>Local storage only. No servers. No tracking.</strong>
+        Our core principle: <strong>Local storage by default. No tracking. Zero-knowledge encryption for optional sync.</strong>
       </p>
     </div>
   </section>

@@ -158,8 +158,9 @@ const metadata = {
           button to create a checklist of sub-steps.
         </li>
         <li>
-          <strong>Check Off Steps Directly</strong>: Subtasks are rendered directly on the task card in the main list.
-          You can check off subtasks directly from your dashboard.
+          <strong>Check Off Steps in the Edit Modal</strong>: To keep your dashboard clean and uncluttered, individual
+          subtask steps are shown only inside the <strong>Edit Modal</strong>. Simply tap/click a task to open it and
+          check off steps, add new ones, or remove completed items.
         </li>
         <li>
           <strong>Progress Bar Tracking</strong>: Task cards display a visual progress bar and percentage showing how
@@ -176,15 +177,27 @@ const metadata = {
       <ul>
         <li>
           <strong>Specific Scheduling</strong>: Set a future start date (e.g. next Tuesday) on any task. The task will
-          hide automatically in the <strong>Scheduled & Recurring</strong> drawer until that date arrives.
+          hide automatically in the <strong>Scheduled &amp; Recurring</strong> drawer until that date arrives.
         </li>
         <li>
           <strong>Scheduled Tasks Drawer</strong>: Located between On Hold and Archive at the bottom, this collapsible
-          drawer keeps future tasks organized and out of sight.
+          drawer keeps future tasks organised and out of sight. Full scheduling details (date, recurrence pattern)
+          are shown here — keeping your main active lists clean and uncluttered.
         </li>
         <li>
-          <strong>Detailed Recurrence Rules</strong>: Set tasks to repeat at custom intervals—such as every 3 days,
-          every 2 weeks (with options for specific weekdays like Monday and Wednesday), or every 3 months.
+          <strong>Detailed Recurrence Rules</strong>: Set tasks to repeat at custom intervals — such as every 3 days,
+          every 2 weeks, every Monday, or every 3 months. You can combine a repeat interval with specific weekdays
+          for patterns like &ldquo;every Monday and Thursday&rdquo;.
+        </li>
+        <li>
+          <strong>Instant Recurrence Setup — No Start Date Required</strong>: Simply check
+          <em>🔁 Repeat this task</em> and the start date automatically defaults to today. If you select specific
+          weekdays (e.g. every Monday), the start date instantly snaps to the next upcoming Monday — no manual
+          calendar hunting needed.
+        </li>
+        <li>
+          <strong>Defer a Task</strong>: Use the calendar icon on any scheduled task card to quickly reschedule it
+          to a new date. The task returns to the Scheduled drawer with its updated date.
         </li>
         <li>
           <strong>Automatic Cycle Rollover</strong>: When you complete a recurring task, the current instance is
@@ -205,13 +218,78 @@ const metadata = {
       </ul>
       <p>Milestones reset daily at midnight, giving you fresh motivation every day.</p>
 
-      <h3>📦 Data Import & Migration</h3>
-      <p><strong>Migrating from Todoist:</strong></p>
-      <ol>
-        <li>Click the "Import" button in the footer</li>
-        <li>Select "Todoist Export" from the options</li>
-        <li>Upload your Todoist CSV files to see your projects converted into 123 ToDo categories</li>
-      </ol>
+      <h3 id="todoist-migration">📦 Data Import & Migration</h3>
+
+      <div class="my-6 p-6 bg-slate-50 dark:bg-slate-800/60 rounded-xl border border-slate-200 dark:border-slate-700">
+        <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2">
+          <span>📋 Todoist Multi-Project CSV Migration Guide</span>
+        </h4>
+        <p class="text-slate-600 dark:text-slate-300 mb-4">
+          Migrating your tasks and projects from Todoist to 123 ToDo is quick, seamless, and safe. Review the detailed steps below before starting your migration:
+        </p>
+
+        <div class="space-y-4 mb-6">
+          <div class="p-4 bg-white dark:bg-slate-900/80 rounded-lg border border-slate-200 dark:border-slate-700">
+            <h5 class="font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-2">
+              <span class="bg-red-500 text-white text-xs px-2 py-0.5 rounded font-bold">STEP 1</span>
+              <span>Export CSV Files from Todoist</span>
+            </h5>
+            <ol class="list-decimal pl-5 space-y-1 text-slate-600 dark:text-slate-300 text-sm">
+              <li>Open <strong>Todoist</strong> on your desktop browser or desktop app.</li>
+              <li>Navigate to the Project you want to export.</li>
+              <li>Click the <strong>three dots (...)</strong> menu icon in the top-right corner of the project header.</li>
+              <li>Select <strong>Export as CSV</strong> and save the file to your computer.</li>
+              <li><em>Repeat for any additional projects you wish to migrate into 123 ToDo.</em></li>
+            </ol>
+          </div>
+
+          <div class="p-4 bg-white dark:bg-slate-900/80 rounded-lg border border-slate-200 dark:border-slate-700">
+            <h5 class="font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-2">
+              <span class="bg-red-500 text-white text-xs px-2 py-0.5 rounded font-bold">STEP 2</span>
+              <span>Upload CSV Files to 123 ToDo</span>
+            </h5>
+            <ol class="list-decimal pl-5 space-y-1 text-slate-600 dark:text-slate-300 text-sm">
+              <li>Open <a href="https://app.123todo.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">app.123todo.com</a> and click the <strong>Import</strong> button in the footer.</li>
+              <li>Select <strong>Todoist Export</strong> from the import options modal.</li>
+              <li>Drag & drop your exported <strong>.csv</strong> files into the upload dropzone (or click to select them from your computer).</li>
+            </ol>
+          </div>
+
+          <div class="p-4 bg-white dark:bg-slate-900/80 rounded-lg border border-slate-200 dark:border-slate-700">
+            <h5 class="font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-2">
+              <span class="bg-red-500 text-white text-xs px-2 py-0.5 rounded font-bold">STEP 3</span>
+              <span>Map Projects & Confirm Import</span>
+            </h5>
+            <p class="text-slate-600 dark:text-slate-300 text-sm">
+              123 ToDo automatically parses your CSV files and suggests matching existing project names. You can choose whether to assign imported tasks to existing color-coded projects or automatically create brand new projects.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-4 bg-blue-50/80 dark:bg-blue-950/40 rounded-lg border border-blue-200 dark:border-blue-800">
+          <h5 class="font-bold text-blue-900 dark:text-blue-200 mb-2 flex items-center gap-1.5 text-sm">
+            🛡️ What Gets Migrated & Preserved (Zero Text Truncation Guarantee):
+          </h5>
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs text-slate-700 dark:text-slate-300">
+            <li class="flex items-start gap-1.5">
+              <span class="text-green-500 font-bold">✓</span>
+              <span><strong>Unlimited Text Capacity:</strong> Todoist task titles & descriptions of any length are imported in full into Unlimited Notes.</span>
+            </li>
+            <li class="flex items-start gap-1.5">
+              <span class="text-green-500 font-bold">✓</span>
+              <span><strong>No Truncation on Edit:</strong> Notes & details are never capped or cut off when editing tasks later in 123 ToDo.</span>
+            </li>
+            <li class="flex items-start gap-1.5">
+              <span class="text-green-500 font-bold">✓</span>
+              <span><strong>Due Dates:</strong> Todoist dates formatted as <code>📅 Due: ...</code></span>
+            </li>
+            <li class="flex items-start gap-1.5">
+              <span class="text-green-500 font-bold">✓</span>
+              <span><strong>Subtask Hierarchy:</strong> Subtasks indented cleanly with <code>↳</code></span>
+            </li>
+          </ul>
+        </div>
+      </div>
 
       <p><strong>Importing 123 ToDo Backups:</strong></p>
       <ol>
@@ -430,9 +508,9 @@ const metadata = {
         description: 'Visit our website at www.123todo.com for contact information and support options.',
       },
       {
-        title: 'Why is there a 200 character limit for tasks?',
+        title: 'How does 123 ToDo handle long Todoist tasks and character limits?',
         description:
-          'Brief tasks are more actionable. If you need more detail, break the task into smaller steps or use another tool for project documentation.',
+          'To keep daily task lists punchy and scannable, main task headlines use a 200-character view. However, 123 ToDo features an UNLIMITED Task Notes field with zero length caps. When importing from Todoist, 100% of your task titles, descriptions, and notes of any size are imported in full without truncation, and will NEVER be cut off when editing tasks later.',
       },
     ]}
   />

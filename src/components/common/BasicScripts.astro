@@ -77,8 +77,35 @@ import { UI } from 'astrowind:config';
 
     attachEvent('[data-aw-social-share]', 'click', function (_, elem) {
       const network = elem.getAttribute('data-aw-social-share');
-      const url = encodeURIComponent(elem.getAttribute('data-aw-url'));
-      const text = encodeURIComponent(elem.getAttribute('data-aw-text'));
+      const rawUrl = elem.getAttribute('data-aw-url') || window.location.href;
+      const rawText = elem.getAttribute('data-aw-text') || 'Organize your day in seconds with 123 ToDo — the free, simple task manager!';
+      const url = encodeURIComponent(rawUrl);
+      const text = encodeURIComponent(rawText);
+
+      if (network === 'copy-link') {
+        navigator.clipboard.writeText(rawUrl).then(() => {
+          const originalTitle = elem.getAttribute('title');
+          elem.setAttribute('title', 'Copied to clipboard!');
+          const badge = document.createElement('span');
+          badge.className = 'fixed bottom-4 right-4 bg-emerald-600 text-white px-4 py-2 rounded-lg shadow-lg text-sm z-50 animate-bounce';
+          badge.textContent = 'Link copied to clipboard!';
+          document.body.appendChild(badge);
+          setTimeout(() => {
+            badge.remove();
+            if (originalTitle) elem.setAttribute('title', originalTitle);
+          }, 2500);
+        });
+        return;
+      }
+
+      if (network === 'web-share' && navigator.share) {
+        navigator.share({
+          title: '123 ToDo',
+          text: rawText,
+          url: rawUrl,
+        }).catch(() => {});
+        return;
+      }
 
       let href;
       switch (network) {
@@ -95,7 +122,7 @@ import { UI } from 'astrowind:config';
           href = `https://wa.me/?text=${text}%20${url}`;
           break;
         case 'mail':
-          href = `mailto:?subject=%22${text}%22&body=${text}%20${url}`;
+          href = `mailto:?subject=${encodeURIComponent('Organize your day with 123 ToDo')}&body=${text}%20${url}`;
           break;
 
         default:
@@ -104,6 +131,7 @@ import { UI } from 'astrowind:config';
 
       const newlink = document.createElement('a');
       newlink.target = '_blank';
+      newlink.rel = 'noopener noreferrer';
       newlink.href = href;
       newlink.click();
     });

@@ -78,7 +78,7 @@ import { UI } from 'astrowind:config';
     attachEvent('[data-aw-social-share]', 'click', function (_, elem) {
       const network = elem.getAttribute('data-aw-social-share');
       const rawUrl = elem.getAttribute('data-aw-url') || window.location.href;
-      const rawText = elem.getAttribute('data-aw-text') || 'Organize your day in seconds with 123 ToDo — the free, simple task manager!';
+      const rawText = elem.getAttribute('data-aw-text') || 'Been using 123 ToDo to stay on top of things — it\'s free, no sign-up, and genuinely helps. Thought you might find it useful! 👉 www.123todo.com';
       const url = encodeURIComponent(rawUrl);
       const text = encodeURIComponent(rawText);
 
@@ -122,7 +122,7 @@ import { UI } from 'astrowind:config';
           href = `https://wa.me/?text=${text}%20${url}`;
           break;
         case 'mail':
-          href = `mailto:?subject=${encodeURIComponent('Organize your day with 123 ToDo')}&body=${text}%20${url}`;
+          href = `mailto:?subject=${encodeURIComponent('Thought you might find this useful')}&body=${text}%20${url}`;
           break;
 
         default:

@@ -7,9 +7,9 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 
 const metadata = {
-  title: '123 ToDo - FREE Simple, Powerful Task Management',
+  title: '123 ToDo - FREE Simple, Stress-Free Task Management & Daily To-Do Lists',
   description:
-    'FREE priority-based task management with offline support, achievement tracking, and zero tracking. Your tasks, your control.',
+    'Free, simple task manager to organize your day, track priorities, and clear mental clutter. Voice dictation, subtasks, offline PWA, and private sync.',
   ignoreTitleTemplate: true,
   openGraph: {
     images: [
@@ -49,23 +49,27 @@ const metadata = {
     }}
   >
     <Fragment slot="title">
-      Simple, Powerful <br />
+      Simple, Stress-Free <br />
       <span class="text-accent dark:text-white highlight">Task Management</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="text-lg">
-        Priority-based organization with **Cross-Device Google Drive Sync** and **Zero-Knowledge Encryption**. <br />
-        <span class="font-semibold text-accent dark:text-white">Your tasks, everywhere you need them, securely.</span>
+        The simple, stress-free way to organize your day, track your to-dos, and clear mental clutter. <br />
+        <span class="font-semibold text-accent dark:text-white"
+          >Syncs smoothly across all your devices, with 100% data privacy.</span
+        >
         <span class="text-purple-600 dark:text-purple-400 font-bold underline decoration-2 underline-offset-4"
-          >TOTALLY FREE.</span
-        > No accounts, no hassle.
+          >100% FREE.</span
+        > No signups, no passwords, no hassle.
       </span>
     </Fragment>
   </Hero>
 
   <!-- Non-Technical Life Benefits Section -->
-  <section class="relative bg-gradient-to-b from-blue-50/70 to-white dark:from-slate-900/60 dark:to-slate-900 not-prose py-12 md:py-16 border-y border-slate-100 dark:border-slate-800">
+  <section
+    class="relative bg-gradient-to-b from-blue-50/70 to-white dark:from-slate-900/60 dark:to-slate-900 not-prose py-12 md:py-16 border-y border-slate-100 dark:border-slate-800"
+  >
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="text-center max-w-3xl mx-auto mb-10 md:mb-14">
         <p class="text-base text-accent dark:text-blue-400 font-bold tracking-wide uppercase">Why Choose 123 ToDo?</p>
@@ -73,29 +77,55 @@ const metadata = {
           Turn Daily Chaos into Calm & Clarity
         </h2>
         <p class="text-xl text-muted dark:text-slate-300">
-          Discover how effortless organization frees your mind, eliminates daily overwhelm, and helps you reclaim control over your time.
+          Discover how effortless organization frees your mind, eliminates daily overwhelm, and helps you reclaim
+          control over your time.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
         <!-- Benefit Card 1 -->
-        <div class="bg-white dark:bg-slate-800/90 p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700/80 hover:shadow-md transition duration-200 flex flex-col">
-          <div class="w-14 h-14 bg-red-100 dark:bg-red-950/60 rounded-xl flex items-center justify-center mb-5 text-red-600 dark:text-red-400">
-            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <div
+          class="bg-white dark:bg-slate-800/90 p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700/80 hover:shadow-md transition duration-200 flex flex-col"
+        >
+          <div
+            class="w-14 h-14 bg-red-100 dark:bg-red-950/60 rounded-xl flex items-center justify-center mb-5 text-red-600 dark:text-red-400"
+          >
+            <svg
+              class="w-8 h-8"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
               <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"></path>
               <path d="M12 7v5l3 3"></path>
             </svg>
           </div>
           <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">De-Stress Your Mind</h3>
           <p class="text-muted dark:text-slate-300 leading-relaxed text-sm md:text-base flex-1">
-            Stop keeping tasks trapped in your head. Offload to-dos instantly into organized lists so you can relax, focus, and sleep better at night.
+            Stop keeping tasks trapped in your head. Offload to-dos instantly into organized lists so you can relax,
+            focus, and enjoy your day.
           </p>
         </div>
 
         <!-- Benefit Card 2 -->
-        <div class="bg-white dark:bg-slate-800/90 p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700/80 hover:shadow-md transition duration-200 flex flex-col">
-          <div class="w-14 h-14 bg-amber-100 dark:bg-amber-950/60 rounded-xl flex items-center justify-center mb-5 text-amber-600 dark:text-amber-400">
-            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <div
+          class="bg-white dark:bg-slate-800/90 p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700/80 hover:shadow-md transition duration-200 flex flex-col"
+        >
+          <div
+            class="w-14 h-14 bg-amber-100 dark:bg-amber-950/60 rounded-xl flex items-center justify-center mb-5 text-amber-600 dark:text-amber-400"
+          >
+            <svg
+              class="w-8 h-8"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
               <circle cx="12" cy="12" r="10"></circle>
               <circle cx="12" cy="12" r="6"></circle>
               <circle cx="12" cy="12" r="2"></circle>
@@ -103,33 +133,60 @@ const metadata = {
           </div>
           <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Clear Daily Priorities</h3>
           <p class="text-muted dark:text-slate-300 leading-relaxed text-sm md:text-base flex-1">
-            Focus on what truly matters today using 4 simple buckets: Must Do, Should Do, Could Do, and On Hold. Eliminate decision fatigue instantly.
+            Focus on what truly matters today using 4 simple buckets: Must Do, Should Do, Could Do, and On Hold.
+            Eliminate decision fatigue instantly.
           </p>
         </div>
 
         <!-- Benefit Card 3 -->
-        <div class="bg-white dark:bg-slate-800/90 p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700/80 hover:shadow-md transition duration-200 flex flex-col">
-          <div class="w-14 h-14 bg-emerald-100 dark:bg-emerald-950/60 rounded-xl flex items-center justify-center mb-5 text-emerald-600 dark:text-emerald-400">
-            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <div
+          class="bg-white dark:bg-slate-800/90 p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700/80 hover:shadow-md transition duration-200 flex flex-col"
+        >
+          <div
+            class="w-14 h-14 bg-emerald-100 dark:bg-emerald-950/60 rounded-xl flex items-center justify-center mb-5 text-emerald-600 dark:text-emerald-400"
+          >
+            <svg
+              class="w-8 h-8"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
               <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
             </svg>
           </div>
           <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Reclaim Free Time</h3>
           <p class="text-muted dark:text-slate-300 leading-relaxed text-sm md:text-base flex-1">
-            When your day is organized, tasks get done faster. Finish work earlier, avoid last-minute rushes, and make more room for family, hobbies, and rest.
+            When your day is organized, tasks get done faster. Finish work earlier, avoid last-minute rushes, and make
+            room for family, hobbies, and rest.
           </p>
         </div>
 
         <!-- Benefit Card 4 -->
-        <div class="bg-white dark:bg-slate-800/90 p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700/80 hover:shadow-md transition duration-200 flex flex-col">
-          <div class="w-14 h-14 bg-purple-100 dark:bg-purple-950/60 rounded-xl flex items-center justify-center mb-5 text-purple-600 dark:text-purple-400">
-            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <div
+          class="bg-white dark:bg-slate-800/90 p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700/80 hover:shadow-md transition duration-200 flex flex-col"
+        >
+          <div
+            class="w-14 h-14 bg-purple-100 dark:bg-purple-950/60 rounded-xl flex items-center justify-center mb-5 text-purple-600 dark:text-purple-400"
+          >
+            <svg
+              class="w-8 h-8"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
               <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
             </svg>
           </div>
           <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">100% Free, Instant Start</h3>
           <p class="text-muted dark:text-slate-300 leading-relaxed text-sm md:text-base flex-1">
-            No registration, no passwords, no email verification, and no credit card required. Open the app and be organized in under 60 seconds.
+            No registration, no passwords, no email verification, and no credit card required. Open the app and be
+            organized in under 60 seconds.
           </p>
         </div>
       </div>
@@ -139,60 +196,72 @@ const metadata = {
   <!-- Features Section -->
   <Features
     id="features"
-    tagline="Features"
-    title="Everything you need to stay organized"
-    subtitle="Built with simplicity and privacy in mind"
+    tagline="Features & Benefits"
+    title="Everything you need to stay organized effortlessly"
+    subtitle="Designed for ultimate simplicity, privacy, and day-to-day productivity"
     classes={{
       container: '!py-6 md:!py-8',
     }}
     items={[
       {
-        title: 'Priority-Based Organization',
+        title: 'Voice-to-Text & Hands-Free Commands',
         description:
-          'Organize tasks with our 4-level priority system: Must Do, Should Do, Could Do, and On Hold. Focus on what matters most.',
+          'Dictate tasks naturally on the go. Speaks punctuation, edit live with "scratch that", or save automatically by saying "add task".',
+        icon: 'tabler:microphone',
+      },
+      {
+        title: '4 Simple Priority Buckets',
+        description:
+          'Organize tasks with our clear 4-level system: Must Do, Should Do, Could Do, and On Hold. Know exactly what to work on first.',
         icon: 'tabler:list-check',
       },
       {
-        title: 'Cross-Device Sync',
+        title: 'Automatic Multi-Device Sync',
         description:
-          'Seamlessly sync your tasks across your phone, tablet, and desktop using your personal Google Drive. Completely free, invisible background syncing.',
+          'Keep your task lists smoothly in sync across your phone, tablet, and computer using your personal Google Drive. Fast and completely free.',
         icon: 'tabler:cloud-upload',
       },
       {
-        title: 'Zero-Knowledge Encryption',
+        title: '100% Private & Secure',
         description:
-          'Before your data ever leaves your device, it is encrypted with military-grade AES-256-GCM. Not even Google can read your tasks.',
-        icon: 'tabler:lock',
+          'Your tasks are encrypted locally before leaving your device. No corporate servers store your private notes or tracking data.',
+        icon: 'tabler:shield-lock',
       },
       {
-        title: 'Achievement Milestones',
+        title: 'Unlimited Notes & Subtasks',
         description:
-          'Stay motivated with milestone celebrations at 5, 10, and 15 completed tasks per day. Track your productivity journey.',
-        icon: 'tabler:trophy',
+          'Add detailed instructions, links, or checklists with zero character caps. Break big goals into easy, checkable subtask steps.',
+        icon: 'tabler:notes',
       },
       {
-        title: 'Zero Tracking',
+        title: 'Works 100% Offline (PWA)',
         description:
-          'No analytics, no cookies, no tracking. Your data never leaves your device. Privacy-first by design.',
-        icon: 'tabler:shield-check',
+          'Install 123ToDo on your mobile home screen or computer desktop in 1 click. Access and manage your tasks anytime without internet.',
+        icon: 'tabler:device-mobile-check',
       },
       {
-        title: 'Shadow Backups',
+        title: 'Smart Dates & Repeat Rules',
         description:
-          'Enjoy peace of mind with automatic daily snapshots of your task list, stored internally as a secondary recovery point.',
-        icon: 'tabler:history',
+          'Schedule tasks for Today, Tomorrow, or Next Week. Set automated recurring tasks for daily, weekly, or monthly routines.',
+        icon: 'tabler:calendar-repeat',
       },
       {
-        title: 'Todoist Import',
+        title: 'Color-Coded Custom Projects',
         description:
-          'Migrating is easy. Import your existing Todoist projects and tasks directly via CSV into our organized priority system.',
+          'Organize your to-dos into custom project groups for work, home, clients, or hobbies with drag-and-drop reordering handles.',
+        icon: 'tabler:folder',
+      },
+      {
+        title: '1-Click Todoist CSV Import',
+        description:
+          'Switching from paid apps? Import your existing Todoist projects and tasks in under 60 seconds with zero data loss.',
         icon: 'tabler:file-import',
       },
       {
-        title: 'Premium Typography',
+        title: 'Daily Achievement Milestones',
         description:
-          'A clean, high-accessibility interface with standard font sizing (1.1rem) designed specifically for legibility on all screens.',
-        icon: 'tabler:typography',
+          'Stay inspired as you complete tasks! Unlock daily bronze, silver, and gold milestones as you complete 5, 10, or 15 items per day.',
+        icon: 'tabler:trophy',
       },
     ]}
   />

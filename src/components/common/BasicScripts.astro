@@ -78,7 +78,9 @@ import { UI } from 'astrowind:config';
     attachEvent('[data-aw-social-share]', 'click', function (_, elem) {
       const network = elem.getAttribute('data-aw-social-share');
       const rawUrl = elem.getAttribute('data-aw-url') || window.location.href;
-      const rawText = elem.getAttribute('data-aw-text') || 'Been using 123 ToDo to stay on top of things — it\'s free, no sign-up, and genuinely helps. Thought you might find it useful! 👉 www.123todo.com';
+      const rawText =
+        elem.getAttribute('data-aw-text') ||
+        "Been using 123 ToDo to stay on top of things — it's free, no sign-up, and genuinely helps. Thought you might find it useful! 👉 www.123todo.com";
       const url = encodeURIComponent(rawUrl);
       const text = encodeURIComponent(rawText);
 
@@ -87,7 +89,8 @@ import { UI } from 'astrowind:config';
           const originalTitle = elem.getAttribute('title');
           elem.setAttribute('title', 'Copied to clipboard!');
           const badge = document.createElement('span');
-          badge.className = 'fixed bottom-4 right-4 bg-emerald-600 text-white px-4 py-2 rounded-lg shadow-lg text-sm z-50 animate-bounce';
+          badge.className =
+            'fixed bottom-4 right-4 bg-emerald-600 text-white px-4 py-2 rounded-lg shadow-lg text-sm z-50 animate-bounce';
           badge.textContent = 'Link copied to clipboard!';
           document.body.appendChild(badge);
           setTimeout(() => {
@@ -99,11 +102,13 @@ import { UI } from 'astrowind:config';
       }
 
       if (network === 'web-share' && navigator.share) {
-        navigator.share({
-          title: '123 ToDo',
-          text: rawText,
-          url: rawUrl,
-        }).catch(() => {});
+        navigator
+          .share({
+            title: '123 ToDo',
+            text: rawText,
+            url: rawUrl,
+          })
+          .catch(() => {});
         return;
       }
 

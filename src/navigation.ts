@@ -1,4 +1,4 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink, getBlogPermalink } from './utils/permalinks';
 
 export const headerData = {
   links: [
@@ -55,9 +55,7 @@ export const footerData = {
     },
   ],
   secondaryLinks: [],
-  socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-  ],
+  socialLinks: [{ ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' }],
   footNote: `
     Copyright © Unforgettable Management Ltd ${new Date().getFullYear()}. All rights reserved. | Website by <a href="https://www.2headsdesign.co.uk" target="_blank" rel="noopener" class="hover:underline">TWO Design & Marketing</a>
   `,

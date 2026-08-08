@@ -60,7 +60,7 @@ This simple system helps you focus on what actually matters instead of drowning 
 
 ### 🎙️ Hands-Free Voice Dictation & Spoken Edits
 
-Capture ideas 5x faster with built-in voice dictation. Speak your tasks naturally with automatic spoken punctuation ("full stop", "comma", "question mark"), live spoken deletions ("scratch that", "delete last word"), and hands-free task auto-submission when dictating "add task".
+Capture ideas 5x faster with built-in voice dictation. Speak tasks and notes naturally with automatic spoken punctuation ("full stop", "fullstop", "dot", "comma", "question mark"), automatic sentence capitalization, live spoken deletions ("scratch that", "delete last word"), and quiet, hands-free auto-submission when dictating "add task" or "add note".
 
 ### 🏆 Motivation Built-In
 

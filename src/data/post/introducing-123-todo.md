@@ -58,11 +58,15 @@ Stay focused with our 4-level priority system:
 
 This simple system helps you focus on what actually matters instead of drowning in an endless list.
 
-### <� Motivation Built-In
+### 🎙️ Hands-Free Voice Dictation & Spoken Edits
+
+Capture ideas 5x faster with built-in voice dictation. Speak your tasks naturally with automatic spoken punctuation ("full stop", "comma", "question mark"), live spoken deletions ("scratch that", "delete last word"), and hands-free task auto-submission when dictating "add task".
+
+### 🏆 Motivation Built-In
 
 Completing tasks feels good. We make it feel even better with achievement milestones at 5, 10, and 15 completed tasks per day. Small celebrations keep you motivated without being annoying.
 
-### =� Your Data, Your Control
+### = Your Data, Your Control
 
 Export your tasks to JSON anytime. Import on another device. Keep backups wherever you want. You own your data - not us.
 

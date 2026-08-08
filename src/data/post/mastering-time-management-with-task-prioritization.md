@@ -158,6 +158,10 @@ Tasks are automatically grouped by priority level with color coding:
 
 When you add a task, you must assign a priority. This tiny moment of reflection prevents the endless list syndrome. "Is this really a Must Do? Or am I just feeling stressed?"
 
+### **Voice-Activated Dictation & Commands**
+
+Log your priorities 5x faster without typing! Use 123ToDo's continuous voice dictation with automatic spoken punctuation (_"full stop"_, _"comma"_, _"question mark"_), spoken editing commands (_"delete last word"_, _"scratch that"_), and hands-free task auto-submission (_"add task"_).
+
 ### **Drag-and-Drop Ordering**
 
 Within each priority, reorder tasks by importance. Your #1 Must Do rises to the top. You always know what's next.

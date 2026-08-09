@@ -62,6 +62,10 @@ This simple system helps you focus on what actually matters instead of drowning 
 
 Capture ideas 5x faster with built-in voice dictation. Speak tasks and notes naturally with automatic spoken punctuation ("full stop", "fullstop", "dot", "comma", "question mark"), automatic sentence capitalization, live spoken deletions ("scratch that", "delete last word"), and quiet, hands-free auto-submission when dictating "add task" or "add note".
 
+### ☁️ Set & Forget E2E Encrypted Cloud Sync
+
+Sync your tasks seamlessly across iPhone, Android, Mac, and PC. Data is encrypted locally with military-grade AES-256-GCM before saving to the cloud. Stay connected forever with zero 1-hour OAuth drops, 100% Safari PWA compatibility, and 5-second 6-digit device pairing.
+
 ### 🏆 Motivation Built-In
 
 Completing tasks feels good. We make it feel even better with achievement milestones at 5, 10, and 15 completed tasks per day. Small celebrations keep you motivated without being annoying.

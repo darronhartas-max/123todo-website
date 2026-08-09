@@ -432,34 +432,26 @@ const metadata = {
         your current data first if you want to keep a secondary copy!
       </p>
 
-      <h3>☁️ Cross-Device Google Drive Sync</h3>
+      <h3>☁️ Cross-Device Cloud Sync (Set & Forget)</h3>
       <p>
-        123 ToDo features a powerful, free synchronization system that lets you access your tasks across all your
-        devices (phones, tablets, and computers).
+        123 ToDo features a powerful, friction-free synchronization system that lets you access your tasks across all your
+        devices (iPhones, Android phones, tablets, laptops, and desktop computers).
       </p>
       <ul>
         <li>
-          <strong>Zero-Knowledge Encryption:</strong> Your data is encrypted with military-grade AES-256-GCM using your personal
-          passphrase <em>before</em> it leaves your device. Not even Google can read your tasks.
+          <strong>Set & Forget Cloud Sync (Recommended):</strong> Powered by Cloudflare D1 Serverless edge database. Sign in once with a passphrase (or pair a second device with a 6-digit code) and stay connected seamlessly. Zero 1-hour OAuth drops and 100% iPhone Safari/PWA compatible.
         </li>
         <li>
-          <strong>Invisible Syncing:</strong> Once signed in, the app automatically pulls updates when you open it, and silently
-          pushes changes in the background as you work.
+          <strong>Zero-Knowledge E2E Encryption:</strong> Your tasks, projects, notes, and subtasks are encrypted with military-grade AES-256-GCM using your personal passphrase <em>before</em> leaving your device. Neither cloud providers nor third parties can read your data.
         </li>
         <li>
-          <strong>Silent Authentication:</strong> Sign in once, and the app will keep you authenticated across sessions seamlessly
-          without annoying popups.
+          <strong>5-Second 6-Digit Device Pairing:</strong> Easily link a second device (like an iPhone to a Mac) by generating a temporary 6-digit pairing code in Settings ➔ Cloud Sync.
         </li>
         <li>
-          <strong>iOS PWA Session Limit:</strong> Due to Apple's iOS security policies, downloaded PWAs (Home Screen apps)
-          on iPhone/iPad cannot share cookies with Safari. While the browser version and Android/Desktop PWAs will automatically
-          renew your Google credentials in the background, iPhone/iPad PWA users will be prompted to re-authenticate once
-          their 1-hour session expires. To avoid this, we recommend using the standard web version of the app directly in
-          Safari or Chrome on iOS.
+          <strong>Google Drive AppData (Optional Provider):</strong> For privacy purists who prefer storing sync data on their personal Google account, Google Drive AppData remains fully supported under Settings ➔ Cloud Sync.
         </li>
         <li>
-          <strong>Visual Status:</strong> The footer button glows green when active and red when offline, keeping you informed
-          without distraction.
+          <strong>Visual Status:</strong> The header sync indicator dot glows steady green when connected and synced, keeping you informed without distraction.
         </li>
       </ul>
 

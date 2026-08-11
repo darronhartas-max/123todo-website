@@ -204,6 +204,12 @@ const metadata = {
     }}
     items={[
       {
+        title: '🎙️ Dual Skin Modes: Task Manager vs. Simple Voice Notes (v3.0)',
+        description:
+          'Switch instantly between a structured Task Manager (P1-P4 matrix) and a Simple Voice Notes mode with extra-large text, giant mic FAB, hands-free field capture, and deferred project triage for builders & trades.',
+        icon: 'tabler:transform',
+      },
+      {
         title: 'Voice-to-Text & Hands-Free Commands',
         description:
           'Dictate tasks & notes naturally on the go. Auto-formats spoken punctuation, auto-capitalizes sentences, and auto-saves hands-free by saying "add task" or "add note".',
@@ -265,6 +271,46 @@ const metadata = {
       },
     ]}
   />
+
+  <!-- Dual Skins Showcase -->
+  <Content
+    tagline="New in v3.0"
+    title="One App, Two Powerful Modes"
+    items={[
+      {
+        title: '🎙️ Simple Voice Notes Mode',
+        description:
+          'Extra-large text, high contrast, and a giant mic button designed for builders, contractors, and busy professionals on site. Speak measurements, materials, or updates hands-free without worrying about project tagging upfront.',
+      },
+      {
+        title: '📋 Task Manager Mode',
+        description:
+          'Structured priority matrix (P1 Must Do, P2 Should Do, P3 Could Do, P4 On Hold) with subtasks, due dates, drag-and-drop reordering, and attached notes.',
+      },
+      {
+        title: '🔄 Unified Data System',
+        description:
+          'Switch skins at will with a 1-tap header toggle. All notes and tasks live in the exact same dataset and sync automatically via Cloudflare D1 or Google Drive zero-knowledge sync.',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/new_grab.jpg',
+      alt: '123 ToDo Dual Skins feature showing Task Manager and Simple Voice Notes',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Designed for both field work & office focus
+      </h3>
+      <p class="text-lg">
+        Whether you are on a construction site taking quick site measurements or at your desk planning your week, 123 ToDo adapts to your workflow seamlessly.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50/50 dark:bg-slate-900/50"></div>
+    </Fragment>
+  </Content>
 
   <!-- How It Works -->
   <Content

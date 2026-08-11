@@ -31,19 +31,23 @@ Simple Voice Notes Mode is a brand-new, high-contrast, large-text interface spec
 Key highlights of the new skin include:
 
 ### 1. Extra-Large Typography & High-Contrast UI
+
 - Read your notes effortlessly in bright sunlight or on the go with 18px–20px text scaling and high-contrast card borders.
 
 ### 2. Giant Floating Mic Button (Hands-Free Mode)
-- A prominent 64px mic button sits at the bottom-right of your screen. 
+
+- A prominent 64px mic button sits at the bottom-right of your screen.
 - Tap once to start continuous dictation across silence pauses. Speak your notes naturally, including spoken punctuation ("full stop", "comma", "question mark") and automatic capitalization.
-- Say *"Save Note"* or *"Add Note"* to complete a note hands-free and immediately keep speaking for the next note.
+- Say _"Save Note"_ or _"Add Note"_ to complete a note hands-free and immediately keep speaking for the next note.
 
 ### 3. Unassigned Inbox (Capture Now, Organize Later)
+
 - All quick notes land in an **Unassigned Inbox**. Capture wall measurements, material reminders, site safety notes, or client calls continuously throughout the day without interrupting your flow.
 
 ### 4. End-of-Day Project Triage & Task Elevation
+
 - When you return to your desk at the end of the day:
-  - **Assign Projects**: Move single or batch-selected notes into custom projects (e.g. *Site A*, *Materials*, *Client B*) with 1 tap.
+  - **Assign Projects**: Move single or batch-selected notes into custom projects (e.g. _Site A_, _Materials_, _Client B_) with 1 tap.
   - **Turn into Tasks**: Convert any note into a prioritized task (`P1 Must Do`, `P2 Should Do`, or `P3 Could Do`) instantly.
 
 ---
@@ -53,6 +57,7 @@ Key highlights of the new skin include:
 You can switch between **Task Manager Mode** and **Simple Voice Notes Mode** at any time using the sleek toggle pill at the top of the header bar `[ 📋 Tasks | 🎙️ Voice Notes ]`.
 
 Because all notes and tasks live in the **same unified dataset**, switching views is instantaneous:
+
 - A note created on site in Voice Notes Mode appears in Task Manager Mode with its full description intact.
 - A task created in Task Manager Mode displays cleanly in Notes Mode.
 
@@ -60,7 +65,7 @@ Because all notes and tasks live in the **same unified dataset**, switching view
 
 ## 100% Private & Fully Synced
 
-Just like every feature in 123 ToDo, your data remains 100% private. 
+Just like every feature in 123 ToDo, your data remains 100% private.
 
 Whether you use our **Set & Forget Cloudflare Cloud Sync** or **Google Drive Sync**, all notes and tasks are encrypted on your device using **AES-256-GCM Zero-Knowledge Encryption** before leaving your browser.
 

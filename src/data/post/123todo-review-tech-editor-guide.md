@@ -49,40 +49,59 @@ Each category is color-coded and organized cleanly, allowing users to collapse o
 
 ---
 
-### 2. AI Voice-to-Text & Hands-Free Spoken Commands
+### 2. Dual Skins: Task Manager vs. Simple Voice Notes
 
 #### **Description**
 
-Built on native Web Speech API technology, 123ToDo’s microphone integration goes far beyond simple speech recognition. It includes an intelligent natural language processor that handles:
+123ToDo features a **Dual Skin Operating System** accessible via a 1-tap header toggle:
+
+- **📋 Task Manager Mode**: Structured P1–P4 matrix, drag-and-drop sorting, subtasks, due dates, and project folders.
+- **🎙️ Simple Voice Notes Mode**: High-contrast, large-text interface designed for builders, contractors, and field work. Allows rapid hands-free dictation into an **Unassigned Inbox** without requiring project tagging or priority assignment upfront.
+
+#### **User Benefit**
+
+- **Adapts to Field & Desk Work**: Capture quick site measurements or thoughts hands-free while on the move, then triage them into structured tasks and projects when back at your desk.
+- **Unified Data Model**: Switching skins is instantaneous — notes added in Notes view are stored directly as Tasks in the unified engine, from which you can attach additional notes, subtask checklists, set priority levels, or assign projects.
+
+---
+
+### 3. AI Voice-to-Text & Spoken Hands-Free Commands
+
+#### **Description**
+
+Built on native Web Speech API technology, 123ToDo’s voice dictation integration includes an intelligent natural language processor accessible via header mic controls or the dedicated red **"Talk"** button on note entry cards:
 
 - **Spoken Punctuation**: Converts spoken phrases like _"call client comma set meeting for 2pm full stop"_ into clean output: _"Call client, set meeting for 2pm."_
 - **Live Spoken Editing Commands**: Saying _"delete last word"_ or _"scratch that"_ instantly removes typos on the fly. Saying _"clear all"_ resets the field.
-- **Hands-Free Auto-Submission**: Dictating a task followed by _"add task"_ or _"submit task"_ automatically cleans the transcript, stops dictation, and saves the task into your list.
+- **Hands-Free Auto-Submission**: Dictating a task followed by _"add task"_, _"add note"_, or _"save task"_ automatically cleans the transcript, stops dictation, and saves the task into your list.
 - **Real-Time Auto-Scroll Viewport**: The input canvas automatically expands and scrolls down to track spoken words as they appear.
 
 #### **User Benefit**
 
-- **Rapid Idea & Action Capture**: Capture complex tasks while commuting, walking between meetings, or multi-tasking around the house without touching a keyboard.
-- **Zero Input Friction**: Reduces the time required to log a task from 15 seconds to under 3 seconds.
+- **Rapid Idea & Action Capture**: Capture complex tasks while commuting, walking between meetings, or working on site without touching a keyboard.
+- **Zero Input Friction**: Reduces the time required to log a task or note from 15 seconds to under 3 seconds.
 
 ---
 
-### 3. Enterprise-Grade Security: Client-Side AES-256-GCM Encrypted Google Drive Sync
+### 4. Zero-Knowledge E2E Cloud Sync (Set & Forget + Google Drive)
 
 #### **Description**
 
 Most free cloud applications store user data in plaintext or server-side encrypted databases where administrators or third parties can access it. 123ToDo utilizes client-side **AES-256-GCM encryption** directly within your browser before sync.
 
-Tasks are synced into your personal **Google Drive AppData folder** using an ultra-fast 2-way merge engine with 300ms push debouncing and automatic connection recovery.
+123ToDo offers two seamless cloud sync options:
+
+- **Set & Forget Cloud Sync (Recommended)**: Powered by Cloudflare D1 serverless edge database with 5-second 6-digit device pairing codes and zero 1-hour session drops.
+- **Google Drive AppData Sync**: Syncs directly to your private Google account's hidden AppData folder.
 
 #### **User Benefit**
 
-- **Total Data Privacy & Ownership**: Confidential client names, personal thoughts, and business strategies remain 100% private. Neither 123ToDo nor Google can read your encrypted tasks.
-- **Zero Monthly Subscription Fees**: Enjoy seamless multi-device cloud synchronization without paying $5 to $12 per month for legacy software subscriptions.
+- **Total Data Privacy & Ownership**: Confidential client names, personal thoughts, and business strategies remain 100% private. Neither 123ToDo nor third parties can read your encrypted tasks.
+- **Seamless Multi-Device Continuity**: Keep iPhone, Android, Mac, and Windows devices smoothly synced without paying $5 to $12 per month for legacy software subscriptions.
 
 ---
 
-### 4. Progressive Web App (PWA) & Offline-First Reliability
+### 5. Progressive Web App (PWA) & Offline-First Reliability
 
 #### **Description**
 
@@ -97,11 +116,11 @@ Using browser storage permissions, 123ToDo operates completely offline. All edit
 
 ---
 
-### 5. Color-Coded Custom Projects & Drag-and-Drop Reordering
+### 6. Color-Coded Custom Projects & Drag-and-Drop Reordering
 
 #### **Description**
 
-Organize tasks by custom project streams (e.g. _Client Marketing_, _Operations_, _Home & Garden_, _Finance_). Each project receives a distinct color band. In the Settings menu, project tabs can be reordered via HTML5 drag-and-drop handles.
+Organize tasks by custom project streams (e.g. _Client Marketing_, _Operations_, _Home & Garden_, _Finance_). Each project receives a distinct color band. In the Settings menu, project tabs can be reordered via drag-and-drop handles.
 
 #### **User Benefit**
 
@@ -110,7 +129,7 @@ Organize tasks by custom project streams (e.g. _Client Marketing_, _Operations_,
 
 ---
 
-### 6. Unlimited Notes Canvas & Subtask Checklists
+### 7. Unlimited Notes Canvas & Subtask Checklists
 
 #### **Description**
 
@@ -123,11 +142,11 @@ While many basic task apps restrict notes to short character limits, 123ToDo pro
 
 ---
 
-### 7. Automated Recurrence & Strategic Scheduling
+### 8. Automated Recurrence & Strategic Scheduling
 
 #### **Description**
 
-Assign due dates with 1-click date shortcuts (_Today, Tomorrow, Next Week, Weekend_) alongside a flexible recurrence engine. Tasks can repeat on daily, weekly (e.g. _every Monday and Thursday_), or monthly schedules.
+Assign due dates with 1-click date shortcuts (_Today, Tomorrow, Next Week, Weekend_) alongside a flexible recurrence engine. Tasks can repeat on daily, weekly (e.g. _every Monday and Thursday_), or monthly schedules, neatly stored in the collapsible **Scheduled & Recurring** drawer until due.
 
 #### **User Benefit**
 
@@ -136,7 +155,7 @@ Assign due dates with 1-click date shortcuts (_Today, Tomorrow, Next Week, Weeke
 
 ---
 
-### 8. Vendor Lock-In Relief: 1-Click Todoist CSV Import Wizard
+### 9. Vendor Lock-In Relief: 1-Click Todoist CSV Import Wizard
 
 #### **Description**
 
@@ -148,7 +167,7 @@ For users migrating from paid tools like Todoist, 123ToDo includes an interactiv
 
 ---
 
-### 9. Tailored Visual Ergonomics & Theme Modes
+### 10. Tailored Visual Ergonomics & Theme Modes
 
 #### **Description**
 
@@ -166,8 +185,9 @@ Under **Settings ➔ Appearance**, users can fine-tune text sizing (8pt to 20pt)
 | Feature Area       | Technical Capability               | Real-World Benefit                                                    |
 | :----------------- | :--------------------------------- | :-------------------------------------------------------------------- |
 | **Prioritization** | 4-Tier Matrix (P1–P4)              | Eliminates daily decision fatigue & focuses energy on high-value wins |
-| **Voice AI**       | Web Speech API + Spoken Commands   | Dictate tasks 5x faster; edit live & auto-submit hands-free           |
-| **Security**       | AES-256-GCM Client-Side Encryption | 100% private data stored in your own Google Drive; zero monthly fees  |
+| **Dual Skins**     | Task Manager vs Simple Voice Notes | Instant skin toggle; capture notes on site & triage at your desk      |
+| **Voice AI**       | Web Speech API + Spoken Commands   | Dictate tasks & notes 5x faster; live edits & hands-free submit       |
+| **Security**       | AES-256-GCM Zero-Knowledge Sync    | 100% private data synced via Set & Forget Cloudflare or Google Drive  |
 | **Platform**       | Progressive Web App (PWA)          | Works 100% offline; installs natively on iOS, Android, Mac & PC       |
 | **Organization**   | Custom Projects & Drag-Drop        | Keeps work, personal, and client streams cleanly segregated           |
 | **Checklists**     | Nested Subtasks & Unlimited Notes  | Stores complete briefs, SOPs, and checklists in task cards            |
@@ -180,7 +200,7 @@ Under **Settings ➔ Appearance**, users can fine-tune text sizing (8pt to 20pt)
 
 **123ToDo** represents a quiet revolution in personal and professional task management. By eschewing subscription paywalls, intrusive tracking scripts, and bloated feature clutter, 123ToDo has delivered an application that feels fast, intuitive, and genuinely respectful of the user's time and privacy.
 
-For business owners wanting to trim software costs, freelancers seeking a clean command center, or individuals eager to bring calm structure to daily life, 123ToDo is one of the most polished, reliable, and well-designed productivity tools available today.
+For business owners wanting to trim software costs, freelancers seeking a clean command center, or field professionals needing rapid voice note capture, 123ToDo is one of the most polished, reliable, and well-designed productivity tools available today.
 
 **VERDICT RATING**: ⭐️⭐️⭐️⭐️⭐️ **9.8 / 10 — Editor's Choice**
 

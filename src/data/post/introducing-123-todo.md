@@ -160,7 +160,7 @@ No signup. No tracking. No credit card. Just open it and start organizing.
 A: Yes. Every feature, forever. No tricks.
 
 **Q: Can I sync between devices?**
-A: Yes! We offer a built-in **Google Drive Sync** feature. It connects directly to your personal Google Drive to sync your tasks seamlessly across all your devices. Best of all, it features AES-256-GCM zero-knowledge encryption, meaning your tasks are fully encrypted with your personal passphrase before they ever leave your device.
+A: Yes! We offer **Set & Forget Cloud Sync** (powered by Cloudflare D1 serverless edge database) as well as **Google Drive Sync**. Both options utilize AES-256-GCM zero-knowledge encryption, meaning your tasks and notes are fully encrypted with your personal passphrase before leaving your device.
 
 **Q: What if I lose my data?**
 A: Use the Export feature regularly to backup. We recommend weekly exports. Since data is local-only, we cannot recover it if lost.

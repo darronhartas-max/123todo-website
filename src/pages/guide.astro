@@ -58,9 +58,9 @@ const metadata = {
         icon: 'tabler:download',
       },
       {
-        title: 'Step 5: <span class="font-medium">Enable Google Drive Sync</span>',
+        title: 'Step 5: <span class="font-medium">Enable Cloud Sync (Recommended)</span>',
         description:
-          'Want to sync across your phone and computer? Click the "Google Drive Sync" button in the footer to seamlessly sync your tasks across devices using AES-256 encrypted storage.',
+          'Want to sync across your phone and computer? Enable **Set & Forget Cloud Sync** (or Google Drive Sync) to seamlessly sync your tasks across devices using AES-256 encrypted storage.',
         icon: 'tabler:cloud-upload',
       },
     ]}
@@ -74,6 +74,31 @@ const metadata = {
     </div>
 
     <div class="prose prose-lg dark:prose-invert max-w-none">
+      <h3>🔄 Dual Skins: Task Manager vs. Simple Voice Notes</h3>
+      <p>
+        123 ToDo features a 1-tap skin switcher at the top of the header bar: <code>[ 📋 Tasks | 🎙️ Voice Notes ]</code
+        >.
+      </p>
+      <ul>
+        <li>
+          <strong>Task Manager Mode</strong>: Full 4-level priority matrix (P1 Must Do, P2 Should Do, P3 Could Do, P4 On
+          Hold) with subtask checklists, due dates, custom project tabs, and attached notes.
+        </li>
+        <li>
+          <strong>Simple Voice Notes Mode</strong>: Extra-large text view tailored for field work, builders,
+          contractors, and on-site note taking. Allows rapid hands-free dictation into an <strong
+            >Unassigned Inbox</strong
+          >.
+        </li>
+        <li>
+          <strong>Unified Note/Task Model</strong>: Every note added via the Notes view is stored directly as a <strong
+            >Task</strong
+          > in 123 ToDo's unified data system. The entry content forms the task item in your Unassigned Inbox, allowing you
+          to easily assign projects, attach additional notes, create subtask checklists, set due dates, or assign priority
+          levels (P1–P4) whenever you choose to triage your list.
+        </li>
+      </ul>
+
       <h3>🎯 Priority System & Collapsible Sections</h3>
       <p>
         123 ToDo uses a 4-level priority system to help you focus on what matters most, complete with instant
@@ -596,12 +621,12 @@ const metadata = {
       {
         title: 'Can I sync between devices?',
         description:
-          'YES! We offer a powerful **Google Drive Sync** feature. It connects directly to your personal Google Drive to sync your tasks seamlessly across all your devices. Best of all, it features AES-256-GCM zero-knowledge encryption, meaning your tasks are fully encrypted before they ever leave your device.',
+          'YES! We offer **Set & Forget Cloud Sync** (powered by Cloudflare D1 serverless edge database) as well as **Google Drive Sync**. Both features use AES-256-GCM zero-knowledge encryption, meaning your tasks and notes are encrypted with your personal passphrase before leaving your device.',
       },
       {
-        title: 'Why does Google Sync ask for logon frequently on my iPhone/iPad PWA?',
+        title: 'How does Set & Forget Cloud Sync solve iPhone/iPad PWA login drops?',
         description:
-          'Due to iOS security policies, downloaded PWAs (Home Screen apps) on iPhone/iPad cannot share cookies with Safari. While the browser version and Android/Desktop PWAs will automatically renew your Google credentials silently in the background, iPhone/iPad PWA users will be prompted to re-login once their 1-hour session expires. To avoid this, we recommend using the standard web version of the app directly in Safari or Chrome on iOS.',
+          'Unlike traditional Google Drive OAuth logins that expire every hour in iOS PWAs, **Set & Forget Cloud Sync** uses a persistent, encrypted session key and instant 5-second 6-digit device pairing codes. You pair your iPhone once and stay connected seamlessly with zero re-login prompts!',
       },
       {
         title: 'Is my data safe on mobile?',

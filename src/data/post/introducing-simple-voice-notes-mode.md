@@ -26,7 +26,7 @@ Today, we're thrilled to launch **123 ToDo v3.0**, featuring our brand-new **Dua
 
 ## What is Simple Voice Notes Mode?
 
-Simple Voice Notes Mode is a brand-new, high-contrast, large-text interface specifically tailored for rapid, hands-free field capture.
+Simple Voice Notes Mode is a high-contrast, large-text interface specifically tailored for rapid, hands-free field capture.
 
 Key highlights of the new skin include:
 
@@ -34,21 +34,22 @@ Key highlights of the new skin include:
 
 - Read your notes effortlessly in bright sunlight or on the go with 18px–20px text scaling and high-contrast card borders.
 
-### 2. Giant Floating Mic Button (Hands-Free Mode)
+### 2. Instant Voice Dictation Controls & Spoken Commands
 
-- A prominent 64px mic button sits at the bottom-right of your screen.
-- Tap once to start continuous dictation across silence pauses. Speak your notes naturally, including spoken punctuation ("full stop", "comma", "question mark") and automatic capitalization.
-- Say _"Save Note"_ or _"Add Note"_ to complete a note hands-free and immediately keep speaking for the next note.
+- Dictate notes naturally using the dedicated red **"Talk"** microphone button on the note card or the header microphone button.
+- Continuous speech recognition listens across silence pauses. Speak punctuation naturally ("full stop", "comma", "question mark") with automatic capitalization and live voice editing ("scratch that", "delete last word").
+- Say _"Save Note"_, _"Add Note"_, or _"Add Task"_ to submit your entry hands-free and immediately keep speaking for the next item.
 
-### 3. Unassigned Inbox (Capture Now, Organize Later)
+### 3. Unassigned Inbox & Unified Task Model
 
-- All quick notes land in an **Unassigned Inbox**. Capture wall measurements, material reminders, site safety notes, or client calls continuously throughout the day without interrupting your flow.
+- Every entry created in Simple Voice Notes Mode is stored directly as a **Task** within 123 ToDo's unified data engine.
+- Notes land in your **Unassigned Inbox** with their dictated content stored as the task text. Capture wall measurements, material reminders, site safety notes, or client calls continuously throughout the day without interrupting your flow.
 
 ### 4. End-of-Day Project Triage & Task Elevation
 
 - When you return to your desk at the end of the day:
   - **Assign Projects**: Move single or batch-selected notes into custom projects (e.g. _Site A_, _Materials_, _Client B_) with 1 tap.
-  - **Turn into Tasks**: Convert any note into a prioritized task (`P1 Must Do`, `P2 Should Do`, or `P3 Could Do`) instantly.
+  - **Elevate & Add Details**: Because every note is actually a full Task under the hood, you can attach detailed subnotes, add subtask checklists, set due dates, or assign priority levels (`P1 Must Do`, `P2 Should Do`, `P3 Could Do`, or `P4 On Hold`) instantly.
 
 ---
 
@@ -58,7 +59,7 @@ You can switch between **Task Manager Mode** and **Simple Voice Notes Mode** at 
 
 Because all notes and tasks live in the **same unified dataset**, switching views is instantaneous:
 
-- A note created on site in Voice Notes Mode appears in Task Manager Mode with its full description intact.
+- A note created on site in Voice Notes Mode appears in Task Manager Mode as an actionable task ready for priority tagging.
 - A task created in Task Manager Mode displays cleanly in Notes Mode.
 
 ---

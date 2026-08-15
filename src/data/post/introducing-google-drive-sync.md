@@ -2,7 +2,7 @@
 publishDate: 2026-08-15T00:00:00Z
 title: 'Dual Encrypted Cloud Sync: Google Drive & 123ToDo Zero-Knowledge Engine'
 excerpt: 'Keep your tasks backed up and synced seamlessly across all your devices using either 123ToDo Zero-Knowledge Cloud Sync (Cloudflare D1) or Google Drive AppData Sync.'
-image: ~/assets/images/blog-launch-rocket.svg
+image: ~/assets/images/blog-dual-cloud-sync.jpg
 category: Announcements
 tags:
   - launch

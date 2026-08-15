@@ -3,14 +3,14 @@ import { Icon } from 'astro-icon/components';
 import { SITE } from 'astrowind:config';
 import { getHomePermalink } from '~/utils/permalinks';
 
-interface Link {
+export interface Link {
   text?: string;
   href?: string;
   ariaLabel?: string;
   icon?: string;
 }
 
-interface Links {
+export interface Links {
   title?: string;
   links: Array<Link>;
 }
@@ -26,23 +26,24 @@ export interface Props {
 const { socialLinks = [], links = [], footNote = '', theme = 'light' } = Astro.props;
 ---
 
-<footer class:list={[{ dark: theme === 'dark' }, 'relative border-t border-gray-200 dark:border-slate-800 not-prose']}>
+<footer
+  class:list={[{ relative: true, dark: theme === 'dark' }, 'border-t border-gray-200 dark:border-slate-800 not-prose']}
+>
   <div class="dark:bg-dark absolute inset-0 pointer-events-none" aria-hidden="true"></div>
-  <div
-    class="relative max-w-7xl mx-auto px-4 sm:px-6 dark:text-slate-300 intersect-once intersect-quarter intersect-no-queue motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
-  >
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 dark:text-slate-300">
     <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12">
       <div class="col-span-12 lg:col-span-4">
         <div class="mb-2">
-          <a class="inline-block" href={getHomePermalink()}>
-            <img src="/123-logo-500px.jpg" alt={SITE?.name || '123 ToDo'} style="width: 150px;" class="h-auto" />
-          </a>
+          <a class="inline-block font-bold text-xl" href={getHomePermalink()}>{SITE?.name}</a>
+        </div>
+        <div class="text-sm text-muted dark:text-gray-400">
+          The free, privacy-first task manager with end-to-end encryption, zero tracking, and 100% offline support.
         </div>
       </div>
       {
         links.map(({ title, links }) => (
           <div class="col-span-6 md:col-span-3 lg:col-span-2">
-            <div class="dark:text-gray-300 font-medium mb-2">{title}</div>
+            <div class="dark:text-gray-200 font-semibold mb-2">{title}</div>
             {links && Array.isArray(links) && links.length > 0 && (
               <ul class="text-sm">
                 {links.map(({ text, href, ariaLabel }) => (
@@ -63,9 +64,9 @@ const { socialLinks = [], links = [], footNote = '', theme = 'light' } = Astro.p
       }
     </div>
 
-    <!-- Friendly Social Sharing Callout Banner -->
+    <!-- Pass It On / Social Share Callout Bar -->
     <div
-      class="my-6 p-6 rounded-2xl bg-gradient-to-r from-blue-50 to-purple-50 dark:from-slate-800/80 dark:to-slate-800/40 border border-blue-100 dark:border-slate-700/60 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left"
+      class="my-6 p-4 rounded-xl bg-slate-100 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/60 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left"
     >
       <div>
         <h4
@@ -74,13 +75,13 @@ const { socialLinks = [], links = [], footNote = '', theme = 'light' } = Astro.p
           <span>😊 If it's helped you, it might help someone else too</span>
         </h4>
         <p class="text-xs md:text-sm text-slate-600 dark:text-slate-300 mt-1">
-          No hard sell — just pass it on if you think a friend or colleague might find it useful. It's free, no signup,
-          no faff.
+          No hard sell — just pass it on if you think a friend or colleague might find it useful. Completely free.
         </p>
       </div>
       <div class="flex items-center gap-2 flex-wrap justify-center">
+        <!-- X (Twitter) -->
         <button
-          class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 transition shadow-sm cursor-pointer"
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:border-slate-400 hover:text-slate-900 dark:hover:text-white transition shadow-sm cursor-pointer"
           title="Share on X (Twitter)"
           data-aw-social-share="twitter"
           data-aw-url="https://www.123todo.com"
@@ -88,6 +89,8 @@ const { socialLinks = [], links = [], footNote = '', theme = 'light' } = Astro.p
         >
           <Icon name="tabler:brand-x" class="w-4 h-4" /> Share on X
         </button>
+
+        <!-- WhatsApp -->
         <button
           class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:border-green-400 hover:text-green-600 dark:hover:text-green-400 transition shadow-sm cursor-pointer"
           title="Share on WhatsApp"
@@ -97,6 +100,19 @@ const { socialLinks = [], links = [], footNote = '', theme = 'light' } = Astro.p
         >
           <Icon name="tabler:brand-whatsapp" class="w-4 h-4 text-green-500" /> WhatsApp
         </button>
+
+        <!-- Facebook -->
+        <button
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 transition shadow-sm cursor-pointer"
+          title="Share on Facebook"
+          data-aw-social-share="facebook"
+          data-aw-url="https://www.123todo.com"
+          data-aw-text="Been using 123 ToDo to stay on top of things — it's free, no sign-up, and genuinely helps. Thought you might find it useful! 👉 www.123todo.com"
+        >
+          <Icon name="tabler:brand-facebook" class="w-4 h-4 text-blue-500" /> Facebook
+        </button>
+
+        <!-- LinkedIn -->
         <button
           class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:border-blue-600 hover:text-blue-700 dark:hover:text-blue-400 transition shadow-sm cursor-pointer"
           title="Share on LinkedIn"
@@ -106,6 +122,63 @@ const { socialLinks = [], links = [], footNote = '', theme = 'light' } = Astro.p
         >
           <Icon name="tabler:brand-linkedin" class="w-4 h-4 text-blue-600" /> LinkedIn
         </button>
+
+        <!-- Reddit -->
+        <button
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:border-orange-500 hover:text-orange-600 dark:hover:text-orange-400 transition shadow-sm cursor-pointer"
+          title="Share on Reddit"
+          data-aw-social-share="reddit"
+          data-aw-url="https://www.123todo.com"
+          data-aw-text="123 ToDo - Free Privacy-First Task Manager & Notes App"
+        >
+          <Icon name="tabler:brand-reddit" class="w-4 h-4 text-orange-500" /> Reddit
+        </button>
+
+        <!-- Telegram -->
+        <button
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:border-sky-500 hover:text-sky-600 dark:hover:text-sky-400 transition shadow-sm cursor-pointer"
+          title="Share on Telegram"
+          data-aw-social-share="telegram"
+          data-aw-url="https://www.123todo.com"
+          data-aw-text="Been using 123 ToDo to stay on top of things — free & private! 👉 www.123todo.com"
+        >
+          <Icon name="tabler:brand-telegram" class="w-4 h-4 text-sky-500" /> Telegram
+        </button>
+
+        <!-- Threads -->
+        <button
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:border-slate-400 hover:text-slate-900 dark:hover:text-white transition shadow-sm cursor-pointer"
+          title="Share on Threads"
+          data-aw-social-share="threads"
+          data-aw-url="https://www.123todo.com"
+          data-aw-text="Been using 123 ToDo to stay on top of things — free & private! 👉 www.123todo.com"
+        >
+          <Icon name="tabler:brand-threads" class="w-4 h-4" /> Threads
+        </button>
+
+        <!-- Bluesky -->
+        <button
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:border-blue-400 hover:text-blue-500 transition shadow-sm cursor-pointer"
+          title="Share on Bluesky"
+          data-aw-social-share="bluesky"
+          data-aw-url="https://www.123todo.com"
+          data-aw-text="Been using 123 ToDo to stay on top of things — free & private! 👉 www.123todo.com"
+        >
+          <Icon name="tabler:cloud" class="w-4 h-4 text-blue-400" /> Bluesky
+        </button>
+
+        <!-- Pinterest -->
+        <button
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:border-red-600 hover:text-red-600 transition shadow-sm cursor-pointer"
+          title="Share on Pinterest"
+          data-aw-social-share="pinterest"
+          data-aw-url="https://www.123todo.com"
+          data-aw-text="123 ToDo - Free Simple Task Management & Priority Matrix"
+        >
+          <Icon name="tabler:brand-pinterest" class="w-4 h-4 text-red-600" /> Pinterest
+        </button>
+
+        <!-- Copy Link -->
         <button
           class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:border-slate-400 hover:text-slate-900 dark:hover:text-white transition shadow-sm cursor-pointer"
           title="Copy Link"

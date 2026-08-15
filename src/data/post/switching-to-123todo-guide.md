@@ -2,7 +2,7 @@
 publishDate: 2026-08-15T00:00:00Z
 title: 'Why Switching to 123 ToDo is the Ultimate Upgrade (60-Second Migration Guide)'
 excerpt: 'Discover why thousands are switching to 123 ToDo for zero-knowledge privacy, server backups, 100% offline PWA freedom, and 1-click imports from Todoist, TickTick, Google Keep, Google Tasks, and MS To Do.'
-image: ~/assets/images/blog-launch-rocket.svg
+image: ~/assets/images/blog-migration-guide.jpg
 category: Guides
 tags:
   - migration

@@ -3,9 +3,10 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Features2 from '~/components/widgets/Features2.astro';
 
 const metadata = {
-  title: 'About Us',
+  title: 'About 123 ToDo — Privacy-First, Zero-Knowledge Task & Notes Engine',
 };
 ---
 
@@ -13,8 +14,8 @@ const metadata = {
   <!-- Hero Section -->
   <Hero
     image={{
-      src: '~/assets/images/sad-female.jpg',
-      alt: 'Frustrated with complex productivity tools',
+      src: '~/assets/images/screenshot-123todo-1.png',
+      alt: '123 ToDo Task Manager Application Interface',
     }}
   >
     <Fragment slot="title">
@@ -23,7 +24,8 @@ const metadata = {
 
     <Fragment slot="subtitle">
       <span class="text-lg">
-        A privacy-first task manager built for people who value simplicity and control over their data.
+        The free, privacy-first task manager and voice note engine built for people who demand simplicity, zero data
+        lock-in, and 100% zero-knowledge encryption over their data.
       </span>
     </Fragment>
   </Hero>
@@ -31,173 +33,247 @@ const metadata = {
   <!-- Our Story -->
   <Content
     tagline="Our Story"
-    title="Why we built 123 ToDo"
+    title="Why We Built 123 ToDo"
     items={[]}
     image={{
-      src: '~/assets/images/about-story.svg',
-      alt: 'Lightbulb moment - the idea behind 123 ToDo',
+      src: '~/assets/images/new_grab.jpg',
+      alt: '123 ToDo Priority Matrix and Custom Project Workspace UI Grab',
     }}
   >
     <Fragment slot="content">
       <p class="text-lg mb-6">
-        In a world where every app wants your email, tracks your behavior, and stores your data in the cloud, we asked a
-        simple question: <span class="font-semibold">Why can't task management be simpler?</span>
+        In a digital landscape where mainstream productivity apps track your activity, store unencrypted task data on
+        commercial cloud servers, and charge aggressive monthly subscription fees, we asked a fundamental question: <span
+          class="font-semibold text-primary dark:text-blue-400"
+          >Why can't task management be fast, private, and free?</span
+        >
       </p>
 
       <p class="text-lg mb-6">
-        123 ToDo was born from frustration with overcomplicated productivity tools that promise the world but deliver
-        bloat, subscription fees, and privacy concerns. We believe task management should be:
+        123 ToDo was engineered to eliminate software fatigue. We stripped away database configuration bloat,
+        subscription paywalls, and intrusive tracking scripts to build an application grounded in core principles:
       </p>
 
-      <ul class="text-lg mb-6 space-y-2 list-disc list-inside">
-        <li><span class="font-semibold">Fast</span> - No waiting for cloud sync or page loads</li>
-        <li><span class="font-semibold">Private</span> - Your tasks stay on your device, period</li>
-        <li><span class="font-semibold">Simple</span> - Powerful features without overwhelming complexity</li>
-        <li><span class="font-semibold">Free</span> - No subscriptions, no paywalls, no premium tiers</li>
+      <ul class="text-lg mb-6 space-y-3 list-none">
+        <li class="flex items-start gap-2">
+          <span class="text-emerald-500 font-bold text-xl">✓</span>
+          <span
+            ><strong class="font-semibold">⚡ Fast & Offline-First:</strong> Powered by Progressive Web App (PWA) technology,
+            launching in milliseconds with 100% offline capability.</span
+          >
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-emerald-500 font-bold text-xl">✓</span>
+          <span
+            ><strong class="font-semibold">🛡️ 100% Zero-Knowledge Encryption:</strong> Your tasks and notes are encrypted
+            client-side using AES-256-GCM before leaving your device.</span
+          >
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-emerald-500 font-bold text-xl">✓</span>
+          <span
+            ><strong class="font-semibold">🎙️ Dual Skin Versatility:</strong> Seamless 1-tap toggle between structured Task
+            Management and high-contrast Simple Voice Notes dictation.</span
+          >
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-emerald-500 font-bold text-xl">✓</span>
+          <span
+            ><strong class="font-semibold">🎁 100% Free Forever:</strong> No premium tiers, no hidden paywalls, no feature
+            restrictions.</span
+          >
+        </li>
       </ul>
-
-      <p class="text-lg mb-6">
-        So we built it. A Progressive Web App that works offline, respects your privacy, and helps you get things done
-        without getting in your way.
-      </p>
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-blue-50/50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
-  <!-- Our Mission -->
+  <!-- Dual Skins & Voice AI Dictation -->
   <Content
     isReversed
-    tagline="Our Mission"
-    title="Building tools that respect users"
+    tagline="Field & Desk Versatility"
+    title="Dual Skins & Hands-Free AI Voice Dictation"
     items={[]}
     image={{
-      src: '~/assets/images/about-mission.svg',
-      alt: 'Target and arrow - our focused mission',
+      src: '~/assets/images/Notes_grab.png',
+      alt: '123 ToDo Simple Voice Notes Mode and Hands-Free Dictation Canvas UI Grab',
     }}
   >
     <Fragment slot="content">
       <p class="text-lg mb-6">
-        Our mission is to create productivity tools that put users first - not advertisers, not investors, not data
-        brokers. Just you and your tasks.
+        Whether you are working at a desk or inspecting a job site in the field, 123 ToDo adapts to your environment
+        through our **Dual Skin Operating System**:
       </p>
 
-      <h3 class="text-xl font-bold mb-3">What we believe:</h3>
+      <div class="space-y-4 mb-6 text-slate-700 dark:text-slate-300">
+        <div class="p-4 bg-white dark:bg-slate-800 rounded-lg shadow-sm border border-slate-200 dark:border-slate-700">
+          <h4 class="font-bold text-primary dark:text-blue-400 mb-1">📋 Task Manager Mode</h4>
+          <p class="text-sm">
+            Features our structured P1–P4 priority matrix (Must Do, Should Do, Could Do, On Hold), custom color-coded
+            project streams, drag-and-drop reordering, subtask checklists, and strategic due dates.
+          </p>
+        </div>
 
-      <p class="text-lg mb-4">
-        <span class="font-semibold">Privacy is a right, not a feature.</span><br />
-        Your tasks, goals, and daily activities reveal intimate details about your life. We believe this information belongs
-        to you alone.
-      </p>
-
-      <p class="text-lg mb-4">
-        <span class="font-semibold">Simple beats complex.</span><br />
-        The best tool is one you'll actually use. We prioritize clarity and speed over endless features most people never
-        touch.
-      </p>
-
-      <p class="text-lg mb-4">
-        <span class="font-semibold">Local-first is better.</span><br />
-        Your device is more reliable and faster than any cloud server. By storing data locally, 123 ToDo works anywhere,
-        anytime - no internet required.
-      </p>
-
-      <p class="text-lg mb-4">
-        <span class="font-semibold text-accent dark:text-white">Free means free.</span><br />
-        No "freemium" tricks, no artificial limits. If we built it, you can use it - fully and forever.
-      </p>
-
-      <p class="text-lg mb-4">
-        <span class="font-semibold text-accent dark:text-white">Accessibility is non-negotiable.</span><br />
-        We believe technology should be legible and usable for everyone. We standardized our typography to a comfortable
-        1.1rem base to ensure an excellent experience on all screen sizes.
-      </p>
+        <div class="p-4 bg-white dark:bg-slate-800 rounded-lg shadow-sm border border-slate-200 dark:border-slate-700">
+          <h4 class="font-bold text-amber-600 dark:text-amber-400 mb-1">🎙️ Simple Voice Notes Mode</h4>
+          <p class="text-sm">
+            High-contrast, large-text dictation interface designed for trade contractors, builders, and field work. Tap
+            the red <strong>Talk</strong> button for continuous dictation with spoken punctuation, live voice editing commands
+            (<em>"scratch that"</em>, <em>"delete last word"</em>), and hands-free submission directly into an
+            Unassigned Inbox.
+          </p>
+        </div>
+      </div>
     </Fragment>
   </Content>
 
-  <!-- The Team -->
+  <!-- Zero-Knowledge Security & Cloud Sync -->
   <Content
-    tagline="The Team"
-    title="Who we are"
+    tagline="Privacy & Cloud Sync"
+    title="Zero-Knowledge Security & E2EE Cloud Sync"
     items={[]}
     image={{
-      src: '~/assets/images/about-team.svg',
-      alt: 'Community of developers and users',
+      src: '~/assets/images/blog-zero-knowledge.jpg',
+      alt: '123 ToDo Zero-Knowledge Encryption Shield and Encrypted Device Pairing',
     }}
   >
     <Fragment slot="content">
       <p class="text-lg mb-6">
-        123 ToDo is created and maintained by independent developers who care about building ethical software. We're not
-        a venture-backed startup racing to monetize users. We're people who use this app daily and want to share it with
-        others.
+        We believe privacy is a fundamental human right. Unlike cloud services that store plaintext tasks on corporate
+        servers, 123 ToDo encrypts all your data on your local device using **AES-256-GCM client-side encryption**.
+        Neither 123 ToDo, Cloudflare, Google, nor third parties can read your task titles or notes.
       </p>
 
-      <p class="text-lg mb-6">
-        This project is supported entirely by its users. If you find value in 123 ToDo, the best way to support us is
-        to:
-      </p>
+      <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">Dual Encrypted Sync Options:</h3>
 
-      <ul class="text-lg mb-6 space-y-2 list-disc list-inside">
-        <li>Share it with friends and colleagues who value privacy</li>
-        <li>Provide feedback on features and improvements</li>
-        <li>Report bugs and help us make it better</li>
-        <li>Spread the word about privacy-first software</li>
+      <ul class="space-y-3 text-base text-slate-700 dark:text-slate-300 mb-6">
+        <li class="flex items-start gap-2">
+          <span class="text-blue-500 font-bold">⚡</span>
+          <span
+            ><strong>123ToDo Cloud Sync (Default):</strong> Powered by Cloudflare D1 serverless edge database with 5-second
+            6-digit device pairing codes. Eliminates 1-hour session expiration drops and WebKit PWA storage wipes on iOS
+            devices.</span
+          >
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-blue-500 font-bold">📁</span>
+          <span
+            ><strong>Google Drive AppData Sync:</strong> Syncs encrypted payloads directly to your personal Google account's
+            hidden AppData folder.</span
+          >
+        </li>
       </ul>
-
-      <p class="text-lg">Thank you for being part of the 123 ToDo community.</p>
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-blue-50/50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Universal Importer & Zero Lock-In -->
+  <Features2
+    tagline="Data Freedom"
+    title="Universal Migration & Zero Lock-In Guarantee"
+    subtitle="Switch away from subscription tools in seconds and maintain 100% data portability."
+    items={[
+      {
+        title: 'Universal Multi-App Importer',
+        description:
+          '1-click migration wizard for Todoist (CSV), TickTick (Backup CSV), Google Keep (Takeout JSON), Google Tasks (Takeout JSON), and Microsoft To Do (CSV). Preserves all notes, subtasks, and priority levels.',
+        icon: 'tabler:file-import',
+      },
+      {
+        title: 'Zero Truncation Guarantee',
+        description:
+          'Unlimited text notes field capacity. Task descriptions and SOP notes are imported in full and never cut off when editing.',
+        icon: 'tabler:notes',
+      },
+      {
+        title: 'Zero Data Lock-In Export',
+        description:
+          'Export your complete workspace dataset as a structured .json backup file anytime in 3 clicks (Settings ⚙️ ➔ Export Backup Data).',
+        icon: 'tabler:download',
+      },
+      {
+        title: '24-Hour Automated Shadow Backups',
+        description:
+          'Local snapshot engine creates automated daily local restore points. Recover your entire workspace in 1 click if accidental deletions occur.',
+        icon: 'tabler:history',
+      },
+    ]}
+  />
+
+  <!-- Automated Service Worker Updates -->
+  <Content
+    isReversed
+    tagline="Reliability & PWA"
+    title="Automated Updates & Offline Reliability"
+    items={[]}
+    image={{
+      src: '~/assets/images/updates.png',
+      alt: '123 ToDo Automated Version Updates & Shadow Backup Modal UI Grab',
+    }}
+  >
+    <Fragment slot="content">
+      <p class="text-lg mb-6">
+        123 ToDo is engineered as a **Progressive Web App (PWA)** that installs directly onto iOS, Android, macOS, or
+        Windows home screens.
+      </p>
+
+      <p class="text-lg mb-6">
+        Automated background version monitoring constantly checks `version.json` and prompts you when an update is ready
+        (<em>"🚀 New version available! Click to update now"</em>). The service worker reloads instantly with **zero
+        downtime, zero data loss, and zero app store waiting cycles**.
+      </p>
+
+      <div
+        class="p-4 bg-emerald-50 dark:bg-emerald-950/40 rounded-xl border border-emerald-200 dark:border-emerald-800 text-sm text-emerald-900 dark:text-emerald-200"
+      >
+        <strong>💡 Persistent Storage Guarantee:</strong> 123 ToDo uses the browser Storage Manager API to request persistent
+        local storage permissions, protecting your offline tasks and daily shadow backups against automatic browser eviction.
+      </div>
     </Fragment>
   </Content>
 
   <!-- Technology -->
   <Content
-    isReversed
-    tagline="Technology"
-    title="Built with modern web standards"
+    tagline="Technology Stack"
+    title="Built on Modern Open Standards"
     items={[
       {
-        title: 'Progressive Web App (PWA)',
-        description: 'Install on any device and use like a native app. Works offline with full functionality.',
+        title: 'React 19 Engine',
+        description: 'Blazing fast, reactive rendering with zero lag across desktop and mobile devices.',
       },
       {
-        title: 'React 19',
-        description: 'Built with the latest React for smooth, responsive performance and excellent user experience.',
+        title: 'Client-Side Web Crypto API',
+        description: 'Standardized browser cryptography providing hardware-accelerated AES-256-GCM encryption.',
       },
       {
-        title: 'Browser localStorage',
+        title: 'Cloudflare D1 Serverless Edge',
+        description: 'Distributed global edge database delivering sub-500ms encrypted multi-device synchronization.',
+      },
+      {
+        title: 'Web Speech API',
         description:
-          'All data stored locally in your browser using standard Web Storage API. No servers, no databases.',
-      },
-      {
-        title: 'Open Standards',
-        description: 'Built with web standards that work everywhere. Export your data anytime as standard JSON.',
-      },
-      {
-        title: 'Storage Manager API',
-        description:
-          'We use the latest Storage APIs to request persistent storage, ensuring your device prioritizes 123 ToDo data.',
+          'Native browser speech recognition with real-time spoken punctuation and live voice editing commands.',
       },
     ]}
     image={{
       src: '~/assets/images/about-technology.svg',
-      alt: 'Modern web technology and code',
+      alt: 'Modern Web Standards and Security Stack',
     }}
   >
     <Fragment slot="content">
       <p class="text-lg mb-6">
-        123 ToDo leverages modern web technologies to deliver a fast, reliable experience without compromising on
-        privacy or requiring complex infrastructure.
+        By leveraging modern browser capabilities, service workers, and serverless edge databases, 123 ToDo delivers
+        enterprise-grade performance and security while remaining lightweight, fast, and completely free.
       </p>
-
-      <p class="text-lg">
-        By using browser localStorage and service workers, we can offer offline functionality and instant load times
-        while keeping your data entirely under your control.
-      </p>
+    </Fragment>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50/50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
@@ -214,6 +290,8 @@ const metadata = {
   >
     <Fragment slot="title"> Ready to take control of your tasks? </Fragment>
 
-    <Fragment slot="subtitle"> Join users who've chosen privacy and simplicity. No signup required. </Fragment>
+    <Fragment slot="subtitle">
+      Join users who've chosen privacy, simplicity, and zero data lock-in. No signup required.
+    </Fragment>
   </CallToAction>
 </Layout>

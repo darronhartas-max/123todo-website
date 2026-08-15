@@ -358,38 +358,55 @@ const metadata = {
       </ul>
       <p>Milestones reset daily at midnight, giving you fresh motivation every day.</p>
 
-      <h3 id="todoist-migration">📦 Data Import & Migration</h3>
+      <h3 id="todoist-migration">📦 Universal Multi-Competitor Data Import & Migration</h3>
 
       <div class="my-6 p-6 bg-slate-50 dark:bg-slate-800/60 rounded-xl border border-slate-200 dark:border-slate-700">
         <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2">
-          <span>📋 Todoist Multi-Project CSV Migration Guide</span>
+          <span>📋 1-Click Migration from Todoist, TickTick, Google Keep, Google Tasks & MS To Do</span>
         </h4>
         <p class="text-slate-600 dark:text-slate-300 mb-4">
-          Migrating your tasks and projects from Todoist to 123 ToDo is quick, seamless, and safe. Review the detailed
-          steps below before starting your migration:
+          Migrating your tasks, notes, checklists, and projects to 123 ToDo is quick, seamless, and safe. Our <strong
+            >Universal Importer Wizard</strong
+          > parses exported backup files from all major task & note apps:
         </p>
 
         <div class="space-y-4 mb-6">
           <div class="p-4 bg-white dark:bg-slate-900/80 rounded-lg border border-slate-200 dark:border-slate-700">
             <h5 class="font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-2">
-              <span class="bg-red-500 text-white text-xs px-2 py-0.5 rounded font-bold">STEP 1</span>
-              <span>Export CSV Files from Todoist</span>
+              <span class="bg-blue-600 text-white text-xs px-2 py-0.5 rounded font-bold">STEP 1</span>
+              <span>Export Files from Your Current App</span>
             </h5>
-            <ol class="list-decimal pl-5 space-y-1 text-slate-600 dark:text-slate-300 text-sm">
-              <li>Open <strong>Todoist</strong> on your desktop browser or desktop app.</li>
-              <li>Navigate to the Project you want to export.</li>
+            <ul class="list-disc pl-5 space-y-1.5 text-slate-600 dark:text-slate-300 text-sm">
               <li>
-                Click the <strong>three dots (...)</strong> menu icon in the top-right corner of the project header.
+                <strong>Todoist:</strong> Open a Project ➔ Click <code>(...)</code> menu ➔ Select <strong
+                  >Export as CSV</strong
+                >.
               </li>
-              <li>Select <strong>Export as CSV</strong> and save the file to your computer.</li>
-              <li><em>Repeat for any additional projects you wish to migrate into 123 ToDo.</em></li>
-            </ol>
+              <li>
+                <strong>TickTick:</strong> Open Settings ➔ Go to <strong>Backup & Export</strong> ➔ Click <strong
+                  >Export Backup CSV</strong
+                >.
+              </li>
+              <li>
+                <strong>Google Keep:</strong> Visit <code>takeout.google.com</code> ➔ Select <strong>Keep</strong> ➔ Click
+                <strong>Create Export</strong> (downloads JSON note files).
+              </li>
+              <li>
+                <strong>Google Tasks:</strong> Visit <code>takeout.google.com</code> ➔ Select <strong>Tasks</strong> ➔ Click
+                <strong>Create Export</strong> (downloads <code>Tasks.json</code>).
+              </li>
+              <li>
+                <strong>Microsoft To Do:</strong> Open Outlook/To Do Settings ➔ Select <strong
+                  >Export Account Data CSV</strong
+                >.
+              </li>
+            </ul>
           </div>
 
           <div class="p-4 bg-white dark:bg-slate-900/80 rounded-lg border border-slate-200 dark:border-slate-700">
             <h5 class="font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-2">
-              <span class="bg-red-500 text-white text-xs px-2 py-0.5 rounded font-bold">STEP 2</span>
-              <span>Upload CSV Files to 123 ToDo</span>
+              <span class="bg-blue-600 text-white text-xs px-2 py-0.5 rounded font-bold">STEP 2</span>
+              <span>Open the 123 ToDo Universal Importer</span>
             </h5>
             <ol class="list-decimal pl-5 space-y-1 text-slate-600 dark:text-slate-300 text-sm">
               <li>
@@ -400,23 +417,23 @@ const metadata = {
                   class="text-blue-600 hover:underline">app.123todo.com</a
                 > and click the <strong>Import</strong> button in the footer.
               </li>
-              <li>Select <strong>Todoist Export</strong> from the import options modal.</li>
+              <li>Select <strong>Import from Other Apps</strong> from the selection modal.</li>
               <li>
-                Drag & drop your exported <strong>.csv</strong> files into the upload dropzone (or click to select them from
-                your computer).
+                Select your source app tab and drag & drop your <strong>.csv</strong> or <strong>.json</strong> files into
+                the upload dropzone (or select multiple files at once).
               </li>
             </ol>
           </div>
 
           <div class="p-4 bg-white dark:bg-slate-900/80 rounded-lg border border-slate-200 dark:border-slate-700">
             <h5 class="font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-2">
-              <span class="bg-red-500 text-white text-xs px-2 py-0.5 rounded font-bold">STEP 3</span>
+              <span class="bg-blue-600 text-white text-xs px-2 py-0.5 rounded font-bold">STEP 3</span>
               <span>Map Projects & Confirm Import</span>
             </h5>
             <p class="text-slate-600 dark:text-slate-300 text-sm">
-              123 ToDo automatically parses your CSV files and suggests matching existing project names. You can choose
-              whether to assign imported tasks to existing color-coded projects or automatically create brand new
-              projects.
+              123 ToDo automatically parses your files, detects task titles, note descriptions, priority levels, due
+              dates, and checklist items. Choose whether to assign tasks to existing projects or create brand new
+              color-coded projects automatically!
             </p>
           </div>
         </div>
@@ -429,45 +446,64 @@ const metadata = {
             <li class="flex items-start gap-1.5">
               <span class="text-green-500 font-bold">✓</span>
               <span
-                ><strong>Unlimited Text Capacity:</strong> Todoist task titles & descriptions of any length are imported
-                in full into Unlimited Notes.</span
+                ><strong>Unlimited Text Capacity:</strong> Task titles, body descriptions, & note text of any length are
+                imported in full.</span
               >
             </li>
             <li class="flex items-start gap-1.5">
               <span class="text-green-500 font-bold">✓</span>
               <span
-                ><strong>No Truncation on Edit:</strong> Notes & details are never capped or cut off when editing tasks later
-                in 123 ToDo.</span
+                ><strong>No Truncation on Edit:</strong> Notes & details are never capped or cut off when editing tasks later.</span
               >
             </li>
             <li class="flex items-start gap-1.5">
               <span class="text-green-500 font-bold">✓</span>
-              <span><strong>Due Dates:</strong> Todoist dates formatted as <code>📅 Due: ...</code></span>
+              <span
+                ><strong>Priorities & Due Dates:</strong> Mapped cleanly to P1-P4 priority matrix and date schedules.</span
+              >
             </li>
             <li class="flex items-start gap-1.5">
               <span class="text-green-500 font-bold">✓</span>
-              <span><strong>Subtask Hierarchy:</strong> Subtasks indented cleanly with <code>↳</code></span>
+              <span
+                ><strong>Subtasks & Checklists:</strong> Imported as interactive checklists and indented subtask trees.</span
+              >
             </li>
           </ul>
         </div>
       </div>
 
-      <p><strong>Importing 123 ToDo Backups:</strong></p>
+      <p><strong>Importing 123 ToDo Backups & Shadow Snapshots:</strong></p>
       <ol>
         <li>Click the "Import" button in the footer</li>
-        <li>Select "123 ToDo Backup"</li>
-        <li>Choose your previously exported JSON file</li>
+        <li>Select "123 ToDo Backup" or "Restore Shadow Backup"</li>
+        <li>Choose your previously saved JSON file or daily automated local snapshot</li>
       </ol>
 
       <p>
-        <strong>⚠️ Important:</strong> Importing data will merge or replace your current tasks depending on the source. Export
-        your current data first if you want to keep a secondary copy!
+        <strong>⚠️ Important:</strong> Importing data will merge your imported items into your current task workspace safely.
       </p>
 
       <h3>☁️ Cross-Device Cloud Sync (Set & Forget)</h3>
       <p>
         123 ToDo features a powerful, friction-free synchronization system that lets you access your tasks across all
         your devices (iPhones, Android phones, tablets, laptops, and desktop computers).
+      </p>
+
+      <h3>⚡ Automated Version Updates & Instant Service Worker Sync</h3>
+      <p>
+        123 ToDo automatically checks for new software releases (such as version 3.3.1) in the background. When an
+        update is deployed, a notification prompt will notify you with a single-click update button:
+      </p>
+      <div class="my-6 text-center">
+        <img
+          src="/updates.png"
+          alt="123 ToDo Automated Version Update Notification"
+          class="rounded-xl border border-slate-200 dark:border-slate-700 shadow-lg mx-auto max-w-xl w-full"
+        />
+      </div>
+      <p>
+        Clicking the update prompt reloads the service worker instantly, giving you immediate access to new features and
+        performance enhancements with zero data loss or setup required.
       </p>
       <ul>
         <li>

@@ -2,7 +2,7 @@
 publishDate: 2026-08-11T00:00:00Z
 title: 'Introducing Dual Skins: Simple Voice Notes & Task Manager in One'
 excerpt: 'Discover 123 ToDo v3.0! Featuring a new Voice Notes skin designed for builders, contractors, and field work, with instant hands-free dictation, unassigned inbox capture, and 1-tap task conversion.'
-image: ~/assets/images/happy-at-desk.jpg
+image: ~/assets/images/blog-voice-notes-mode.jpg
 category: Announcements
 tags:
   - launch

@@ -2,7 +2,7 @@
 publishDate: 2026-08-15T09:00:00Z
 title: '123ToDo Review: The Free, Privacy-First Productivity Engine That Proves Less Really Is More'
 excerpt: 'A comprehensive tech editor evaluation of 123ToDo v3.3.1: discover why professionals, business owners, and busy individuals are switching to this free, zero-knowledge encrypted, voice-powered task & notes engine.'
-image: ~/assets/images/blog-tech-editor-review.svg
+image: ~/assets/images/blog-editor-review.jpg
 category: Reviews
 tags:
   - review

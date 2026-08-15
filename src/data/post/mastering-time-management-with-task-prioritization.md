@@ -2,7 +2,7 @@
 publishDate: 2025-10-15T00:00:00Z
 title: 'Mastering Time Management: The Power of Task Prioritization'
 excerpt: 'Discover how a simple priority-based task management system can transform your productivity and help you focus on what truly matters.'
-image: ~/assets/images/blog-prioritization.svg
+image: ~/assets/images/blog-prioritization.jpg
 category: Tips & Tricks
 tags:
   - productivity

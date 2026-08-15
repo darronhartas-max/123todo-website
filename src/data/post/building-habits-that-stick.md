@@ -2,7 +2,7 @@
 publishDate: 2025-10-22T00:00:00Z
 title: 'Building Habits That Stick: Why You Give Up and How to Finally Break the Cycle'
 excerpt: 'You start strong, then fade away. Sound familiar? Discover the science of habit formation and proven strategies to build routines that last - even with minimal time.'
-image: ~/assets/images/blog-habits-chain.svg
+image: ~/assets/images/blog-habits-stick.jpg
 category: Tips & Tricks
 tags:
   - habits

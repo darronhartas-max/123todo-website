@@ -9,9 +9,10 @@ import { getPermalink } from '~/utils/permalinks';
 
 export interface Props {
   post: Post;
+  loading?: 'lazy' | 'eager';
 }
 
-const { post } = Astro.props;
+const { post, loading = 'lazy' } = Astro.props;
 const image = await findImage(post.image);
 
 const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : '';
@@ -34,7 +35,7 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
               alt={post.title}
               aspectRatio="16:9"
               layout="cover"
-              loading="lazy"
+              loading={loading}
               decoding="async"
             />
           </a>
@@ -48,7 +49,7 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
             alt={post.title}
             aspectRatio="16:9"
             layout="cover"
-            loading="lazy"
+            loading={loading}
             decoding="async"
           />
         ))

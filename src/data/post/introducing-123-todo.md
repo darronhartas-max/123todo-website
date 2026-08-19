@@ -35,19 +35,19 @@ We believe task management shouldn't be this complicated - or invasive.
 
 123 ToDo takes a radically different approach:
 
-### = Privacy-First by Design
+### 🛡️ Privacy-First by Design
 
 All your tasks are stored locally in your browser. Nothing is sent to our servers. We use **zero tracking**, **zero cookies**, and **zero analytics**. We literally cannot see your tasks or how you use the app.
 
 This isn't just a privacy feature - it's our core architecture. Your data never leaves your device.
 
-### =� Works Offline, Anywhere
+### ⚡ Works Offline, Anywhere
 
 Since everything runs locally, 123 ToDo works perfectly offline. Install it as a Progressive Web App (PWA) on your phone or desktop, and use it anywhere - on a plane, in the subway, or in the middle of nowhere.
 
 Internet connection optional.
 
-### <� Priority-Based Organization
+### 🎯 Priority-Based Organization
 
 Stay focused with our 4-level priority system:
 
@@ -66,15 +66,15 @@ Capture ideas 5x faster with built-in voice dictation. Speak tasks and notes nat
 
 Sync your tasks seamlessly across iPhone, Android, Mac, and PC. Data is encrypted locally with military-grade AES-256-GCM before saving to the cloud. Stay connected forever with zero 1-hour OAuth drops, 100% Safari PWA compatibility, and 5-second 6-digit device pairing.
 
-### 🏆 Motivation Built-In
+### 🏆 Motivation Built-In: 10-Tier Milestones & Daily Streaks
 
-Completing tasks feels good. We make it feel even better with achievement milestones at 5, 10, and 15 completed tasks per day. Small celebrations keep you motivated without being annoying.
+Completing tasks feels good. We make it feel even better with our 10-tier level progression, Productivity Points (+10 task, +2 subtask, +15 streak), and daily streaks. Advance from Focused Starter to 123 Immortal!
 
-### = Your Data, Your Control
+### 💾 Your Data, Your Control
 
 Export your tasks to JSON anytime. Import on another device. Keep backups wherever you want. You own your data - not us.
 
-### <� Actually Free
+### 💸 Actually Free
 
 No "freemium" tricks. No subscription upsells. No artificial limits. Every feature we build is available to everyone, forever.
 
@@ -148,7 +148,7 @@ If 123 ToDo helps you stay organized and productive, the best way to support us 
 
 Ready to take control of your tasks and your data?
 
-**[Start using 123 ToDo �](https://app.123todo.com)**
+**[Start using 123 ToDo ➔](https://app.123todo.com)**
 
 No signup. No tracking. No credit card. Just open it and start organizing.
 
@@ -175,4 +175,4 @@ A: Technical users can inspect the code. Non-technical users can use browser dev
 
 Welcome to 123 ToDo. We hope it helps you get more done with less stress.
 
-**[Get started at app.123todo.com �](https://app.123todo.com)**
+**[Get started at app.123todo.com ➔](https://app.123todo.com)**

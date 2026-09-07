@@ -66,6 +66,29 @@ const metadata = {
     </Fragment>
   </Hero>
 
+  <!-- New Feature Promo Banner -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 -mt-4 mb-8">
+    <a
+      href="/introducing-photo-attachments"
+      class="flex flex-col sm:flex-row items-center justify-between gap-3 p-4 bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-600 rounded-2xl text-white shadow-lg shadow-blue-500/20 hover:shadow-xl hover:scale-[1.01] transition duration-200"
+    >
+      <div class="flex items-center gap-3">
+        <span
+          class="bg-white/20 text-white text-xs uppercase font-bold tracking-wider px-2.5 py-1 rounded-full border border-white/30 backdrop-blur-sm"
+          >NEW v3.6.0</span
+        >
+        <span class="font-medium text-sm sm:text-base"
+          >📸 Photo Attachments are here! Snap site photos, receipts &amp; paste screen grabs (Cmd+V) directly into
+          Notes.</span
+        >
+      </div>
+      <span
+        class="text-xs sm:text-sm font-semibold bg-white text-blue-700 px-3.5 py-1.5 rounded-xl whitespace-nowrap flex items-center gap-1 shadow-sm"
+        >Read Announcement &rarr;</span
+      >
+    </a>
+  </div>
+
   <!-- Non-Technical Life Benefits Section -->
   <section
     class="relative bg-gradient-to-b from-blue-50/70 to-white dark:from-slate-900/60 dark:to-slate-900 not-prose py-12 md:py-16 border-y border-slate-100 dark:border-slate-800"
@@ -216,6 +239,12 @@ const metadata = {
         icon: 'tabler:transform',
       },
       {
+        title: '📸 Photo Attachments &amp; Clipboard Screen Grabs',
+        description:
+          'Attach up to 3 photos per note! Capture site photos and receipts directly via camera on mobile, drag-and-drop, or paste screenshots instantly from your clipboard (Cmd+V / Ctrl+V) with full-screen Lightbox zoom.',
+        icon: 'tabler:photo',
+      },
+      {
         title: '🎤 Continuous Voice Dictation &amp; Spoken Commands',
         description:
           'Dictate tasks & notes naturally on the go. Auto-formats spoken punctuation ("comma", "full stop"), auto-capitalizes sentences, and auto-saves hands-free by saying "add task" or "add note".',
@@ -343,6 +372,15 @@ const metadata = {
               <td class="p-4 text-slate-500">Tasks Only</td>
               <td class="p-4 text-slate-500">Tasks Only</td>
               <td class="p-4 text-slate-500">Separate Apps</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-semibold">Photo Attachments &amp; Screenshots</td>
+              <td class="p-4 font-bold text-emerald-600 dark:text-emerald-400 bg-blue-50/60 dark:bg-blue-950/40"
+                >Included Free (Camera, Drag &amp; Drop, ⌘V Paste, Lightbox)</td
+              >
+              <td class="p-4 text-slate-500">Paid Plan Only ($4–$6/mo)</td>
+              <td class="p-4 text-slate-500">Limited / Paid Plan</td>
+              <td class="p-4 text-slate-500">Separate Image Notes</td>
             </tr>
             <tr>
               <td class="p-4 font-semibold">Voice Dictation &amp; Auto-Commands</td>

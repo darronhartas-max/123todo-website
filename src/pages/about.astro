@@ -3,7 +3,9 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import Features2 from '~/components/widgets/Features2.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+import { Icon } from 'astro-icon/components';
 
 const metadata = {
   title: 'About 123 ToDo — Privacy-First, Zero-Knowledge Task & Notes Engine',
@@ -173,38 +175,243 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Universal Importer & Zero Lock-In -->
-  <Features2
-    tagline="Data Freedom"
-    title="Universal Migration & Zero Lock-In Guarantee"
-    subtitle="Switch away from subscription tools in seconds and maintain 100% data portability."
-    items={[
-      {
-        title: 'Universal Multi-App Importer',
-        description:
-          '1-click migration wizard for Todoist (CSV), TickTick (Backup CSV), Google Keep (Takeout JSON), Google Tasks (Takeout JSON), and Microsoft To Do (CSV). Preserves all notes, subtasks, and priority levels.',
-        icon: 'tabler:file-import',
-      },
-      {
-        title: 'Zero Truncation Guarantee',
-        description:
-          'Unlimited text notes field capacity. Task descriptions and SOP notes are imported in full and never cut off when editing.',
-        icon: 'tabler:notes',
-      },
-      {
-        title: 'Zero Data Lock-In Export',
-        description:
-          'Export your complete workspace dataset as a structured .json backup file anytime in 3 clicks (Settings ⚙️ ➔ Export Backup Data).',
-        icon: 'tabler:download',
-      },
-      {
-        title: '24-Hour Automated Shadow Backups',
-        description:
-          'Local snapshot engine creates automated daily local restore points. Recover your entire workspace in 1 click if accidental deletions occur.',
-        icon: 'tabler:history',
-      },
-    ]}
-  />
+  <!-- Universal Importer & Zero Lock-In (Data Freedom) - Fluid Pipeline & Editorial Stream (No Tiles) -->
+  <WidgetWrapper containerClass="max-w-6xl mx-auto py-12 md:py-16">
+    <Headline
+      tagline="Data Freedom"
+      title="Universal Migration & Zero Lock-In Guarantee"
+      subtitle="Switch away from subscription tools in seconds and maintain 100% data portability."
+      classes={{
+        container: 'max-w-3xl mx-auto text-center mb-12',
+        title: 'text-3xl md:text-4xl font-bold tracking-tight mb-4 font-heading',
+        subtitle: 'text-lg text-muted dark:text-slate-400',
+      }}
+    />
+
+    <!-- Interactive Data Freedom Flow Strip -->
+    <div
+      class="mb-14 p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-blue-500/5 via-primary/10 to-emerald-500/5 dark:from-blue-900/20 dark:via-slate-800/60 dark:to-emerald-900/20 border border-blue-200/60 dark:border-blue-800/40 shadow-sm backdrop-blur-sm"
+    >
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+        <div class="flex items-center gap-4">
+          <div
+            class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center text-blue-600 dark:text-blue-300 font-bold shrink-0 shadow-sm"
+          >
+            <Icon name="tabler:file-import" class="w-6 h-6" />
+          </div>
+          <div>
+            <div class="text-xs uppercase tracking-wider font-semibold text-blue-600 dark:text-blue-400">
+              Step 1: Ingest
+            </div>
+            <div class="font-bold text-slate-900 dark:text-white">Import from Any App</div>
+            <div class="text-xs text-muted dark:text-slate-400">Todoist, TickTick, Keep, MS To Do</div>
+          </div>
+        </div>
+
+        <div class="hidden md:flex items-center text-slate-300 dark:text-slate-600">
+          <Icon name="tabler:arrow-narrow-right" class="w-8 h-8" />
+        </div>
+
+        <div class="flex items-center gap-4">
+          <div
+            class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-900/50 flex items-center justify-center text-emerald-600 dark:text-emerald-300 font-bold shrink-0 shadow-sm"
+          >
+            <Icon name="tabler:shield-check" class="w-6 h-6" />
+          </div>
+          <div>
+            <div class="text-xs uppercase tracking-wider font-semibold text-emerald-600 dark:text-emerald-400">
+              Step 2: Preserve
+            </div>
+            <div class="font-bold text-slate-900 dark:text-white">Zero Truncation Core</div>
+            <div class="text-xs text-muted dark:text-slate-400">Unlimited text, AES-256 local encrypted</div>
+          </div>
+        </div>
+
+        <div class="hidden md:flex items-center text-slate-300 dark:text-slate-600">
+          <Icon name="tabler:arrow-narrow-right" class="w-8 h-8" />
+        </div>
+
+        <div class="flex items-center gap-4">
+          <div
+            class="w-12 h-12 rounded-xl bg-amber-100 dark:bg-amber-900/50 flex items-center justify-center text-amber-600 dark:text-amber-300 font-bold shrink-0 shadow-sm"
+          >
+            <Icon name="tabler:lock-open" class="w-6 h-6" />
+          </div>
+          <div>
+            <div class="text-xs uppercase tracking-wider font-semibold text-amber-600 dark:text-amber-400">
+              Step 3: Sovereignty
+            </div>
+            <div class="font-bold text-slate-900 dark:text-white">100% Data Ownership</div>
+            <div class="text-xs text-muted dark:text-slate-400">1-click JSON export & 24h shadow backups</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Editorial Feature Stream (Divided Rows, No Tiles) -->
+    <div class="space-y-10">
+      <!-- Item 1: Multi-App Importer -->
+      <div class="flex flex-col md:flex-row md:items-start gap-6 pb-10 border-b border-slate-200 dark:border-slate-800">
+        <div class="flex items-center gap-4 md:w-1/3 shrink-0">
+          <div
+            class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 flex items-center justify-center shrink-0"
+          >
+            <Icon name="tabler:file-import" class="w-6 h-6" />
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Universal Multi-App Importer</h3>
+            <span
+              class="inline-block mt-1 text-xs font-semibold px-2.5 py-0.5 rounded-full bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800"
+              >1-Click Migration</span
+            >
+          </div>
+        </div>
+        <div class="md:w-2/3">
+          <p class="text-base text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+            Migrate from existing task managers in seconds without losing your work history. Our built-in import wizard
+            automatically parses formats, re-maps priorities (P1–P4), and reconstructs full nested subtask hierarchies.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-1">
+            <span
+              class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700"
+            >
+              <span class="w-2 h-2 rounded-full bg-red-500"></span> Todoist (CSV)
+            </span>
+            <span
+              class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700"
+            >
+              <span class="w-2 h-2 rounded-full bg-amber-500"></span> TickTick (Backup CSV)
+            </span>
+            <span
+              class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700"
+            >
+              <span class="w-2 h-2 rounded-full bg-yellow-500"></span> Google Keep (Takeout JSON)
+            </span>
+            <span
+              class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700"
+            >
+              <span class="w-2 h-2 rounded-full bg-blue-500"></span> Google Tasks (Takeout JSON)
+            </span>
+            <span
+              class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700"
+            >
+              <span class="w-2 h-2 rounded-full bg-cyan-500"></span> Microsoft To Do (CSV)
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2: Zero Truncation Guarantee -->
+      <div class="flex flex-col md:flex-row md:items-start gap-6 pb-10 border-b border-slate-200 dark:border-slate-800">
+        <div class="flex items-center gap-4 md:w-1/3 shrink-0">
+          <div
+            class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0"
+          >
+            <Icon name="tabler:notes" class="w-6 h-6" />
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Zero Truncation Guarantee</h3>
+            <span
+              class="inline-block mt-1 text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800"
+              >Infinite Text Capacity</span
+            >
+          </div>
+        </div>
+        <div class="md:w-2/3">
+          <p class="text-base text-slate-600 dark:text-slate-300 leading-relaxed mb-3">
+            Many task tools silently cut off your task descriptions, truncate notes beyond 500 characters, or block
+            typing when editing imported data. 123 ToDo has <strong>zero character limits</strong> on note fields.
+          </p>
+          <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-300">
+            <li class="flex items-center gap-2">
+              <span class="text-emerald-500 font-bold">✓</span> Store multi-page checklists, complex standard operating procedures
+              (SOPs), and long meeting minutes.
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-emerald-500 font-bold">✓</span> Full text rendering with actionable telephone numbers, email
+              addresses, and clickable URLs.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Item 3: Zero Data Lock-In Export -->
+      <div class="flex flex-col md:flex-row md:items-start gap-6 pb-10 border-b border-slate-200 dark:border-slate-800">
+        <div class="flex items-center gap-4 md:w-1/3 shrink-0">
+          <div
+            class="w-12 h-12 rounded-xl bg-amber-100 dark:bg-amber-900/40 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0"
+          >
+            <Icon name="tabler:download" class="w-6 h-6" />
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Zero Data Lock-In Export</h3>
+            <span
+              class="inline-block mt-1 text-xs font-semibold px-2.5 py-0.5 rounded-full bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-800"
+              >Open Standard JSON</span
+            >
+          </div>
+        </div>
+        <div class="md:w-2/3">
+          <p class="text-base text-slate-600 dark:text-slate-300 leading-relaxed mb-3">
+            Your life and projects should never be held hostage by a software vendor. At any time, you can export your
+            entire workspace dataset with 3 clicks (<code
+              class="text-xs font-mono bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 rounded text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700"
+              >Settings ⚙️ ➔ Export Backup Data</code
+            >).
+          </p>
+          <p class="text-sm text-slate-500 dark:text-slate-400">
+            Generates clean, human-readable, schema-valid JSON that you can inspect in any text editor, archive to
+            offline drives, or ingest into custom scripts.
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 4: 24-Hour Automated Shadow Backups -->
+      <div class="flex flex-col md:flex-row md:items-start gap-6">
+        <div class="flex items-center gap-4 md:w-1/3 shrink-0">
+          <div
+            class="w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-900/40 text-purple-600 dark:text-purple-400 flex items-center justify-center shrink-0"
+          >
+            <Icon name="tabler:history" class="w-6 h-6" />
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">24-Hour Shadow Backups</h3>
+            <span
+              class="inline-block mt-1 text-xs font-semibold px-2.5 py-0.5 rounded-full bg-purple-100 dark:bg-purple-950 text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-800"
+              >Autonomous Safety Net</span
+            >
+          </div>
+        </div>
+        <div class="md:w-2/3">
+          <p class="text-base text-slate-600 dark:text-slate-300 leading-relaxed mb-3">
+            Accidents happen. That's why 123 ToDo includes an automated local snapshot engine. Every 24 hours, an
+            immutable recovery checkpoint of your active and archived tasks is recorded safely inside local browser
+            storage.
+          </p>
+          <p class="text-sm text-slate-500 dark:text-slate-400">
+            Roll back your workspace to yesterday's snapshot with a single click — no internet connection or customer
+            support tickets required.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Sovereignty Guarantee Banner -->
+    <div
+      class="mt-14 p-6 rounded-2xl bg-slate-50 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left shadow-sm"
+    >
+      <div
+        class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0"
+      >
+        <Icon name="tabler:shield-lock" class="w-6 h-6" />
+      </div>
+      <div class="text-sm text-slate-600 dark:text-slate-300">
+        <strong class="text-slate-900 dark:text-white font-semibold">The 123 ToDo Data Sovereignty Promise:</strong> We never
+        harvest your data, sell ads, or charge subscription fees to access or export your information. What you write stays
+        yours, always.
+      </div>
+    </div>
+  </WidgetWrapper>
 
   <!-- Automated Service Worker Updates -->
   <Content

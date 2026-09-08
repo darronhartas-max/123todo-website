@@ -9,7 +9,7 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 const metadata = {
   title: '123 ToDo - Free Task Manager, Daily To-Do List App & Voice Notes App (Best Todoist & TickTick Alternative)',
   description:
-    '123 ToDo is a fast, 100% free task manager and to-do list app with voice notes, subtasks, daily streaks, zero-knowledge encryption, and 1-click migration from Todoist, TickTick, Google Keep, and Microsoft To Do.',
+    '123 ToDo is a fast, 100% free task manager and to-do list app with voice notes, photo attachments, subtasks, daily streaks, zero-knowledge encryption, and 1-click migration from Todoist, TickTick, Google Keep, and Microsoft To Do.',
   ignoreTitleTemplate: true,
   openGraph: {
     images: [
@@ -49,19 +49,21 @@ const metadata = {
     }}
   >
     <Fragment slot="title">
-      123 ToDo — The Free, Private <br />
-      <span class="text-accent dark:text-white highlight">Task Manager &amp; To-Do List App</span>
+      123 ToDo — The Free, Private<br class="hidden sm:inline" />
+      <span class="text-accent dark:text-white highlight inline-block">Task Manager &amp; To-Do List&nbsp;App</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="text-lg">
-        The simple, stress-free way to organize your day, track your to-do lists, and clear mental clutter. <br />
+      <span class="text-lg text-balance block max-w-3xl mx-auto">
+        The simple, stress-free way to organize your day, track your to-do lists, and clear mental clutter. <br
+          class="hidden sm:inline"
+        />
         <span class="font-semibold text-accent dark:text-white"
-          >Zero-Knowledge Cloud Sync across iPhone, Android, Mac &amp; PC with complete data privacy.</span
+          >Zero-Knowledge Cloud Sync across iPhone, Android, Mac &amp; PC with complete data&nbsp;privacy.</span
         >
         <span class="text-purple-600 dark:text-purple-400 font-bold underline decoration-2 underline-offset-4"
           >100% FREE.</span
-        > The ultimate private alternative to Todoist, TickTick, Google Keep, and Microsoft To Do.
+        > The ultimate private alternative to Todoist, TickTick, Google Keep, and Microsoft To&nbsp;Do.
       </span>
     </Fragment>
   </Hero>
@@ -77,9 +79,9 @@ const metadata = {
           class="bg-white/20 text-white text-xs uppercase font-bold tracking-wider px-2.5 py-1 rounded-full border border-white/30 backdrop-blur-sm"
           >NEW v3.6.0</span
         >
-        <span class="font-medium text-sm sm:text-base"
-          >📸 Photo Attachments are here! Snap site photos, receipts &amp; paste screen grabs (Cmd+V) directly into
-          Notes.</span
+        <span class="font-medium text-sm sm:text-base text-balance"
+          >📸 Photo Attachments are here! Snap site photos, receipts &amp; paste screen grabs (Cmd+V) directly
+          into&nbsp;Notes.</span
         >
       </div>
       <span
@@ -89,6 +91,47 @@ const metadata = {
     </a>
   </div>
 
+  <!-- Dual Skins Showcase (Moved up right after hero/banner for immediate visual impact) -->
+  <Content
+    tagline="Versatile Operating System"
+    title="One Free App, Two Powerful Modes"
+    items={[
+      {
+        title: '🎙️ Simple Voice Notes Mode',
+        description:
+          'Extra-large text, high contrast, and rapid voice dictation controls designed for builders, contractors, and busy professionals on site. Speak measurements, materials, or updates hands-free without worrying about project tagging upfront.',
+      },
+      {
+        title: '📋 Task Manager Mode',
+        description:
+          'Structured priority matrix (Must Do P1, Should Do P2, Could Do P3, On Hold P4) with subtask checklists, due dates, drag-and-drop reordering, and attached notes.',
+      },
+      {
+        title: '🔄 Unified Cross-Platform Dataset',
+        description:
+          'Switch skins at will with a 1-tap header toggle. All notes and tasks live in the exact same dataset and sync automatically across all your devices via zero-knowledge Cloudflare D1 or Google Drive sync.',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/Notes_grab.png',
+      alt: '123 ToDo Dual Skins feature showing Task Manager Mode and Simple Voice Notes Mode',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2 text-balance">
+        Designed for both field work &amp; office&nbsp;focus
+      </h3>
+      <p class="text-lg text-balance">
+        Whether you are on a construction site taking quick site measurements or at your desk planning your week, 123
+        ToDo adapts to your workflow seamlessly.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50/50 dark:bg-slate-900/50"></div>
+    </Fragment>
+  </Content>
+
   <!-- Non-Technical Life Benefits Section -->
   <section
     class="relative bg-gradient-to-b from-blue-50/70 to-white dark:from-slate-900/60 dark:to-slate-900 not-prose py-12 md:py-16 border-y border-slate-100 dark:border-slate-800"
@@ -96,12 +139,14 @@ const metadata = {
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="text-center max-w-3xl mx-auto mb-10 md:mb-14">
         <p class="text-base text-accent dark:text-blue-400 font-bold tracking-wide uppercase">Why Choose 123 ToDo?</p>
-        <h2 class="text-3xl md:text-5xl font-bold font-heading tracking-tight text-heading dark:text-white mt-2 mb-4">
-          Turn Daily Chaos into Calm &amp; Clarity
+        <h2
+          class="text-3xl md:text-5xl font-bold font-heading tracking-tight text-heading dark:text-white mt-2 mb-4 text-balance"
+        >
+          Turn Daily Chaos into Calm &amp;&nbsp;Clarity
         </h2>
-        <p class="text-xl text-muted dark:text-slate-300">
+        <p class="text-xl text-muted dark:text-slate-300 max-w-2xl mx-auto text-balance">
           Discover how effortless organization frees your mind, eliminates daily overwhelm, and helps you reclaim
-          control over your time.
+          control over your&nbsp;time.
         </p>
       </div>
 
@@ -126,7 +171,7 @@ const metadata = {
               <path d="M12 7v5l3 3"></path>
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">De-Stress Your Mind</h3>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 text-balance">De-Stress Your&nbsp;Mind</h3>
           <p class="text-muted dark:text-slate-300 leading-relaxed text-sm md:text-base flex-1">
             Stop keeping tasks trapped in your head. Offload to-dos instantly into organized lists so you can relax,
             focus, and enjoy your day without burnout.
@@ -154,7 +199,9 @@ const metadata = {
               <circle cx="12" cy="12" r="2"></circle>
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Clear Daily 1-2-3 Priorities</h3>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 text-balance">
+            Clear Daily 1-2-3&nbsp;Priorities
+          </h3>
           <p class="text-muted dark:text-slate-300 leading-relaxed text-sm md:text-base flex-1">
             Focus on what truly matters today using 4 simple buckets: Must Do (P1), Should Do (P2), Could Do (P3), and
             On Hold. Eliminate decision fatigue instantly.
@@ -180,7 +227,7 @@ const metadata = {
               <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Reclaim Free Time</h3>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 text-balance">Reclaim Free&nbsp;Time</h3>
           <p class="text-muted dark:text-slate-300 leading-relaxed text-sm md:text-base flex-1">
             When your day is organized, tasks get done faster. Finish work earlier, avoid last-minute rushes, and make
             room for family, hobbies, and rest.
@@ -206,7 +253,9 @@ const metadata = {
               <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">100% Free, Instant Start</h3>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 text-balance">
+            100% Free, Instant&nbsp;Start
+          </h3>
           <p class="text-muted dark:text-slate-300 leading-relaxed text-sm md:text-base flex-1">
             No registration, no passwords, no email verification, and no credit card required. Open the app and be
             organized in under 60 seconds.
@@ -216,21 +265,25 @@ const metadata = {
     </div>
   </section>
 
-  <!-- Features Section -->
+  <!-- Features Section (Re-ordered with high-utility daily tools first) -->
   <Features
     id="features"
     tagline="Features & Capabilities"
-    title="Everything you need in a modern task manager & to-do app"
-    subtitle="Engineered for ultimate simplicity, zero-knowledge privacy, and daily productivity flow"
+    title="Everything You Need in a Modern To-Do App"
+    subtitle="Engineered for ultimate simplicity, zero-knowledge privacy, and daily productivity flow"
     classes={{
       container: '!py-6 md:!py-8',
+      headline: {
+        title: 'text-3xl md:text-4xl text-balance',
+        subtitle: 'text-xl text-balance max-w-2xl mx-auto',
+      },
     }}
     items={[
       {
-        title: '🏆 10-Tier Milestones & Gamified Productivity Points',
+        title: '📸 Photo Attachments & Clipboard Screen Grabs',
         description:
-          'Earn points (+10 task, +2 subtask, +15 streak) and advance through 10 progressive achievement ranks from Focused Starter 🌱 to 123 Immortal 👑 with milestone badges and streak tracking.',
-        icon: 'tabler:trophy',
+          'Attach up to 3 photos per note! Capture site photos and receipts directly via camera on mobile, drag-and-drop files, or paste screenshots instantly from your clipboard (Cmd+V / Ctrl+V) with full-screen Lightbox zoom.',
+        icon: 'tabler:photo',
       },
       {
         title: '🎙️ Dual Skin Modes: Task Manager vs. Simple Voice Notes',
@@ -239,16 +292,16 @@ const metadata = {
         icon: 'tabler:transform',
       },
       {
-        title: '📸 Photo Attachments & Clipboard Screen Grabs',
-        description:
-          'Attach up to 3 photos per note! Capture site photos and receipts directly via camera on mobile, drag-and-drop, or paste screenshots instantly from your clipboard (Cmd+V / Ctrl+V) with full-screen Lightbox zoom.',
-        icon: 'tabler:photo',
-      },
-      {
         title: '🎤 Continuous Voice Dictation & Spoken Commands',
         description:
           'Dictate tasks & notes naturally on the go. Auto-formats spoken punctuation ("comma", "full stop"), auto-capitalizes sentences, and auto-saves hands-free by saying "add task" or "add note".',
         icon: 'tabler:microphone',
+      },
+      {
+        title: '🛡️ Zero-Knowledge E2EE Cloud Sync',
+        description:
+          'Keep your tasks synchronized in real-time across iPhone, iPad, Android, Mac, and Windows PC. Powered by client-side AES-256-GCM encryption with 6-digit device pairing codes.',
+        icon: 'tabler:shield-lock',
       },
       {
         title: '📋 Drag-and-Drop Subtasks & Line Wrapping',
@@ -257,10 +310,16 @@ const metadata = {
         icon: 'tabler:list-check',
       },
       {
-        title: '🛡️ Zero-Knowledge E2EE Cloud Sync',
+        title: '📅 Smart Scheduling & Next-Day / Next-Week Deferral',
         description:
-          'Keep your tasks synchronized in real-time across iPhone, iPad, Android, Mac, and Windows PC. Powered by client-side AES-256-GCM encryption with 6-digit device pairing codes.',
-        icon: 'tabler:shield-lock',
+          'Schedule tasks for Today, Tomorrow, or specific weekdays with 1-click "Next Day" and "Next Week" quick buttons. Set automated recurring tasks that roll over automatically upon completion.',
+        icon: 'tabler:calendar-repeat',
+      },
+      {
+        title: '🎨 Color-Coded Projects & Kanban Column Views',
+        description:
+          'Organize tasks into custom project folders with custom colors. On desktop wide screens, view your workspace grouped either by Priority tiers or Project Kanban columns.',
+        icon: 'tabler:folder',
       },
       {
         title: '📦 Universal 1-Click Multi-Competitor Importer',
@@ -275,22 +334,16 @@ const metadata = {
         icon: 'tabler:device-mobile-check',
       },
       {
-        title: '📅 Smart Scheduling & Custom Recurrence Rules',
+        title: '🔍 Space-Efficient Note Previews & 2-Line Compact View',
         description:
-          'Schedule tasks for Today, Tomorrow, or specific weekdays. Set automated recurring tasks (e.g., every 3 days, every 2 weeks, or every Monday) that roll over automatically upon completion.',
-        icon: 'tabler:calendar-repeat',
-      },
-      {
-        title: '🎨 Color-Coded Projects & Kanban Column Views',
-        description:
-          'Organize tasks into custom project folders with custom colors. On desktop wide screens, view your workspace grouped either by Priority tiers or Project Kanban columns.',
-        icon: 'tabler:folder',
-      },
-      {
-        title: '🔍 Space-Efficient Note Previews',
-        description:
-          'Tasks with attached notes display a clean single-line preview underneath the title for fast scanning without cluttering your priority lists.',
+          'Choose between a clean 2-line compact task preview or full-length view. Tasks with notes display a space-saving single-line preview underneath the title for effortless scanning.',
         icon: 'tabler:notes',
+      },
+      {
+        title: '🏆 10-Tier Milestones & Gamified Productivity Points',
+        description:
+          'Earn points (+10 task, +2 subtask, +15 streak) and advance through 10 progressive achievement ranks from Focused Starter 🌱 to 123 Immortal 👑 with milestone badges and streak tracking.',
+        icon: 'tabler:trophy',
       },
       {
         title: '🔥 Never-Break-the-Chain Daily Streaks',
@@ -301,23 +354,67 @@ const metadata = {
       {
         title: '💸 100% Free Forever — No Subscriptions',
         description:
-          'Enjoy uncapped tasks, unlimited projects, unlimited note lengths, and full sync features with zero premium paywalls, ads, or tracking.',
+          'Enjoy uncapped tasks, unlimited projects, unlimited note lengths, photo attachments, and full sync features with zero premium paywalls, ads, or tracking.',
         icon: 'tabler:currency-dollar-off',
       },
     ]}
   />
+
+  <!-- How It Works -->
+  <Content
+    isReversed
+    tagline="How It Works"
+    title="Get Organized in 3 Simple Steps"
+    items={[
+      {
+        title: '1. Add Tasks, Photos, or Voice Notes',
+        description:
+          'Quickly type, speak, or snap photos for your tasks. Attach checklist subtasks or rich notes with zero limits.',
+      },
+      {
+        title: '2. Set Daily 1-2-3 Priorities',
+        description:
+          'Organize your workload into Must Do (1), Should Do (2), and Could Do (3) buckets. Drag and drop to reorder tasks or defer with 1 tap.',
+      },
+      {
+        title: '3. Complete, Level Up & Build Streaks',
+        description:
+          'Check off completed tasks to earn Productivity Points, maintain your daily focus streak, and advance through 10 progressive achievement ranks!',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/new_grab.jpg',
+      alt: '123 ToDo app screenshot showing modern task management and priorities',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2 text-balance">
+        No learning curve&nbsp;required
+      </h3>
+      <p class="text-lg text-balance">
+        Start managing your tasks immediately. 123 ToDo is designed to be intuitive and straightforward, so you can
+        focus on getting things done instead of configuring complex software.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
 
   <!-- Competitor Comparison Section: Best Free Alternative -->
   <section class="py-12 md:py-16 bg-slate-50 dark:bg-slate-900/60 border-y border-slate-200 dark:border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="text-center max-w-3xl mx-auto mb-10 md:mb-12">
         <p class="text-base text-accent dark:text-blue-400 font-bold tracking-wide uppercase">App Comparison</p>
-        <h2 class="text-3xl md:text-4xl font-bold font-heading tracking-tight text-heading dark:text-white mt-2 mb-4">
-          Why 123 ToDo is the Best Alternative to Subscription Apps
+        <h2
+          class="text-3xl md:text-4xl font-bold font-heading tracking-tight text-heading dark:text-white mt-2 mb-4 text-balance"
+        >
+          Why 123 ToDo is the Best Free Alternative<br class="hidden sm:inline" /> to Subscription&nbsp;Apps
         </h2>
-        <p class="text-lg text-muted dark:text-slate-300">
+        <p class="text-lg text-muted dark:text-slate-300 max-w-2xl mx-auto text-balance">
           Looking for a free alternative to Todoist, TickTick, Google Keep, or Microsoft To Do? See how 123 ToDo
-          delivers enterprise-grade features without the monthly fees.
+          delivers enterprise-grade features without the monthly&nbsp;fees.
         </p>
       </div>
 
@@ -354,15 +451,6 @@ const metadata = {
               <td class="p-4 text-slate-500">Server Plaintext</td>
               <td class="p-4 text-slate-500">Server Plaintext</td>
               <td class="p-4 text-slate-500">Google Scanned</td>
-            </tr>
-            <tr>
-              <td class="p-4 font-semibold">10-Tier Milestones &amp; Streaks</td>
-              <td class="p-4 font-bold text-emerald-600 dark:text-emerald-400 bg-blue-50/60 dark:bg-blue-950/40"
-                >Included Free (10 Levels)</td
-              >
-              <td class="p-4 text-slate-500">Karma System</td>
-              <td class="p-4 text-slate-500">Achievement Score</td>
-              <td class="p-4 text-slate-500">None</td>
             </tr>
             <tr>
               <td class="p-4 font-semibold">Dual Skins (Tasks + Voice Notes)</td>
@@ -409,97 +497,25 @@ const metadata = {
               <td class="p-4 text-slate-500">Premium Only</td>
               <td class="p-4 text-slate-500">Limited</td>
             </tr>
+            <tr>
+              <td class="p-4 font-semibold">10-Tier Milestones &amp; Streaks</td>
+              <td class="p-4 font-bold text-emerald-600 dark:text-emerald-400 bg-blue-50/60 dark:bg-blue-950/40"
+                >Included Free (10 Levels)</td
+              >
+              <td class="p-4 text-slate-500">Karma System</td>
+              <td class="p-4 text-slate-500">Achievement Score</td>
+              <td class="p-4 text-slate-500">None</td>
+            </tr>
           </tbody>
         </table>
       </div>
     </div>
   </section>
 
-  <!-- Dual Skins Showcase -->
-  <Content
-    tagline="Versatile Operating System"
-    title="One Free App, Two Powerful Modes"
-    items={[
-      {
-        title: '🎙️ Simple Voice Notes Mode',
-        description:
-          'Extra-large text, high contrast, and rapid voice dictation controls designed for builders, contractors, and busy professionals on site. Speak measurements, materials, or updates hands-free without worrying about project tagging upfront.',
-      },
-      {
-        title: '📋 Task Manager Mode',
-        description:
-          'Structured priority matrix (P1 Must Do, P2 Should Do, P3 Could Do, P4 On Hold) with subtask checklists, due dates, drag-and-drop reordering, and attached notes.',
-      },
-      {
-        title: '🔄 Unified Cross-Platform Dataset',
-        description:
-          'Switch skins at will with a 1-tap header toggle. All notes and tasks live in the exact same dataset and sync automatically across all your devices via zero-knowledge Cloudflare D1 or Google Drive sync.',
-      },
-    ]}
-    image={{
-      src: '~/assets/images/Notes_grab.png',
-      alt: '123 ToDo Dual Skins feature showing Task Manager Mode and Simple Voice Notes Mode',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Designed for both field work &amp; office focus
-      </h3>
-      <p class="text-lg">
-        Whether you are on a construction site taking quick site measurements or at your desk planning your week, 123
-        ToDo adapts to your workflow seamlessly.
-      </p>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50/50 dark:bg-slate-900/50"></div>
-    </Fragment>
-  </Content>
-
-  <!-- How It Works -->
-  <Content
-    isReversed
-    tagline="How It Works"
-    title="Get organized in 3 simple steps"
-    items={[
-      {
-        title: '1. Add Your Tasks or Voice Notes',
-        description:
-          'Quickly type or speak tasks with our simple interface. Attach subtask checklists or notes with zero limits.',
-      },
-      {
-        title: '2. Set Daily 1-2-3 Priorities',
-        description:
-          'Organize your workload into Must Do (1), Should Do (2), and Could Do (3) buckets. Drag and drop to reorder tasks or move across categories.',
-      },
-      {
-        title: '3. Complete, Level Up & Build Streaks',
-        description:
-          'Check off completed tasks to earn Productivity Points, maintain your daily focus streak, and advance through 10 progressive achievement ranks!',
-      },
-    ]}
-    image={{
-      src: '~/assets/images/new_grab.jpg',
-      alt: '123 ToDo app screenshot showing modern task management and priorities',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">No learning curve required</h3>
-      <p class="text-lg">
-        Start managing your tasks immediately. 123 ToDo is designed to be intuitive and straightforward, so you can
-        focus on getting things done instead of learning complex software.
-      </p>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
   <!-- Privacy Promise -->
   <Content
     tagline="Privacy First"
-    title="Your data stays 100% yours"
+    title="Your Data Stays 100% Yours"
     items={[
       {
         title: 'Zero-Knowledge Client-Side Encryption',
@@ -523,10 +539,10 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Built for privacy, designed for simplicity
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2 text-balance">
+        Built for privacy, designed for&nbsp;simplicity
       </h3>
-      <p class="text-lg">
+      <p class="text-lg text-balance">
         In an age of constant surveillance and subscription fatigue, 123 ToDo offers a refreshing, 100% free
         alternative. We don't want your data, and we don't need it to provide you with world-class task management.
       </p>
@@ -536,7 +552,7 @@ const metadata = {
   <!-- Latest Blog Posts (Displaying Latest 3 Posts) -->
   <BlogLatestPosts
     count={3}
-    title="Latest from our blog"
+    title="Latest from Our Blog"
     information={`Expert productivity guides, time management strategies, and feature updates.`}
   />
 
@@ -551,10 +567,14 @@ const metadata = {
       },
     ]}
   >
-    <Fragment slot="title"> Ready to simplify your to-do lists? </Fragment>
+    <Fragment slot="title">
+      <span class="text-balance inline-block">Ready to Simplify Your To-Do&nbsp;Lists?</span>
+    </Fragment>
 
     <Fragment slot="subtitle">
-      Start organizing your tasks today. No signup required, zero cost, completely private.
+      <span class="text-balance inline-block"
+        >Start organizing your tasks today. No signup required, zero cost, completely private.</span
+      >
     </Fragment>
   </CallToAction>
 </Layout>

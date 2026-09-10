@@ -14,6 +14,7 @@ interface Link {
   href?: string;
   ariaLabel?: string;
   icon?: string;
+  target?: string;
 }
 
 interface MenuLink extends Link {
@@ -86,7 +87,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
         class="flex flex-col md:flex-row md:self-center w-full md:w-auto text-xl md:text-[0.9375rem] tracking-[0.01rem] font-medium md:justify-center"
       >
         {
-          links.map(({ text, href, links }) => (
+          links.map(({ text, href, target, links }) => (
             <li class={links?.length ? 'dropdown' : ''}>
               {links?.length ? (
                 <>
@@ -98,7 +99,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
                     <Icon name="tabler:chevron-down" class="w-3.5 h-3.5 ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden md:inline" />
                   </button>
                   <ul class="dropdown-menu md:backdrop-blur-md dark:md:bg-dark rounded md:absolute pl-4 md:pl-0 md:hidden font-medium md:bg-white/90 md:min-w-[200px] drop-shadow-xl">
-                    {links.map(({ text: text2, href: href2 }) => (
+                    {links.map(({ text: text2, href: href2, target: target2 }) => (
                       <li>
                         <a
                           class:list={[
@@ -106,6 +107,8 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
                             { 'aw-link-active': href2 === currentPath },
                           ]}
                           href={href2}
+                          target={target2}
+                          rel={target2 === '_blank' ? 'noopener noreferrer' : undefined}
                         >
                           {text2}
                         </a>
@@ -117,10 +120,18 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
                 <a
                   class:list={[
                     'hover:text-link dark:hover:text-white px-4 py-3 flex items-center whitespace-nowrap',
-                    { 'aw-link-active': href === currentPath },
+                    {
+                      'aw-link-active': href === currentPath,
+                      'text-accent dark:text-blue-400 font-bold': href?.includes('app.123todo.com'),
+                    },
                   ]}
                   href={href}
+                  target={target}
+                  rel={target === '_blank' ? 'noopener noreferrer' : undefined}
                 >
+                  {href?.includes('app.123todo.com') && (
+                    <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-2" />
+                  )}
                   {text}
                 </a>
               )}
@@ -128,6 +139,15 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
           ))
         }
       </ul>
+      {
+        actions?.length ? (
+          <div class="md:hidden flex flex-col items-center justify-center p-4 border-t border-slate-200 dark:border-slate-800 mt-2 w-full gap-2">
+            {actions.map((btnProps) => (
+              <Button {...btnProps} class="w-full text-center py-3 px-6 font-bold shadow-md text-base" />
+            ))}
+          </div>
+        ) : null
+      }
     </nav>
     <div
       class:list={[

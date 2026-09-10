@@ -3,6 +3,11 @@ import { getPermalink, getBlogPermalink } from './utils/permalinks';
 export const headerData = {
   links: [
     {
+      text: 'Open App',
+      href: 'https://app.123todo.com',
+      target: '_blank',
+    },
+    {
       text: 'About',
       href: getPermalink('/about'),
     },
@@ -15,7 +20,7 @@ export const headerData = {
       href: getBlogPermalink(),
     },
   ],
-  actions: [{ text: 'Open App', href: 'https://app.123todo.com', target: '_blank' }],
+  actions: [{ text: 'Launch App Free 🚀', href: 'https://app.123todo.com', target: '_blank', variant: 'primary' }],
 };
 
 export const footerData = {

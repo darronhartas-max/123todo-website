@@ -64,7 +64,7 @@ Capture ideas 5x faster with built-in voice dictation. Speak tasks and notes nat
 
 ### ☁️ Set & Forget E2E Encrypted Cloud Sync
 
-Sync your tasks seamlessly across iPhone, Android, Mac, and PC. Data is encrypted locally with military-grade AES-256-GCM before saving to the cloud. Stay connected forever with zero 1-hour OAuth drops, 100% Safari PWA compatibility, and 5-second 6-digit device pairing.
+Sync your tasks seamlessly across iPhone, Android, Mac, and PC. Data is encrypted locally with military-grade AES-256-GCM before saving to the cloud. Stay reliably connected with zero 1-hour OAuth drops, 100% Safari PWA compatibility, and 5-second 6-digit device pairing.
 
 ### 🏆 Motivation Built-In: 10-Tier Milestones & Daily Streaks
 
@@ -74,11 +74,9 @@ Completing tasks feels good. We make it feel even better with our 10-tier level 
 
 Export your tasks to JSON anytime. Import on another device. Keep backups wherever you want. You own your data - not us.
 
-### 💸 Actually Free
+### 💸 Free to Use
 
-No "freemium" tricks. No subscription upsells. No artificial limits. Every feature we build is available to everyone, forever.
-
-If we thought you needed to pay for it, we wouldn't have built it this way.
+No hidden catches. No forced account signups. Enjoy a full-featured, private task manager with offline access and local encryption, completely free to start.
 
 ## How It Works
 
@@ -129,7 +127,7 @@ But we're committed to keeping 123 ToDo simple. We'll only add features that mak
 
 ## A Note on Sustainability
 
-You might be wondering: "How can this be free forever?"
+You might be wondering: "How can 123 ToDo offer such a generous free app?"
 
 Fair question. Here's our thinking:
 
@@ -156,8 +154,8 @@ No signup. No tracking. No credit card. Just open it and start organizing.
 
 ## Questions?
 
-**Q: Is this really completely free?**
-A: Yes. Every feature, forever. No tricks.
+**Q: Is this really free to use?**
+A: Yes. The core application is completely free to use without requiring an account or credit card.
 
 **Q: Can I sync between devices?**
 A: Yes! We offer **Set & Forget Cloud Sync** (powered by Cloudflare D1 serverless edge database) as well as **Google Drive Sync**. Both options utilize AES-256-GCM zero-knowledge encryption, meaning your tasks and notes are fully encrypted with your personal passphrase before leaving your device.
@@ -165,8 +163,8 @@ A: Yes! We offer **Set & Forget Cloud Sync** (powered by Cloudflare D1 serverles
 **Q: What if I lose my data?**
 A: Use the Export feature regularly to backup. We recommend weekly exports. Since data is local-only, we cannot recover it if lost.
 
-**Q: Do you plan to monetize this later?**
-A: We have no plans to add subscriptions, ads, or premium tiers. 123 ToDo will remain free as long as we can afford to host it (which, given the minimal costs, is indefinitely).
+**Q: Will the core app remain free?**
+A: Yes. The core application and your offline local data will always remain free with zero ads. If we ever offer optional Pro power-user features in the future, all core productivity tools will stay completely accessible.
 
 **Q: How can I trust this is private?**
 A: Technical users can inspect the code. Non-technical users can use browser developer tools to verify no network requests are made when using the app (except loading the initial files).

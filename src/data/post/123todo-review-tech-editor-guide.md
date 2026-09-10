@@ -22,7 +22,7 @@ In today’s corporate, small business, and personal productivity landscape, "so
 
 Enter **123ToDo** (now in version 3.3.1) — a lightweight yet remarkably sophisticated task management application designed to strip away administrative bloat while equipping users with the exact tools needed to master their daily agendas.
 
-What makes 123ToDo particularly compelling for both personal and professional users is its price tag: **it is 100% free forever**. However, unlike typical free applications that monetize user data or restrict essential capabilities behind aggressive subscription paywalls, 123ToDo operates on a privacy-first, zero-knowledge architectural model.
+What makes 123ToDo particularly compelling for both personal and professional users is its accessibility: **it is completely free to use**. However, unlike typical free applications that monetize user data or restrict essential capabilities behind aggressive subscription paywalls, 123ToDo operates on a privacy-first, zero-knowledge architectural model.
 
 Below is an in-depth, feature-by-feature evaluation of 123ToDo, detailing the core capabilities of the app and the concrete benefits it delivers to everyday workflows.
 

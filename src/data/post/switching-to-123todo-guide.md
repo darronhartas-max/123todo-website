@@ -49,9 +49,9 @@ Switch effortlessly between two operating skins:
 1. **Task Manager Skin**: Structured P1–P4 priority matrix (Must Do, Should Do, Could Do, On Hold) with subtask checklists and custom project colors.
 2. **Simple Voice Notes Skin**: Hands-free continuous dictation, large high-contrast text, unassigned inbox capture, and 1-tap task conversion — ideal for quick capture on the move.
 
-### 💸 100% Free Forever — Zero Subscriptions
+### 💸 Free to Use — Zero Subscriptions Required
 
-No hidden paywalls, no artificial task limits, no character caps. Everything is free.
+No artificial task limits, no character caps, and no forced account signups. The core task and note manager is completely free.
 
 ---
 

@@ -309,11 +309,11 @@ Remember that dopamine response we discussed? 123 ToDo amplifies it with milesto
 
 These small rewards keep motivation high without being annoying or gimmicky. You're getting psychological reinforcement for building good habits.
 
-### Actually Free
+### Free to Use
 
-No trial periods. No premium features locked away. No subscriptions. Everything you need is available from day one, forever.
+No trial periods. No intrusive ads. Everything you need to manage your day is available from day one, free to use.
 
-Because time management shouldn't require a monthly fee.
+Because essential daily organization shouldn't require a monthly subscription.
 
 ## Real People, Real Transformations
 

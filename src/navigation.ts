@@ -20,9 +20,7 @@ export const headerData = {
       href: getBlogPermalink(),
     },
   ],
-  actions: [
-    { text: 'Launch App Free 🚀', href: 'https://app.123todo.com', target: '_blank', variant: 'primary' as const },
-  ],
+  actions: [{ text: 'Launch App', href: 'https://app.123todo.com', target: '_blank', variant: 'primary' as const }],
 };
 
 export const footerData = {

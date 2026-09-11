@@ -331,12 +331,9 @@ export default function HeroInteractiveDemo() {
                   e.stopPropagation();
                   setIsOpen(true);
                 }}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-500/25 hover:scale-[1.02] transition-all cursor-pointer"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-500/25 hover:scale-[1.02] transition-all cursor-pointer"
               >
-                <span>⚡ Open Interactive Demo Modal</span>
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
+                <span>Open Interactive Demo</span>
               </button>
             </div>
           </div>
@@ -393,7 +390,7 @@ export default function HeroInteractiveDemo() {
             <div className="px-4 sm:px-6 py-3 bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-600 text-white flex flex-col sm:flex-row items-center justify-between gap-2.5 sm:gap-4 shadow-sm flex-shrink-0">
               <div className="text-center sm:text-left">
                 <div className="flex items-center justify-center sm:justify-start gap-1.5 font-bold text-xs sm:text-sm">
-                  <span>🚀 Want to try the REAL 123ToDo App?</span>
+                  <span>Want to try the full 123ToDo App?</span>
                   <span className="bg-white/20 text-[10px] sm:text-xs px-2 py-0.2 rounded-full uppercase tracking-wider">
                     100% Free &amp; Private
                   </span>
@@ -407,9 +404,9 @@ export default function HeroInteractiveDemo() {
                 href="https://app.123todo.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-white text-blue-700 hover:bg-blue-50 shadow-md transition-all whitespace-nowrap cursor-pointer flex-shrink-0 hover:scale-105"
+                className="inline-flex items-center justify-center px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-white text-blue-700 hover:bg-blue-50 shadow-md transition-all whitespace-nowrap cursor-pointer flex-shrink-0 hover:scale-105"
               >
-                <span>Launch REAL App Free ➔</span>
+                <span>Launch App</span>
               </a>
             </div>
 
@@ -843,12 +840,9 @@ export default function HeroInteractiveDemo() {
                   href="https://app.123todo.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-blue-600 hover:bg-blue-700 text-white shadow-md hover:scale-[1.02] transition-all whitespace-nowrap cursor-pointer"
+                  className="inline-flex items-center justify-center px-5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-blue-600 hover:bg-blue-700 text-white shadow-md hover:scale-[1.02] transition-all whitespace-nowrap cursor-pointer"
                 >
-                  <span>Launch REAL App Free</span>
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
+                  <span>Launch App</span>
                 </a>
               </div>
             </div>

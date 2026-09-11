@@ -80,11 +80,31 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
       </div>
     </div>
     <nav
-      class="items-center w-full md:w-auto hidden md:flex md:mx-5 text-default overflow-y-auto overflow-x-hidden md:overflow-y-visible md:overflow-x-auto md:justify-self-center"
+      class="items-center w-full md:w-auto hidden md:flex md:mx-5 text-default overflow-y-auto overflow-x-hidden md:overflow-y-visible md:overflow-x-auto md:justify-self-center px-4 pt-6 pb-12 md:p-0"
       aria-label="Main navigation"
     >
+      <!-- Mobile Header Brand Pill (House Colours) -->
+      <div
+        class="md:hidden flex items-center justify-between pb-3.5 mb-3 border-b border-slate-200/70 dark:border-slate-800/80 px-1 w-full"
+      >
+        <div class="flex items-center gap-2">
+          <span
+            class="flex items-center gap-1.5 bg-slate-100 dark:bg-slate-800/90 py-1 px-2.5 rounded-full border border-slate-200/80 dark:border-slate-700/60"
+          >
+            <span class="w-2 h-2 rounded-full bg-red-500 shadow-sm shadow-red-500/50"></span>
+            <span class="w-2 h-2 rounded-full bg-amber-500 shadow-sm shadow-amber-500/50"></span>
+            <span class="w-2 h-2 rounded-full bg-blue-500 shadow-sm shadow-blue-500/50"></span>
+            <span class="text-[11px] font-bold text-slate-700 dark:text-slate-200 uppercase tracking-wider ml-1"
+              >123 Method</span
+            >
+          </span>
+        </div>
+        <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">Navigation</span
+        >
+      </div>
+
       <ul
-        class="flex flex-col md:flex-row md:self-center w-full md:w-auto text-xl md:text-[0.9375rem] tracking-[0.01rem] font-medium md:justify-center"
+        class="flex flex-col md:flex-row md:self-center w-full md:w-auto text-xl md:text-[0.9375rem] tracking-[0.01rem] font-medium md:justify-center space-y-1.5 md:space-y-0"
       >
         {
           links.map(({ text, href, target, links }) => (
@@ -101,52 +121,147 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
                   </button>
 
                   {/* Mobile Group Category Header */}
-                  <div class="md:hidden px-4 pt-3 pb-1 text-[11px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 border-t border-slate-100 dark:border-slate-800/60 mt-1">
-                    {text}
+                  <div class="md:hidden pt-4 pb-1.5 px-1 flex items-center gap-2.5 mt-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400 dark:bg-slate-500" />
+                    <span class="text-[11px] font-extrabold uppercase tracking-widest text-slate-400 dark:text-slate-500">
+                      {text}
+                    </span>
+                    <div class="h-px bg-slate-200/80 dark:bg-slate-800/80 flex-1" />
                   </div>
 
                   {/* Submenu List (Floating Card on Desktop, Indented on Mobile) */}
-                  <ul class="dropdown-menu md:backdrop-blur-md dark:md:bg-slate-900/95 md:bg-white/95 md:border md:border-slate-200/80 dark:md:border-slate-800 rounded-xl md:absolute pl-2 md:pl-0 md:hidden font-medium md:min-w-[200px] md:shadow-xl md:p-1.5 space-y-0.5">
+                  <ul class="dropdown-menu md:backdrop-blur-md dark:md:bg-slate-900/95 md:bg-white/95 md:border md:border-slate-200/80 dark:md:border-slate-800 rounded-xl md:absolute pl-0 md:hidden font-medium md:min-w-[200px] md:shadow-xl md:p-1.5 space-y-1 bg-slate-50/90 dark:bg-slate-900/60 border border-slate-200/70 dark:border-slate-800/70 p-1.5 my-1">
                     {links.map(({ text: text2, href: href2, target: target2 }) => (
                       <li>
                         <a
                           class:list={[
-                            'rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-link dark:hover:text-white py-2 px-4 md:px-3 block whitespace-nowrap text-base md:text-sm text-slate-700 dark:text-slate-200 transition-colors',
-                            { 'aw-link-active font-semibold text-accent dark:text-blue-400': href2 === currentPath },
+                            'rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-link dark:hover:text-white py-2.5 px-3 md:px-3 flex items-center justify-between whitespace-nowrap text-[15px] md:text-sm text-slate-700 dark:text-slate-200 transition-colors',
+                            {
+                              'aw-link-active font-semibold text-accent dark:text-blue-400 bg-blue-50/70 dark:bg-blue-950/40':
+                                href2 === currentPath,
+                            },
                           ]}
                           href={href2}
                           target={target2}
                           rel={target2 === '_blank' ? 'noopener noreferrer' : undefined}
                         >
-                          {text2}
+                          <span class="flex items-center gap-2.5">
+                            {text2 === 'Report a Bug' && (
+                              <Icon name="tabler:bug" class="w-4 h-4 text-red-500 md:hidden flex-shrink-0" />
+                            )}
+                            {text2 === 'Suggest Enhancement' && (
+                              <Icon name="tabler:bulb" class="w-4 h-4 text-amber-500 md:hidden flex-shrink-0" />
+                            )}
+                            {text2 === 'Terms of Service' && (
+                              <Icon name="tabler:file-text" class="w-4 h-4 text-blue-500 md:hidden flex-shrink-0" />
+                            )}
+                            {text2 === 'Privacy Policy' && (
+                              <Icon
+                                name="tabler:shield-check"
+                                class="w-4 h-4 text-emerald-500 md:hidden flex-shrink-0"
+                              />
+                            )}
+                            <span>{text2}</span>
+                          </span>
+                          <Icon name="tabler:chevron-right" class="w-3.5 h-3.5 text-slate-400 opacity-60 md:hidden" />
                         </a>
                       </li>
                     ))}
                   </ul>
                 </>
+              ) : href?.includes('app.123todo.com') ? (
+                <>
+                  {/* Mobile Standout Open App Card */}
+                  <a
+                    class="md:hidden mt-4 p-3.5 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 text-white font-bold flex items-center justify-between shadow-md shadow-blue-500/25 hover:opacity-95 active:scale-[0.99] transition-all"
+                    href={href}
+                    target={target}
+                    rel={target === '_blank' ? 'noopener noreferrer' : undefined}
+                  >
+                    <div class="flex items-center gap-2.5">
+                      <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
+                      <span class="text-[15px] font-bold tracking-tight">Open 123ToDo App</span>
+                    </div>
+                    <span class="text-xs bg-white/20 text-white px-2.5 py-1 rounded-lg border border-white/30 flex items-center gap-1 font-semibold">
+                      Free
+                      <Icon name="tabler:arrow-up-right" class="w-3.5 h-3.5" />
+                    </span>
+                  </a>
+
+                  {/* Desktop Standard Open App Link */}
+                  <a
+                    class:list={[
+                      'hidden md:flex hover:text-link dark:hover:text-white px-4 py-2.5 md:py-3 items-center whitespace-nowrap text-base md:text-[0.9375rem] transition-colors',
+                      {
+                        'aw-link-active font-semibold': href === currentPath,
+                        'text-accent dark:text-blue-400 font-bold': href?.includes('app.123todo.com'),
+                      },
+                    ]}
+                    href={href}
+                    target={target}
+                    rel={target === '_blank' ? 'noopener noreferrer' : undefined}
+                  >
+                    <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-2" />
+                    {text}
+                  </a>
+                </>
               ) : (
                 <a
                   class:list={[
-                    'hover:text-link dark:hover:text-white px-4 py-2.5 md:py-3 flex items-center whitespace-nowrap text-base md:text-[0.9375rem] transition-colors',
+                    'rounded-xl px-3.5 py-2.5 md:py-3 flex items-center justify-between whitespace-nowrap text-[16px] md:text-[0.9375rem] transition-all',
+                    'hover:bg-slate-100/90 dark:hover:bg-slate-800/80 active:bg-slate-200/70 dark:active:bg-slate-700/60',
                     {
-                      'aw-link-active font-semibold': href === currentPath,
-                      'text-accent dark:text-blue-400 font-bold': href?.includes('app.123todo.com'),
+                      'aw-link-active font-bold text-accent dark:text-blue-400 bg-blue-50/70 dark:bg-blue-950/40 border border-blue-200/50 dark:border-blue-800/40':
+                        href === currentPath,
+                      'font-medium text-slate-800 dark:text-slate-100': href !== currentPath,
                     },
                   ]}
                   href={href}
                   target={target}
                   rel={target === '_blank' ? 'noopener noreferrer' : undefined}
                 >
-                  {href?.includes('app.123todo.com') && (
-                    <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-2" />
-                  )}
-                  {text}
+                  <span class="flex items-center gap-3">
+                    {text === 'Features' && (
+                      <span class="w-2 h-2 rounded-full bg-blue-500 shadow-sm shadow-blue-500/50 md:hidden flex-shrink-0" />
+                    )}
+                    {text === 'User Guide' && (
+                      <span class="w-2 h-2 rounded-full bg-amber-500 shadow-sm shadow-amber-500/50 md:hidden flex-shrink-0" />
+                    )}
+                    {text === 'About' && (
+                      <span class="w-2 h-2 rounded-full bg-emerald-500 shadow-sm shadow-emerald-500/50 md:hidden flex-shrink-0" />
+                    )}
+                    {text === 'Blog' && (
+                      <span class="w-2 h-2 rounded-full bg-rose-500 shadow-sm shadow-rose-500/50 md:hidden flex-shrink-0" />
+                    )}
+                    <span>{text}</span>
+                  </span>
+                  <Icon
+                    name="tabler:chevron-right"
+                    class="w-4 h-4 text-slate-400 dark:text-slate-500 opacity-60 md:hidden"
+                  />
                 </a>
               )}
             </li>
           ))
         }
       </ul>
+
+      <!-- Mobile Menu Footer Brand Accents -->
+      <div
+        class="md:hidden mt-6 pt-5 border-t border-slate-200/70 dark:border-slate-800/70 text-center text-xs text-slate-400 dark:text-slate-500 flex flex-col items-center gap-2 pb-4"
+      >
+        <div class="flex items-center gap-1.5 text-xs font-semibold">
+          <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+          <span class="text-slate-600 dark:text-slate-300 font-medium">Must Do</span>
+          <span class="text-slate-300 dark:text-slate-600">•</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+          <span class="text-slate-600 dark:text-slate-300 font-medium">Should Do</span>
+          <span class="text-slate-300 dark:text-slate-600">•</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+          <span class="text-slate-600 dark:text-slate-300 font-medium">Could Do</span>
+        </div>
+        <span class="text-[11px] text-slate-400 dark:text-slate-500">100% Private Client-Side Productivity</span>
+      </div>
     </nav>
     <div
       class:list={[

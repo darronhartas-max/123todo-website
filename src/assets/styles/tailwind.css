@@ -53,7 +53,7 @@
 
 #header.expanded nav {
   position: fixed;
-  top: 78px;
+  top: 100px;
   left: 0;
   right: 0;
   bottom: 0 !important;
@@ -61,6 +61,16 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   background-color: var(--aw-color-bg-page);
+  border-top: 1px solid rgba(226, 232, 240, 0.7);
+}
+.dark #header.expanded nav {
+  border-top: 1px solid rgba(30, 41, 59, 0.7);
+}
+
+@media (max-width: 767px) {
+  #header > div > div:last-child {
+    display: none !important;
+  }
 }
 
 .dropdown:focus .dropdown-menu,

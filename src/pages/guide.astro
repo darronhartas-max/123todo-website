@@ -42,7 +42,7 @@ const metadata = {
       {
         title: 'Step 2: <span class="font-medium">Add Your First Task</span>',
         description:
-          'Click the "Add Task" button at the top of any priority section. Type your task (up to 200 characters) and select a priority level.',
+          'Click the "Add Task" button at the top of any priority section. Type your task (up to 250 characters by default, or set to Unlimited in Settings) and select a priority level.',
         icon: 'tabler:pencil',
       },
       {
@@ -130,18 +130,103 @@ const metadata = {
       <h3>✏️ Adding and Editing Tasks</h3>
       <p><strong>To add a new task:</strong></p>
       <ol>
-        <li>Click the "Add Task" button in any priority section</li>
-        <li>Type your task in the modal that appears (200 character limit)</li>
-        <li>Select the priority level using the colored buttons</li>
-        <li>Click "Add Task" to save</li>
+        <li>Click the <strong>Add Task</strong> button in the top header or at the top of your priority lists</li>
+        <li>
+          Type your task title (up to 250 characters by default, or set to <strong>Unlimited</strong> in Settings)
+        </li>
+        <li>Optionally add notes, due dates, subtasks, or assign a project category</li>
+        <li>Select the priority level using the colored buttons (🔴 Must Do, 🟡 Should Do, ⚪ Could Do, 🟣 On Hold)</li>
+        <li>Click <strong>Add Task</strong> (or press <code>Enter</code>) to save</li>
       </ol>
 
       <p><strong>To edit an existing task:</strong></p>
       <ol>
-        <li>Click the pencil icon next to any task</li>
-        <li>Modify the text or change the priority</li>
-        <li>Click "Update Task" to save changes</li>
+        <li>
+          Click the pencil icon next to any task (or click directly on the task text) to open the <strong
+            >Edit Modal</strong>
+        </li>
+        <li>Modify the title, attached notes, priority level, project category, or checklist subtasks</li>
+        <li>Click <strong>Update Task</strong> (or press <code>Enter</code>) to save your changes</li>
       </ol>
+
+      <!-- Task Length Limits & Unlimited Mode Guide Card -->
+      <div class="my-6 p-6 bg-slate-50 dark:bg-slate-800/70 rounded-2xl border border-slate-200 dark:border-slate-700">
+        <h4 class="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2 mb-2 mt-0">
+          <span>📏 Task Description Character Limit &amp; Unlimited Mode</span>
+        </h4>
+        <p class="text-sm text-slate-600 dark:text-slate-300 mb-4">
+          By default, 123 ToDo uses a <strong>250-character limit</strong> for task titles to encourage concise, punchy to-dos
+          that keep your daily dashboard uncluttered and scannable at a glance. However, if you need more room, you can easily
+          customize or remove this limit entirely:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+          <div
+            class="p-4 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700 flex flex-col"
+          >
+            <p class="font-bold text-slate-900 dark:text-white mb-1.5 flex items-center gap-1.5">
+              <span>⚡</span>
+              <span>Increasing to Unlimited Length:</span>
+            </p>
+            <p class="leading-relaxed flex-1">
+              Need to paste extensive specifications, client requirements, or longer task instructions? Simply open <strong
+                >Settings ⚙️ ➔ Appearance &amp; General Preferences ➔ Task Description Character Limit</strong
+              > and choose <strong>Unlimited</strong>. This completely removes the character ceiling!
+            </p>
+          </div>
+          <div
+            class="p-4 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700 flex flex-col"
+          >
+            <p class="font-bold text-slate-900 dark:text-white mb-1.5 flex items-center gap-1.5">
+              <span>📝</span>
+              <span>Unlimited Task Notes &amp; Details:</span>
+            </p>
+            <p class="leading-relaxed flex-1">
+              Remember that the secondary <strong>Task Notes</strong> field is always <strong>100% Unlimited</strong> with
+              zero length restrictions by design. You can attach paragraphs of context, addresses, meeting transcripts, links,
+              and photos without affecting your task headline.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Actionable Phone Numbers & Email Links -->
+      <div
+        class="my-6 p-6 bg-blue-50/70 dark:bg-blue-950/30 rounded-2xl border border-blue-200 dark:border-blue-900/50"
+      >
+        <h4 class="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2 mb-2 mt-0">
+          <span>📞 Actionable Phone Numbers, Email Links &amp; Email Service Picker</span>
+        </h4>
+        <p class="text-sm text-slate-600 dark:text-slate-300 mb-4">
+          Tasks and notes often contain contact information. 123 ToDo automatically detects telephone numbers and email
+          addresses, transforming them into instant clickable actions across desktop and mobile:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+          <div class="p-4 bg-white dark:bg-slate-900 rounded-xl border border-blue-200 dark:border-slate-700">
+            <p class="font-bold text-slate-900 dark:text-white mb-1 flex items-center gap-1.5">
+              <span>📱</span>
+              <span>One-Tap Telephone Dialing:</span>
+            </p>
+            <p class="leading-relaxed">
+              Any valid UK or international phone number in a task or note becomes a clickable <code>tel:</code> link. On
+              mobile devices, tapping it opens your phone dialer instantly. On desktop, it triggers FaceTime or your system
+              calling app.
+            </p>
+          </div>
+          <div class="p-4 bg-white dark:bg-slate-900 rounded-xl border border-blue-200 dark:border-slate-700">
+            <p class="font-bold text-slate-900 dark:text-white mb-1 flex items-center gap-1.5">
+              <span>✉️</span>
+              <span>Preferred Email Service Picker:</span>
+            </p>
+            <p class="leading-relaxed">
+              Clicking an email address prompts you once to pick your favorite service: <strong>Default Mail App</strong
+              > (Apple Mail, Outlook Desktop, Thunderbird), <strong>Gmail Web</strong>, <strong
+                >Outlook / Microsoft 365 Web</strong
+              >, or <strong>Yahoo Mail</strong>. 123 ToDo remembers your choice so future clicks open compose directly.
+              You can modify or reset your preference anytime in <strong>Settings ⚙️ ➔ Preferred Email Service</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
 
       <div
         class="my-8 p-6 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-slate-800/80 dark:to-slate-800/50 rounded-2xl stroke-blue-200 dark:stroke-slate-700 border border-blue-100 dark:border-slate-700"
@@ -588,33 +673,16 @@ const metadata = {
         <strong>⚠️ Important:</strong> Importing data will merge your imported items into your current task workspace safely.
       </p>
 
-      <h3>☁️ Cross-Device Cloud Sync (Set & Forget)</h3>
+      <h3>☁️ Cross-Device Cloud Sync (Set &amp; Forget)</h3>
       <p>
         123 ToDo features a powerful, friction-free synchronization system that lets you access your tasks across all
-        your devices (iPhones, Android phones, tablets, laptops, and desktop computers).
-      </p>
-
-      <h3>⚡ Automated Version Updates & Instant Service Worker Sync</h3>
-      <p>
-        123 ToDo automatically checks for new software releases (such as version 3.3.1) in the background. When an
-        update is deployed, a notification prompt will notify you with a single-click update button:
-      </p>
-      <div class="my-6 text-center">
-        <img
-          src="/updates.png"
-          alt="123 ToDo Automated Version Update Notification"
-          class="rounded-xl border border-slate-200 dark:border-slate-700 shadow-lg mx-auto max-w-xl w-full"
-        />
-      </div>
-      <p>
-        Clicking the update prompt reloads the service worker instantly, giving you immediate access to new features and
-        performance enhancements with zero data loss or setup required.
+        your devices (iPhones, Android phones, tablets, laptops, and desktop computers):
       </p>
       <ul>
         <li>
-          <strong>Set & Forget Cloud Sync (Recommended):</strong> Powered by Cloudflare D1 Serverless edge database. Sign
-          in once with a passphrase (or pair a second device with a 6-digit code) and stay connected seamlessly. Zero 1-hour
-          OAuth drops and 100% iPhone Safari/PWA compatible.
+          <strong>Set &amp; Forget Cloud Sync (Recommended):</strong> Powered by Cloudflare D1 Serverless edge database.
+          Sign in once with a passphrase (or pair a second device with a 6-digit code) and stay connected seamlessly. Zero
+          1-hour OAuth drops and 100% iPhone Safari/PWA compatible.
         </li>
         <li>
           <strong>Zero-Knowledge E2E Encryption:</strong> Your tasks, projects, notes, and subtasks are encrypted with military-grade
@@ -634,6 +702,23 @@ const metadata = {
           you informed without distraction.
         </li>
       </ul>
+
+      <h3>⚡ Automated Version Updates &amp; Instant Service Worker Sync</h3>
+      <p>
+        123 ToDo automatically checks for new software releases (such as version 3.6.x) in the background. When an
+        update is deployed, a notification prompt will notify you with a single-click update button:
+      </p>
+      <div class="my-6 text-center">
+        <img
+          src="/updates.png"
+          alt="123 ToDo Automated Version Update Notification"
+          class="rounded-xl border border-slate-200 dark:border-slate-700 shadow-lg mx-auto max-w-xl w-full"
+        />
+      </div>
+      <p>
+        Clicking the update prompt reloads the service worker instantly, giving you immediate access to new features and
+        performance enhancements with zero data loss or setup required.
+      </p>
 
       <h3>🛡️ Shadow Backups (Automatic)</h3>
       <p>
@@ -673,11 +758,63 @@ const metadata = {
         backups are essential to prevent data loss.
       </p>
 
-      <h3>🎨 Theme Options</h3>
+      <h3>🎨 Theme &amp; Visual Appearance Options</h3>
       <p>
-        123 ToDo automatically adapts to your system's light or dark mode preference. If you change your system theme,
-        the app will update automatically.
+        123 ToDo automatically adapts to your device's light or dark mode preference, but you can also tailor the visual
+        experience to your personal comfort:
       </p>
+      <ul>
+        <li>
+          <strong>3 Calibrated Light Mode Tones:</strong> In <strong>Settings ⚙️ ➔ Appearance &amp; Styling</strong>,
+          choose between:
+          <ul class="mt-1">
+            <li><strong>Bright Tone:</strong> Crisp, pure white standard appearance.</li>
+            <li>
+              <strong>Soft Tone:</strong> Soft warm light grey engineered for reduced eye fatigue during long desk sessions.
+            </li>
+            <li><strong>Muted Tone:</strong> Subdued cozy grey with zero screen glare.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>High-Contrast Dark Mode:</strong> Rich, low-light dark palette optimized for evening planning and battery
+          efficiency on OLED displays.
+        </li>
+      </ul>
+
+      <h3>📊 Wide-Screen Layout &amp; Project Columns (Kanban View)</h3>
+      <p>On larger screens (tablets, laptops, desktops), 123 ToDo offers flexible layout options:</p>
+      <ul>
+        <li>
+          <strong>Priority Columns View:</strong> Displays your 3 main priorities (Must Do, Should Do, Could Do) side-by-side
+          as responsive vertical lists.
+        </li>
+        <li>
+          <strong>Project Columns View:</strong> Under <strong>Settings ⚙️ ➔ Layout &amp; Views</strong>, switch your
+          wide view from Priorities to <strong>Projects</strong>! This turns 123 ToDo into a horizontal Kanban board
+          where each project category (e.g. Work, Home, Personal) gets its own dedicated column with full horizontal
+          scrolling.
+        </li>
+        <li>
+          <strong>Date Format Selection:</strong> Choose your preferred date formatting under Settings: UK / International
+          (<code>DD/MM/YYYY</code>) or US (<code>MM/DD/YYYY</code>).
+        </li>
+      </ul>
+
+      <h3>🖐️ Mobile Touch &amp; Swipe Gestures</h3>
+      <p>Manage your tasks rapidly on mobile phones and tablets with customizable swipe gestures:</p>
+      <ul>
+        <li>
+          <strong>Swipe Right:</strong> Default triggers instant task completion and archiving with haptic feedback.
+        </li>
+        <li>
+          <strong>Swipe Left:</strong> Default opens task deletion or quick priority reassignment.
+        </li>
+        <li>
+          <strong>Customizable Actions:</strong> In <strong>Settings ⚙️ ➔ Swipe Actions</strong>, customize what left
+          and right swipes do (Complete, Priority Flag, On Hold Pause, Edit, or None), or disable swiping if you prefer
+          pure tap interactions.
+        </li>
+      </ul>
 
       <h3>⌨️ Keyboard Shortcuts</h3>
       <p>
@@ -809,9 +946,14 @@ const metadata = {
         description: 'Visit our website at www.123todo.com for contact information and support options.',
       },
       {
-        title: 'How does 123 ToDo handle long Todoist tasks and character limits?',
+        title: 'Can I increase or remove the character limit for task descriptions?',
         description:
-          'To keep daily task lists punchy and scannable, main task headlines use a 200-character view. However, 123 ToDo features an UNLIMITED Task Notes field with zero length caps. When importing from Todoist, 100% of your task titles, descriptions, and notes of any size are imported in full without truncation, and will NEVER be cut off when editing tasks later.',
+          'YES! While 123 ToDo defaults to 250 characters to encourage punchy, scannable to-dos, you can remove this limit entirely. Open **Settings ⚙️ ➔ Appearance & General Preferences ➔ Task Description Character Limit** and choose **Unlimited**. Furthermore, the secondary **Task Notes** field is always 100% unlimited with zero length caps by default.',
+      },
+      {
+        title: 'How does 123 ToDo handle long tasks imported from Todoist, TickTick, or Google Keep?',
+        description:
+          'When importing from other apps via our Universal Importer, 100% of your task titles, descriptions, and notes of any size are imported in full with zero truncation guarantee. Full text is preserved across all views and will never be cut off when editing tasks later.',
       },
     ]}
   />

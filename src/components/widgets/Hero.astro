@@ -12,7 +12,7 @@ const {
 
   content = await Astro.slots.render('content'),
   actions = await Astro.slots.render('actions'),
-  image = await Astro.slots.render('image'),
+  image = Astro.props.image,
 
   id,
   bg = await Astro.slots.render('bg'),
@@ -84,7 +84,11 @@ const isLottie = !!(
         class="intersect-once intersect-no-queue intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
       >
         {
-          image && (
+          Astro.slots.has('image') ? (
+            <div class="relative m-auto max-w-5xl">
+              <slot name="image" />
+            </div>
+          ) : image ? (
             <div class="relative m-auto max-w-5xl">
               {typeof image === 'string' ? (
                 <Fragment set:html={image} />
@@ -106,7 +110,7 @@ const isLottie = !!(
                 />
               )}
             </div>
-          )
+          ) : null
         }
       </div>
     </div>

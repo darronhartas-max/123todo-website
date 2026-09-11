@@ -5,6 +5,7 @@ import Features from '~/components/widgets/Features.astro';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import HeroInteractiveDemo from '~/components/interactive/HeroInteractiveDemo';
 
 const metadata = {
   title: '123 ToDo - Free Task Manager, Daily To-Do List App & Voice Notes App (Best Todoist & TickTick Alternative)',
@@ -34,19 +35,16 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Start Organizing for Free',
+        text: 'Launch 123ToDo in Browser',
         href: 'https://app.123todo.com',
         icon: 'tabler:rocket',
+        target: '_blank',
       },
       {
-        text: 'Explore Features',
-        href: '#features',
+        text: 'Try Interactive Demo ↓',
+        href: '#interactive-demo',
       },
     ]}
-    image={{
-      src: '~/assets/images/productive-man.json',
-      alt: 'Person organizing daily tasks and priorities with 123 ToDo free task manager',
-    }}
   >
     <Fragment slot="title">
       123 ToDo — The Free, Private<br class="hidden sm:inline" />
@@ -65,6 +63,44 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="content">
+      <!-- Trust Reassurance Microcopy -->
+      <div
+        class="mt-4 mb-2 flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5 text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300"
+      >
+        <span class="inline-flex items-center gap-1.5 text-emerald-600 dark:text-emerald-400 font-semibold">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            ><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg
+          >
+          No sign-up or email
+        </span>
+        <span class="text-slate-300 dark:text-slate-600 hidden sm:inline">•</span>
+        <span class="inline-flex items-center gap-1.5 text-emerald-600 dark:text-emerald-400 font-semibold">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            ><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg
+          >
+          No credit card
+        </span>
+        <span class="text-slate-300 dark:text-slate-600 hidden sm:inline">•</span>
+        <span class="inline-flex items-center gap-1.5 text-emerald-600 dark:text-emerald-400 font-semibold">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            ><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg
+          >
+          Opens instantly in browser
+        </span>
+        <span class="text-slate-300 dark:text-slate-600 hidden sm:inline">•</span>
+        <span class="inline-flex items-center gap-1.5 text-blue-600 dark:text-blue-400 font-semibold">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            ><path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+            ></path></svg
+          >
+          100% Client-Side Private
+        </span>
+      </div>
+
       <div class="mt-6 pt-5 border-t border-slate-200/80 dark:border-slate-800 max-w-2xl mx-auto">
         <p class="text-xs uppercase tracking-wider font-bold text-slate-500 dark:text-slate-400 mb-2.5">
           ⚡ Available Everywhere — 100% Free &amp; Offline-Ready
@@ -106,6 +142,12 @@ const metadata = {
         <p class="text-xs text-muted dark:text-slate-400 mt-2.5">
           Instant Web App • Installable PWA • Real-time Zero-Knowledge Sync across all your devices
         </p>
+      </div>
+    </Fragment>
+
+    <Fragment slot="image">
+      <div id="interactive-demo" class="scroll-mt-24 pt-4">
+        <HeroInteractiveDemo client:load />
       </div>
     </Fragment>
   </Hero>
@@ -693,6 +735,108 @@ const metadata = {
             >
           </a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transparency Section: Why is 123 ToDo 100% Free? -->
+  <section class="py-12 md:py-16 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+        <p class="text-xs sm:text-sm font-bold tracking-wider uppercase text-blue-600 dark:text-blue-400">
+          Radical Transparency
+        </p>
+        <h2
+          class="text-3xl md:text-5xl font-bold font-heading tracking-tight text-heading dark:text-white mt-2 mb-4 text-balance"
+        >
+          Why is 123 ToDo Free?<br class="hidden sm:inline" /> What's the Catch?
+        </h2>
+        <p class="text-lg text-muted dark:text-slate-300 max-w-2xl mx-auto text-balance">
+          In an era of subscription fatigue, intrusive data tracking, and surprise paywalls, being 100% free naturally
+          makes people suspicious. Here is our honest, technical explanation.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <!-- Pillar 1: Edge Architecture -->
+        <div
+          class="bg-slate-50 dark:bg-slate-800/70 p-6 md:p-8 rounded-2xl border border-slate-200/80 dark:border-slate-700 flex flex-col shadow-sm hover:shadow-md transition-shadow"
+        >
+          <div
+            class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-5 text-2xl font-bold"
+          >
+            ⚡
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2.5">1. Near-Zero Server Costs</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed flex-1">
+            Unlike traditional apps that maintain expensive cloud databases for every customer, 123 ToDo runs <strong
+              >100% locally on your device</strong
+            > using browser IndexedDB and Web Workers. Our app code is delivered via Cloudflare edge servers, meaning hosting
+            costs for 100,000 users are virtually identical to 10 users.
+          </p>
+        </div>
+
+        <!-- Pillar 2: Independent Ethos -->
+        <div
+          class="bg-slate-50 dark:bg-slate-800/70 p-6 md:p-8 rounded-2xl border border-slate-200/80 dark:border-slate-700 flex flex-col shadow-sm hover:shadow-md transition-shadow"
+        >
+          <div
+            class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-5 text-2xl font-bold"
+          >
+            🌱
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2.5">2. No Investors, No Dark Patterns</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed flex-1">
+            We are self-funded and completely independent. We have no venture capitalists demanding aggressive monthly
+            monetization, no ad networks demanding user tracking scripts, and no incentive to trap you behind surprise
+            14-day paywalls. 123 ToDo was created as the clean, private tool we wanted for ourselves.
+          </p>
+        </div>
+
+        <!-- Pillar 3: Zero-Knowledge Privacy -->
+        <div
+          class="bg-slate-50 dark:bg-slate-800/70 p-6 md:p-8 rounded-2xl border border-slate-200/80 dark:border-slate-700 flex flex-col shadow-sm hover:shadow-md transition-shadow"
+        >
+          <div
+            class="w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400 flex items-center justify-center mb-5 text-2xl font-bold"
+          >
+            🛡️
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2.5">3. Zero-Knowledge Encryption</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed flex-1">
+            You don't need to trust our servers with your personal life or business tasks. All data is encrypted
+            directly on your device with military-grade <strong>AES-256-GCM</strong> before any cross-device sync occurs.
+            We don't possess your encryption keys, so we physically cannot view, monetize, or sell your data.
+          </p>
+        </div>
+      </div>
+
+      <!-- Reassurance callout bar -->
+      <div
+        class="mt-8 p-6 bg-blue-50/70 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-900/50 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4"
+      >
+        <div class="flex items-center gap-3 text-center sm:text-left">
+          <span class="text-3xl flex-shrink-0">🔒</span>
+          <div>
+            <h4 class="text-base font-bold text-slate-900 dark:text-white">Zero Data Lock-in Guarantee</h4>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+              You can export your complete workspace to open standard JSON anytime with 1 click, or sync directly to
+              your personal Google Drive.
+            </p>
+          </div>
+        </div>
+        <a
+          href="https://app.123todo.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-blue-600 hover:bg-blue-700 text-white shadow-md hover:scale-105 transition-all whitespace-nowrap flex-shrink-0 cursor-pointer"
+        >
+          <span>Open 123ToDo Free</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            ><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"
+            ></path></svg
+          >
+        </a>
       </div>
     </div>
   </section>

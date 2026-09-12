@@ -110,14 +110,17 @@ const phases = [
 
     <Fragment slot="subtitle">
       <span class="text-lg">
-        The complete build history of 123 To Do from v1.0.0 to v{latestVersion}. Transparent, documented progress showing every feature, performance optimization, and privacy refinement.
+        The complete build history of 123 To Do from v1.0.0 to v{latestVersion}. Transparent, documented progress
+        showing every feature, performance optimization, and privacy refinement.
       </span>
     </Fragment>
   </Hero>
 
   <!-- Overview Stats Bar -->
   <section class="max-w-6xl mx-auto px-4 sm:px-6 -mt-8 mb-12 relative z-10">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-xl shadow-slate-200/50 dark:shadow-none text-center">
+    <div
+      class="grid grid-cols-2 md:grid-cols-4 gap-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-xl shadow-slate-200/50 dark:shadow-none text-center"
+    >
       <div class="border-r border-slate-100 dark:border-slate-800/80 pr-4 last:border-r-0">
         <div class="text-3xl font-extrabold text-accent dark:text-white mb-1">{totalReleases}+</div>
         <div class="text-xs uppercase font-bold tracking-wider text-slate-500 dark:text-slate-400">Total Releases</div>
@@ -160,10 +163,14 @@ const phases = [
       {
         phases.map((phase) => (
           <div id={phase.id} class="scroll-mt-24">
-            <!-- Phase Header Banner -->
-            <div class={`p-6 sm:p-8 rounded-2xl border bg-gradient-to-br ${phase.borderClass} ${phase.bgClass} mb-8 shadow-sm`}>
+            {/* Phase Header Banner */}
+            <div
+              class={`p-6 sm:p-8 rounded-2xl border bg-gradient-to-br ${phase.borderClass} ${phase.bgClass} mb-8 shadow-sm`}
+            >
               <div class="flex items-center justify-between flex-wrap gap-2 mb-3">
-                <span class={`text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full border ${phase.badgeClass}`}>
+                <span
+                  class={`text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full border ${phase.badgeClass}`}
+                >
                   {phase.badge}
                 </span>
                 <span class="text-sm font-mono font-bold text-slate-500 dark:text-slate-400">{phase.range}</span>
@@ -172,12 +179,14 @@ const phases = [
               <p class="text-slate-600 dark:text-slate-300 text-base leading-relaxed">{phase.description}</p>
             </div>
 
-            <!-- Version Cards Container -->
+            {/* Version Cards Container */}
             <div class="space-y-6">
               {phase.entries.map(([ver, items]) => {
                 const isLatest = ver === latestVersion;
                 return (
-                  <div class={`p-6 rounded-xl border transition duration-200 ${isLatest ? 'bg-emerald-500/[0.03] border-emerald-500/40 shadow-lg shadow-emerald-500/5' : 'bg-white dark:bg-slate-900/60 border-slate-200 dark:border-slate-800/80 hover:border-slate-300 dark:hover:border-slate-700'}`}>
+                  <div
+                    class={`p-6 rounded-xl border transition duration-200 ${isLatest ? 'bg-emerald-500/[0.03] border-emerald-500/40 shadow-lg shadow-emerald-500/5' : 'bg-white dark:bg-slate-900/60 border-slate-200 dark:border-slate-800/80 hover:border-slate-300 dark:hover:border-slate-700'}`}
+                  >
                     <div class="flex items-center justify-between flex-wrap gap-3 mb-4 pb-3 border-b border-slate-100 dark:border-slate-800">
                       <div class="flex items-center gap-3">
                         <span class="text-lg font-mono font-extrabold text-slate-900 dark:text-white">v{ver}</span>
@@ -233,7 +242,8 @@ const phases = [
     </Fragment>
 
     <Fragment slot="subtitle">
-      No subscriptions, no account barriers, and zero trackers. Fast, private productivity that updates quietly in the background.
+      No subscriptions, no account barriers, and zero trackers. Fast, private productivity that updates quietly in the
+      background.
     </Fragment>
   </CallToAction>
 </Layout>

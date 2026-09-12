@@ -1,4 +1,10 @@
 {
+  "3.7.8": [
+    {
+      "title": "🔍 Full Pro Details in Lite View & Footer Achievements Badge:",
+      "desc": "In Tasks mode Lite view, clicking any task now expands it to reveal complete Pro details (project tag, full unclamped text, schedule and recurrence, subtasks checklist, full notes, and photo attachments). Cleaned the Lite toolbar by hiding the achievements badge, and added the achievements badge next to the version number in the footer for instant access in both Pro and Lite modes."
+    }
+  ],
   "3.7.7": [
     {
       "title": "🍃 Streamlined Lite Mode & Layout Harmonization:",

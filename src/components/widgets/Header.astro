@@ -227,6 +227,9 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
                     {text === 'User Guide' && (
                       <span class="w-2.5 h-2.5 rounded-full bg-amber-500 shadow-sm shadow-amber-500/50 md:hidden flex-shrink-0" />
                     )}
+                    {text === 'Changelog' && (
+                      <span class="w-2.5 h-2.5 rounded-full bg-purple-500 shadow-sm shadow-purple-500/50 md:hidden flex-shrink-0" />
+                    )}
                     {text === 'About' && (
                       <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 shadow-sm shadow-emerald-500/50 md:hidden flex-shrink-0" />
                     )}

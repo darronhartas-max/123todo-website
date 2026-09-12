@@ -1,4 +1,10 @@
 {
+  "3.7.10": [
+    {
+      "title": "🎯 Unified Expanded Edit Card Across Views:",
+      "desc": "Clicking any task in Lite view now directly launches the exact same full Pro Task Edit Card as Pro view, providing identical editing capabilities, voice dictation, priority selectors, subtasks checklist, notes editor, and date scheduling across both modes. Tapping the expand chevron reveals the full in-card Pro layout."
+    }
+  ],
   "3.7.9": [
     {
       "title": "✨ Enhanced Pro Details & Seamless Toggle in Lite Mode:",

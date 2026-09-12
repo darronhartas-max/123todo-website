@@ -11,6 +11,10 @@ export const headerData = {
       href: getPermalink('/guide'),
     },
     {
+      text: 'Changelog',
+      href: getPermalink('/changelog'),
+    },
+    {
       text: 'About',
       href: getPermalink('/about'),
     },
@@ -62,6 +66,7 @@ export const footerData = {
       links: [
         { text: 'Features', href: getPermalink('/#features') },
         { text: 'User Guide', href: getPermalink('/guide') },
+        { text: 'Changelog', href: getPermalink('/changelog') },
         { text: 'Open App', href: 'https://app.123todo.com' },
       ],
     },

@@ -1,11 +1,147 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
-import Features from '~/components/widgets/Features.astro';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import HeroInteractiveDemo from '~/components/interactive/HeroInteractiveDemo';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+import ItemGrid from '~/components/ui/ItemGrid.astro';
+
+const coreFeatures = [
+  {
+    title: '✨ Intuitive 1-2-3 Daily Priorities (Zero Learning Curve)',
+    description:
+      'Focus on what truly matters today with a simple 4-tier matrix: Must Do (P1), Should Do (P2), Could Do (P3), and On Hold. Drag and drop tasks between buckets or reorder in seconds with zero configuration required.',
+    icon: 'tabler:circle-check',
+  },
+  {
+    title: '🔄 Seamless Cross-Device Sync (Zero-Knowledge E2EE)',
+    description:
+      'Keep your tasks and notes synchronized in real-time across Mac, Windows, Linux, iPhone, iPad, and Android with instant 6-digit device pairing codes. Client-side AES-256-GCM encryption ensures your data is never readable by servers.',
+    icon: 'tabler:devices',
+  },
+  {
+    title: '📸 Photo Attachments & Clipboard Screen Grabs',
+    description:
+      'Attach up to 3 photos per note! Capture site photos and receipts directly via camera on mobile, drag-and-drop files, or paste screenshots instantly from your clipboard (Cmd+V / Ctrl+V) with full-screen Lightbox zoom.',
+    icon: 'tabler:photo',
+  },
+  {
+    title: '🎙️ Dual Skin Modes: Task Manager vs. Simple Voice Notes',
+    description:
+      'Switch instantly between a structured Task Manager (P1-P4 matrix) and a Simple Voice Notes mode with extra-large text, instant hands-free dictation, and unassigned inbox triage for field contractors & trades.',
+    icon: 'tabler:transform',
+  },
+  {
+    title: '🎤 Continuous Voice Dictation & Spoken Commands',
+    description:
+      'Dictate tasks & notes naturally on the go. Auto-formats spoken punctuation ("comma", "full stop"), auto-capitalizes sentences, and auto-saves hands-free by saying "add task" or "add note".',
+    icon: 'tabler:microphone',
+  },
+  {
+    title: '📅 Smart Scheduling & Next-Day / Next-Week Deferral',
+    description:
+      'Schedule tasks for Today, Tomorrow, or specific weekdays with 1-click "Next Day" and "Next Week" quick buttons. Set automated recurring tasks that roll over automatically upon completion.',
+    icon: 'tabler:calendar-repeat',
+  },
+];
+
+const additionalFeatures = [
+  {
+    title: '📋 Drag-and-Drop Subtasks & Line Wrapping',
+    description:
+      'Break large goals into multi-line checklist steps. Easily reorder subtasks via drag-and-drop handles and preview progress bars directly on task cards.',
+    icon: 'tabler:list-check',
+  },
+  {
+    title: '🎨 Color-Coded Projects & Kanban Column Views',
+    description:
+      'Organize tasks into custom project folders with custom colors. On desktop wide screens, view your workspace grouped either by Priority tiers or Project Kanban columns.',
+    icon: 'tabler:folder',
+  },
+  {
+    title: '📦 Universal 1-Click Multi-Competitor Importer',
+    description:
+      'Switch away from paid tools in seconds. Easily import your entire setup from Todoist (CSV), TickTick (Backup CSV), Google Keep (JSON), Google Tasks (JSON), and Microsoft To Do (CSV).',
+    icon: 'tabler:file-import',
+  },
+  {
+    title: '🛡️ Built-In Resilience, Photo Backups & Autonomous Shadow Snapshots',
+    description:
+      'Never lose work to silent browser updates, unexpected reboots, or disk cleanups. Features immediate synchronous disk saving, dual-tier photo preservation (full-res in IndexedDB + thumbnails in shadow backups to prevent 5MB storage crashes), HTML5 Persistent Storage API protection, and automatic 24-hour local shadow snapshots.',
+    icon: 'tabler:shield-check',
+  },
+  {
+    title: '⚡ 100% Offline Progressive Web App (PWA)',
+    description:
+      'Install 123 ToDo directly to your mobile home screen or desktop. Works completely offline with native app speed, zero network lag, and silent background updates without annoying prompts.',
+    icon: 'tabler:device-mobile-check',
+  },
+  {
+    title: '🔍 Space-Efficient Note Previews & 2-Line Compact View',
+    description:
+      'Choose between a clean 2-line compact task preview or full-length view. Tasks with notes display a space-saving single-line preview underneath the title for effortless scanning.',
+    icon: 'tabler:notes',
+  },
+  {
+    title: '🏆 10-Tier Milestones & Gamified Productivity Points',
+    description:
+      'Earn points (+10 task, +2 subtask, +15 streak) and advance through 10 progressive achievement ranks from Focused Starter 🌱 to 123 Immortal 👑 with milestone badges and streak tracking.',
+    icon: 'tabler:trophy',
+  },
+  {
+    title: '🔥 Never-Break-the-Chain Daily Streaks',
+    description:
+      'Build compounding daily productivity habits. Track your active daily completion streak and celebrate milestone achievements in the header.',
+    icon: 'tabler:flame',
+  },
+  {
+    title: '💸 Free to Use — No Hidden Subscriptions or Ads',
+    description:
+      'Enjoy uncapped tasks, unlimited projects, unlimited note lengths, photo attachments, and full sync features with no forced subscriptions, ads, or tracking.',
+    icon: 'tabler:currency-dollar-off',
+  },
+];
+
+const faqs = [
+  {
+    question: 'Is 123 ToDo really 100% free with no hidden subscriptions?',
+    answer:
+      'Yes! All core productivity features—including uncapped tasks, photo attachments, voice dictation, subtask checklists, and cross-device zero-knowledge sync—are 100% free to use. There are no 14-day trial paywalls, no credit card requirements, and no third-party advertisements.',
+  },
+  {
+    question: 'How does 123 ToDo compare to Todoist, TickTick, and Google Keep?',
+    answer:
+      'Unlike Todoist and TickTick that charge $36–$72/year for photo uploads, reminders, and daily backups, 123 ToDo provides these capabilities completely free. Unlike Google Keep or Microsoft To Do, 123 ToDo features true client-side zero-knowledge AES-256-GCM encryption, meaning your personal tasks and private notes are never scanned, indexed, or monetized.',
+  },
+  {
+    question: 'Can I sync my tasks across Mac, Windows, Linux, iOS, and Android?',
+    answer:
+      'Absolutely. 123 ToDo syncs in real-time across all your devices using our Set & Forget Cloud Sync (powered by Cloudflare D1 edge database) or Google Drive Sync. You pair your phone, tablet, and computer using secure 6-digit device pairing codes without persistent login drops.',
+  },
+  {
+    question: 'Will I lose any tasks or photos if my browser updates silently or my computer restarts?',
+    answer:
+      'No. 123 ToDo writes all changes synchronously and immediately to physical local storage. Browser executable updates (Chrome, Safari, Edge) do not touch your user profile storage directory. Furthermore, 123 ToDo includes automatic 24-hour shadow snapshots, HTML5 Persistent Storage protection, and dual-tier photo preservation (full-resolution in IndexedDB and compressed thumbnail shadows in LocalStorage) to prevent data loss.',
+  },
+  {
+    question: 'How does the Dual Skins (Task Manager vs. Voice Notes) mode work?',
+    answer:
+      'With a single tap on the header toggle, you can switch between Task Manager mode (a structured priority matrix with subtasks, due dates, and project folders) and Simple Voice Notes mode (extra-large high-contrast text and instant hands-free speech dictation for trades, field builders, and busy professionals). Both modes share the exact same underlying dataset.',
+  },
+  {
+    question: 'Does 123 ToDo work completely offline?',
+    answer:
+      'Yes. 123 ToDo is an offline-first Progressive Web App (PWA). You can install it directly to your home screen or desktop dock. You can create, edit, reschedule, or complete tasks with zero internet connection, and your changes will automatically sync once your connection is restored.',
+  },
+  {
+    question: 'How do I import my existing tasks from another to-do app?',
+    answer:
+      'You can migrate your entire setup in seconds using our universal 1-click competitor importer. We provide native support for Todoist (CSV), TickTick (Backup CSV), Google Keep (JSON), Google Tasks (JSON), and Microsoft To Do (CSV).',
+  },
+];
 
 const metadata = {
   title: '123 ToDo - Free Task Manager, Daily To-Do List App & Voice Notes App (Best Todoist & TickTick Alternative)',
@@ -215,38 +351,6 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Prompt 1: Try Dual Skins -->
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 my-8">
-    <div
-      class="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 rounded-2xl p-6 sm:p-8 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6"
-    >
-      <div class="text-center md:text-left">
-        <span
-          class="bg-white/20 text-white text-xs uppercase font-bold tracking-wider px-3 py-1 rounded-full border border-white/30 backdrop-blur-sm inline-block mb-2"
-          >Instant Free Access</span
-        >
-        <h3 class="text-2xl sm:text-3xl font-bold font-heading text-balance">
-          Ready to Try Voice Notes &amp; Task&nbsp;Management?
-        </h3>
-        <p class="text-blue-100 text-sm sm:text-base mt-1 text-balance">
-          Open in your browser now on any device — No account, no credit card, no downloads required.
-        </p>
-      </div>
-      <a
-        href="https://app.123todo.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex items-center gap-2 bg-white text-blue-700 hover:bg-blue-50 font-bold px-6 py-3.5 rounded-xl text-base shadow-md hover:scale-105 transition-all duration-200 whitespace-nowrap flex-shrink-0"
-      >
-        <span>Start Using 123 ToDo Free</span>
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-          ><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"
-          ></path></svg
-        >
-      </a>
-    </div>
-  </div>
-
   <!-- Non-Technical Life Benefits Section -->
   <section
     class="relative bg-gradient-to-b from-blue-50/70 to-white dark:from-slate-900/60 dark:to-slate-900 not-prose py-12 md:py-16 border-y border-slate-100 dark:border-slate-800"
@@ -377,163 +481,73 @@ const metadata = {
           </p>
         </div>
       </div>
-
-      <!-- Prompt 2: De-stress Action Strip -->
-      <div class="mt-10 text-center">
-        <div
-          class="inline-flex flex-col sm:flex-row items-center gap-4 p-3 sm:px-6 bg-white dark:bg-slate-800 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700"
-        >
-          <span class="text-sm sm:text-base font-semibold text-slate-800 dark:text-slate-200">
-            ✨ Why wait? De-stress your day in under 60&nbsp;seconds.
-          </span>
-          <a
-            href="https://app.123todo.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm px-5 py-2.5 rounded-xl shadow-sm transition-all duration-200 whitespace-nowrap"
-          >
-            <span>Open Web App — 100% Free</span>
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-              ><path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg
-            >
-          </a>
-        </div>
-      </div>
     </div>
   </section>
 
-  <!-- Features Section (Re-ordered with high-utility daily tools first) -->
-  <Features
-    id="features"
-    tagline="Features & Capabilities"
-    title="Everything You Need in a Modern To-Do App"
-    subtitle="Engineered for ultimate simplicity, zero-knowledge privacy, and daily productivity flow"
-    classes={{
-      container: '!py-6 md:!py-8',
-      headline: {
+  <!-- Features Section with Progressive Disclosure -->
+  <WidgetWrapper id="features" containerClass="max-w-6xl !py-8 md:!py-12">
+    <Headline
+      tagline="Features & Capabilities"
+      title="Everything You Need in a Modern To-Do & Notes App"
+      subtitle="Engineered for ultimate simplicity, zero-knowledge privacy, and daily productivity flow"
+      classes={{
         title: 'text-3xl md:text-4xl text-balance',
         subtitle: 'text-xl text-balance max-w-2xl mx-auto',
-      },
-    }}
-    items={[
-      {
-        title: '📸 Photo Attachments & Clipboard Screen Grabs',
-        description:
-          'Attach up to 3 photos per note! Capture site photos and receipts directly via camera on mobile, drag-and-drop files, or paste screenshots instantly from your clipboard (Cmd+V / Ctrl+V) with full-screen Lightbox zoom.',
-        icon: 'tabler:photo',
-      },
-      {
-        title: '🎙️ Dual Skin Modes: Task Manager vs. Simple Voice Notes',
-        description:
-          'Switch instantly between a structured Task Manager (P1-P4 matrix) and a Simple Voice Notes mode with extra-large text, instant hands-free dictation, and unassigned inbox triage for field contractors & trades.',
-        icon: 'tabler:transform',
-      },
-      {
-        title: '🎤 Continuous Voice Dictation & Spoken Commands',
-        description:
-          'Dictate tasks & notes naturally on the go. Auto-formats spoken punctuation ("comma", "full stop"), auto-capitalizes sentences, and auto-saves hands-free by saying "add task" or "add note".',
-        icon: 'tabler:microphone',
-      },
-      {
-        title: '🛡️ Zero-Knowledge E2EE Cloud Sync',
-        description:
-          'Keep your tasks synchronized in real-time across iPhone, iPad, Android, Mac, and Windows PC. Powered by client-side AES-256-GCM encryption with 6-digit device pairing codes.',
-        icon: 'tabler:shield-lock',
-      },
-      {
-        title: '📋 Drag-and-Drop Subtasks & Line Wrapping',
-        description:
-          'Break large goals into multi-line checklist steps. Easily reorder subtasks via drag-and-drop handles and preview progress bars directly on task cards.',
-        icon: 'tabler:list-check',
-      },
-      {
-        title: '📅 Smart Scheduling & Next-Day / Next-Week Deferral',
-        description:
-          'Schedule tasks for Today, Tomorrow, or specific weekdays with 1-click "Next Day" and "Next Week" quick buttons. Set automated recurring tasks that roll over automatically upon completion.',
-        icon: 'tabler:calendar-repeat',
-      },
-      {
-        title: '🎨 Color-Coded Projects & Kanban Column Views',
-        description:
-          'Organize tasks into custom project folders with custom colors. On desktop wide screens, view your workspace grouped either by Priority tiers or Project Kanban columns.',
-        icon: 'tabler:folder',
-      },
-      {
-        title: '📦 Universal 1-Click Multi-Competitor Importer',
-        description:
-          'Switch away from paid tools in seconds. Easily import your entire setup from Todoist (CSV), TickTick (Backup CSV), Google Keep (JSON), Google Tasks (JSON), and Microsoft To Do (CSV).',
-        icon: 'tabler:file-import',
-      },
-      {
-        title: '🛡️ Built-In Resilience, Photo Backups & Autonomous Shadow Snapshots',
-        description:
-          'Never lose work to silent browser updates, unexpected reboots, or disk cleanups. Features immediate synchronous disk saving, dual-tier photo preservation (full-res in IndexedDB + thumbnails in shadow backups to prevent 5MB storage crashes), HTML5 Persistent Storage API protection, and automatic 24-hour local shadow snapshots.',
-        icon: 'tabler:shield-check',
-      },
-      {
-        title: '⚡ 100% Offline Progressive Web App (PWA)',
-        description:
-          'Install 123 ToDo directly to your mobile home screen or desktop. Works completely offline with native app speed, zero network lag, and silent background updates without annoying prompts.',
-        icon: 'tabler:device-mobile-check',
-      },
-      {
-        title: '🔍 Space-Efficient Note Previews & 2-Line Compact View',
-        description:
-          'Choose between a clean 2-line compact task preview or full-length view. Tasks with notes display a space-saving single-line preview underneath the title for effortless scanning.',
-        icon: 'tabler:notes',
-      },
-      {
-        title: '🏆 10-Tier Milestones & Gamified Productivity Points',
-        description:
-          'Earn points (+10 task, +2 subtask, +15 streak) and advance through 10 progressive achievement ranks from Focused Starter 🌱 to 123 Immortal 👑 with milestone badges and streak tracking.',
-        icon: 'tabler:trophy',
-      },
-      {
-        title: '🔥 Never-Break-the-Chain Daily Streaks',
-        description:
-          'Build compounding daily productivity habits. Track your active daily completion streak and celebrate milestone achievements in the header.',
-        icon: 'tabler:flame',
-      },
-      {
-        title: '💸 Free to Use — No Hidden Subscriptions',
-        description:
-          'Enjoy uncapped tasks, unlimited projects, unlimited note lengths, photo attachments, and full sync features with no forced subscriptions, ads, or tracking.',
-        icon: 'tabler:currency-dollar-off',
-      },
-    ]}
-  />
+      }}
+    />
 
-  <!-- Prompt 3: All Features Included Free -->
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 -mt-2 mb-12 text-center">
-    <div
-      class="bg-blue-50/80 dark:bg-slate-800/80 border border-blue-200/80 dark:border-slate-700 rounded-2xl p-6 sm:p-8"
-    >
-      <h3 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-2 text-balance">
-        All Core Features Included Free — Get Started in Seconds
-      </h3>
-      <p class="text-muted dark:text-slate-300 text-sm sm:text-base max-w-xl mx-auto mb-5 text-balance">
-        Photos, continuous voice dictation, subtasks, end-to-end encryption, and daily streaks are completely uncapped
-        for every user.
-      </p>
-      <div class="flex flex-wrap items-center justify-center gap-4">
-        <a
-          href="https://app.123todo.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn-primary inline-flex items-center justify-center font-bold px-6 py-3 rounded-xl shadow-md text-base"
+    <!-- Top 6 Core Features Requested by User -->
+    <ItemGrid
+      items={coreFeatures}
+      columns={2}
+      classes={{
+        container: 'gap-x-8 gap-y-10',
+        title: 'md:text-[1.25rem] font-bold text-slate-900 dark:text-white',
+        description: 'text-slate-600 dark:text-slate-300 text-sm md:text-base leading-relaxed',
+        icon: 'text-white bg-blue-600 rounded-xl w-10 h-10 md:w-12 md:h-12 p-2.5 mr-4 shadow-sm flex-shrink-0',
+      }}
+    />
+
+    <!-- Progressive Disclosure Expander for Additional 8 Features -->
+    <div class="mt-10 pt-2">
+      <details
+        class="group rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-900/50 overflow-hidden transition-all duration-300 shadow-sm"
+      >
+        <summary
+          class="flex items-center justify-between gap-4 p-5 sm:px-6 cursor-pointer select-none text-slate-800 dark:text-slate-200 hover:bg-blue-50/50 dark:hover:bg-slate-800/60 transition-colors list-none [&::-webkit-details-marker]:hidden"
         >
-          <span>Launch App</span>
-        </a>
-        <span class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 flex items-center gap-1.5 font-medium">
-          ✓ Works on Mac, Windows, Linux, iOS &amp; Android
-        </span>
-      </div>
+          <div class="flex items-center gap-3">
+            <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+            <span class="font-bold text-sm sm:text-base tracking-wide">
+              <span class="group-open:hidden">Show 8 More Features &amp; Capabilities</span>
+              <span class="hidden group-open:inline">Hide Additional Features &amp; Specifications</span>
+            </span>
+            <span
+              class="text-xs px-2.5 py-0.5 rounded-full bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 font-semibold hidden sm:inline-block"
+            >
+              All Included Free
+            </span>
+          </div>
+          <div class="flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-blue-600 dark:text-blue-400">
+            <span class="group-open:hidden">Show All ▾</span>
+            <span class="hidden group-open:inline">Collapse ▴</span>
+          </div>
+        </summary>
+        <div class="p-6 sm:p-8 pt-6 border-t border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70">
+          <ItemGrid
+            items={additionalFeatures}
+            columns={2}
+            classes={{
+              container: 'gap-x-8 gap-y-10',
+              title: 'md:text-[1.25rem] font-bold text-slate-900 dark:text-white',
+              description: 'text-slate-600 dark:text-slate-300 text-sm md:text-base leading-relaxed',
+              icon: 'text-white bg-slate-700 dark:bg-slate-700 rounded-xl w-10 h-10 md:w-12 md:h-12 p-2.5 mr-4 shadow-sm flex-shrink-0',
+            }}
+          />
+        </div>
+      </details>
     </div>
-  </div>
+  </WidgetWrapper>
 
   <!-- How It Works -->
   <Content
@@ -576,31 +590,6 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
-
-  <!-- Prompt 4: Step 1 Quick Start -->
-  <div class="max-w-3xl mx-auto px-4 sm:px-6 my-8 text-center">
-    <div
-      class="p-6 bg-white dark:bg-slate-800/90 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col sm:flex-row items-center justify-between gap-4"
-    >
-      <div class="text-center sm:text-left">
-        <p class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">Take Step 1 Right Now</p>
-        <p class="text-xs sm:text-sm text-muted dark:text-slate-400">
-          Add your first task in seconds. Zero setup required.
-        </p>
-      </div>
-      <a
-        href="https://app.123todo.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-5 py-2.5 rounded-xl text-sm shadow-sm transition-all whitespace-nowrap"
-      >
-        <span>Add Your First Task Free</span>
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-          ><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg
-        >
-      </a>
-    </div>
-  </div>
 
   <!-- Competitor Comparison Section: Best Free Alternative -->
   <section class="py-12 md:py-16 bg-slate-50 dark:bg-slate-900/60 border-y border-slate-200 dark:border-slate-800">
@@ -740,17 +729,17 @@ const metadata = {
     </div>
   </section>
 
-  <!-- Transparency Section: Why is 123 ToDo 100% Free? -->
+  <!-- Transparency & Privacy Section -->
   <section class="py-12 md:py-16 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="text-center max-w-3xl mx-auto mb-10 md:mb-14">
         <p class="text-xs sm:text-sm font-bold tracking-wider uppercase text-blue-600 dark:text-blue-400">
-          Radical Transparency
+          Radical Transparency &amp; Privacy
         </p>
         <h2
           class="text-3xl md:text-5xl font-bold font-heading tracking-tight text-heading dark:text-white mt-2 mb-4 text-balance"
         >
-          Why is 123 ToDo Free?<br class="hidden sm:inline" /> What's the Catch?
+          Why is 123 ToDo Free?<br class="hidden sm:inline" /> Your Data Stays 100%&nbsp;Yours
         </h2>
         <p class="text-lg text-muted dark:text-slate-300 max-w-2xl mx-auto text-balance">
           In an era of subscription fatigue, intrusive data tracking, and surprise paywalls, being 100% free naturally
@@ -777,25 +766,7 @@ const metadata = {
           </p>
         </div>
 
-        <!-- Pillar 2: Independent Ethos -->
-        <div
-          class="bg-slate-50 dark:bg-slate-800/70 p-6 md:p-8 rounded-2xl border border-slate-200/80 dark:border-slate-700 flex flex-col shadow-sm hover:shadow-md transition-shadow"
-        >
-          <div
-            class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-5 text-2xl font-bold"
-          >
-            🌱
-          </div>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2.5">2. Independent &amp; Ad-Free</h3>
-          <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed flex-1">
-            We are self-funded and independent. We have no venture capitalists demanding aggressive ads, no data brokers
-            buying your information, and no artificial 14-day paywalls locking your data away. The core 1-2-3
-            productivity method runs free in your browser, and any future advanced tiers will always be completely
-            transparent and opt-in.
-          </p>
-        </div>
-
-        <!-- Pillar 3: Zero-Knowledge Privacy -->
+        <!-- Pillar 2: Zero-Knowledge Privacy -->
         <div
           class="bg-slate-50 dark:bg-slate-800/70 p-6 md:p-8 rounded-2xl border border-slate-200/80 dark:border-slate-700 flex flex-col shadow-sm hover:shadow-md transition-shadow"
         >
@@ -804,11 +775,28 @@ const metadata = {
           >
             🛡️
           </div>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2.5">3. Zero-Knowledge Encryption</h3>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2.5">2. Zero-Knowledge Encryption</h3>
           <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed flex-1">
             You don't need to trust our servers with your personal life or business tasks. All data is encrypted
             directly on your device with military-grade <strong>AES-256-GCM</strong> before any cross-device sync occurs.
-            We don't possess your encryption keys, so we physically cannot view, monetize, or sell your data.
+            Neither we, Cloudflare, nor Google possess your encryption keys, so no one can view, monetize, or scan your data.
+          </p>
+        </div>
+
+        <!-- Pillar 3: Independent Ethos -->
+        <div
+          class="bg-slate-50 dark:bg-slate-800/70 p-6 md:p-8 rounded-2xl border border-slate-200/80 dark:border-slate-700 flex flex-col shadow-sm hover:shadow-md transition-shadow"
+        >
+          <div
+            class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-5 text-2xl font-bold"
+          >
+            🌱
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2.5">3. Independent &amp; Ad-Free</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed flex-1">
+            We are self-funded and independent. We have no venture capitalists demanding aggressive ads, no data brokers
+            buying your information, and no artificial paywalls. The core 1-2-3 productivity method runs free forever in
+            your browser without registration.
           </p>
         </div>
       </div>
@@ -843,73 +831,63 @@ const metadata = {
     </div>
   </section>
 
-  <!-- Privacy Promise -->
-  <Content
-    tagline="Privacy First"
-    title="Your Data Stays 100% Yours"
-    items={[
-      {
-        title: 'Zero-Knowledge Client-Side Encryption',
-        description:
-          'Your tasks and notes are encrypted with AES-256-GCM directly on your device before sync. Neither we, Cloudflare, Google, nor third parties can read your private data.',
-      },
-      {
-        title: 'No Registration Required',
-        description:
-          'No email, no password, no account required. Start using immediately on web, iOS, Android, Mac, or Windows without giving up personal data.',
-      },
-      {
-        title: 'Zero Data Lock-In Guarantee',
-        description:
-          'Export your complete workspace data as a JSON backup anytime with 1 click, or migrate seamlessly between devices with 6-digit sync codes.',
-      },
-    ]}
-    image={{
-      src: '~/assets/images/happy-at-desk.jpg',
-      alt: 'Happy person working at desk with secure, private task management app',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2 text-balance">
-        Built for privacy, designed for&nbsp;simplicity
-      </h3>
-      <p class="text-lg text-balance">
-        In an age of constant surveillance and subscription fatigue, 123 ToDo offers a refreshing, privacy-first,
-        free-to-use alternative. We don't want your data, and we don't need it to provide you with world-class task
-        management.
-      </p>
-    </Fragment>
-  </Content>
-
-  <!-- Prompt 6: Private Workspace -->
-  <div class="max-w-3xl mx-auto px-4 sm:px-6 my-8 text-center">
-    <div
-      class="p-6 bg-slate-900 text-white dark:bg-slate-800/95 rounded-2xl shadow-xl border border-slate-700 flex flex-col sm:flex-row items-center justify-between gap-4"
-    >
-      <div class="text-center sm:text-left">
-        <p class="text-base sm:text-lg font-bold">Your Private Workspace is Ready</p>
-        <p class="text-xs sm:text-sm text-slate-300">
-          No tracking, no ads, no registration. Just pure daily productivity on any device.
+  <!-- FAQ Section with Schema.org FAQPage Structured Data -->
+  <section class="py-12 md:py-16 bg-slate-50 dark:bg-slate-900/40 border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-10 md:mb-12">
+        <p class="text-base text-accent dark:text-blue-400 font-bold tracking-wide uppercase">Got Questions?</p>
+        <h2
+          class="text-3xl md:text-4xl font-bold font-heading tracking-tight text-heading dark:text-white mt-2 mb-4 text-balance"
+        >
+          Frequently Asked Questions
+        </h2>
+        <p class="text-lg text-muted dark:text-slate-300 max-w-2xl mx-auto text-balance">
+          Everything you need to know about 123 ToDo, offline data security, and migrating your workflow.
         </p>
       </div>
-      <a
-        href="https://app.123todo.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex items-center gap-2 bg-white hover:bg-slate-100 text-slate-900 font-bold px-5 py-2.5 rounded-xl text-sm shadow-md transition-all whitespace-nowrap flex-shrink-0"
-      >
-        <span>Start Private Workspace</span>
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-          ><path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-          ></path></svg
-        >
-      </a>
+
+      <div class="space-y-4">
+        {
+          faqs.map((faq, index) => (
+            <details class="group rounded-2xl border border-slate-200 dark:border-slate-700/80 bg-white dark:bg-slate-800 p-5 sm:p-6 transition-shadow hover:shadow-sm">
+              <summary class="flex items-center justify-between gap-4 cursor-pointer select-none font-bold text-base sm:text-lg text-slate-900 dark:text-white list-none [&::-webkit-details-marker]:hidden">
+                <span class="flex items-center gap-3">
+                  <span class="text-blue-600 dark:text-blue-400 font-bold text-sm sm:text-base">{index + 1}.</span>
+                  <span>{faq.question}</span>
+                </span>
+                <span class="w-7 h-7 flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-300 flex-shrink-0 group-open:rotate-180 transition-transform duration-200">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </span>
+              </summary>
+              <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-700/60 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+                <p>{faq.answer}</p>
+              </div>
+            </details>
+          ))
+        }
+      </div>
     </div>
-  </div>
+  </section>
+
+  <!-- Schema.org FAQPage Structured Data -->
+  <script
+    is:inline
+    type="application/ld+json"
+    set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqs.map((faq) => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer,
+        },
+      })),
+    })}
+  />
 
   <!-- Latest Blog Posts (Displaying Latest 3 Posts) -->
   <BlogLatestPosts

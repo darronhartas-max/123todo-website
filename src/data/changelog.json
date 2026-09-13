@@ -1,4 +1,10 @@
 {
+  "3.7.12": [
+    {
+      "title": "🛡️ Safe & Clean Lite Tasks View:",
+      "desc": "Removed the expand chevron icon adjacent to the archive checkbox in Lite tasks view to prevent accidental taps. Users can effortlessly view and edit complete task details and subtasks by clicking directly on the task item to open the full edit modal."
+    }
+  ],
   "3.7.11": [
     {
       "title": "🔒 Truthful & Evidentiary Timestamps Integrity:",

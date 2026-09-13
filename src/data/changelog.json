@@ -1,4 +1,10 @@
 {
+  "3.7.14": [
+    {
+      "title": "📱 Adaptive Resolution & Compact Phone Scaling:",
+      "desc": "Added automatic device screen resolution and viewport detection. For older and compact phones (such as iPhone SE, iPhone 5/6/7/8, Galaxy A-series, and screens ≤375px or ≤640px high), the app automatically adjusts base typography, header logo width, modal paddings, and touch targets to maintain optimal proportion and eliminate cramped layouts. Includes a manual override in Settings > Appearance (Auto, Compact, Standard)."
+    }
+  ],
   "3.7.13": [
     {
       "title": "🛡️ Safe & Clean Lite Notes View:",

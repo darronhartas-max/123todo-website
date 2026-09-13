@@ -2,4 +2,17 @@
 import { SITE } from 'astrowind:config';
 ---
 
-<img src="/123-logo-500px.jpg" alt={SITE?.name || '123 ToDo'} class="h-auto" style="width: 250px;" />
+<span class="flex items-center">
+  <img
+    src="/123-logo-500px-light.png"
+    alt={SITE?.name || '123 ToDo'}
+    class="h-auto dark:hidden max-w-full"
+    style="width: 250px;"
+  />
+  <img
+    src="/123-logo-500px-dark.png"
+    alt={SITE?.name || '123 ToDo'}
+    class="h-auto hidden dark:block max-w-full"
+    style="width: 250px;"
+  />
+</span>

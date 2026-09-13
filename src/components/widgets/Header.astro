@@ -80,12 +80,12 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
       </div>
     </div>
     <nav
-      class="items-center w-full md:w-auto hidden md:flex md:mx-5 text-default overflow-y-auto overflow-x-hidden md:overflow-y-visible md:overflow-x-auto md:justify-self-center px-6 sm:px-8 pt-8 pb-16 md:p-0"
+      class="items-center w-full md:w-auto hidden md:flex md:mx-5 text-default overflow-y-auto overflow-x-hidden md:overflow-y-visible md:overflow-x-auto md:justify-self-center px-5 sm:px-8 pt-4 pb-8 md:p-0"
       aria-label="Main navigation"
     >
       <!-- Mobile Header Brand Pill (House Colours) -->
       <div
-        class="md:hidden flex items-center justify-between pb-3.5 mb-6 border-b border-slate-200/70 dark:border-slate-800/80 px-1 w-full"
+        class="md:hidden flex items-center justify-between pb-2 mb-3 border-b border-slate-200/70 dark:border-slate-800/80 px-1 w-full"
       >
         <div class="flex items-center gap-2">
           <span
@@ -104,7 +104,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
       </div>
 
       <ul
-        class="flex flex-col md:flex-row md:self-center w-full md:w-auto text-xl md:text-[0.9375rem] tracking-[0.01rem] font-medium md:justify-center space-y-2 md:space-y-0"
+        class="flex flex-col md:flex-row md:self-center w-full md:w-auto text-xl md:text-[0.9375rem] tracking-[0.01rem] font-medium md:justify-center space-y-1 md:space-y-0"
       >
         {
           links.map(({ text, href, target, links }) => (
@@ -121,7 +121,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
                   </button>
 
                   {/* Mobile Group Category Header */}
-                  <div class="md:hidden pt-4 pb-1.5 px-1 flex items-center gap-2.5 mt-1">
+                  <div class="md:hidden pt-2.5 pb-1 px-1 flex items-center gap-2 mt-0.5">
                     <span class="w-1.5 h-1.5 rounded-full bg-slate-400 dark:bg-slate-500" />
                     <span class="text-[11px] font-extrabold uppercase tracking-widest text-slate-400 dark:text-slate-500">
                       {text}
@@ -130,12 +130,12 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
                   </div>
 
                   {/* Submenu List (Floating Card on Desktop, Indented on Mobile) */}
-                  <ul class="dropdown-menu md:backdrop-blur-md dark:md:bg-slate-900/95 md:bg-white/95 md:border md:border-slate-200/80 dark:md:border-slate-800 rounded-xl md:absolute pl-0 md:hidden font-medium md:min-w-[200px] md:shadow-xl md:p-1.5 space-y-1 bg-slate-50/90 dark:bg-slate-900/60 border border-slate-200/70 dark:border-slate-800/70 p-1.5 my-1">
+                  <ul class="dropdown-menu md:backdrop-blur-md dark:md:bg-slate-900/95 md:bg-white/95 md:border md:border-slate-200/80 dark:md:border-slate-800 rounded-xl md:absolute pl-0 md:hidden font-medium md:min-w-[200px] md:shadow-xl md:p-1.5 space-y-0.5 bg-slate-50/90 dark:bg-slate-900/60 border border-slate-200/70 dark:border-slate-800/70 p-1 my-0.5">
                     {links.map(({ text: text2, href: href2, target: target2 }) => (
                       <li>
                         <a
                           class:list={[
-                            'rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-link dark:hover:text-white py-2.5 px-3 md:px-3 flex items-center justify-between whitespace-nowrap text-[15px] md:text-sm text-slate-700 dark:text-slate-200 transition-colors',
+                            'rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-link dark:hover:text-white py-1.5 px-2.5 md:py-2 md:px-3 flex items-center justify-between whitespace-nowrap text-[15px] md:text-sm text-slate-700 dark:text-slate-200 transition-colors',
                             {
                               'aw-link-active font-semibold text-accent dark:text-blue-400 bg-blue-50/70 dark:bg-blue-950/40':
                                 href2 === currentPath,
@@ -173,7 +173,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
                 <>
                   {/* Mobile Standout Open App Card */}
                   <a
-                    class="md:hidden mt-4 p-3.5 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 text-white font-bold flex items-center justify-between shadow-md shadow-blue-500/25 hover:opacity-95 active:scale-[0.99] transition-all"
+                    class="md:hidden mt-2 p-2.5 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 text-white font-bold flex items-center justify-between shadow-md shadow-blue-500/25 hover:opacity-95 active:scale-[0.99] transition-all"
                     href={href}
                     target={target}
                     rel={target === '_blank' ? 'noopener noreferrer' : undefined}
@@ -208,7 +208,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
               ) : (
                 <a
                   class:list={[
-                    'rounded-xl px-3.5 py-2.5 md:py-3 flex items-center justify-between whitespace-nowrap text-[16px] md:text-[0.9375rem] transition-all',
+                    'rounded-xl px-3 py-1.5 md:py-3 md:px-3.5 flex items-center justify-between whitespace-nowrap text-[16px] md:text-[0.9375rem] transition-all',
                     'hover:bg-slate-100/90 dark:hover:bg-slate-800/80 active:bg-slate-200/70 dark:active:bg-slate-700/60',
                     {
                       'aw-link-active font-bold text-accent dark:text-blue-400 bg-blue-50/70 dark:bg-blue-950/40 border border-blue-200/50 dark:border-blue-800/40':
@@ -251,7 +251,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
 
       <!-- Mobile Menu Footer Brand Accents & Theme Toggle -->
       <div
-        class="md:hidden mt-8 pt-6 border-t border-slate-200/70 dark:border-slate-800/70 text-center text-xs text-slate-400 dark:text-slate-500 flex flex-col items-center gap-3.5 pb-12"
+        class="md:hidden mt-4 pt-3 border-t border-slate-200/70 dark:border-slate-800/70 text-center text-xs text-slate-400 dark:text-slate-500 flex flex-col items-center gap-2 pb-6"
       >
         {
           showToggleTheme && (

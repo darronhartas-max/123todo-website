@@ -745,16 +745,43 @@ const metadata = {
         />
       </div>
       <p>
-        Clicking the update prompt reloads the service worker instantly, giving you immediate access to new features and
-        performance enhancements with zero data loss or setup required.
+        123 ToDo updates silently in the background via modern service workers, giving you immediate access to new
+        features and performance enhancements with zero data loss, zero interruptions, and no disruptive banners.
       </p>
 
-      <h3>🛡️ Shadow Backups (Automatic)</h3>
-      <p>
-        123 ToDo includes a built-in <strong>Shadow Backup</strong> system for extra peace of mind. Every 24 hours, the app
-        automatically saves a "hidden" snapshot of your tasks internally. If your main task list is ever accidentally cleared,
-        this secondary restore point ensures you never lose more than a day's work.
-      </p>
+      <h3>🛡️ Built-In Resilience &amp; Automatic Shadow Backups</h3>
+      <p>123 ToDo is engineered with an enterprise-grade local resilience stack so you never lose work:</p>
+      <ul>
+        <li>
+          <strong>Instant Synchronous Writes:</strong> Unlike apps that buffer changes in volatile memory, 123 ToDo commits
+          every keystroke, checkbox tap, note edit, and reorder synchronously to physical local storage the millisecond you
+          take action.
+        </li>
+        <li>
+          <strong>Dual-Tier Photo Attachment Architecture:</strong> High-resolution original photos are saved to your browser's
+          dedicated
+          <strong>IndexedDB</strong> store (<code>123TodoPhotoDB</code>), while attachment metadata and compact visual
+          thumbnails (~160px WebP) are stored in LocalStorage and your shadow backups. This deliberate architecture
+          bypasses the strict 5MB LocalStorage quota limit that causes silent save failures in lesser web apps.
+        </li>
+        <li>
+          <strong>Automatic 24-Hour Shadow Snapshots:</strong> Every 24 hours, the app takes an autonomous internal snapshot
+          of your entire workspace (active tasks, archive, projects, subtasks, notes, and photo thumbnails). If you ever
+          make an accidental mass deletion or wipe, you can roll back to your last known good state with one click in <strong
+            >Settings ⚙️ ➔ Backup &amp; Restore</strong
+          >.
+        </li>
+        <li>
+          <strong>Immunity to Browser &amp; OS Updates:</strong> When Chrome, Safari, Edge, or your operating system updates
+          silently in the background, only application binaries are touched. Your browser user data profile (housing LocalStorage
+          and IndexedDB) is 100% preserved.
+        </li>
+        <li>
+          <strong>Persistent Storage API:</strong> 123 ToDo requests persistent storage permissions (<code
+            >navigator.storage.persist()</code
+          >), preventing the browser from evicting your data during low-disk-space maintenance sweeps.
+        </li>
+      </ul>
 
       <h3>📱 PWA Installation</h3>
       <p><strong>On Desktop (Chrome, Edge, Brave):</strong></p>
@@ -936,14 +963,24 @@ const metadata = {
           'Unlike traditional Google Drive OAuth logins that expire every hour in iOS PWAs, **Set & Forget Cloud Sync** uses a persistent, encrypted session key and instant 5-second 6-digit device pairing codes. You pair your iPhone once and stay connected seamlessly with zero re-login prompts!',
       },
       {
+        title: 'Will I lose my work if Chrome, Safari, or my OS updates silently in the background?',
+        description:
+          '**No.** Every action you take in 123 ToDo is written **synchronously and immediately** to physical local storage—there is no waiting for an end-of-day batch save. When Google Chrome, Apple Safari, Microsoft Edge, or your operating system updates silently, only the browser’s application executable is replaced. Your personal user profile directory—which contains your LocalStorage, IndexedDB databases, and PWA containers—remains completely intact and untouched.',
+      },
+      {
+        title: 'Are photo attachments included in the automatic 24-hour shadow backup?',
+        description:
+          '**Yes.** 123 ToDo uses an intelligent dual-tier storage architecture: original full-resolution photos are saved into a dedicated browser **IndexedDB** database (`123TodoPhotoDB`), while all task/note records, photo metadata, and **compact visual thumbnails (~160px WebP)** are saved directly into your 24-hour Shadow Backup. This prevents hitting the browser’s strict 5MB `localStorage` limit (which causes save crashes in other web apps) while guaranteeing your tasks and photos remain protected and visible.',
+      },
+      {
         title: 'Is my data safe on mobile?',
         description:
-          'Yes! We use the **Persistent Storage API** on mobile devices. When you install the app as a PWA, we request that the OS never clears your data, making it as robust as a native app.',
+          'Yes! 123 ToDo activates the **HTML5 Persistent Storage API** (`navigator.storage.persist()`) on mobile and desktop devices. When granted, the browser is instructed never to evict your local database during automated cleanup routines. Furthermore, adding 123 ToDo to your Home Screen (PWA) on iOS and Android creates an isolated app sandbox, decoupling it from regular browser tab cleanup policies.',
       },
       {
         title: 'What happens if I clear my browser data?',
         description:
-          'Clearing browser data will delete all your tasks permanently. This is why regular exports are crucial. We cannot recover lost data.',
+          'Manually selecting "Clear History and Website Data" in your browser settings will delete all local tasks and databases. This is why automated 24-hour shadow backups, weekly export reminders, and our optional E2E encrypted Cloud Sync are built in.',
       },
       {
         title: 'Can I use 123 ToDo offline?',

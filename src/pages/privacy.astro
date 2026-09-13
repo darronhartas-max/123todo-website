@@ -113,14 +113,19 @@ const metadata = {
         </li>
       </ul>
 
-      <h3>D. Automated Local Shadow Backups</h3>
+      <h3>D. Automated Local Shadow Backups &amp; Photo Storage</h3>
       <ul>
         <li>
           To safeguard against accidental user edits, 123 ToDo automatically creates localized daily snapshot backups.
         </li>
         <li>
-          These shadow snapshots reside exclusively in an isolated, protected IndexedDB store within your own browser on
-          your device, and are never transmitted across the network.
+          These shadow snapshots reside exclusively in protected local storage within your own browser on your device,
+          and are never transmitted across the network unless you explicitly enable zero-knowledge cloud sync.
+        </li>
+        <li>
+          Photo attachments are compressed and handled entirely client-side: high-resolution image binaries reside in
+          your browser's private IndexedDB database (<code>123TodoPhotoDB</code>), while visual thumbnails are preserved
+          in your local shadow backups.
         </li>
       </ul>
 

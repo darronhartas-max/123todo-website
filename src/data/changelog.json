@@ -1,4 +1,10 @@
 {
+  "3.7.13": [
+    {
+      "title": "🛡️ Safe & Clean Lite Notes View:",
+      "desc": "Removed the expand chevron icon adjacent to the archive checkbox in Lite notes view to eliminate accidental completions. Users can effortlessly expand and view full note details and edit mode by clicking directly on the note card or text."
+    }
+  ],
   "3.7.12": [
     {
       "title": "🛡️ Safe & Clean Lite Tasks View:",

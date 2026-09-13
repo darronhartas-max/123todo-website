@@ -13,7 +13,7 @@ const coreFeatures = [
   {
     title: '✨ Intuitive 1-2-3 Daily Priorities (Zero Learning Curve)',
     description:
-      'Focus on what truly matters today with a simple 4-tier matrix: Must Do (P1), Should Do (P2), Could Do (P3), and On Hold. Drag and drop tasks between buckets or reorder in seconds with zero configuration required.',
+      'Focus on what truly matters today with a simple 4-tier matrix: Must Do (P1), Should Do (P2), Could Do (P3), and On Hold. Drag and drop tasks between buckets or reorder in seconds to eliminate workday overwhelm.',
     icon: 'tabler:circle-check',
   },
   {
@@ -23,28 +23,28 @@ const coreFeatures = [
     icon: 'tabler:devices',
   },
   {
+    title: '📅 Smart Scheduling & Next-Day / Next-Week Deferral',
+    description:
+      'Schedule tasks for Today, Tomorrow, or specific weekdays with 1-click "Next Day" and "Next Week" quick buttons. Set automated recurring tasks that roll over automatically upon completion.',
+    icon: 'tabler:calendar-repeat',
+  },
+  {
     title: '📸 Photo Attachments & Clipboard Screen Grabs',
     description:
-      'Attach up to 3 photos per note! Capture site photos and receipts directly via camera on mobile, drag-and-drop files, or paste screenshots instantly from your clipboard (Cmd+V / Ctrl+V) with full-screen Lightbox zoom.',
+      'Attach up to 3 photos per note! Drag and drop files, paste clipboard screenshots instantly (⌘V / Ctrl+V) for work mockups and documentation, or snap receipts and whiteboard notes on mobile with full-screen Lightbox zoom.',
     icon: 'tabler:photo',
   },
   {
-    title: '🎙️ Dual Skin Modes: Task Manager vs. Simple Voice Notes',
+    title: '🎙️ Dual Skin Modes: Task Manager vs. Rapid Voice Notes',
     description:
-      'Switch instantly between a structured Task Manager (P1-P4 matrix) and a Simple Voice Notes mode with extra-large text, instant hands-free dictation, and unassigned inbox triage for field contractors & trades.',
+      'Switch instantly between a structured Task Manager (P1-P4 matrix for office focus and sprint planning) and a Simple Voice Notes mode with extra-large text and hands-free dictation for rapid thought capture away from your desk.',
     icon: 'tabler:transform',
   },
   {
     title: '🎤 Continuous Voice Dictation & Spoken Commands',
     description:
-      'Dictate tasks & notes naturally on the go. Auto-formats spoken punctuation ("comma", "full stop"), auto-capitalizes sentences, and auto-saves hands-free by saying "add task" or "add note".',
+      'Dictate tasks, meeting action items, and notes naturally on the go. Auto-formats spoken punctuation ("comma", "full stop"), auto-capitalizes sentences, and auto-saves hands-free by saying "add task" or "add note".',
     icon: 'tabler:microphone',
-  },
-  {
-    title: '📅 Smart Scheduling & Next-Day / Next-Week Deferral',
-    description:
-      'Schedule tasks for Today, Tomorrow, or specific weekdays with 1-click "Next Day" and "Next Week" quick buttons. Set automated recurring tasks that roll over automatically upon completion.',
-    icon: 'tabler:calendar-repeat',
   },
 ];
 
@@ -129,7 +129,7 @@ const faqs = [
   {
     question: 'How does the Dual Skins (Task Manager vs. Voice Notes) mode work?',
     answer:
-      'With a single tap on the header toggle, you can switch between Task Manager mode (a structured priority matrix with subtasks, due dates, and project folders) and Simple Voice Notes mode (extra-large high-contrast text and instant hands-free speech dictation for trades, field builders, and busy professionals). Both modes share the exact same underlying dataset.',
+      'With a single tap on the header toggle, you can switch between Task Manager mode (a structured priority matrix with subtasks, due dates, and project folders for office work and sprint planning) and Simple Voice Notes mode (extra-large high-contrast text and instant hands-free speech dictation for rapid thought capture away from your desk). Both modes share the exact same underlying dataset.',
   },
   {
     question: 'Does 123 ToDo work completely offline?',
@@ -236,49 +236,6 @@ const metadata = {
           100% Client-Side Private
         </span>
       </div>
-
-      <div class="mt-6 pt-5 border-t border-slate-200/80 dark:border-slate-800 max-w-2xl mx-auto">
-        <p class="text-xs uppercase tracking-wider font-bold text-slate-500 dark:text-slate-400 mb-2.5">
-          ⚡ Available Everywhere — 100% Free &amp; Offline-Ready
-        </p>
-        <div
-          class="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-200"
-        >
-          <span
-            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm"
-          >
-            🍏 Mac
-          </span>
-          <span
-            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm"
-          >
-            🪟 Windows
-          </span>
-          <span
-            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm"
-          >
-            🐧 Linux
-          </span>
-          <span
-            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm"
-          >
-            📱 iOS (iPhone &amp; iPad)
-          </span>
-          <span
-            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm"
-          >
-            🤖 Android
-          </span>
-          <span
-            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800/80 shadow-sm"
-          >
-            🌐 Any Web Browser
-          </span>
-        </div>
-        <p class="text-xs text-muted dark:text-slate-400 mt-2.5">
-          Instant Web App • Installable PWA • Real-time Zero-Knowledge Sync across all your devices
-        </p>
-      </div>
     </Fragment>
 
     <Fragment slot="image">
@@ -288,47 +245,25 @@ const metadata = {
     </Fragment>
   </Hero>
 
-  <!-- New Feature Promo Banner -->
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 -mt-4 mb-8">
-    <a
-      href="/guide"
-      class="flex flex-col sm:flex-row items-center justify-between gap-3 p-4 bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-600 rounded-2xl text-white shadow-lg shadow-blue-500/20 hover:shadow-xl hover:scale-[1.01] transition duration-200"
-    >
-      <div class="flex items-center gap-3">
-        <span
-          class="bg-white/20 text-white text-xs uppercase font-bold tracking-wider px-2.5 py-1 rounded-full border border-white/30 backdrop-blur-sm"
-          >NEW v3.7.0</span
-        >
-        <span class="font-medium text-sm sm:text-base text-balance"
-          >🕒 1-Click Timestamped Notes &amp; Activity Logs, Visible Creation Times, and Photo Attachments are live!</span
-        >
-      </div>
-      <span
-        class="text-xs sm:text-sm font-semibold bg-white text-blue-700 px-3.5 py-1.5 rounded-xl whitespace-nowrap flex items-center gap-1 shadow-sm"
-        >Explore Guide &rarr;</span
-      >
-    </a>
-  </div>
-
-  <!-- Dual Skins Showcase (Moved up right after hero/banner for immediate visual impact) -->
+  <!-- Dual Skins Showcase (Structured Task Manager + Voice Notes) -->
   <Content
     tagline="Versatile Operating System"
-    title="One Free App, Two Powerful Modes"
+    title="One Free App, Two Powerful Modes"
     items={[
       {
-        title: '🎙️ Simple Voice Notes Mode',
+        title: '📋 Structured Task Manager Mode',
         description:
-          'Extra-large text, high contrast, and rapid voice dictation controls designed for builders, contractors, and busy professionals on site. Speak measurements, materials, or updates hands-free without worrying about project tagging upfront.',
+          'High-clarity 1-2-3 priority matrix (Must Do P1, Should Do P2, Could Do P3, On Hold P4) with subtask checklists, due dates, drag-and-drop reordering, and project categorization engineered for busy office professionals and knowledge workers.',
       },
       {
-        title: '📋 Task Manager Mode',
+        title: '🎙️ Rapid Voice Notes Mode',
         description:
-          'Structured priority matrix (Must Do P1, Should Do P2, Could Do P3, On Hold P4) with subtask checklists, due dates, drag-and-drop reordering, and attached notes.',
+          'Extra-large text, high contrast, and instant hands-free speech dictation. Capture meeting action items, project thoughts, or voice memos immediately when away from your desk without upfront tagging.',
       },
       {
         title: '🔄 Unified Cross-Platform Dataset',
         description:
-          'Switch skins at will with a 1-tap header toggle. All notes and tasks live in the exact same dataset and sync automatically across all your devices via zero-knowledge Cloudflare D1 or Google Drive sync.',
+          'Switch skins instantly with a 1-tap header toggle. All notes and tasks live in the exact same dataset and sync automatically across all your devices via zero-knowledge Cloudflare D1 or Google Drive sync.',
       },
     ]}
     image={{
@@ -338,11 +273,11 @@ const metadata = {
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2 text-balance">
-        Designed for both field work &amp; office&nbsp;focus
+        Engineered for deep focus &amp; executive&nbsp;clarity
       </h3>
       <p class="text-lg text-balance">
-        Whether you are on a construction site taking quick site measurements or at your desk planning your week, 123
-        ToDo adapts to your workflow seamlessly.
+        Whether you are at your desk planning sprints and managing deliverables, or in transit capturing rapid voice
+        memos, 123 ToDo adapts to your workday seamlessly.
       </p>
     </Fragment>
 

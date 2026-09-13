@@ -40,7 +40,7 @@ jobs:
       - run: npm run check
 
   deploy:
-    if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     needs: [build, check]
     runs-on: ubuntu-latest
     steps:

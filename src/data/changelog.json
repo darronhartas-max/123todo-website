@@ -1,4 +1,10 @@
 {
+  "3.7.16": [
+    {
+      "title": "✨ Streamlined Main List Toolbar:",
+      "desc": "Removed the Pro/Lite interface toggle switch from the main task list toolbar, freeing up valuable space for project names and essential action buttons on smaller mobile screens. Interface Profile selection remains fully available and configurable under Settings > Appearance."
+    }
+  ],
   "3.7.15": [
     {
       "title": "🔄 Restored Drag-and-Drop Task Reordering in Lite Mode:",

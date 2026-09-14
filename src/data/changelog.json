@@ -1,4 +1,10 @@
 {
+  "3.7.15": [
+    {
+      "title": "🔄 Restored Drag-and-Drop Task Reordering in Lite Mode:",
+      "desc": "Restored draggable handlers and reordering capability across tasks in Lite mode. Users can seamlessly click and drag tasks to reorder them within or between priority sections and project columns in both Lite and Pro interface profiles, with safeguards ensuring smooth drops without unintended edit modal triggers."
+    }
+  ],
   "3.7.14": [
     {
       "title": "📱 Adaptive Resolution & Compact Phone Scaling:",

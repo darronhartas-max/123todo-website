@@ -1,4 +1,10 @@
 {
+  "3.7.19": [
+    {
+      "title": "✨ Streamlined Notes Toolbar:",
+      "desc": "Removed the redundant Pro/Lite toggle switch from the Notes view toolbar to match Tasks mode. Interface Profile selection remains fully available and configurable under Settings > Appearance."
+    }
+  ],
   "3.7.18": [
     {
       "title": "🎙️ Clean Voice Dictation & Echo Prevention:",

@@ -1,4 +1,10 @@
 {
+  "3.7.18": [
+    {
+      "title": "🎙️ Clean Voice Dictation & Echo Prevention:",
+      "desc": "Resolved speech recognition text duplication across pauses in Notes mode. Cleaned up recognition instance recycling during natural pauses and pauses between sentences, preventing repeated words, duplicated sentences, and overlapping speech buffers."
+    }
+  ],
   "3.7.17": [
     {
       "title": "🔄 Drag-and-Drop Reordering for On Hold Tasks:",

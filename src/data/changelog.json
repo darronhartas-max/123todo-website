@@ -1,4 +1,10 @@
 {
+  "3.7.21": [
+    {
+      "title": "🏢 Commercial White-Labeling & Multi-Tenant Branding (Phase 1):",
+      "desc": "Introduced an extensible configuration architecture allowing custom branded editions for commercial clients while preserving seamless core app updates for everyone. Supports custom partner footer branding, partner logos, client-specific support/portal links, and client feature flags with instant activation via URL (?brand=pilot) and device persistence."
+    }
+  ],
   "3.7.20": [
     {
       "title": "🎨 Styled Projects Dropdown in Notes Mode:",

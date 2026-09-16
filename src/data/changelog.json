@@ -1,4 +1,10 @@
 {
+  "3.7.22": [
+    {
+      "title": "📅 Chronological Scheduled Tasks Sorting:",
+      "desc": "Scheduled and recurring tasks in the Scheduled section are now automatically sorted in ascending date order with tasks due the soonest displayed at the top of the list."
+    }
+  ],
   "3.7.21": [
     {
       "title": "🏢 Commercial White-Labeling & Multi-Tenant Branding (Phase 1):",

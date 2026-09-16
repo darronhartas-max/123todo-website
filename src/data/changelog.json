@@ -1,4 +1,10 @@
 {
+  "3.7.20": [
+    {
+      "title": "🎨 Styled Projects Dropdown in Notes Mode:",
+      "desc": "Upgraded the Notes view project dropdown to match the custom styled dropdown in Tasks mode, featuring vibrant project color borders, colored indicator bands, accurate note counts, and active highlighting."
+    }
+  ],
   "3.7.19": [
     {
       "title": "✨ Streamlined Notes Toolbar:",

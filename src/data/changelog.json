@@ -1,4 +1,10 @@
 {
+  "3.7.23": [
+    {
+      "title": "🔝 Top Priority Placement for Scheduled Tasks Due Today:",
+      "desc": "When a scheduled task reaches its set day (or is due today), it is now automatically placed at the top of its priority list, ensuring it is immediately visible and never overlooked even in long lists."
+    }
+  ],
   "3.7.22": [
     {
       "title": "📅 Chronological Scheduled Tasks Sorting:",

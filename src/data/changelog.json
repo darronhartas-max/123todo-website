@@ -1,4 +1,10 @@
 {
+  "3.7.26": [
+    {
+      "title": "🖐️ Drag-and-Drop Reordering for Due Scheduled Tasks:",
+      "desc": "Scheduled tasks continue to appear at the top of their priority list when their set due date arrives, but now fully respect custom drag-and-drop reordering without snapping back to the top, allowing users to freely move them anywhere in the list or place other tasks above them."
+    }
+  ],
   "3.7.25": [
     {
       "title": "📝 Streamlined & Clutter-Free Notes View:",

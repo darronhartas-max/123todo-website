@@ -1,4 +1,10 @@
 {
+  "3.7.31": [
+    {
+      "title": "✨ Clean Priority Section Headers:",
+      "desc": "Removed the redundant \"Collapsed\" text label from priority section headers in the main task list. Sections maintain clean, uncluttered visual headers with intuitive chevron toggle icons indicating collapse and expansion states."
+    }
+  ],
   "3.7.30": [
     {
       "title": "⏰ Simple Clock Face Time Picker:",

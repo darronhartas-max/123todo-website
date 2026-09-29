@@ -1,4 +1,10 @@
 {
+  "3.7.28": [
+    {
+      "title": "📅 Google & Apple Calendar Integration & Automated Reminders:",
+      "desc": "Added seamless 1-click \"Add to Google Calendar\" and \"Add to Apple Calendar\" (.ics) buttons when scheduling tasks, pre-configured with reminders. Also introduced automated in-app and PWA reminders for due scheduled tasks on desktop and mobile devices, with a preference toggle in Settings."
+    }
+  ],
   "3.7.27": [
     {
       "title": "⏰ Optional Time for Scheduled Tasks:",

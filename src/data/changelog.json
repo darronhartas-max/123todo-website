@@ -1,4 +1,10 @@
 {
+  "3.7.30": [
+    {
+      "title": "⏰ Simple Clock Face Time Picker:",
+      "desc": "Simplified the scheduling time picker to a clean, minimal interface. Clicking the time input opens the intuitive native clock face to easily pick the hour then minutes, eliminating visual clutter while preserving quick Google Calendar and Apple Calendar integration."
+    }
+  ],
   "3.7.29": [
     {
       "title": "⚡ Fast 1-Tap Time Presets & Clean Dropdown Picker:",

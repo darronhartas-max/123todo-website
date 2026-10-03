@@ -1,4 +1,10 @@
 {
+  "3.7.35": [
+    {
+      "title": "📊 Complete Active Task Counts in Projects Dropdown:",
+      "desc": "Audited and refined the active task counts displayed in the Projects dropdown trigger and menu. Project badges now accurately reflect all active tasks across Must Do, Should Do, Could Do, On Hold, and Scheduled & Recurring tasks (including future scheduled dates)."
+    }
+  ],
   "3.7.34": [
     {
       "title": "📐 Full-Width Real-Estate for On Hold & Scheduled Tasks:",

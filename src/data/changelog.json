@@ -1,4 +1,10 @@
 {
+  "3.7.41": [
+    {
+      "title": "🔁 Streamlined Recurrence Icon on Schedule Row & Right-Aligned Add Note:",
+      "desc": "Replaced the textual \"Repeat this task\" label with a clean Repeat icon toggle, unified directly onto the same line as the schedule time icon to maximize vertical screen space in both Add Task and Edit Task modals. In Notes mode, relocated the Add Note button to the right side of the header bar with generous touch targets for rapid, thumb-friendly note capture."
+    }
+  ],
   "3.7.40": [
     {
       "title": "🕒 Streamlined Timestamp & Time Icons, Optional Creation Timestamp:",

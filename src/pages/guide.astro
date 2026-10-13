@@ -15,19 +15,10 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Section -->
   <Hero
-    image={{
-      src: '~/assets/images/frustrated.jpg',
-      alt: 'Frustrated with task management - let us help',
-    }}
-  >
-    <Fragment slot="title">
-      <span class="text-accent dark:text-white">User Guide</span>
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      <span class="text-lg"> Everything you need to know to master 123 ToDo </span>
-    </Fragment>
-  </Hero>
+    tagline="Documentation & User Manual"
+    title="User Guide"
+    subtitle="Everything you need to master 123 ToDo — from continuous voice dictation and scheduled timelines to zero-knowledge cloud sync and rapid keyboard shortcuts."
+  />
 
   <!-- Stylised Guide Directory & Contents Panel -->
   <section id="guide-index" class="px-4 py-8 md:py-12 mx-auto max-w-6xl scroll-mt-24">
@@ -72,72 +63,63 @@ const metadata = {
         <div
           class="text-[11px] font-extrabold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3 flex items-center gap-1.5"
         >
-          <Icon name="tabler:flame" class="w-4 h-4 text-amber-500" />
+          <Icon name="tabler:bookmark" class="w-4 h-4 text-blue-500" />
           <span>Frequently Accessed Chapters</span>
         </div>
         <div class="flex flex-wrap gap-2 sm:gap-2.5">
           <a
             href="#getting-started"
-            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-500 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 shadow-sm transition-all hover:scale-[1.02]"
+            class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-500 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 shadow-sm transition-all hover:scale-[1.02]"
           >
-            <span>🚀</span>
-            <span>60-Sec Quick Start</span>
+            60-Sec Quick Start
           </a>
           <a
             href="#voice-dictation"
-            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-500 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 shadow-sm transition-all hover:scale-[1.02]"
+            class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-500 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 shadow-sm transition-all hover:scale-[1.02]"
           >
-            <span>🎙️</span>
-            <span>Voice Dictation Guide</span>
+            Voice Dictation Guide
           </a>
           <a
             href="#photo-attachments"
-            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-500 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 shadow-sm transition-all hover:scale-[1.02]"
+            class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-500 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 shadow-sm transition-all hover:scale-[1.02]"
           >
-            <span>📸</span>
-            <span>Photos &amp; Screen Grabs</span>
+            Photos &amp; Screen Grabs
           </a>
           <a
             href="#cloud-sync"
-            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-500 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 shadow-sm transition-all hover:scale-[1.02]"
+            class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-500 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 shadow-sm transition-all hover:scale-[1.02]"
           >
-            <span>☁️</span>
-            <span>Cloud Sync Setup</span>
+            Cloud Sync Setup
           </a>
           <a
             href="#shadow-backups"
-            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-500 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 shadow-sm transition-all hover:scale-[1.02]"
+            class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-500 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 shadow-sm transition-all hover:scale-[1.02]"
           >
-            <span>🛡️</span>
-            <span>Shadow Backups</span>
+            Shadow Backups
           </a>
           <a
             href="#todoist-migration"
-            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-500 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 shadow-sm transition-all hover:scale-[1.02]"
+            class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-500 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 shadow-sm transition-all hover:scale-[1.02]"
           >
-            <span>📦</span>
-            <span>Universal App Importer</span>
+            Universal App Importer
           </a>
           <a
             href="#keyboard-shortcuts"
-            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-500 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 shadow-sm transition-all hover:scale-[1.02]"
+            class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-500 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 shadow-sm transition-all hover:scale-[1.02]"
           >
-            <span>⌨️</span>
-            <span>Keyboard Shortcuts</span>
+            Keyboard Shortcuts
           </a>
           <a
             href="#troubleshooting"
-            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-500 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 shadow-sm transition-all hover:scale-[1.02]"
+            class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-500 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 shadow-sm transition-all hover:scale-[1.02]"
           >
-            <span>🔧</span>
-            <span>Troubleshooting</span>
+            Troubleshooting
           </a>
           <a
             href="#faq"
-            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-500 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 shadow-sm transition-all hover:scale-[1.02]"
+            class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-500 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 shadow-sm transition-all hover:scale-[1.02]"
           >
-            <span>❓</span>
-            <span>FAQs</span>
+            FAQs
           </a>
         </div>
       </div>
@@ -146,11 +128,11 @@ const metadata = {
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
         <!-- Column 1: Getting Started & Tasks -->
         <div
-          class="p-5 rounded-2xl bg-white/80 dark:bg-slate-900/90 border border-red-200/60 dark:border-red-900/30 flex flex-col shadow-sm"
+          class="p-5 rounded-2xl bg-white/90 dark:bg-slate-900/90 border border-slate-200/80 dark:border-slate-800 flex flex-col shadow-sm"
         >
           <div class="flex items-center gap-2.5 mb-4 pb-3 border-b border-slate-100 dark:border-slate-800">
             <span
-              class="w-7 h-7 rounded-lg bg-red-100 dark:bg-red-900/40 text-red-600 dark:text-red-400 flex items-center justify-center flex-shrink-0"
+              class="w-7 h-7 rounded-lg bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 border border-blue-200/40 dark:border-blue-800/40 flex items-center justify-center flex-shrink-0"
             >
               <Icon name="tabler:checklist" class="w-4 h-4" />
             </span>
@@ -163,72 +145,72 @@ const metadata = {
             <li>
               <a
                 href="#getting-started"
-                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50/50 dark:hover:bg-red-950/20 transition-colors font-medium"
+                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors font-medium"
               >
                 <span>60-Sec Quick Start</span>
                 <Icon
                   name="tabler:chevron-right"
-                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-red-500 transition-opacity"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-blue-500 transition-opacity"
                 />
               </a>
             </li>
             <li>
               <a
                 href="#dual-skins"
-                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50/50 dark:hover:bg-red-950/20 transition-colors font-medium"
+                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors font-medium"
               >
                 <span>Tasks vs. Voice Notes</span>
                 <Icon
                   name="tabler:chevron-right"
-                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-red-500 transition-opacity"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-blue-500 transition-opacity"
                 />
               </a>
             </li>
             <li>
               <a
                 href="#priority-system"
-                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50/50 dark:hover:bg-red-950/20 transition-colors font-medium"
+                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors font-medium"
               >
                 <span>1-2-3 Priority System</span>
                 <Icon
                   name="tabler:chevron-right"
-                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-red-500 transition-opacity"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-blue-500 transition-opacity"
                 />
               </a>
             </li>
             <li>
               <a
                 href="#adding-editing-tasks"
-                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50/50 dark:hover:bg-red-950/20 transition-colors font-medium"
+                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors font-medium"
               >
                 <span>Adding &amp; Editing Tasks</span>
                 <Icon
                   name="tabler:chevron-right"
-                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-red-500 transition-opacity"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-blue-500 transition-opacity"
                 />
               </a>
             </li>
             <li>
               <a
                 href="#character-limits"
-                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50/50 dark:hover:bg-red-950/20 transition-colors font-medium"
+                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors font-medium"
               >
                 <span>Unlimited Task Length</span>
                 <Icon
                   name="tabler:chevron-right"
-                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-red-500 transition-opacity"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-blue-500 transition-opacity"
                 />
               </a>
             </li>
             <li>
               <a
                 href="#actionable-contacts"
-                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50/50 dark:hover:bg-red-950/20 transition-colors font-medium"
+                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors font-medium"
               >
                 <span>Clickable Phones &amp; Emails</span>
                 <Icon
                   name="tabler:chevron-right"
-                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-red-500 transition-opacity"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-blue-500 transition-opacity"
                 />
               </a>
             </li>
@@ -237,11 +219,11 @@ const metadata = {
 
         <!-- Column 2: Productivity & Workflows -->
         <div
-          class="p-5 rounded-2xl bg-white/80 dark:bg-slate-900/90 border border-blue-200/60 dark:border-blue-900/30 flex flex-col shadow-sm"
+          class="p-5 rounded-2xl bg-white/90 dark:bg-slate-900/90 border border-slate-200/80 dark:border-slate-800 flex flex-col shadow-sm"
         >
           <div class="flex items-center gap-2.5 mb-4 pb-3 border-b border-slate-100 dark:border-slate-800">
             <span
-              class="w-7 h-7 rounded-lg bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 flex items-center justify-center flex-shrink-0"
+              class="w-7 h-7 rounded-lg bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 border border-blue-200/40 dark:border-blue-800/40 flex items-center justify-center flex-shrink-0"
             >
               <Icon name="tabler:sparkles" class="w-4 h-4" />
             </span>
@@ -254,7 +236,7 @@ const metadata = {
             <li>
               <a
                 href="#voice-dictation"
-                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50/50 dark:hover:bg-blue-950/20 transition-colors font-medium"
+                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors font-medium"
               >
                 <span>Voice Dictation &amp; Edits</span>
                 <Icon
@@ -266,7 +248,7 @@ const metadata = {
             <li>
               <a
                 href="#photo-attachments"
-                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50/50 dark:hover:bg-blue-950/20 transition-colors font-medium"
+                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors font-medium"
               >
                 <span>Photo &amp; Screen Grabs</span>
                 <Icon
@@ -278,7 +260,7 @@ const metadata = {
             <li>
               <a
                 href="#reordering-tasks"
-                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50/50 dark:hover:bg-blue-950/20 transition-colors font-medium"
+                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors font-medium"
               >
                 <span>Sorting &amp; Drag-and-Drop</span>
                 <Icon
@@ -290,7 +272,7 @@ const metadata = {
             <li>
               <a
                 href="#subtasks"
-                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50/50 dark:hover:bg-blue-950/20 transition-colors font-medium"
+                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors font-medium"
               >
                 <span>Subtask Checklists</span>
                 <Icon
@@ -302,7 +284,7 @@ const metadata = {
             <li>
               <a
                 href="#scheduled-tasks"
-                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50/50 dark:hover:bg-blue-950/20 transition-colors font-medium"
+                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors font-medium"
               >
                 <span>Scheduled &amp; Recurring</span>
                 <Icon
@@ -314,7 +296,7 @@ const metadata = {
             <li>
               <a
                 href="#archive-system"
-                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50/50 dark:hover:bg-blue-950/20 transition-colors font-medium"
+                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors font-medium"
               >
                 <span>Archive &amp; Restoration</span>
                 <Icon
@@ -328,11 +310,11 @@ const metadata = {
 
         <!-- Column 3: Sync & Data Resilience -->
         <div
-          class="p-5 rounded-2xl bg-white/80 dark:bg-slate-900/90 border border-emerald-200/60 dark:border-emerald-900/30 flex flex-col shadow-sm"
+          class="p-5 rounded-2xl bg-white/90 dark:bg-slate-900/90 border border-slate-200/80 dark:border-slate-800 flex flex-col shadow-sm"
         >
           <div class="flex items-center gap-2.5 mb-4 pb-3 border-b border-slate-100 dark:border-slate-800">
             <span
-              class="w-7 h-7 rounded-lg bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400 flex items-center justify-center flex-shrink-0"
+              class="w-7 h-7 rounded-lg bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 border border-blue-200/40 dark:border-blue-800/40 flex items-center justify-center flex-shrink-0"
             >
               <Icon name="tabler:shield-check" class="w-4 h-4" />
             </span>
@@ -345,72 +327,72 @@ const metadata = {
             <li>
               <a
                 href="#cloud-sync"
-                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50/50 dark:hover:bg-emerald-950/20 transition-colors font-medium"
+                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors font-medium"
               >
                 <span>Set &amp; Forget Cloud Sync</span>
                 <Icon
                   name="tabler:chevron-right"
-                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-emerald-500 transition-opacity"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-blue-500 transition-opacity"
                 />
               </a>
             </li>
             <li>
               <a
                 href="#shadow-backups"
-                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50/50 dark:hover:bg-emerald-950/20 transition-colors font-medium"
+                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors font-medium"
               >
                 <span>24h Shadow Backups</span>
                 <Icon
                   name="tabler:chevron-right"
-                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-emerald-500 transition-opacity"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-blue-500 transition-opacity"
                 />
               </a>
             </li>
             <li>
               <a
                 href="#todoist-migration"
-                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50/50 dark:hover:bg-emerald-950/20 transition-colors font-medium"
+                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors font-medium"
               >
                 <span>Universal App Importer</span>
                 <Icon
                   name="tabler:chevron-right"
-                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-emerald-500 transition-opacity"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-blue-500 transition-opacity"
                 />
               </a>
             </li>
             <li>
               <a
                 href="#pwa-installation"
-                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50/50 dark:hover:bg-emerald-950/20 transition-colors font-medium"
+                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors font-medium"
               >
                 <span>PWA Installation</span>
                 <Icon
                   name="tabler:chevron-right"
-                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-emerald-500 transition-opacity"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-blue-500 transition-opacity"
                 />
               </a>
             </li>
             <li>
               <a
                 href="#automated-updates"
-                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50/50 dark:hover:bg-emerald-950/20 transition-colors font-medium"
+                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors font-medium"
               >
                 <span>Silent Updates</span>
                 <Icon
                   name="tabler:chevron-right"
-                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-emerald-500 transition-opacity"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-blue-500 transition-opacity"
                 />
               </a>
             </li>
             <li>
               <a
                 href="#backup-reminders"
-                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50/50 dark:hover:bg-emerald-950/20 transition-colors font-medium"
+                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors font-medium"
               >
                 <span>Manual Export Reminders</span>
                 <Icon
                   name="tabler:chevron-right"
-                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-emerald-500 transition-opacity"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-blue-500 transition-opacity"
                 />
               </a>
             </li>
@@ -419,11 +401,11 @@ const metadata = {
 
         <!-- Column 4: Customization & Help -->
         <div
-          class="p-5 rounded-2xl bg-white/80 dark:bg-slate-900/90 border border-amber-200/60 dark:border-amber-900/30 flex flex-col shadow-sm"
+          class="p-5 rounded-2xl bg-white/90 dark:bg-slate-900/90 border border-slate-200/80 dark:border-slate-800 flex flex-col shadow-sm"
         >
           <div class="flex items-center gap-2.5 mb-4 pb-3 border-b border-slate-100 dark:border-slate-800">
             <span
-              class="w-7 h-7 rounded-lg bg-amber-100 dark:bg-amber-900/40 text-amber-600 dark:text-amber-400 flex items-center justify-center flex-shrink-0"
+              class="w-7 h-7 rounded-lg bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 border border-blue-200/40 dark:border-blue-800/40 flex items-center justify-center flex-shrink-0"
             >
               <Icon name="tabler:adjustments" class="w-4 h-4" />
             </span>
@@ -436,84 +418,84 @@ const metadata = {
             <li>
               <a
                 href="#achievements"
-                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-amber-600 dark:hover:text-amber-400 hover:bg-amber-50/50 dark:hover:bg-amber-950/20 transition-colors font-medium"
+                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors font-medium"
               >
                 <span>10-Tier Achievements</span>
                 <Icon
                   name="tabler:chevron-right"
-                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-amber-500 transition-opacity"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-blue-500 transition-opacity"
                 />
               </a>
             </li>
             <li>
               <a
                 href="#theme-appearance"
-                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-amber-600 dark:hover:text-amber-400 hover:bg-amber-50/50 dark:hover:bg-amber-950/20 transition-colors font-medium"
+                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors font-medium"
               >
                 <span>3 Light Tones &amp; Dark Mode</span>
                 <Icon
                   name="tabler:chevron-right"
-                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-amber-500 transition-opacity"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-blue-500 transition-opacity"
                 />
               </a>
             </li>
             <li>
               <a
                 href="#kanban-view"
-                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-amber-600 dark:hover:text-amber-400 hover:bg-amber-50/50 dark:hover:bg-amber-950/20 transition-colors font-medium"
+                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors font-medium"
               >
                 <span>Wide-Screen Kanban Columns</span>
                 <Icon
                   name="tabler:chevron-right"
-                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-amber-500 transition-opacity"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-blue-500 transition-opacity"
                 />
               </a>
             </li>
             <li>
               <a
                 href="#touch-gestures"
-                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-amber-600 dark:hover:text-amber-400 hover:bg-amber-50/50 dark:hover:bg-amber-950/20 transition-colors font-medium"
+                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors font-medium"
               >
                 <span>Mobile Swipe Gestures</span>
                 <Icon
                   name="tabler:chevron-right"
-                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-amber-500 transition-opacity"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-blue-500 transition-opacity"
                 />
               </a>
             </li>
             <li>
               <a
                 href="#keyboard-shortcuts"
-                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-amber-600 dark:hover:text-amber-400 hover:bg-amber-50/50 dark:hover:bg-amber-950/20 transition-colors font-medium"
+                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors font-medium"
               >
                 <span>Keyboard Shortcuts</span>
                 <Icon
                   name="tabler:chevron-right"
-                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-amber-500 transition-opacity"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-blue-500 transition-opacity"
                 />
               </a>
             </li>
             <li>
               <a
                 href="#troubleshooting"
-                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-amber-600 dark:hover:text-amber-400 hover:bg-amber-50/50 dark:hover:bg-amber-950/20 transition-colors font-medium"
+                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors font-medium"
               >
                 <span>Troubleshooting &amp; Fixes</span>
                 <Icon
                   name="tabler:chevron-right"
-                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-amber-500 transition-opacity"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-blue-500 transition-opacity"
                 />
               </a>
             </li>
             <li>
               <a
                 href="#faq"
-                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-amber-600 dark:hover:text-amber-400 hover:bg-amber-50/50 dark:hover:bg-amber-950/20 transition-colors font-medium"
+                class="group flex items-center justify-between py-1.5 px-2 rounded-lg text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors font-medium"
               >
                 <span>Frequently Asked Questions</span>
                 <Icon
                   name="tabler:chevron-right"
-                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-amber-500 transition-opacity"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 text-blue-500 transition-opacity"
                 />
               </a>
             </li>
@@ -570,10 +552,9 @@ const metadata = {
     </div>
 
     <div class="prose prose-lg dark:prose-invert max-w-none">
-      <h3 id="dual-skins" class="scroll-mt-24">🔄 Dual Skins: Task Manager vs. Simple Voice Notes</h3>
+      <h3 id="dual-skins" class="scroll-mt-24">Dual Skins: Task Manager vs. Simple Voice Notes</h3>
       <p>
-        123 ToDo features a 1-tap skin switcher at the top of the header bar: <code>[ 📋 Tasks | 🎙️ Voice Notes ]</code
-        >.
+        123 ToDo features a 1-tap skin switcher at the top of the header bar: <code>[ Tasks | Voice Notes ]</code>.
       </p>
       <ul>
         <li>
@@ -595,7 +576,7 @@ const metadata = {
         </li>
       </ul>
 
-      <h3 id="priority-system" class="scroll-mt-24">🎯 Priority System & Collapsible Sections</h3>
+      <h3 id="priority-system" class="scroll-mt-24">Priority System &amp; Collapsible Sections</h3>
       <p>
         123 ToDo uses a 4-level priority system to help you focus on what matters most, complete with instant
         expand/contract toggles on each priority section for an uncluttered view:
@@ -619,11 +600,11 @@ const metadata = {
         </li>
       </ul>
       <p class="text-sm italic text-gray-600 dark:text-gray-400 mt-2">
-        💡 <strong>Pro-Tip:</strong> Click the chevron icon next to any priority section title to collapse sections you aren't
+        <strong>Pro Tip:</strong> Click the chevron icon next to any priority section title to collapse sections you aren't
         currently working on. Your preferred collapse state is saved automatically.
       </p>
 
-      <h3 id="adding-editing-tasks" class="scroll-mt-24">✏️ Adding and Editing Tasks</h3>
+      <h3 id="adding-editing-tasks" class="scroll-mt-24">Adding and Editing Tasks</h3>
       <p><strong>To add a new task:</strong></p>
       <ol>
         <li>Click the <strong>Add Task</strong> button in the top header or at the top of your priority lists</li>
@@ -631,7 +612,7 @@ const metadata = {
           Type your task title (up to 250 characters by default, or set to <strong>Unlimited</strong> in Settings)
         </li>
         <li>Optionally add notes, due dates, subtasks, or assign a project category</li>
-        <li>Select the priority level using the colored buttons (🔴 Must Do, 🟡 Should Do, ⚪ Could Do, 🟣 On Hold)</li>
+        <li>Select the priority level using the priority buttons (Must Do, Should Do, Could Do, On Hold)</li>
         <li>Click <strong>Add Task</strong> (or press <code>Enter</code>) to save</li>
       </ol>
 
@@ -649,10 +630,10 @@ const metadata = {
       <!-- Task Length Limits & Unlimited Mode Guide Card -->
       <div
         id="character-limits"
-        class="scroll-mt-24 my-6 p-6 bg-slate-50 dark:bg-slate-800/70 rounded-2xl border border-slate-200 dark:border-slate-700"
+        class="scroll-mt-24 my-6 p-6 sm:p-8 bg-slate-50/80 dark:bg-slate-900/80 rounded-2xl border border-slate-200/90 dark:border-slate-800"
       >
         <h4 class="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2 mb-2 mt-0">
-          <span>📏 Task Description Character Limit &amp; Unlimited Mode</span>
+          <span>Task Description Character Limit &amp; Unlimited Mode</span>
         </h4>
         <p class="text-sm text-slate-600 dark:text-slate-300 mb-4">
           By default, 123 ToDo uses a <strong>250-character limit</strong> for task titles to encourage concise, punchy to-dos
@@ -663,23 +644,17 @@ const metadata = {
           <div
             class="p-4 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700 flex flex-col"
           >
-            <p class="font-bold text-slate-900 dark:text-white mb-1.5 flex items-center gap-1.5">
-              <span>⚡</span>
-              <span>Increasing to Unlimited Length:</span>
-            </p>
+            <p class="font-bold text-slate-900 dark:text-white mb-1.5">Increasing to Unlimited Length:</p>
             <p class="leading-relaxed flex-1">
               Need to paste extensive specifications, client requirements, or longer task instructions? Simply open <strong
-                >Settings ⚙️ ➔ Appearance &amp; General Preferences ➔ Task Description Character Limit</strong
+                >Settings ➔ Appearance &amp; General Preferences ➔ Task Description Character Limit</strong
               > and choose <strong>Unlimited</strong>. This completely removes the character ceiling!
             </p>
           </div>
           <div
             class="p-4 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700 flex flex-col"
           >
-            <p class="font-bold text-slate-900 dark:text-white mb-1.5 flex items-center gap-1.5">
-              <span>📝</span>
-              <span>Unlimited Task Notes &amp; Details:</span>
-            </p>
+            <p class="font-bold text-slate-900 dark:text-white mb-1.5">Unlimited Task Notes &amp; Details:</p>
             <p class="leading-relaxed flex-1">
               Remember that the secondary <strong>Task Notes</strong> field is always <strong>100% Unlimited</strong> with
               zero length restrictions by design. You can attach paragraphs of context, addresses, meeting transcripts, links,
@@ -689,9 +664,8 @@ const metadata = {
           <div
             class="p-4 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700 flex flex-col"
           >
-            <p class="font-bold text-slate-900 dark:text-white mb-1.5 flex items-center gap-1.5">
-              <span>🕒</span>
-              <span>1-Click Timestamped Notes &amp; Activity Logs:</span>
+            <p class="font-bold text-slate-900 dark:text-white mb-1.5">
+              One-Click Timestamped Notes &amp; Activity Logs:
             </p>
             <p class="leading-relaxed flex-1">
               Record progressive updates, client conversations, and supplier call logs directly on a task over time. In
@@ -703,14 +677,10 @@ const metadata = {
           <div
             class="p-4 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700 flex flex-col"
           >
-            <p class="font-bold text-slate-900 dark:text-white mb-1.5 flex items-center gap-1.5">
-              <span>📅</span>
-              <span>Evidentiary Creation Timestamps:</span>
-            </p>
+            <p class="font-bold text-slate-900 dark:text-white mb-1.5">Evidentiary Creation Timestamps:</p>
             <p class="leading-relaxed flex-1">
               Know exactly when every task or note was created. In Task Edit mode, the original creation date and time
-              stamp is permanently visible at the bottom of the modal (e.g. <code
-                >🕒 Created: 11 Sep 2026, 18:57:22</code
+              stamp is permanently visible at the bottom of the modal (e.g. <code>Created: 11 Sep 2026, 18:57:22</code
               >), giving you a tamper-resistant evidentiary record of when work was first logged.
             </p>
           </div>
@@ -720,38 +690,32 @@ const metadata = {
       <!-- Actionable Phone Numbers & Email Links -->
       <div
         id="actionable-contacts"
-        class="scroll-mt-24 my-6 p-6 bg-blue-50/70 dark:bg-blue-950/30 rounded-2xl border border-blue-200 dark:border-blue-900/50"
+        class="scroll-mt-24 my-6 p-6 sm:p-8 bg-slate-50/80 dark:bg-slate-900/80 rounded-2xl border border-slate-200/90 dark:border-slate-800"
       >
         <h4 class="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2 mb-2 mt-0">
-          <span>📞 Actionable Phone Numbers, Email Links &amp; Email Service Picker</span>
+          <span>Actionable Phone Numbers, Email Links &amp; Email Service Picker</span>
         </h4>
         <p class="text-sm text-slate-600 dark:text-slate-300 mb-4">
           Tasks and notes often contain contact information. 123 ToDo automatically detects telephone numbers and email
           addresses, transforming them into instant clickable actions across desktop and mobile:
         </p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
-          <div class="p-4 bg-white dark:bg-slate-900 rounded-xl border border-blue-200 dark:border-slate-700">
-            <p class="font-bold text-slate-900 dark:text-white mb-1 flex items-center gap-1.5">
-              <span>📱</span>
-              <span>One-Tap Telephone Dialing:</span>
-            </p>
+          <div class="p-4 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700">
+            <p class="font-bold text-slate-900 dark:text-white mb-1">One-Tap Telephone Dialing:</p>
             <p class="leading-relaxed">
               Any valid UK or international phone number in a task or note becomes a clickable <code>tel:</code> link. On
               mobile devices, tapping it opens your phone dialer instantly. On desktop, it triggers FaceTime or your system
               calling app.
             </p>
           </div>
-          <div class="p-4 bg-white dark:bg-slate-900 rounded-xl border border-blue-200 dark:border-slate-700">
-            <p class="font-bold text-slate-900 dark:text-white mb-1 flex items-center gap-1.5">
-              <span>✉️</span>
-              <span>Preferred Email Service Picker:</span>
-            </p>
+          <div class="p-4 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700">
+            <p class="font-bold text-slate-900 dark:text-white mb-1">Preferred Email Service Picker:</p>
             <p class="leading-relaxed">
               Clicking an email address prompts you once to pick your favorite service: <strong>Default Mail App</strong
               > (Apple Mail, Outlook Desktop, Thunderbird), <strong>Gmail Web</strong>, <strong
                 >Outlook / Microsoft 365 Web</strong
               >, or <strong>Yahoo Mail</strong>. 123 ToDo remembers your choice so future clicks open compose directly.
-              You can modify or reset your preference anytime in <strong>Settings ⚙️ ➔ Preferred Email Service</strong>.
+              You can modify or reset your preference anytime in <strong>Settings ➔ Preferred Email Service</strong>.
             </p>
           </div>
         </div>
@@ -759,10 +723,10 @@ const metadata = {
 
       <div
         id="voice-dictation"
-        class="scroll-mt-24 my-8 p-6 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-slate-800/80 dark:to-slate-800/50 rounded-2xl stroke-blue-200 dark:stroke-slate-700 border border-blue-100 dark:border-slate-700"
+        class="scroll-mt-24 my-8 p-6 sm:p-8 bg-slate-50/80 dark:bg-slate-900/80 rounded-2xl border border-slate-200/90 dark:border-slate-800"
       >
         <h3 class="text-2xl font-bold text-slate-900 dark:text-white flex items-center gap-2 mb-3 mt-0">
-          <span>🎙️ Voice-to-Text & Spoken Commands Guide</span>
+          <span>Voice-to-Text &amp; Spoken Commands Guide</span>
         </h3>
         <p class="text-slate-600 dark:text-slate-300 text-base mb-4">
           Capture tasks 5x faster using continuous voice dictation with automatic spoken punctuation, live editing, and
@@ -772,10 +736,8 @@ const metadata = {
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
           <!-- Spoken Punctuation -->
           <div class="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-700">
-            <h4
-              class="font-bold text-slate-900 dark:text-white text-sm uppercase tracking-wide mb-2 flex items-center gap-1.5"
-            >
-              <span>✍️ Spoken Punctuation</span>
+            <h4 class="font-bold text-slate-900 dark:text-white text-sm uppercase tracking-wide mb-2">
+              Spoken Punctuation
             </h4>
             <ul class="text-xs text-slate-600 dark:text-slate-300 space-y-1">
               <li>
@@ -821,10 +783,8 @@ const metadata = {
 
           <!-- Spoken Deletions & Commands -->
           <div class="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-700">
-            <h4
-              class="font-bold text-slate-900 dark:text-white text-sm uppercase tracking-wide mb-2 flex items-center gap-1.5"
-            >
-              <span>✂️ Spoken Edits & Auto-Submit</span>
+            <h4 class="font-bold text-slate-900 dark:text-white text-sm uppercase tracking-wide mb-2">
+              Spoken Edits &amp; Auto-Submit
             </h4>
             <ul class="text-xs text-slate-600 dark:text-slate-300 space-y-1">
               <li>
@@ -862,17 +822,17 @@ const metadata = {
         </div>
 
         <p class="text-xs text-slate-500 dark:text-slate-400 italic">
-          💡 <strong>Live Auto-Scroll Viewport:</strong> As you dictate long task titles or notes, the canvas automatically
+          <strong>Live Auto-Scroll Viewport:</strong> As you dictate long task titles or notes, the canvas automatically
           expands and scrolls down so your latest spoken words remain 100% visible at the bottom.
         </p>
       </div>
 
       <div
         id="photo-attachments"
-        class="scroll-mt-24 my-8 p-6 bg-gradient-to-br from-sky-50 to-blue-50 dark:from-slate-800/80 dark:to-slate-800/50 rounded-2xl stroke-blue-200 dark:stroke-slate-700 border border-sky-100 dark:border-slate-700"
+        class="scroll-mt-24 my-8 p-6 sm:p-8 bg-slate-50/80 dark:bg-slate-900/80 rounded-2xl border border-slate-200/90 dark:border-slate-800"
       >
         <h3 class="text-2xl font-bold text-slate-900 dark:text-white flex items-center gap-2 mb-3 mt-0">
-          <span>📸 Photo &amp; Screenshot Attachments in Notes</span>
+          <span>Photo &amp; Screenshot Attachments in Notes</span>
         </h3>
         <p class="text-slate-600 dark:text-slate-300 text-base mb-4">
           Attach up to 3 photos per note or task! Engineered for rapid field work on mobile and instant screenshot
@@ -881,10 +841,8 @@ const metadata = {
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <div class="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-700">
-            <h4
-              class="font-bold text-slate-900 dark:text-white text-sm uppercase tracking-wide mb-2 flex items-center gap-1.5"
-            >
-              <span>📱 On Mobile (iPhone &amp; Android)</span>
+            <h4 class="font-bold text-slate-900 dark:text-white text-sm uppercase tracking-wide mb-2">
+              On Mobile (iPhone &amp; Android)
             </h4>
             <ul class="text-xs text-slate-600 dark:text-slate-300 space-y-1.5">
               <li>
@@ -902,10 +860,8 @@ const metadata = {
           </div>
 
           <div class="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-700">
-            <h4
-              class="font-bold text-slate-900 dark:text-white text-sm uppercase tracking-wide mb-2 flex items-center gap-1.5"
-            >
-              <span>💻 On Desktop (Mac, Windows, Linux)</span>
+            <h4 class="font-bold text-slate-900 dark:text-white text-sm uppercase tracking-wide mb-2">
+              On Desktop (Mac, Windows, Linux)
             </h4>
             <ul class="text-xs text-slate-600 dark:text-slate-300 space-y-1.5">
               <li>
@@ -926,18 +882,18 @@ const metadata = {
         </div>
 
         <p class="text-xs text-slate-500 dark:text-slate-400 italic">
-          💡 <strong>Smart WebP Compression &amp; IndexedDB:</strong> Photos are automatically compressed client-side (max
-          2048px, ~150KB–250KB) to preserve razor-sharp receipt text while keeping storage lean and offline-ready in IndexedDB.
+          <strong>Smart WebP Compression &amp; IndexedDB:</strong> Photos are automatically compressed client-side (max 2048px,
+          ~150KB–250KB) to preserve razor-sharp receipt text while keeping storage lean and offline-ready in IndexedDB.
         </p>
       </div>
 
-      <h3 id="completing-tasks" class="scroll-mt-24">✅ Completing Tasks</h3>
+      <h3 id="completing-tasks" class="scroll-mt-24">Completing Tasks</h3>
       <p>
         Click the checkbox next to any task to mark it complete. Completed tasks move to the Archive section at the
         bottom of the page. You can restore archived tasks anytime by clicking the restore icon.
       </p>
 
-      <h3 id="reordering-tasks" class="scroll-mt-24">↕️ Reordering & Moving Tasks</h3>
+      <h3 id="reordering-tasks" class="scroll-mt-24">Reordering &amp; Moving Tasks</h3>
       <p>Tasks can be sorted and moved using intuitive drag and drop mechanics:</p>
       <ul>
         <li>
@@ -954,13 +910,13 @@ const metadata = {
         </li>
       </ul>
 
-      <h3 id="deleting-tasks" class="scroll-mt-24">🗑️ Deleting Tasks</h3>
+      <h3 id="deleting-tasks" class="scroll-mt-24">Deleting Tasks</h3>
       <p>
         To permanently delete a task, click the trash icon. You'll see a confirmation prompt.
         <strong>Deleted tasks cannot be recovered.</strong>
       </p>
 
-      <h3 id="archive-system" class="scroll-mt-24">📦 Archive System</h3>
+      <h3 id="archive-system" class="scroll-mt-24">Archive System</h3>
       <p>
         Completed tasks are automatically moved to the Archive section at the bottom of the page. The archive shows:
       </p>
@@ -970,11 +926,11 @@ const metadata = {
         <li>Options to restore (move back to active) or permanently delete</li>
       </ul>
 
-      <h3 id="subtasks" class="scroll-mt-24">📋 Subtasks & Checklists</h3>
+      <h3 id="subtasks" class="scroll-mt-24">Subtasks &amp; Checklists</h3>
       <p>For large or complex tasks, you can break them down into smaller, manageable steps:</p>
       <ul>
         <li>
-          <strong>Create Checklists</strong>: Inside the Add Task or Edit Task interface, click the <em>📋 Subtasks</em>
+          <strong>Create Checklists</strong>: Inside the Add Task or Edit Task interface, click the <em>Subtasks</em>
           button to create a checklist of sub-steps.
         </li>
         <li>
@@ -992,7 +948,7 @@ const metadata = {
         </li>
       </ul>
 
-      <h3 id="scheduled-tasks" class="scroll-mt-24">📅 Scheduled & Recurring Tasks</h3>
+      <h3 id="scheduled-tasks" class="scroll-mt-24">Scheduled &amp; Recurring Tasks</h3>
       <p>Manage upcoming work, precise daily timelines, and recurring routines without cluttering your daily view:</p>
       <ul>
         <li>
@@ -1032,10 +988,10 @@ const metadata = {
         </li>
       </ul>
 
-      <h3 id="achievements" class="scroll-mt-24">🏆 Productivity Achievements & 10-Tier Mastery Hub</h3>
+      <h3 id="achievements" class="scroll-mt-24">Productivity Achievements &amp; 10-Tier Mastery Hub</h3>
       <p>
-        Stay motivated with 123 ToDo's built-in gamification engine! Tap the <strong>Trophy Icon (🏆)</strong> in the top
-        header to open your personal <strong>Productivity &amp; Achievements Modal</strong>:
+        Stay motivated with 123 ToDo's built-in gamification engine! Tap the <strong>Trophy Icon</strong> in the top header
+        to open your personal <strong>Productivity &amp; Achievements Modal</strong>:
       </p>
       <ul>
         <li>
@@ -1043,8 +999,8 @@ const metadata = {
           completed, +2 pts per checklist subtask checked, +15 pts per active streak day).
         </li>
         <li>
-          <strong>10 Progressive Achievement Tiers</strong>: Advance from <em>Level 1: Focused Starter 🌱</em> to the elite,
-          virtually unachievable pinnacle <em>Level 10: 123 Immortal 👑</em> (50,000+ points).
+          <strong>10 Progressive Achievement Tiers</strong>: Advance from <em>Level 1: Focused Starter</em> to the elite
+          pinnacle <em>Level 10: 123 Immortal</em> (50,000+ points).
         </li>
         <li>
           <strong>Daily Focus Streaks</strong>: Build unbreakable compounding habits by maintaining an active
@@ -1055,26 +1011,28 @@ const metadata = {
           (P2), and Could-Do (P3) tasks.
         </li>
         <li>
-          <strong>Unlockable Milestone Badges</strong>: Unlock badges for First Step 🚀, Hat Trick 🎩, On Fire 🔥, 1-2-3
-          Virtuoso 🎯, Subtask Slayer 📋, Century Club 💯, and Voice Pioneer 🎙️.
+          <strong>Unlockable Milestone Badges</strong>: Unlock badges for First Step, Hat Trick, On Fire, 1-2-3
+          Virtuoso, Subtask Slayer, Century Club, and Voice Pioneer.
         </li>
       </ul>
       <p class="text-sm text-blue-600 dark:text-blue-400 font-semibold">
-        📖 <a href="/gamification-productivity-streaks-milestones-guide" class="hover:underline"
-          >Read our complete guide on Productivity Streaks, Dopamine &amp; 10-Tier Milestones ➔</a
+        <a href="/gamification-productivity-streaks-milestones-guide" class="hover:underline"
+          >Read our complete guide on Productivity Streaks, Dopamine &amp; 10-Tier Milestones &rarr;</a
         >
       </p>
 
-      <h3 id="todoist-migration" class="scroll-mt-24">📦 Universal Multi-Competitor Data Import & Migration</h3>
+      <h3 id="todoist-migration" class="scroll-mt-24">Universal Multi-Competitor Data Import &amp; Migration</h3>
 
-      <div class="my-6 p-6 bg-slate-50 dark:bg-slate-800/60 rounded-xl border border-slate-200 dark:border-slate-700">
+      <div
+        class="my-6 p-6 sm:p-8 bg-slate-50/80 dark:bg-slate-900/80 rounded-2xl border border-slate-200/90 dark:border-slate-800"
+      >
         <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2">
-          <span>📋 1-Click Migration from Todoist, TickTick, Google Keep, Google Tasks & MS To Do</span>
+          <span>One-Click Migration from Todoist, TickTick, Google Keep, Google Tasks &amp; MS To Do</span>
         </h4>
         <p class="text-slate-600 dark:text-slate-300 mb-4">
           Migrating your tasks, notes, checklists, and projects to 123 ToDo is quick, seamless, and safe. Our <strong
             >Universal Importer Wizard</strong
-          > parses exported backup files from all major task & note apps:
+          > parses exported backup files from all major task &amp; note apps:
         </p>
 
         <div class="space-y-4 mb-6">
@@ -1090,7 +1048,7 @@ const metadata = {
                 >.
               </li>
               <li>
-                <strong>TickTick:</strong> Open Settings ➔ Go to <strong>Backup & Export</strong> ➔ Click <strong
+                <strong>TickTick:</strong> Open Settings ➔ Go to <strong>Backup &amp; Export</strong> ➔ Click <strong
                   >Export Backup CSV</strong
                 >.
               </li>
@@ -1126,8 +1084,8 @@ const metadata = {
               </li>
               <li>Select <strong>Import from Other Apps</strong> from the selection modal.</li>
               <li>
-                Select your source app tab and drag & drop your <strong>.csv</strong> or <strong>.json</strong> files into
-                the upload dropzone (or select multiple files at once).
+                Select your source app tab and drag &amp; drop your <strong>.csv</strong> or <strong>.json</strong> files
+                into the upload dropzone (or select multiple files at once).
               </li>
             </ol>
           </div>
@@ -1135,7 +1093,7 @@ const metadata = {
           <div class="p-4 bg-white dark:bg-slate-900/80 rounded-lg border border-slate-200 dark:border-slate-700">
             <h5 class="font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-2">
               <span class="bg-blue-600 text-white text-xs px-2 py-0.5 rounded font-bold">STEP 3</span>
-              <span>Map Projects & Confirm Import</span>
+              <span>Map Projects &amp; Confirm Import</span>
             </h5>
             <p class="text-slate-600 dark:text-slate-300 text-sm">
               123 ToDo automatically parses your files, detects task titles, note descriptions, priority levels, due
@@ -1145,34 +1103,35 @@ const metadata = {
           </div>
         </div>
 
-        <div class="p-4 bg-blue-50/80 dark:bg-blue-950/40 rounded-lg border border-blue-200 dark:border-blue-800">
-          <h5 class="font-bold text-blue-900 dark:text-blue-200 mb-2 flex items-center gap-1.5 text-sm">
-            🛡️ What Gets Migrated & Preserved (Zero Text Truncation Guarantee):
+        <div class="p-5 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700">
+          <h5 class="font-bold text-slate-900 dark:text-white mb-2 text-sm">
+            What Gets Migrated &amp; Preserved (Zero Text Truncation Guarantee):
           </h5>
           <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs text-slate-700 dark:text-slate-300">
             <li class="flex items-start gap-1.5">
-              <span class="text-green-500 font-bold">✓</span>
+              <span class="text-emerald-500 font-bold">✓</span>
               <span
-                ><strong>Unlimited Text Capacity:</strong> Task titles, body descriptions, & note text of any length are
-                imported in full.</span
+                ><strong>Unlimited Text Capacity:</strong> Task titles, body descriptions, &amp; note text of any length
+                are imported in full.</span
               >
             </li>
             <li class="flex items-start gap-1.5">
-              <span class="text-green-500 font-bold">✓</span>
+              <span class="text-emerald-500 font-bold">✓</span>
               <span
-                ><strong>No Truncation on Edit:</strong> Notes & details are never capped or cut off when editing tasks later.</span
+                ><strong>No Truncation on Edit:</strong> Notes &amp; details are never capped or cut off when editing tasks
+                later.</span
               >
             </li>
             <li class="flex items-start gap-1.5">
-              <span class="text-green-500 font-bold">✓</span>
+              <span class="text-emerald-500 font-bold">✓</span>
               <span
-                ><strong>Priorities & Due Dates:</strong> Mapped cleanly to P1-P4 priority matrix and date schedules.</span
+                ><strong>Priorities &amp; Due Dates:</strong> Mapped cleanly to P1-P4 priority matrix and date schedules.</span
               >
             </li>
             <li class="flex items-start gap-1.5">
-              <span class="text-green-500 font-bold">✓</span>
+              <span class="text-emerald-500 font-bold">✓</span>
               <span
-                ><strong>Subtasks & Checklists:</strong> Imported as interactive checklists and indented subtask trees.</span
+                ><strong>Subtasks &amp; Checklists:</strong> Imported as interactive checklists and indented subtask trees.</span
               >
             </li>
           </ul>
@@ -1180,17 +1139,17 @@ const metadata = {
       </div>
 
       <div
-        class="my-6 p-6 bg-emerald-50/80 dark:bg-emerald-950/40 rounded-xl border border-emerald-200 dark:border-emerald-800"
+        class="my-6 p-6 sm:p-8 bg-slate-50/80 dark:bg-slate-900/80 rounded-2xl border border-slate-200/90 dark:border-slate-800"
       >
-        <h4 class="text-xl font-bold text-emerald-900 dark:text-emerald-200 mb-2 flex items-center gap-2">
-          <span>📤 Exporting Your Data Out of 123 ToDo (Zero Lock-In Guarantee)</span>
+        <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-2">
+          <span>Exporting Your Data Out of 123 ToDo (Zero Lock-In Guarantee)</span>
         </h4>
         <p class="text-slate-700 dark:text-slate-300 text-sm mb-3">
           123 ToDo guarantees 100% data portability and user ownership. You are never trapped in our ecosystem. You can
           export your complete workspace dataset out of 123 ToDo at any time:
         </p>
         <ol class="list-decimal pl-5 space-y-1 text-slate-700 dark:text-slate-300 text-sm mb-3">
-          <li>Open 123 ToDo and click <strong>Settings ⚙️</strong> (or <strong>Export</strong> in the footer bar).</li>
+          <li>Open 123 ToDo and click <strong>Settings</strong> (or <strong>Export</strong> in the footer bar).</li>
           <li>Click <strong>Export Backup Data</strong>.</li>
           <li>Save the resulting <code>.json</code> file to your device.</li>
         </ol>
@@ -1200,7 +1159,7 @@ const metadata = {
         </p>
       </div>
 
-      <p><strong>Importing 123 ToDo Backups & Shadow Snapshots:</strong></p>
+      <p><strong>Importing 123 ToDo Backups &amp; Shadow Snapshots:</strong></p>
       <ol>
         <li>Click the "Import" button in the footer</li>
         <li>Select "123 ToDo Backup" or "Restore Shadow Backup"</li>
@@ -1208,10 +1167,10 @@ const metadata = {
       </ol>
 
       <p>
-        <strong>⚠️ Important:</strong> Importing data will merge your imported items into your current task workspace safely.
+        <strong>Important:</strong> Importing data will merge your imported items into your current task workspace safely.
       </p>
 
-      <h3 id="cloud-sync" class="scroll-mt-24">☁️ Cross-Device Cloud Sync (Set &amp; Forget)</h3>
+      <h3 id="cloud-sync" class="scroll-mt-24">Cross-Device Cloud Sync</h3>
       <p>
         123 ToDo features a powerful, friction-free synchronization system that lets you access your tasks across all
         your devices (iPhones, Android phones, tablets, laptops, and desktop computers):
@@ -1241,12 +1200,10 @@ const metadata = {
         </li>
       </ul>
 
-      <h3 id="automated-updates" class="scroll-mt-24">
-        ⚡ Automated Version Updates &amp; Instant Service Worker Sync
-      </h3>
+      <h3 id="automated-updates" class="scroll-mt-24">Automated Version Updates &amp; Instant Service Worker Sync</h3>
       <p>
-        123 ToDo automatically checks for new software releases (such as version 3.7.x) in the background. When an
-        update is deployed, a notification prompt will notify you with a single-click update button:
+        123 ToDo automatically checks for and applies new releases in the background via modern service workers. When an
+        update is deployed, it activates silently without disruptive prompts or reload banners:
       </p>
       <div class="my-6 text-center">
         <img
@@ -1256,11 +1213,11 @@ const metadata = {
         />
       </div>
       <p>
-        123 ToDo updates silently in the background via modern service workers, giving you immediate access to new
-        features and performance enhancements with zero data loss, zero interruptions, and no disruptive banners.
+        Your active session remains completely uninterrupted with zero data loss. You always have immediate access to
+        the latest features, security patches, and performance optimizations.
       </p>
 
-      <h3 id="shadow-backups" class="scroll-mt-24">🛡️ Built-In Resilience &amp; Automatic Shadow Backups</h3>
+      <h3 id="shadow-backups" class="scroll-mt-24">Built-In Resilience &amp; Automatic Shadow Backups</h3>
       <p>123 ToDo is engineered with an enterprise-grade local resilience stack so you never lose work:</p>
       <ul>
         <li>
@@ -1279,7 +1236,7 @@ const metadata = {
           <strong>Automatic 24-Hour Shadow Snapshots:</strong> Every 24 hours, the app takes an autonomous internal snapshot
           of your entire workspace (active tasks, archive, projects, subtasks, notes, and photo thumbnails). If you ever
           make an accidental mass deletion or wipe, you can roll back to your last known good state with one click in <strong
-            >Settings ⚙️ ➔ Backup &amp; Restore</strong
+            >Settings ➔ Backup &amp; Restore</strong
           >.
         </li>
         <li>
@@ -1294,7 +1251,7 @@ const metadata = {
         </li>
       </ul>
 
-      <h3 id="pwa-installation" class="scroll-mt-24">📱 PWA Installation</h3>
+      <h3 id="pwa-installation" class="scroll-mt-24">Progressive Web App (PWA) Installation</h3>
       <p><strong>On Desktop (Chrome, Edge, Brave):</strong></p>
       <ol>
         <li>Visit app.123todo.com</li>
@@ -1319,20 +1276,20 @@ const metadata = {
         <li>Tap "Add" to confirm</li>
       </ol>
 
-      <h3 id="backup-reminders" class="scroll-mt-24">💾 Data Backup Reminders</h3>
+      <h3 id="backup-reminders" class="scroll-mt-24">Data Backup Reminders</h3>
       <p>
         123 ToDo will remind you weekly to backup your data. Since all tasks are stored locally in your browser, regular
         backups are essential to prevent data loss.
       </p>
 
-      <h3 id="theme-appearance" class="scroll-mt-24">🎨 Theme &amp; Visual Appearance Options</h3>
+      <h3 id="theme-appearance" class="scroll-mt-24">Theme &amp; Visual Appearance Options</h3>
       <p>
         123 ToDo automatically adapts to your device's light or dark mode preference, but you can also tailor the visual
         experience to your personal comfort:
       </p>
       <ul>
         <li>
-          <strong>3 Calibrated Light Mode Tones:</strong> In <strong>Settings ⚙️ ➔ Appearance &amp; Styling</strong>,
+          <strong>3 Calibrated Light Mode Tones:</strong> In <strong>Settings ➔ Appearance &amp; Styling</strong>,
           choose between:
           <ul class="mt-1">
             <li><strong>Bright Tone:</strong> Crisp, pure white standard appearance.</li>
@@ -1347,25 +1304,24 @@ const metadata = {
           efficiency on OLED displays.
         </li>
         <li>
-          <strong>Feature Buttons &amp; Labels Mode:</strong> In <strong>Settings ⚙️ ➔ Appearance &amp; Styling</strong
-          >, choose how toolbar buttons appear: <strong>Icons (Clean)</strong> with ample spacing and minimal clutter, <strong
+          <strong>Feature Buttons &amp; Labels Mode:</strong> In <strong>Settings ➔ Appearance &amp; Styling</strong>,
+          choose how toolbar buttons appear: <strong>Icons (Clean)</strong> with ample spacing and minimal clutter, <strong
             >Icons &amp; Text</strong
           > for full descriptive labels, or <strong>Text Only</strong>.
         </li>
         <li>
           <strong>Adaptive Screen Scaling for Compact Phones:</strong> 123 ToDo automatically detects smaller viewports (e.g.
           iPhone SE or displays &le;375px wide) to adjust typography, margins, and touch targets. Override or customize anytime
-          in <strong>Settings ⚙️ ➔ Appearance &amp; Styling ➔ Screen Scaling Mode</strong> (Auto, Compact, Standard).
+          in <strong>Settings ➔ Appearance &amp; Styling ➔ Screen Scaling Mode</strong> (Auto, Compact, Standard).
         </li>
         <li>
-          <strong>Scheduled Times &amp; Creation Timestamps:</strong> In <strong
-            >Settings ⚙️ ➔ Tasks &amp; Workflow</strong
+          <strong>Scheduled Times &amp; Creation Timestamps:</strong> In <strong>Settings ➔ Tasks &amp; Workflow</strong
           >, toggle time scheduling selectors and creation timestamps to keep your editing modals as lean or as detailed
           as you like.
         </li>
       </ul>
 
-      <h3 id="kanban-view" class="scroll-mt-24">📊 Wide-Screen Layout &amp; Project Columns (Kanban View)</h3>
+      <h3 id="kanban-view" class="scroll-mt-24">Wide-Screen Layout &amp; Project Columns (Kanban View)</h3>
       <p>On larger screens (tablets, laptops, desktops), 123 ToDo offers flexible layout options:</p>
       <ul>
         <li>
@@ -1373,9 +1329,9 @@ const metadata = {
           as responsive vertical lists.
         </li>
         <li>
-          <strong>Project Columns View:</strong> Under <strong>Settings ⚙️ ➔ Layout &amp; Views</strong>, switch your
-          wide view from Priorities to <strong>Projects</strong>! This turns 123 ToDo into a horizontal Kanban board
-          where each project category (e.g. Work, Home, Personal) gets its own dedicated column with full horizontal
+          <strong>Project Columns View:</strong> Under <strong>Settings ➔ Layout &amp; Views</strong>, switch your wide
+          view from Priorities to <strong>Projects</strong>! This turns 123 ToDo into a horizontal Kanban board where
+          each project category (e.g. Work, Home, Personal) gets its own dedicated column with full horizontal
           scrolling.
         </li>
         <li>
@@ -1384,7 +1340,7 @@ const metadata = {
         </li>
       </ul>
 
-      <h3 id="touch-gestures" class="scroll-mt-24">🖐️ Mobile Touch &amp; Swipe Gestures</h3>
+      <h3 id="touch-gestures" class="scroll-mt-24">Mobile Touch &amp; Swipe Gestures</h3>
       <p>Manage your tasks rapidly on mobile phones and tablets with customizable swipe gestures:</p>
       <ul>
         <li>
@@ -1394,13 +1350,13 @@ const metadata = {
           <strong>Swipe Left:</strong> Default opens task deletion or quick priority reassignment.
         </li>
         <li>
-          <strong>Customizable Actions:</strong> In <strong>Settings ⚙️ ➔ Swipe Actions</strong>, customize what left
-          and right swipes do (Complete, Priority Flag, On Hold Pause, Edit, or None), or disable swiping if you prefer
-          pure tap interactions.
+          <strong>Customizable Actions:</strong> In <strong>Settings ➔ Swipe Actions</strong>, customize what left and
+          right swipes do (Complete, Priority Flag, On Hold Pause, Edit, or None), or disable swiping if you prefer pure
+          tap interactions.
         </li>
       </ul>
 
-      <h3 id="keyboard-shortcuts" class="scroll-mt-24">⌨️ Keyboard Shortcuts</h3>
+      <h3 id="keyboard-shortcuts" class="scroll-mt-24">Keyboard Shortcuts</h3>
       <p>
         Accelerate your workflow with these quick keyboard shortcuts (automatically disabled when typing inside input
         fields):
@@ -1543,7 +1499,7 @@ const metadata = {
       {
         title: 'Can I increase or remove the character limit for task descriptions?',
         description:
-          'YES! While 123 ToDo defaults to 250 characters to encourage punchy, scannable to-dos, you can remove this limit entirely. Open **Settings ⚙️ ➔ Appearance & General Preferences ➔ Task Description Character Limit** and choose **Unlimited**. Furthermore, the secondary **Task Notes** field is always 100% unlimited with zero length caps by default.',
+          'YES! While 123 ToDo defaults to 250 characters to encourage punchy, scannable to-dos, you can remove this limit entirely. Open **Settings ➔ Appearance & General Preferences ➔ Task Description Character Limit** and choose **Unlimited**. Furthermore, the secondary **Task Notes** field is always 100% unlimited with zero length caps by default.',
       },
       {
         title: 'How does 123 ToDo handle long tasks imported from Todoist, TickTick, or Google Keep?',
@@ -1554,55 +1510,112 @@ const metadata = {
   />
 
   <!-- Troubleshooting -->
-  <section id="troubleshooting" class="scroll-mt-24 px-4 py-16 mx-auto max-w-4xl">
+  <section id="troubleshooting" class="scroll-mt-24 px-4 py-16 mx-auto max-w-5xl">
     <div class="text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">Troubleshooting</h2>
-      <p class="text-xl text-gray-600 dark:text-gray-400">Common issues and solutions</p>
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 font-heading text-slate-900 dark:text-white">Troubleshooting</h2>
+      <p class="text-lg sm:text-xl text-slate-600 dark:text-slate-400">
+        Common questions, edge cases, and quick solutions
+      </p>
     </div>
 
-    <div class="prose prose-lg dark:prose-invert max-w-none">
-      <h3>🔄 Tasks disappeared after browser update</h3>
-      <p>Browser updates shouldn't clear localStorage, but it can happen. If this occurs:</p>
-      <ol>
-        <li>Check if you have an exported backup file</li>
-        <li>Use Import Data to restore from backup</li>
-        <li>Going forward, export data weekly</li>
-      </ol>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div
+        class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800 shadow-sm flex flex-col"
+      >
+        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Tasks Disappeared After Browser Update</h3>
+        <p class="text-sm text-slate-600 dark:text-slate-300 mb-4 flex-1">
+          Browser and operating system updates normally preserve user data profiles. If tasks ever appear missing after
+          an update or unintended cache clear:
+        </p>
+        <ol class="list-decimal pl-5 space-y-1.5 text-xs text-slate-600 dark:text-slate-400">
+          <li>
+            Open <strong>Settings ➔ Backup &amp; Restore</strong> and tap <strong>Restore Shadow Backup</strong> to roll
+            back to your daily automated local snapshot
+          </li>
+          <li>
+            If you saved an export file, use the <strong>Import</strong> button in the footer to restore your JSON backup
+          </li>
+          <li>
+            Ensure <strong>Set &amp; Forget Cloud Sync</strong> is enabled so encrypted copies are maintained across devices
+          </li>
+        </ol>
+      </div>
 
-      <h3>📡 App not working offline</h3>
-      <p>
-        Ensure you've visited the app while online at least once. Service workers need to cache the app files initially.
-        If still having issues:
-      </p>
-      <ol>
-        <li>Visit app.123todo.com while online</li>
-        <li>Wait for the page to fully load</li>
-        <li>Install as PWA for best offline experience</li>
-        <li>Try going offline again</li>
-      </ol>
+      <div
+        class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800 shadow-sm flex flex-col"
+      >
+        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">App Not Working Offline</h3>
+        <p class="text-sm text-slate-600 dark:text-slate-300 mb-4 flex-1">
+          Service workers require one online visit to precache application bundles for offline execution:
+        </p>
+        <ol class="list-decimal pl-5 space-y-1.5 text-xs text-slate-600 dark:text-slate-400">
+          <li>
+            Visit <a
+              href="https://app.123todo.com"
+              target="_blank"
+              rel="noopener"
+              class="text-blue-600 dark:text-blue-400 hover:underline">app.123todo.com</a
+            > while connected to the internet
+          </li>
+          <li>Allow the page to fully load so the service worker completes background caching</li>
+          <li>Install 123 ToDo as a Progressive Web App (PWA) to guarantee persistent local execution</li>
+        </ol>
+      </div>
 
-      <h3>🔧 Can't install as PWA</h3>
-      <p>PWA installation requirements vary by browser:</p>
-      <ul>
-        <li><strong>Chrome/Edge:</strong> Look for install icon in address bar</li>
-        <li><strong>Safari iOS:</strong> Use Share → Add to Home Screen</li>
-        <li><strong>Firefox:</strong> Limited PWA support, use browser bookmarks instead</li>
-      </ul>
+      <div
+        class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800 shadow-sm flex flex-col"
+      >
+        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Cannot Install as Progressive Web App</h3>
+        <p class="text-sm text-slate-600 dark:text-slate-300 mb-4 flex-1">
+          PWA installation controls vary depending on your browser and operating system:
+        </p>
+        <ul class="list-disc pl-5 space-y-1.5 text-xs text-slate-600 dark:text-slate-400">
+          <li>
+            <strong>Chrome / Edge / Brave:</strong> Click the install icon in the URL address bar (monitor with a downward
+            arrow)
+          </li>
+          <li>
+            <strong>iOS Safari:</strong> Tap the Share button (box with upward arrow), scroll down, and tap &ldquo;Add to
+            Home Screen&rdquo;
+          </li>
+          <li>
+            <strong>Android Chrome:</strong> Tap the three-dot menu and select &ldquo;Add to Home screen&rdquo; or &ldquo;Install
+            App&rdquo;
+          </li>
+        </ul>
+      </div>
 
-      <h3>📥 Import not working</h3>
-      <p>If import fails:</p>
-      <ol>
-        <li>Ensure you're importing a file exported from 123 ToDo (not edited manually)</li>
-        <li>Check that the file is valid JSON</li>
-        <li>Try exporting current data, then importing the old file</li>
-        <li>If corrupted, you may need to manually recreate tasks</li>
-      </ol>
+      <div
+        class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800 shadow-sm flex flex-col"
+      >
+        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Data Import Not Processing</h3>
+        <p class="text-sm text-slate-600 dark:text-slate-300 mb-4 flex-1">
+          If importing a backup file or competitor export file does not complete:
+        </p>
+        <ol class="list-decimal pl-5 space-y-1.5 text-xs text-slate-600 dark:text-slate-400">
+          <li>
+            Ensure you are importing an unmodified <code>.json</code> or <code>.csv</code> file exported from 123 ToDo or
+            supported apps
+          </li>
+          <li>
+            For competitor files (Todoist, TickTick, Keep, Google Tasks, MS To Do), select &ldquo;Import from Other
+            Apps&rdquo;
+          </li>
+          <li>Verify the file is not empty or corrupted before uploading</li>
+        </ol>
+      </div>
 
-      <h3>🖱️ Drag and drop not working</h3>
-      <p>
-        Drag and drop works on desktop only. Mobile touch devices don't support drag and drop for task reordering. Use
-        Edit to change priorities on mobile.
-      </p>
+      <div
+        class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800 shadow-sm md:col-span-2"
+      >
+        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Reordering Tasks on Mobile vs. Desktop</h3>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          Desktop supports fluid drag-and-drop sorting and cross-priority moving. On mobile touch devices, drag
+          interactions are optimized for native scrolling; you can quickly reorder tasks, use custom swipe gestures
+          (left/right swipe for completion or priority change), or tap any task to update its priority in the Edit
+          modal.
+        </p>
+      </div>
     </div>
   </section>
 

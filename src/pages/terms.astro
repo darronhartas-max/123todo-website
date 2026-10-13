@@ -1,6 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
+import { Icon } from 'astro-icon/components';
 
 const metadata = {
   title: 'Terms of Service',
@@ -293,15 +294,16 @@ const metadata = {
 
       <div class="mt-12 p-6 bg-blue-50 dark:bg-blue-900/20 rounded-xl border border-blue-200 dark:border-blue-800">
         <p class="font-bold mb-2 text-blue-950 dark:text-blue-100 flex items-center gap-2">
-          <span>💾</span> Reminder: Protect Your Data with Regular Exports
+          <Icon name="tabler:database-export" class="w-5 h-5 text-blue-600 dark:text-blue-400" />
+          <span>Reminder: Protect Your Data with Regular Exports</span>
         </p>
         <p class="mb-2 text-sm text-blue-900 dark:text-blue-200 leading-relaxed">
           123 ToDo stores all data directly on your device. We do not maintain server-side copies. Clearing your browser
           storage or losing your device will permanently erase your local data.
         </p>
         <p class="text-sm text-blue-900 dark:text-blue-200 leading-relaxed mb-0">
-          <strong>Best Practice:</strong> Go to <strong>Settings ⚙️ ➔ Import / Export Data</strong> regularly to download
-          a free 1-click JSON backup to your computer, hard drive, or personal cloud.
+          <strong>Best Practice:</strong> Go to <strong>Settings ➔ Import / Export Data</strong> regularly to download a
+          free 1-click JSON backup to your computer, hard drive, or personal cloud.
         </p>
       </div>
     </div>

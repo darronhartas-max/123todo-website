@@ -45,7 +45,7 @@ Before any task title, note description, due date, or project category leaves yo
 
 Powered by our global serverless infrastructure (Cloudflare D1 edge database), **123ToDo Cloud Sync** was designed to eliminate third-party cloud OAuth friction:
 
-### 🌟 Key Advantages of 123ToDo Cloud Sync:
+### Key Advantages of 123ToDo Cloud Sync:
 
 - **Set & Forget (Zero Session Expirations)**: Unlike Google OAuth tokens which can expire every 60 minutes or require re-authentication, 123ToDo Cloud Sync uses persistent cryptographic device tokens that stay connected indefinitely.
 - **5-Second 6-Digit Device Pairing**: Pair your iPhone, Android phone, iPad, or laptop instantly by entering a simple 6-digit pairing code generated on your primary device.
@@ -58,7 +58,7 @@ Powered by our global serverless infrastructure (Cloudflare D1 edge database), *
 
 For users who prefer keeping 100% of their cloud storage footprint within their personal Google Account ecosystem:
 
-### 📁 How Google Drive AppData Sync Works:
+### How Google Drive AppData Sync Works:
 
 - Uses Google Identity Services (GIS) OAuth 2.0.
 - Saves your encrypted task payload inside your personal Google Drive's hidden `appDataFolder` (a private folder invisible in normal Google Drive file browsing, accessible only by 123 ToDo).

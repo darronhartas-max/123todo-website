@@ -49,13 +49,13 @@ The result? **A blazing fast, responsive photo attachment experience that costs 
 
 We built Photo Attachments to feel effortless whether you are wearing work gloves on a job site or working with dual monitors at an office desk.
 
-### 📱 On Mobile: Instant Camera Capture & Photo Roll
+### On Mobile: Instant Camera Capture & Photo Roll
 
 - **Dedicated Camera Button**: Tap the **Camera** button inside any note to launch your device's camera immediately (`capture="environment"`). Snap the scene, confirm, and it is instantly compressed and attached.
 - **Photo Library**: Tap **Attach** to pick existing photos or screenshots from your iOS or Android photo album.
 - **Visual Thumbnails**: Thumbnails display immediately under the note with rounded corners, file size badges, and single-tap delete buttons.
 
-### 💻 On Desktop: Direct Clipboard Paste (`Cmd+V` / `Ctrl+V`)
+### On Desktop: Direct Clipboard Paste (`Cmd+V` / `Ctrl+V`)
 
 - **Paste Directly from Clipboard**: This is a game-changer for desktop productivity. Grab a screenshot with `Cmd+Shift+4` on Mac or `Win+Shift+S` on Windows, click into the note, and simply press **`Cmd+V`** (or **`Ctrl+V`**). The screen grab is parsed directly from your clipboard and attached in less than a second — no saving intermediate files to your desktop!
 - **Drag-and-Drop**: Drag any PNG, JPEG, or WebP file straight from your desktop file manager into the note area to attach it.

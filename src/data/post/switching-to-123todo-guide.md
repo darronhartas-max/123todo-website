@@ -23,7 +23,7 @@ With the launch of **123 ToDo v3.3.1**, migrating your entire setup from bloated
 
 ## 1. Why People are Switching to 123 ToDo
 
-### 🛡️ 100% Zero-Knowledge AES-256-GCM Encryption
+### 100% Zero-Knowledge AES-256-GCM Encryption
 
 Unlike traditional task managers that store your private tasks, work notes, and personal checklists in plain text on central servers, 123 ToDo is built ground-up on **Zero-Knowledge Client-Side Encryption**.
 
@@ -31,25 +31,25 @@ Unlike traditional task managers that store your private tasks, work notes, and 
 - Neither we nor third parties can read your task titles, notes, or project names.
 - Powered by our high-performance Cloudflare D1 serverless sync engine, your encrypted data stays synchronized seamlessly across all your phones, tablets, and desktop devices without requiring clumsy 1-hour OAuth token drops.
 
-### 💾 Automatic Server Backups & Daily Shadow Snapshots
+### Automatic Server Backups & Daily Shadow Snapshots
 
 Data reliability is paramount. 123 ToDo combines real-time encrypted cloud sync with automatic **daily shadow backups**:
 
 - Every 24 hours, your local state creates an automated shadow snapshot saved safely in browser storage.
 - If you ever make an accidental mass deletion or switch devices offline, you can restore your complete workspace with a single click.
 
-### ⚡ 100% Offline PWA Freedom
+### 100% Offline PWA Freedom
 
 123 ToDo is a full-featured **Progressive Web App (PWA)**. It loads instantly without an internet connection, lets you add and edit tasks with zero latency, and silently syncs when you reconnect.
 
-### 🎨 Dual-Skin Architecture: Tasks Matrix + Simple Voice Notes
+### Dual-Skin Architecture: Tasks Matrix + Simple Voice Notes
 
 Switch effortlessly between two operating skins:
 
 1. **Task Manager Skin**: Structured P1–P4 priority matrix (Must Do, Should Do, Could Do, On Hold) with subtask checklists and custom project colors.
 2. **Simple Voice Notes Skin**: Hands-free continuous dictation, large high-contrast text, unassigned inbox capture, and 1-tap task conversion — ideal for quick capture on the move.
 
-### 💸 Free to Use — Zero Subscriptions Required
+### Free to Use — Zero Subscriptions Required
 
 No artificial task limits, no character caps, and no forced account signups. The core task and note manager is completely free.
 

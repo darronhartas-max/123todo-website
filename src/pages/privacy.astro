@@ -2,6 +2,7 @@
 import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
+import { Icon } from 'astro-icon/components';
 
 const metadata = {
   title: 'Privacy Policy',
@@ -25,7 +26,8 @@ const metadata = {
     <div class="prose prose-lg dark:prose-invert max-w-none">
       <div class="p-6 bg-emerald-50 dark:bg-emerald-950/30 rounded-xl border border-emerald-500/30 mb-8">
         <h3 class="text-xl font-bold mb-2 text-emerald-900 dark:text-emerald-100 flex items-center gap-2">
-          <span>🛡️</span> Our Architectural Privacy Guarantee
+          <Icon name="tabler:shield-check" class="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
+          <span>Our Architectural Privacy Guarantee</span>
         </h3>
         <p class="text-emerald-950 dark:text-emerald-200 text-base leading-relaxed mb-2">
           <strong>123 ToDo is engineered with privacy as an architectural constraint, not just a policy promise.</strong

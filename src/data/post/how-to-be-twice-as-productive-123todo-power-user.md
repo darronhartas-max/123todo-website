@@ -42,25 +42,25 @@ The cornerstone of high-velocity productivity is ruthless prioritization. You ca
 
 123 ToDo replaces arbitrary 1-to-10 scales and endless custom tags with a clean, unshakeable 4-tier hierarchy:
 
-### 🎯 P1: Must Do (Non-Negotiable Needle-Movers)
+### P1: Must Do (Non-Negotiable Needle-Movers)
 
 - **The Rule:** Limit yourself to **1 to 3 items per day**.
 - **What belongs here:** Tasks that will have severe, tangible consequences if not finished today, or high-leverage activities that create 80% of your progress.
 - **Power User Habit:** When you sit down in the morning, do not touch email, Slack, or social media until your P1 tasks are checked off.
 
-### 🔶 P2: Should Do (High-Value Progress)
+### P2: Should Do (High-Value Progress)
 
 - **The Rule:** Limit to **2 to 5 tasks**.
 - **What belongs here:** Important tasks that advance ongoing projects, follow-ups with suppliers, or preparing materials for upcoming deadlines.
 - **Power User Habit:** Tackle these during your midday focus blocks once your morning P1 momentum is secured.
 
-### ⚪ P3: Could Do (Quick Wins & Backlog)
+### P3: Could Do (Quick Wins & Backlog)
 
 - **The Rule:** As many as you like, but treat them as optional bonuses.
 - **What belongs here:** Low-urgency research, reading an interesting article, cleaning up a desktop folder, or quick administrative tasks.
 - **Power User Habit:** Work on these only when your higher-priority energy is spent, or during low-energy late afternoons.
 
-### ⏸️ P4: On Hold / Someday (Out of Sight, Out of Mind)
+### P4: On Hold / Someday (Out of Sight, Out of Mind)
 
 - **The Rule:** Park ideas here so they don't distract your active consciousness.
 - **What belongs here:** Long-term brainstorms, projects pending client feedback, or tasks scheduled for next quarter.

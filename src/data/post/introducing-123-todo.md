@@ -35,19 +35,19 @@ We believe task management shouldn't be this complicated - or invasive.
 
 123 ToDo takes a radically different approach:
 
-### 🛡️ Privacy-First by Design
+### Privacy-First by Design
 
 All your tasks are stored locally in your browser. Nothing is sent to our servers. We use **zero tracking**, **zero cookies**, and **zero analytics**. We literally cannot see your tasks or how you use the app.
 
 This isn't just a privacy feature - it's our core architecture. Your data never leaves your device.
 
-### ⚡ Works Offline, Anywhere
+### Works Offline, Anywhere
 
 Since everything runs locally, 123 ToDo works perfectly offline. Install it as a Progressive Web App (PWA) on your phone or desktop, and use it anywhere - on a plane, in the subway, or in the middle of nowhere.
 
 Internet connection optional.
 
-### 🎯 Priority-Based Organization
+### Priority-Based Organization
 
 Stay focused with our 4-level priority system:
 
@@ -58,23 +58,23 @@ Stay focused with our 4-level priority system:
 
 This simple system helps you focus on what actually matters instead of drowning in an endless list.
 
-### 🎙️ Hands-Free Voice Dictation & Spoken Edits
+### Hands-Free Voice Dictation & Spoken Edits
 
 Capture ideas 5x faster with built-in voice dictation. Speak tasks and notes naturally with automatic spoken punctuation ("full stop", "fullstop", "dot", "comma", "question mark"), automatic sentence capitalization, live spoken deletions ("scratch that", "delete last word"), and quiet, hands-free auto-submission when dictating "add task" or "add note".
 
-### ☁️ Set & Forget E2E Encrypted Cloud Sync
+### Set & Forget E2E Encrypted Cloud Sync
 
 Sync your tasks seamlessly across iPhone, Android, Mac, and PC. Data is encrypted locally with military-grade AES-256-GCM before saving to the cloud. Stay reliably connected with zero 1-hour OAuth drops, 100% Safari PWA compatibility, and 5-second 6-digit device pairing.
 
-### 🏆 Motivation Built-In: 10-Tier Milestones & Daily Streaks
+### Motivation Built-In: 10-Tier Milestones & Daily Streaks
 
 Completing tasks feels good. We make it feel even better with our 10-tier level progression, Productivity Points (+10 task, +2 subtask, +15 streak), and daily streaks. Advance from Focused Starter to 123 Immortal!
 
-### 💾 Your Data, Your Control
+### Your Data, Your Control
 
 Export your tasks to JSON anytime. Import on another device. Keep backups wherever you want. You own your data - not us.
 
-### 💸 Free to Use
+### Free to Use
 
 No hidden catches. No forced account signups. Enjoy a full-featured, private task manager with offline access and local encryption, completely free to start.
 

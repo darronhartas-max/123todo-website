@@ -38,25 +38,25 @@ When notes are jotted down on scrap paper or left unrecorded until the end of th
 
 123 ToDo features a 1-tap header skin toggle (`[ 📋 Tasks | 🎙️ Voice Notes ]`) that switches the app into **Simple Voice Notes Mode**:
 
-### 🎙️ Continuous Dictation with Native Web Speech API
+### Continuous Dictation with Native Web Speech API
 
 - Tap the large red **"Talk"** button to start continuous hands-free voice dictation.
 - The high-contrast canvas expands dynamically, automatically scrolling down to track your spoken words in real-time.
 
-### ✍️ Intelligent Spoken Punctuation
+### Intelligent Spoken Punctuation
 
 Speak naturally without needing post-editing:
 
 - Saying _"order 50 feet conduit pipe comma delivery for Thursday morning full stop"_ is automatically formatted into: _"Order 50 feet conduit pipe, delivery for Thursday morning."_
 
-### ✂️ Live Spoken Editing Commands
+### Live Spoken Editing Commands
 
 Made a mistake while dictating? You don't need to touch the keyboard:
 
 - Say **"delete last word"** or **"scratch that"** to remove recent mistakes on the fly.
 - Say **"clear all"** to reset the field instantly.
 
-### 🚀 Hands-Free Auto-Submission
+### Hands-Free Auto-Submission
 
 - Finish your sentence and say **"add task"**, **"add note"**, or **"save task"**.
 - 123 ToDo automatically strips the command keyword, stops dictation, and saves the item directly into your **Unassigned Inbox**.

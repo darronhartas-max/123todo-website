@@ -39,13 +39,13 @@ In a **Zero-Knowledge Architecture**:
 
 123 ToDo provides two zero-knowledge cloud sync providers in **Settings ⚙️ ➔ Cloud Sync**:
 
-### ⚡ Option A: 123ToDo Cloud Sync (Serverless Cloudflare D1)
+### Option A: 123ToDo Cloud Sync (Serverless Cloudflare D1)
 
 - Uses high-speed global edge databases for sub-500ms multi-device sync.
 - Eliminates 1-hour OAuth token drops and WebKit PWA storage wipes on iOS devices.
 - Uses **5-Second 6-Digit Device Pairing**: generate a code on your primary device, type it on your second device, and instant cryptographic pairing takes care of the rest.
 
-### 📁 Option B: Google Drive AppData Sync
+### Option B: Google Drive AppData Sync
 
 - Connects directly to your personal Google Drive account.
 - Stores encrypted task payloads inside your private, hidden `appDataFolder` (invisible in standard Drive browsing and inaccessible to third-party apps).

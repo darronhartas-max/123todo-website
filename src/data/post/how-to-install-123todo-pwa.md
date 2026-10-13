@@ -40,25 +40,25 @@ When you tap it, it launches in full screen—without browser address bars, tabs
 
 Many people first discover 123 ToDo in a web browser like Safari, Chrome, or Edge and simply leave the tab open in the background. While that works, installing it onto your device gives you huge advantages:
 
-### 1. 🚀 Instant 1-Tap Access from Your Home Screen or Dock
+### 1. Instant 1-Tap Access from Your Home Screen or Dock
 
 No more opening your browser, sifting through 45 open tabs, or typing in web addresses. Simply tap the **123 ToDo** icon right on your phone's home screen or laptop dock to jump straight into your tasks.
 
-### 2. 📱 Full-Screen, Distraction-Free Focus
+### 2. Full-Screen, Distraction-Free Focus
 
 When you install 123 ToDo, all browser chrome disappears. There are no address bars, back/forward buttons, or distracting news feeds. You get 100% of your screen dedicated to getting things done.
 
-### 3. ✈️ 100% Offline Capability (Anywhere, Anytime)
+### 3. 100% Offline Capability (Anywhere, Anytime)
 
 Going into an underground subway? Flying at 35,000 feet? On a construction site or in a basement with zero cellular reception?
 
 Because 123 ToDo is installed locally on your device, it loads in milliseconds and lets you add tasks, dictate voice notes, and check off checklist steps completely offline. The moment you reconnect to Wi-Fi or cellular data, your encrypted sync seamlessly updates your other devices.
 
-### 4. 🛡️ Data Protection & Storage Persistence
+### 4. Data Protection & Storage Persistence
 
 Browsers are known to occasionally wipe website storage if a tab hasn’t been visited for weeks or when device storage runs low. When you install 123 ToDo as a PWA, your operating system grants it **Persistent Storage permissions**, keeping your tasks, notes, photo attachments, and 24-hour shadow backups safe from automatic browser eviction.
 
-### 5. ⚡ Zero App Store Bloat & Instant Background Updates
+### 5. Zero App Store Bloat & Instant Background Updates
 
 Traditional to-do apps from app stores often weigh 150MB to 300MB and require manual updates through the App Store. 123 ToDo takes up less than **1MB** of space and updates itself silently in the background whenever a new version is released—no waiting, no downloads.
 
@@ -68,7 +68,7 @@ Traditional to-do apps from app stores often weigh 150MB to 300MB and require ma
 
 Installing 123 ToDo takes less than 10 seconds. Select your device below and follow the simple steps:
 
-### 📱 iPhone & iPad (Using Safari)
+### iPhone & iPad (Using Safari)
 
 _Apple requires adding PWAs through Safari:_
 
@@ -82,7 +82,7 @@ _Apple requires adding PWAs through Safari:_
 
 ---
 
-### 🤖 Android Phones & Tablets (Using Chrome)
+### Android Phones & Tablets (Using Chrome)
 
 1. Open **[app.123todo.com](https://app.123todo.com)** in **Google Chrome**.
 2. Look for the install banner that automatically appears at the top or bottom of the screen, and tap **"Install"** or **"Add to Home Screen"**.
@@ -93,7 +93,7 @@ _Apple requires adding PWAs through Safari:_
 
 ---
 
-### 💻 Mac (Apple Silicon & Intel)
+### Mac (Apple Silicon & Intel)
 
 #### Option A: Google Chrome / Microsoft Edge / Brave
 
@@ -112,7 +112,7 @@ _Apple requires adding PWAs through Safari:_
 
 ---
 
-### 🪟 Windows PC & Chromebook
+### Windows PC & Chromebook
 
 1. Open **[app.123todo.com](https://app.123todo.com)** in **Google Chrome** or **Microsoft Edge**.
 2. In the address bar at the top right, click the **Install icon** (or click the three dots `...` ➔ **Apps** ➔ **Install 123 To Do**).

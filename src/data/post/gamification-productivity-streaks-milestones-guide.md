@@ -28,7 +28,7 @@ Introducing the **Productivity & Achievements Hub** in 123 ToDo — featuring an
 
 ---
 
-## 🧠 The Neuroscience of Productivity Points: Why Gamified Focus Works
+## The Neuroscience of Productivity Points: Why Gamified Focus Works
 
 Human brains are hardwired for immediate feedback loops. When you complete an action and receive clear visual recognition, your brain releases a micro-dose of dopamine — the neurotransmitter responsible for motivation, habit formation, and goal pursuit.
 
@@ -42,7 +42,7 @@ Because points are earned through real-world execution rather than vanity metric
 
 ---
 
-## 🏆 The 10 Progressive Achievement Levels: From Starter to Immortal
+## The 10 Progressive Achievement Levels: From Starter to Immortal
 
 Whether you are completing your very first 1-2-3 daily priority list or you are a high-volume power user clearing 10+ complex tasks every single day, the **10-Tier Level Hierarchy** provides meaningful milestones to shoot for:
 
@@ -65,7 +65,7 @@ Level 10 is intentionally calibrated to be a prestigious, virtually unachievable
 
 ---
 
-## 🔥 The "Never Break the Chain" Daily Streak System
+## The "Never Break the Chain" Daily Streak System
 
 Jerry Seinfeld famously shared his secret to prolific productivity: **Hang a calendar on the wall, cross off each day you write, and don't break the chain.**
 
@@ -77,7 +77,7 @@ Jerry Seinfeld famously shared his secret to prolific productivity: **Hang a cal
 
 ---
 
-## 🎯 How the 1-2-3 Rule Powers Your Score
+## How the 1-2-3 Rule Powers Your Score
 
 Most people fail with to-do lists because they treat all tasks equally. A 2-minute email gets the same weight as writing a comprehensive quarterly report.
 
@@ -91,7 +91,7 @@ Inside the **Achievements & Productivity Modal**, the **1-2-3 Balance Insight** 
 
 ---
 
-## 🎖️ Unlockable Milestone Badges
+## Unlockable Milestone Badges
 
 Alongside your level progression, 123 ToDo tracks specific milestone achievements:
 
@@ -106,7 +106,7 @@ Alongside your level progression, 123 ToDo tracks specific milestone achievement
 
 ---
 
-## 🚀 How to Access the Achievements Hub in 123 ToDo
+## How to Access the Achievements Hub in 123 ToDo
 
 1. Open [**app.123todo.com**](https://app.123todo.com) on your phone, tablet, or desktop.
 2. Click the **Trophy Icon (🏆)** located in the top action bar right before Settings.

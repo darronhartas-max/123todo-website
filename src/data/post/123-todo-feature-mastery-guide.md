@@ -47,11 +47,10 @@ A list of tasks tells you _what_ to do. It doesn't tell you _when_ you are actua
 ### How to Use Clock Face Scheduling
 
 1. **Interactive Clock Face Dial**: When creating or editing any task (or tapping Defer), tap the clock icon to open the custom circular analog clock face. An intuitive interactive dial lets you tap or drag the hour hand, toggle AM/PM, and set exact minutes in two effortless steps.
-2. **1-Tap Quick Presets**: Need to schedule fast? Tap convenient preset chips for **Morning (09:00)**, **Midday (12:00)**, **Afternoon (14:00)**, or **Evening (18:00)** to assign times in a fraction of a second.
-3. **Chronological Timeline Ordering**: Tasks assigned a scheduled time are automatically arranged in chronological order (earliest time first), transforming your daily list into a structured daily itinerary while fully preserving custom drag-and-drop manual reordering.
-4. **Concise Time Badges**: Scheduled tasks display a small, elegant time badge (e.g., `09:00`, `2:30 PM`) right at the start of the task card in both Pro and Lite views.
-5. **1-Click Google & Apple Calendar Sync**: With one click, export any scheduled task directly to Google Calendar or download an Apple Calendar (`.ics`) event, pre-configured with a 15-minute advance reminder alert.
-6. **Automated Reminders**: Optional browser and PWA notifications alert you the moment a scheduled task reaches its set time on your desktop or mobile device.
+2. **Chronological Timeline Ordering**: Tasks assigned a scheduled time are automatically arranged in chronological order (earliest time first), transforming your daily list into a structured daily itinerary while fully preserving custom drag-and-drop manual reordering.
+3. **Concise Time Badges**: Scheduled tasks display a small, elegant time badge (e.g., `09:00`, `2:30 PM`) right at the start of the task card in both Pro and Lite views.
+4. **1-Click Google & Apple Calendar Sync**: With one click, export any scheduled task directly to Google Calendar or download an Apple Calendar (`.ics`) event, pre-configured with a 15-minute advance reminder alert.
+5. **Automated Reminders**: Optional browser and PWA notifications alert you the moment a scheduled task reaches its set time on your desktop or mobile device.
 
 ---
 

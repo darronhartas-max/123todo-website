@@ -406,7 +406,7 @@ export default function HeroInteractiveDemo() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-white text-blue-700 hover:bg-blue-50 shadow-md transition-all whitespace-nowrap cursor-pointer flex-shrink-0 hover:scale-105"
               >
-                <span>Launch App</span>
+                <span>Open Full App Free</span>
               </a>
             </div>
 
@@ -842,7 +842,7 @@ export default function HeroInteractiveDemo() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-blue-600 hover:bg-blue-700 text-white shadow-md hover:scale-[1.02] transition-all whitespace-nowrap cursor-pointer"
                 >
-                  <span>Launch App</span>
+                  <span>Open Full App Free</span>
                 </a>
               </div>
             </div>

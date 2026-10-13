@@ -145,7 +145,7 @@ Want to draft your tasks on your Mac or PC in the morning and check them off on 
 
 ## 10. Automated Shadow Backups & Universal Importer (Impact: ⭐⭐⭐)
 
-We believe you should own your data forever. You should never be locked into a proprietary ecosystem or lose work because of an accidental browser cache clear.
+We believe you should always own your data. You should never be locked into a proprietary ecosystem or lose work because of an accidental browser cache clear.
 
 ### Safety Nets & Easy Migration
 

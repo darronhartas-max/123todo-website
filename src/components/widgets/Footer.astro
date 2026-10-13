@@ -37,7 +37,19 @@ const { links = [], footNote = '', theme = 'light' } = Astro.props;
           <a class="inline-block font-bold text-xl" href={getHomePermalink()}>{SITE?.name}</a>
         </div>
         <div class="text-sm text-muted dark:text-gray-400">
-          The free, privacy-first task manager with end-to-end encryption, zero tracking, and 100% offline support.
+          The free, open-source (MIT), privacy-first task manager with end-to-end encryption, zero tracking, and 100%
+          offline support.
+        </div>
+        <div class="mt-3">
+          <a
+            href="https://github.com/darronhartas-max/123todo-react"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-md bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-200 hover:bg-slate-300 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition"
+          >
+            <Icon name="tabler:brand-github" class="w-4 h-4" />
+            <span>Open Source on GitHub</span>
+          </a>
         </div>
       </div>
       {

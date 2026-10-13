@@ -78,6 +78,7 @@ export const footerData = {
       links: [
         { text: 'Blog', href: getBlogPermalink() },
         { text: 'About Us', href: getPermalink('/about') },
+        { text: 'GitHub (Open Source)', href: 'https://github.com/darronhartas-max/123todo-react', target: '_blank' },
       ],
     },
     {

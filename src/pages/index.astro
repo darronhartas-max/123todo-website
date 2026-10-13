@@ -125,6 +125,11 @@ const faqs = [
       'Yes! All core productivity features—including uncapped tasks, photo attachments, voice dictation, subtask checklists, and cross-device zero-knowledge sync—are 100% free to use. There are no 14-day trial paywalls, no credit card requirements, and no third-party advertisements.',
   },
   {
+    question: 'Is 123 ToDo open source software?',
+    answer:
+      'Yes! 123 ToDo is 100% open-source software released under the permissive MIT License. You can inspect, audit, or fork our complete client-side codebase on GitHub (darronhartas-max/123todo-react). Our open-source architecture ensures complete transparency—meaning anyone can independently verify that your data is encrypted client-side and never scanned, tracked, or monetized.',
+  },
+  {
     question: 'How does 123 ToDo compare to Todoist, TickTick, and Google Keep?',
     answer:
       'Unlike Todoist and TickTick that charge $36–$72/year for photo uploads, reminders, and daily backups, 123 ToDo provides these capabilities completely free. Unlike Google Keep or Microsoft To Do, 123 ToDo features true client-side zero-knowledge AES-256-GCM encryption, meaning your personal tasks and private notes are never scanned, indexed, or monetized.',
@@ -159,7 +164,7 @@ const faqs = [
 const metadata = {
   title: '123 ToDo - Free Task Manager, Daily To-Do List App & Voice Notes App (Best Todoist & TickTick Alternative)',
   description:
-    '123 ToDo is a fast, 100% free task manager and to-do list app with voice notes, photo attachments, subtasks, daily streaks, zero-knowledge encryption, and 1-click migration from Todoist, TickTick, Google Keep, and Microsoft To Do.',
+    '123 ToDo is a fast, 100% free and open source (MIT) task manager and to-do list app with voice notes, photo attachments, subtasks, daily streaks, zero-knowledge encryption, and 1-click migration from Todoist, TickTick, Google Keep, and Microsoft To Do.',
   ignoreTitleTemplate: true,
   openGraph: {
     images: [
@@ -206,7 +211,7 @@ const metadata = {
           >Works across Mac, Windows, Linux, iOS, Android &amp; Web with Zero-Knowledge Cloud&nbsp;Sync.</span
         >
         <span class="text-purple-600 dark:text-purple-400 font-bold underline decoration-2 underline-offset-4"
-          >100% FREE.</span
+          >100% FREE &amp; OPEN SOURCE.</span
         > The private, offline-first alternative to Todoist, TickTick, Google Keep, and Microsoft To&nbsp;Do.
       </span>
     </Fragment>
@@ -248,6 +253,16 @@ const metadata = {
           >
           100% Client-Side Private
         </span>
+        <span class="text-slate-300 dark:text-slate-600 hidden sm:inline">•</span>
+        <a
+          href="https://github.com/darronhartas-max/123todo-react"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1.5 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 font-semibold transition"
+        >
+          <Icon name="tabler:brand-github" class="w-4 h-4 text-slate-800 dark:text-slate-100" />
+          <span>Open Source (MIT)</span>
+        </a>
       </div>
     </Fragment>
 
@@ -590,6 +605,15 @@ const metadata = {
               <td class="p-4 text-slate-500">Google Scanned</td>
             </tr>
             <tr>
+              <td class="p-4 font-semibold">Codebase &amp; Auditability</td>
+              <td class="p-4 font-bold text-emerald-600 dark:text-emerald-400 bg-blue-50/60 dark:bg-blue-950/40"
+                >100% Open Source (MIT) on GitHub</td
+              >
+              <td class="p-4 text-slate-500">Proprietary (Closed)</td>
+              <td class="p-4 text-slate-500">Proprietary (Closed)</td>
+              <td class="p-4 text-slate-500">Proprietary (Closed)</td>
+            </tr>
+            <tr>
               <td class="p-4 font-semibold">Dual Skins (Tasks + Voice Notes)</td>
               <td class="p-4 font-bold text-emerald-600 dark:text-emerald-400 bg-blue-50/60 dark:bg-blue-950/40"
                 >1-Tap Instant Toggle</td
@@ -740,20 +764,24 @@ const metadata = {
           </p>
         </div>
 
-        <!-- Pillar 3: Independent Ethos -->
+        <!-- Pillar 3: Independent Ethos & Open Source -->
         <div
           class="bg-slate-50 dark:bg-slate-800/70 p-6 md:p-8 rounded-2xl border border-slate-200/80 dark:border-slate-700 flex flex-col shadow-sm hover:shadow-md transition-shadow"
         >
           <div
             class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-5 font-bold"
           >
-            <Icon name="tabler:leaf" class="w-6 h-6" />
+            <Icon name="tabler:brand-github" class="w-6 h-6" />
           </div>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2.5">3. Independent &amp; Ad-Free</h3>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2.5">3. 100% Open Source &amp; Independent</h3>
           <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed flex-1">
-            We are self-funded and independent. We have no venture capitalists demanding aggressive ads, no data brokers
-            buying your information, and no artificial paywalls. The core 1-2-3 productivity method runs free forever in
-            your browser without registration.
+            We are self-funded and completely open source under the permissive <strong>MIT License</strong>. Anyone can
+            inspect and audit our complete client-side codebase on <a
+              href="https://github.com/darronhartas-max/123todo-react"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-600 dark:text-blue-400 font-semibold underline hover:text-blue-700">GitHub</a
+            > to verify our zero-knowledge security. No venture capitalists, no ads, no trackers, and no paywalls.
           </p>
         </div>
       </div>

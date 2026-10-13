@@ -99,9 +99,9 @@ Instead of an endless, intimidating list of 40 unranked items, your day is organ
 
 When you open [123 To Do](https://app.123todo.com), you only need to know 3 gestures:
 
-1. **Complete a task (✓):** Tap the checkmark button on the left of any task card. The task will strike through and celebrate your progress!
+1. **Complete a task (✓):** Tap the checkmark button on the right of any task card. The task will strike through and celebrate your progress!
 2. **Edit a task:** Tap directly on any task’s text. You can change the title, add detailed notes, adjust its priority, or attach a photo.
-3. **Add a task (+):** Tap the prominent blue **+** button at the bottom of the screen. Type what you need to do, pick 1, 2, or 3, and tap Save!
+3. **Add a task (+):** Tap the prominent **+** button at the top of the screen. Type what you need to do, pick the priority (Must Should or Could), and tap Save!
 
 That's literally all you need to organize today's workday.
 

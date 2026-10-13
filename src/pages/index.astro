@@ -23,9 +23,9 @@ const coreFeatures = [
     icon: 'tabler:devices',
   },
   {
-    title: 'Smart Scheduling & Next-Day / Next-Week Deferral',
+    title: 'Smart Scheduling, Clock Face Times & Calendar Sync',
     description:
-      'Schedule tasks for Today, Tomorrow, or specific weekdays with 1-click "Next Day" and "Next Week" quick buttons. Set automated recurring tasks that roll over automatically upon completion.',
+      'Schedule tasks with optional exact times using an intuitive circular clock face picker or 1-tap presets (Morning, Midday, Afternoon, Evening). 1-click sync to Google Calendar & Apple Calendar (.ics), automated reminders, and recurring rollover routines.',
     icon: 'tabler:calendar-repeat',
   },
   {
@@ -49,6 +49,18 @@ const coreFeatures = [
 ];
 
 const additionalFeatures = [
+  {
+    title: 'Interactive In-Box Actionable Links & Email Client Picker',
+    description:
+      'Phone numbers, email addresses, and URLs are directly clickable inside task and note boxes without entering edit mode. Tap to call on mobile, open your preferred email client (Gmail, Outlook, Apple Mail), or visit links instantly.',
+    icon: 'tabler:link',
+  },
+  {
+    title: 'Customizable Button Display Modes & Compact Phone Scaling',
+    description:
+      'Tailor the UI to your style: choose between Icons (Clean), Icons & Text, or Text Only across all toolbars. Automatic responsive scaling optimizes typography and touch targets on older and compact smartphones.',
+    icon: 'tabler:adjustments',
+  },
   {
     title: 'Drag-and-Drop Subtasks & Line Wrapping',
     description:
@@ -454,7 +466,7 @@ const metadata = {
           <div class="flex items-center gap-3">
             <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
             <span class="font-bold text-sm sm:text-base tracking-wide">
-              <span class="group-open:hidden">Show 8 More Features &amp; Capabilities</span>
+              <span class="group-open:hidden">Show {additionalFeatures.length} More Features &amp; Capabilities</span>
               <span class="hidden group-open:inline">Hide Additional Features &amp; Specifications</span>
             </span>
             <span
@@ -602,6 +614,15 @@ const metadata = {
               <td class="p-4 text-slate-500">Basic Keyboard Mic</td>
               <td class="p-4 text-slate-500">Basic Keyboard Mic</td>
               <td class="p-4 text-slate-500">Basic Audio Memo</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-semibold">Clock Face Times &amp; Calendar Export</td>
+              <td class="p-4 font-bold text-emerald-600 dark:text-emerald-400 bg-blue-50/60 dark:bg-blue-950/40"
+                >Included Free (Clock Face Picker, Presets, Google &amp; Apple .ics, Reminders)</td
+              >
+              <td class="p-4 text-slate-500">Pro Only ($4–$6/mo)</td>
+              <td class="p-4 text-slate-500">Premium Only ($3/mo)</td>
+              <td class="p-4 text-slate-500">Basic Due Time</td>
             </tr>
             <tr>
               <td class="p-4 font-semibold">Universal Competitor Migration</td>

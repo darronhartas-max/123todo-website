@@ -24,6 +24,7 @@ export const headerData = {
     },
     {
       text: 'Support',
+      hideOnDesktop: true,
       links: [
         {
           text: 'Report a Bug',
@@ -39,6 +40,7 @@ export const headerData = {
     },
     {
       text: 'Legal',
+      hideOnDesktop: true,
       links: [
         {
           text: 'Terms of Service',
@@ -52,6 +54,7 @@ export const headerData = {
     },
     {
       text: 'Open App',
+      hideOnDesktop: true,
       href: 'https://app.123todo.com',
       target: '_blank',
     },

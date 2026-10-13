@@ -993,30 +993,37 @@ const metadata = {
       </ul>
 
       <h3 id="scheduled-tasks" class="scroll-mt-24">📅 Scheduled & Recurring Tasks</h3>
-      <p>Manage upcoming work and routines without cluttering your daily view:</p>
+      <p>Manage upcoming work, precise daily timelines, and recurring routines without cluttering your daily view:</p>
       <ul>
         <li>
-          <strong>Specific Scheduling</strong>: Set a future start date (e.g. next Tuesday) on any task. The task will
-          hide automatically in the <strong>Scheduled &amp; Recurring</strong> drawer until that date arrives.
+          <strong>Specific Date &amp; Time Scheduling</strong>: Set a future date and optional exact time on any task.
+          When scheduling with a time, pick hours and minutes using the intuitive circular clock face dial or 1-tap
+          quick presets (Morning 09:00, Midday 12:00, Afternoon 14:00, Evening 18:00).
         </li>
         <li>
-          <strong>Scheduled Tasks Drawer</strong>: Located between On Hold and Archive at the bottom, this collapsible
-          drawer keeps future tasks organised and out of sight. Full scheduling details (date, recurrence pattern) are
-          shown here — keeping your main active lists clean and uncluttered.
+          <strong>Chronological Daily Timeline &amp; Time Badges</strong>: Tasks with scheduled times automatically sort
+          in chronological order and display a concise time badge (e.g. <code>09:00</code>, <code>2:30 PM</code>) at the
+          start of the task, transforming your priority list into an effortless daily agenda.
+        </li>
+        <li>
+          <strong>Google Calendar &amp; Apple Calendar Integration</strong>: Seamless 1-click &ldquo;Add to Google
+          Calendar&rdquo; and &ldquo;Add to Apple Calendar&rdquo; (.ics) export buttons pre-configure calendar events
+          and reminders in your favorite calendar app.
+        </li>
+        <li>
+          <strong>Automated Reminders &amp; Due Task Priority</strong>: Automated in-app and PWA reminder alerts notify
+          you when scheduled tasks fall due. When a task reaches its scheduled day, it is automatically placed at the
+          top of its priority list while fully respecting custom drag-and-drop reordering.
+        </li>
+        <li>
+          <strong>Scheduled Tasks Drawer</strong>: Located between On Hold and Archive at the bottom, this full-width
+          collapsible drawer keeps future tasks organized and out of sight. Tasks due today appear in active priority
+          lists, keeping your dashboard focused.
         </li>
         <li>
           <strong>Detailed Recurrence Rules</strong>: Set tasks to repeat at custom intervals — such as every 3 days,
-          every 2 weeks, every Monday, or every 3 months. You can combine a repeat interval with specific weekdays for
-          patterns like &ldquo;every Monday and Thursday&rdquo;.
-        </li>
-        <li>
-          <strong>Instant Recurrence Setup — No Start Date Required</strong>: Simply check
-          <em>🔁 Repeat this task</em> and the start date automatically defaults to today. If you select specific weekdays
-          (e.g. every Monday), the start date instantly snaps to the next upcoming Monday — no manual calendar hunting needed.
-        </li>
-        <li>
-          <strong>Defer a Task</strong>: Use the calendar icon on any scheduled task card to quickly reschedule it to a
-          new date. The task returns to the Scheduled drawer with its updated date.
+          every 2 weeks, every Monday, or every 3 months. Toggle recurrence instantly via the Repeat icon toggle
+          directly on the schedule row.
         </li>
         <li>
           <strong>Automatic Cycle Rollover</strong>: When you complete a recurring task, the current instance is
@@ -1338,6 +1345,23 @@ const metadata = {
         <li>
           <strong>High-Contrast Dark Mode:</strong> Rich, low-light dark palette optimized for evening planning and battery
           efficiency on OLED displays.
+        </li>
+        <li>
+          <strong>Feature Buttons &amp; Labels Mode:</strong> In <strong>Settings ⚙️ ➔ Appearance &amp; Styling</strong
+          >, choose how toolbar buttons appear: <strong>Icons (Clean)</strong> with ample spacing and minimal clutter, <strong
+            >Icons &amp; Text</strong
+          > for full descriptive labels, or <strong>Text Only</strong>.
+        </li>
+        <li>
+          <strong>Adaptive Screen Scaling for Compact Phones:</strong> 123 ToDo automatically detects smaller viewports (e.g.
+          iPhone SE or displays &le;375px wide) to adjust typography, margins, and touch targets. Override or customize anytime
+          in <strong>Settings ⚙️ ➔ Appearance &amp; Styling ➔ Screen Scaling Mode</strong> (Auto, Compact, Standard).
+        </li>
+        <li>
+          <strong>Scheduled Times &amp; Creation Timestamps:</strong> In <strong
+            >Settings ⚙️ ➔ Tasks &amp; Workflow</strong
+          >, toggle time scheduling selectors and creation timestamps to keep your editing modals as lean or as detailed
+          as you like.
         </li>
       </ul>
 

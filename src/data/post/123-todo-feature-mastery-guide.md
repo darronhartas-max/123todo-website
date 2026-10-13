@@ -112,7 +112,7 @@ Productivity is personal, and the environment you work in shapes your focus. 123
 
 ## 7. Projects, Tags & Desktop Kanban Columns (Impact: ⭐⭐⭐)
 
-While your daily view is strictly limited to 6 core tasks (1-2-3), real life requires tracking ongoing initiatives that span across weeks or months.
+You can create and view as many tasks as you need—there are no artificial limits or caps. While the 1-2-3 framework is designed to help you prioritize your top tasks each day, real-world productivity often involves tracking dozens of ongoing initiatives, backlogged ideas, and multi-week projects.
 
 ### Managing Projects & Kanban Boards
 

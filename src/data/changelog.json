@@ -1,4 +1,14 @@
 {
+  "3.7.48": [
+    {
+      "title": "🏷️ Uniform \"On Hold\" Section Heading:",
+      "desc": "Standardized the On Hold tasks header in the main task list from \"ON HOLD TASKS\" to simply \"ON HOLD\", establishing full visual and typographic uniformity alongside Must Do, Should Do, and Could Do sections."
+    },
+    {
+      "title": "🧹 Streamlined Archive Row Action Buttons:",
+      "desc": "Removed the redundant secondary permanent delete button that appeared alongside the Restore button on each archived task row, preserving the dedicated delete button on the left of each task for a cleaner, uncluttered interface."
+    }
+  ],
   "3.7.47": [
     {
       "title": "🖼️ Clarified Lightbox Actions, Generous Touch Targets & Spacing:",

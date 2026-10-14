@@ -1,4 +1,14 @@
 {
+  "3.7.46": [
+    {
+      "title": "⏱️ Inline Time Lozenge Wrapping & Clean Section Headings:",
+      "desc": "When a scheduled time is set on a task, the time lozenge is now rendered inline with the task description, allowing text lines to cleanly wrap directly underneath the lozenge to eliminate awkward gaps and maximize usable space. Also standardized priority list headers by removing the redundant \"Show\" and \"Hide\" prefixes from On Hold and Scheduled sections for complete visual uniformity."
+    },
+    {
+      "title": "📦 Modernized Archive Listing, 2-Line Clamping & Safe Edit Flow:",
+      "desc": "Refined the Archive modal with modernized theme-consistent styling. Archived tasks are now neatly clamped to 2 lines of description for rapid scanning, and clicking an archived task now presents an intuitive confirmation popup prompting to restore it into the live system before opening it in the task editor."
+    }
+  ],
   "3.7.45": [
     {
       "title": "📸 5 Photo Attachments, Cursor Viewport Scrolling & Collapsible Sections:",

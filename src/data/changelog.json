@@ -1,4 +1,10 @@
 {
+  "3.7.51": [
+    {
+      "title": "✨ Streamlined Add Task Controls & Space Optimization:",
+      "desc": "Removed the redundant Cancel button from the bottom priority button row in the Add Task form, reclaiming valuable horizontal space for priority tier buttons and the Add Task action. Task creation can still be cleanly cancelled at any time via the prominent close cross (✕) in the top right or by pressing the Escape key."
+    }
+  ],
   "3.7.50": [
     {
       "title": "👁️ Active Text Viewport Visibility & Cursor Tracking in Notes and Tasks:",

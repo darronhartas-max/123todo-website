@@ -1,4 +1,14 @@
 {
+  "3.7.50": [
+    {
+      "title": "👁️ Active Text Viewport Visibility & Cursor Tracking in Notes and Tasks:",
+      "desc": "When editing a note attached to a task or typing task descriptions in Add Task and Edit Task modals, the active cursor and newly added text now remain visible inside the viewport at all times. Resolved mobile and desktop issues where adding text to the end of a long note pushed the editing line outside the visible pane or behind the virtual keyboard."
+    },
+    {
+      "title": "📐 Precision Soft-Wrap Line Measuring & Container Auto-Scroll:",
+      "desc": "Upgraded the internal cursor position tracker with an off-screen typographic measuring mirror that accurately accounts for soft-wrapped sentences without hard returns. Both the internal textarea scroll and the modal container auto-scroll in real time with frame-synchronized alignment during both keyboard typing and voice transcription."
+    }
+  ],
   "3.7.49": [
     {
       "title": "🎙️ Voice Dictation Viewport Visibility & Cursor Tracking:",

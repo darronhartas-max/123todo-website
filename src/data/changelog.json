@@ -1,4 +1,18 @@
 {
+  "3.7.56": [
+    {
+      "title": "🔄 Unified Subtask Reorder Hook & Modular Architecture (Phase 4):",
+      "desc": "Extracted duplicated touch, boundary collision, and drag-and-drop gesture handlers across TaskItem, AddTask, and EditModal into a reusable useSubtaskReorder hook, eliminating redundant reordering logic and ensuring unified vibration feedback."
+    },
+    {
+      "title": "🗄️ Storage Keys Centralization & Orphan Section Key Pruning:",
+      "desc": "Centralized all local storage identifiers into the STORAGE_KEYS registry, resolving fragmented key usage. Added automated pruning of orphaned task section keys on app startup and task deletion to prevent storage leaks."
+    },
+    {
+      "title": "🛡️ Safe Silent Background Service Worker Activation:",
+      "desc": "Enhanced silent background service worker update transitions to safeguard against reloading while any modal dialog or active input editing is open, safely deferring reloads until the app is backgrounded."
+    }
+  ],
   "3.7.55": [
     {
       "title": "🔒 Security Hardening & Content Security Policy (Phase 3):",

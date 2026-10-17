@@ -1,4 +1,14 @@
 {
+  "3.8.0": [
+    {
+      "title": "📥 Dedicated Photo Download vs. Share Actions:",
+      "desc": "The Download button in the photo Lightbox viewer now strictly triggers direct file downloads to your Downloads folder on all devices, keeping it distinct from the Share button which opens the system share sheet (AirDrop, Messages, Mail, WhatsApp)."
+    },
+    {
+      "title": "⏱️ Extended Download Reliability:",
+      "desc": "Extended file blob download lifetime to ensure smooth, uncorrupted downloads for high-resolution images across all mobile and desktop browsers."
+    }
+  ],
   "3.7.59": [
     {
       "title": "📥 Full-Resolution Photo Download & Native Save:",

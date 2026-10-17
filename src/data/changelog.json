@@ -1,4 +1,22 @@
 {
+  "3.7.58": [
+    {
+      "title": "🛡️ Zero Photo Loss & Storage Protection:",
+      "desc": "Note photos are permanently preserved in IndexedDB with browser Persistent Storage protection, completely safeguarding photos from eviction or 5MB quota errors."
+    },
+    {
+      "title": "📦 1-Click Physical Photo ZIP Export:",
+      "desc": "New \"Export All Photos (.ZIP)\" tool in Data Backup & Settings exports all high-resolution note photos across active and archived tasks into a single physical ZIP file."
+    },
+    {
+      "title": "🖼️ Permanent Photo Retention in Archive:",
+      "desc": "Completed tasks in the Archive now retain their photo attachments and thumbnails, viewable and downloadable anytime in read-only mode."
+    },
+    {
+      "title": "⚡ Asynchronous Thumbnail Hydration:",
+      "desc": "Gallery thumbnails hydrate smoothly from IndexedDB without blocking the UI or causing memory bloat."
+    }
+  ],
   "3.7.57": [
     {
       "title": "📋 Top-Prepend for New Subtasks:",

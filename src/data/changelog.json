@@ -1,4 +1,10 @@
 {
+  "3.8.8": [
+    {
+      "title": "📝 Dynamic Subtask Text & Checkbox Scaling in Notes Mode:",
+      "desc": "Subtask checklists, step descriptions, and checkboxes in Notes view mode now dynamically scale with the user's Notes Text Size setting in both view and edit modes, ensuring high readability and comfortable touch targets on mobile."
+    }
+  ],
   "3.8.7": [
     {
       "title": "📱 Centered Archive & Undo Notification on Mobile:",

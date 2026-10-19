@@ -3,6 +3,10 @@ import { getPermalink, getBlogPermalink } from './utils/permalinks';
 export const headerData = {
   links: [
     {
+      text: 'Cross-Device Sync',
+      href: getPermalink('/#sync'),
+    },
+    {
       text: 'Features',
       href: getPermalink('/#features'),
     },
@@ -67,6 +71,7 @@ export const footerData = {
     {
       title: 'Product',
       links: [
+        { text: 'Cross-Device Sync', href: getPermalink('/#sync') },
         { text: 'Features', href: getPermalink('/#features') },
         { text: 'User Guide', href: getPermalink('/guide') },
         { text: 'Changelog', href: getPermalink('/changelog') },

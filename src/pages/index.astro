@@ -209,8 +209,9 @@ const metadata = {
 
     <Fragment slot="subtitle">
       <span class="text-lg sm:text-xl text-balance block max-w-3xl mx-auto leading-relaxed">
-        Turn daily chaos into calm focus and peak efficiency. Master your daily 1-2-3 priorities, eliminate decision
-        fatigue, and get more done in less time — 100% free with zero-knowledge privacy.
+        Turn daily chaos into calm focus and peak efficiency. Master your daily 1-2-3 priorities, seamlessly sync across
+        your phone, tablet and computer in real time, and get more done in less time — 100% free with zero-knowledge
+        privacy.
       </span>
     </Fragment>
 
@@ -239,6 +240,20 @@ const metadata = {
           >
           Opens instantly in browser
         </span>
+        <span class="text-slate-300 dark:text-slate-600 hidden sm:inline">•</span>
+        <a
+          href="#sync"
+          class="inline-flex items-center gap-1.5 text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 font-semibold transition"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+          </svg>
+          Real-Time Multi-Device Sync
+        </a>
         <span class="text-slate-300 dark:text-slate-600 hidden sm:inline">•</span>
         <span class="inline-flex items-center gap-1.5 text-blue-600 dark:text-blue-400 font-semibold">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -332,28 +347,30 @@ const metadata = {
             </div>
           </div>
 
-          <!-- Moving Badge 3: Bottom-Right Zero-Knowledge E2EE -->
+          <!-- Moving Badge 3: Bottom-Right Multi-Device Live Sync Badge -->
           <div
             class="absolute bottom-3 right-3 sm:bottom-6 sm:right-6 animate-float-gentle bg-white/95 dark:bg-slate-900/95 backdrop-blur-md px-3 py-2 sm:px-4 sm:py-3 rounded-2xl shadow-xl border border-white/60 dark:border-slate-700/80 hidden sm:flex items-center gap-2.5 sm:gap-3 max-w-xs transition-transform hover:scale-105"
           >
             <div
-              class="w-8 h-8 rounded-xl bg-purple-100 dark:bg-purple-950/80 text-purple-600 dark:text-purple-400 flex items-center justify-center shrink-0"
+              class="w-8 h-8 rounded-xl bg-indigo-100 dark:bg-indigo-950/80 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0"
             >
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="2.5"
-                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                ></path>
+                  stroke-width="2"
+                  d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
               </svg>
             </div>
             <div class="min-w-0">
-              <p class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white leading-tight">
-                Zero-Knowledge Privacy
+              <p
+                class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white leading-tight flex items-center gap-1.5"
+              >
+                <span>Multi-Device Sync</span>
+                <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
               </p>
               <p class="text-[10px] sm:text-xs text-slate-600 dark:text-slate-300 truncate">
-                AES-256 client-side encrypted
+                Mac, Win, iOS &amp; Android
               </p>
             </div>
           </div>
@@ -431,6 +448,7 @@ const metadata = {
 
   <!-- Dedicated Cross-Device Sync Feature Showcase -->
   <Content
+    id="sync"
     tagline="Multi-Device Freedom"
     title="Real-Time Sync Across All Your Devices"
     items={[
@@ -619,12 +637,12 @@ const metadata = {
           </p>
         </div>
 
-        <!-- Benefit Card 4 -->
+        <!-- Benefit Card 4: Seamless Multi-Device Continuity -->
         <div
           class="bg-white dark:bg-slate-800/90 p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700/80 hover:shadow-md transition duration-200 flex flex-col"
         >
           <div
-            class="w-14 h-14 bg-purple-100 dark:bg-purple-950/60 rounded-xl flex items-center justify-center mb-5 text-purple-600 dark:text-purple-400"
+            class="w-14 h-14 bg-indigo-100 dark:bg-indigo-950/60 rounded-xl flex items-center justify-center mb-5 text-indigo-600 dark:text-indigo-400"
           >
             <svg
               class="w-8 h-8"
@@ -635,15 +653,17 @@ const metadata = {
               stroke-linecap="round"
               stroke-linejoin="round"
             >
-              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
             </svg>
           </div>
           <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 text-balance">
-            100% Free, Instant&nbsp;Start
+            Seamless Multi-Device&nbsp;Sync
           </h3>
           <p class="text-muted dark:text-slate-300 leading-relaxed text-sm md:text-base flex-1">
-            No registration, no passwords, no email verification, and no credit card required. Open the app and be
-            organized in under 60 seconds.
+            Add tasks on your iPhone on the move, review them on your Mac at your desk, and check them off on your
+            Android tablet. Instant 6-digit code pairing keeps every device in perfect sync.
           </p>
         </div>
       </div>

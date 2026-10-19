@@ -71,6 +71,7 @@ export default function HeroInteractiveDemo() {
     window.addEventListener('123todo:open-demo', handleCustomOpen);
 
     const openBtn = document.getElementById('hero-open-demo-btn');
+    const floatingBtn = document.getElementById('hero-floating-demo-btn');
     const handleBtnClick = (e: MouseEvent) => {
       e.preventDefault();
       setIsOpen(true);
@@ -78,12 +79,18 @@ export default function HeroInteractiveDemo() {
     if (openBtn) {
       openBtn.addEventListener('click', handleBtnClick);
     }
+    if (floatingBtn) {
+      floatingBtn.addEventListener('click', handleBtnClick);
+    }
 
     return () => {
       window.removeEventListener('hashchange', handleHash);
       window.removeEventListener('123todo:open-demo', handleCustomOpen);
       if (openBtn) {
         openBtn.removeEventListener('click', handleBtnClick);
+      }
+      if (floatingBtn) {
+        floatingBtn.removeEventListener('click', handleBtnClick);
       }
     };
   }, []);

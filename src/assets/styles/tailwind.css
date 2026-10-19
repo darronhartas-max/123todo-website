@@ -109,3 +109,46 @@
 .dd *:first-child {
   margin-top: 0;
 }
+
+/* Floating animation utilities for Hero showcase */
+@keyframes heroFloatSlow {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes heroFloatDelayed {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+}
+
+@keyframes heroFloatGentle {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-float-slow {
+  animation: heroFloatSlow 5s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: heroFloatDelayed 6s ease-in-out infinite 1s;
+}
+
+.animate-float-gentle {
+  animation: heroFloatGentle 7s ease-in-out infinite 2s;
+}

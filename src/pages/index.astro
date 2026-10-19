@@ -8,7 +8,6 @@ import HeroInteractiveDemo from '~/components/interactive/HeroInteractiveDemo';
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import Headline from '~/components/ui/Headline.astro';
 import ItemGrid from '~/components/ui/ItemGrid.astro';
-import Image from '~/components/common/Image.astro';
 import { Icon } from 'astro-icon/components';
 
 const coreFeatures = [
@@ -202,26 +201,6 @@ const metadata = {
       },
     ]}
   >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 overflow-hidden pointer-events-none">
-        <!-- Hero background photograph behind main heading -->
-        <Image
-          src="~/assets/images/hero-entrepreneur-efficiency.jpg"
-          alt=""
-          class="w-full h-full object-cover object-center opacity-30 dark:opacity-20 scale-105 filter blur-[1px]"
-          widths={[400, 768, 1024, 1920]}
-          sizes="100vw"
-          loading="eager"
-          width={1920}
-          height={1080}
-        />
-        <!-- Atmospheric readability overlays for crystal-clear heading text contrast -->
-        <div
-          class="absolute inset-0 bg-gradient-to-b from-white/85 via-white/75 to-white dark:from-slate-950/90 dark:via-slate-950/80 dark:to-slate-950"
-        >
-        </div>
-      </div>
-    </Fragment>
     <Fragment slot="title">
       123 ToDo — The Free, Private<br class="hidden sm:inline" />
       <span class="text-accent dark:text-white highlight inline-block">Task Manager &amp; To-Do List&nbsp;App</span>

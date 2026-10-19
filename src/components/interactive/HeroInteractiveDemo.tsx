@@ -57,6 +57,24 @@ export default function HeroInteractiveDemo() {
   const [editNote, setEditNote] = useState('');
   const [editPriority, setEditPriority] = useState<Priority>(1);
 
+  // Desktop Responsive View Mode: 'columns' (3-column Kanban) or 'list' (stacked)
+  const [viewMode, setViewMode] = useState<'columns' | 'list'>('columns');
+
+  // Simulated Cross-Device Sync Notification Toast
+  const [syncToast, setSyncToast] = useState<{ message: string; device: string } | null>(null);
+
+  const triggerSyncSimulation = (action: string) => {
+    const devices = ['iPhone 15 Pro', 'MacBook Air', 'Pixel 8', 'iPad Air'];
+    const chosenDevice = devices[Math.floor(Math.random() * devices.length)];
+    setSyncToast({
+      message: action,
+      device: chosenDevice,
+    });
+    setTimeout(() => {
+      setSyncToast(null);
+    }, 2800);
+  };
+
   // Handle external triggers (URL hash, custom event, or hero CTA button click)
   useEffect(() => {
     const handleHash = () => {
@@ -123,11 +141,17 @@ export default function HeroInteractiveDemo() {
   }, [isOpen, editingTaskId]);
 
   const toggleComplete = (id: string) => {
-    setTasks((prev) => prev.map((t) => (t.id === id ? { ...t, completed: !t.completed } : t)));
+    setTasks((prev) => {
+      const target = prev.find((t) => t.id === id);
+      const willComplete = target ? !target.completed : false;
+      triggerSyncSimulation(willComplete ? 'Task marked complete' : 'Task marked incomplete');
+      return prev.map((t) => (t.id === id ? { ...t, completed: !t.completed } : t));
+    });
   };
 
   const deleteTask = (id: string) => {
     setTasks((prev) => prev.filter((t) => t.id !== id));
+    triggerSyncSimulation('Task deleted');
     if (editingTaskId === id) {
       setEditingTaskId(null);
     }
@@ -156,6 +180,7 @@ export default function HeroInteractiveDemo() {
           : t
       )
     );
+    triggerSyncSimulation('Task changes synced');
     setEditingTaskId(null);
   };
 
@@ -174,6 +199,7 @@ export default function HeroInteractiveDemo() {
     };
 
     setTasks((prev) => [newTask, ...prev]);
+    triggerSyncSimulation('New task synced');
     setNewTitle('');
     setNewNote('');
     setShowAddForm(false);
@@ -220,7 +246,7 @@ export default function HeroInteractiveDemo() {
   return (
     <>
       {/* 1. HERO INLINE TEASER PREVIEW (Clicks to launch modal with blurred background) */}
-      <div className="w-full max-w-3xl mx-auto text-left select-none relative group">
+      <div className="w-full max-w-5xl mx-auto text-left select-none relative group">
         <div
           onClick={() => setIsOpen(true)}
           className="cursor-pointer rounded-2xl overflow-hidden bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800 shadow-2xl shadow-blue-500/10 transition-all duration-300 hover:border-blue-400 dark:hover:border-blue-600 hover:shadow-blue-500/20"
@@ -259,57 +285,83 @@ export default function HeroInteractiveDemo() {
               </div>
             </div>
 
-            {/* Teaser 3 tasks */}
-            <div className="space-y-2">
-              <div className="flex items-center justify-between p-3 rounded-xl border border-red-200/80 dark:border-red-900/40 bg-red-50/40 dark:bg-red-950/20 border-l-[5px] border-l-red-600">
-                <div className="flex items-center gap-2.5">
-                  <div className="w-4 h-4 rounded border border-red-400 bg-white dark:bg-slate-800"></div>
-                  <div>
-                    <p className="text-xs sm:text-sm font-semibold text-slate-900 dark:text-white">
-                      1 Must Do: Send monthly project invoice to client
-                    </p>
-                    <p className="text-[11px] text-slate-500 dark:text-slate-400">
-                      Include bank details &amp; updated hours breakdown.
-                    </p>
-                  </div>
-                </div>
-                <span className="text-[10px] font-bold uppercase tracking-wider text-red-600 dark:text-red-400 bg-red-100 dark:bg-red-950 px-2 py-0.5 rounded">
-                  P1 Must Do
+            {/* Cross-Device Sync Simulation Header in Teaser */}
+            <div className="flex flex-wrap items-center justify-between gap-2 px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200/70 dark:border-slate-700 text-[11px]">
+              <div className="flex items-center gap-2 text-slate-700 dark:text-slate-300">
+                <span className="flex h-2 w-2 relative">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                <span className="font-semibold">Live E2EE Sync Active:</span>
+                <span className="text-slate-500 dark:text-slate-400 hidden sm:inline">
+                  MacBook Pro &bull; iPhone 15 &bull; Android
                 </span>
               </div>
+              <div className="font-mono text-[10px] font-bold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/80 px-2 py-0.5 rounded border border-blue-200 dark:border-blue-900">
+                Pairing Code: 738-921
+              </div>
+            </div>
 
-              <div className="flex items-center justify-between p-3 rounded-xl border border-amber-200/80 dark:border-amber-900/40 bg-amber-50/40 dark:bg-amber-950/20 border-l-[5px] border-l-amber-500">
-                <div className="flex items-center gap-2.5">
-                  <div className="w-4 h-4 rounded border border-amber-400 bg-white dark:bg-slate-800"></div>
-                  <div>
-                    <p className="text-xs sm:text-sm font-semibold text-slate-900 dark:text-white">
-                      2 Should Do: Book car service &amp; MOT before Friday
-                    </p>
-                    <p className="text-[11px] text-slate-500 dark:text-slate-400">
-                      Call garage at 8:30am; ask for morning drop-off.
-                    </p>
+            {/* Responsive Teaser 3 Tasks: 3 Columns on md+ Desktop, 1 Column on Mobile */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+              <div className="p-3 rounded-xl border border-red-200/80 dark:border-red-900/40 bg-red-50/40 dark:bg-red-950/20 border-l-[5px] border-l-red-600 flex flex-col justify-between gap-2">
+                <div>
+                  <div className="flex items-center justify-between gap-1 mb-1.5">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-red-600 dark:text-red-400 bg-red-100 dark:bg-red-950 px-2 py-0.5 rounded">
+                      P1 Must Do
+                    </span>
+                    <span className="text-[10px] font-mono text-slate-400">Desktop &bull; Mobile</span>
                   </div>
+                  <p className="text-xs sm:text-sm font-semibold text-slate-900 dark:text-white">
+                    Send monthly project invoice
+                  </p>
+                  <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
+                    Include bank details &amp; hours breakdown.
+                  </p>
                 </div>
-                <span className="text-[10px] font-bold uppercase tracking-wider text-amber-700 dark:text-amber-400 bg-amber-100 dark:bg-amber-950 px-2 py-0.5 rounded">
-                  P2 Should Do
-                </span>
+                <div className="flex items-center gap-1.5 text-[10px] text-emerald-600 dark:text-emerald-400 font-semibold pt-1 border-t border-red-200/50 dark:border-red-900/30">
+                  <span>✓ Synced to iPhone</span>
+                </div>
               </div>
 
-              <div className="flex items-center justify-between p-3 rounded-xl border border-slate-200/80 dark:border-slate-800 bg-slate-50/60 dark:bg-slate-800/40 border-l-[5px] border-l-slate-400">
-                <div className="flex items-center gap-2.5">
-                  <div className="w-4 h-4 rounded border border-slate-400 bg-white dark:bg-slate-800"></div>
-                  <div>
-                    <p className="text-xs sm:text-sm font-semibold text-slate-900 dark:text-white">
-                      3 Could Do: Pick up weekly groceries &amp; fresh fruit
-                    </p>
-                    <p className="text-[11px] text-slate-500 dark:text-slate-400">
-                      Olive oil, fresh produce, and coffee beans.
-                    </p>
+              <div className="p-3 rounded-xl border border-amber-200/80 dark:border-amber-900/40 bg-amber-50/40 dark:bg-amber-950/20 border-l-[5px] border-l-amber-500 flex flex-col justify-between gap-2">
+                <div>
+                  <div className="flex items-center justify-between gap-1 mb-1.5">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-amber-700 dark:text-amber-400 bg-amber-100 dark:bg-amber-950 px-2 py-0.5 rounded">
+                      P2 Should Do
+                    </span>
+                    <span className="text-[10px] font-mono text-slate-400">Desktop &bull; Mobile</span>
                   </div>
+                  <p className="text-xs sm:text-sm font-semibold text-slate-900 dark:text-white">
+                    Book car service &amp; MOT
+                  </p>
+                  <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
+                    Call garage at 8:30am for morning drop-off.
+                  </p>
                 </div>
-                <span className="text-[10px] font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded">
-                  P3 Could Do
-                </span>
+                <div className="flex items-center gap-1.5 text-[10px] text-emerald-600 dark:text-emerald-400 font-semibold pt-1 border-t border-amber-200/50 dark:border-amber-900/30">
+                  <span>✓ Synced to Mac</span>
+                </div>
+              </div>
+
+              <div className="p-3 rounded-xl border border-slate-200/80 dark:border-slate-800 bg-slate-50/60 dark:bg-slate-800/40 border-l-[5px] border-l-slate-400 flex flex-col justify-between gap-2">
+                <div>
+                  <div className="flex items-center justify-between gap-1 mb-1.5">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded">
+                      P3 Could Do
+                    </span>
+                    <span className="text-[10px] font-mono text-slate-400">Desktop &bull; Mobile</span>
+                  </div>
+                  <p className="text-xs sm:text-sm font-semibold text-slate-900 dark:text-white">
+                    Weekly groceries &amp; fruit
+                  </p>
+                  <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
+                    Olive oil, fresh produce, coffee beans.
+                  </p>
+                </div>
+                <div className="flex items-center gap-1.5 text-[10px] text-emerald-600 dark:text-emerald-400 font-semibold pt-1 border-t border-slate-200/60 dark:border-slate-700/50">
+                  <span>✓ Synced to Android</span>
+                </div>
               </div>
             </div>
 
@@ -363,7 +415,7 @@ export default function HeroInteractiveDemo() {
         >
           {/* Modal Dialog Card */}
           <div
-            className="relative w-full max-w-3xl bg-white dark:bg-slate-900 rounded-2xl sm:rounded-3xl shadow-2xl border border-slate-200 dark:border-slate-800 overflow-hidden my-auto flex flex-col max-h-[92vh]"
+            className="relative w-full max-w-5xl xl:max-w-6xl bg-white dark:bg-slate-900 rounded-2xl sm:rounded-3xl shadow-2xl border border-slate-200 dark:border-slate-800 overflow-hidden my-auto flex flex-col max-h-[92vh]"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Top Amber Banner: Crystal Clear SIMPLIFIED DEMO Notice */}
@@ -430,8 +482,67 @@ export default function HeroInteractiveDemo() {
                   </span>
                 </div>
 
-                {/* Reset & Add Task Buttons */}
+                {/* Center: Live Sync Simulator Indicator */}
+                <div className="hidden lg:flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-800 text-[11px] font-semibold text-emerald-800 dark:text-emerald-300">
+                  <span className="flex h-2 w-2 relative">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                  </span>
+                  <span>Cross-Device Sync:</span>
+                  <span className="font-mono text-[10px] text-slate-500 dark:text-slate-400">
+                    Mac &bull; iPhone &bull; Android
+                  </span>
+                  <span className="font-mono text-[10px] font-bold bg-white dark:bg-slate-900 px-1.5 py-0.5 rounded border border-emerald-200 dark:border-emerald-800 text-slate-700 dark:text-slate-300">
+                    #738-921
+                  </span>
+                </div>
+
+                {/* Reset, View Toggle & Add Task Buttons */}
                 <div className="flex items-center gap-2">
+                  {/* Desktop Layout Switcher: 3 Columns vs Stacked List */}
+                  <div className="hidden sm:inline-flex items-center p-0.5 bg-slate-100 dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 text-xs">
+                    <button
+                      type="button"
+                      onClick={() => setViewMode('columns')}
+                      title="Desktop 3-Column Kanban Board"
+                      className={`px-2 py-1 rounded-md font-semibold transition-all cursor-pointer flex items-center gap-1 ${
+                        viewMode === 'columns'
+                          ? 'bg-white dark:bg-slate-900 text-blue-600 dark:text-blue-400 shadow-sm'
+                          : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                      }`}
+                    >
+                      <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"
+                        />
+                      </svg>
+                      <span>Columns</span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setViewMode('list')}
+                      title="Compact List View"
+                      className={`px-2 py-1 rounded-md font-semibold transition-all cursor-pointer flex items-center gap-1 ${
+                        viewMode === 'list'
+                          ? 'bg-white dark:bg-slate-900 text-blue-600 dark:text-blue-400 shadow-sm'
+                          : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                      }`}
+                    >
+                      <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M4 6h16M4 12h16M4 18h16"
+                        />
+                      </svg>
+                      <span>List</span>
+                    </button>
+                  </div>
+
                   <button
                     type="button"
                     onClick={resetDemo}
@@ -546,8 +657,29 @@ export default function HeroInteractiveDemo() {
                 </form>
               )}
 
-              {/* Task List: 3 Signature 1-2-3 Priority Sections */}
-              <div className="p-4 sm:p-6 space-y-6">
+              {/* Live Sync Simulated Notification Toast */}
+              {syncToast && (
+                <div className="px-4 py-2 bg-emerald-500/10 dark:bg-emerald-950/40 border-b border-emerald-500/20 flex items-center justify-between text-xs text-emerald-800 dark:text-emerald-300 animate-fade">
+                  <div className="flex items-center gap-2">
+                    <span className="flex h-2 w-2 relative">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                    </span>
+                    <span className="font-bold">Encrypted Cloud Sync:</span>
+                    <span>{syncToast.message}</span>
+                  </div>
+                  <span className="text-[11px] font-mono text-emerald-700 dark:text-emerald-400">
+                    &rarr; Synced with {syncToast.device}
+                  </span>
+                </div>
+              )}
+
+              {/* Task List: 3 Signature 1-2-3 Priority Sections (Responsive 3-Column Desktop Kanban or Stacked List) */}
+              <div
+                className={`p-4 sm:p-6 ${
+                  viewMode === 'columns' ? 'grid grid-cols-1 md:grid-cols-3 gap-6 items-start' : 'space-y-6'
+                }`}
+              >
                 {priorityConfigs.map((config) => {
                   const sectionTasks = tasks.filter((t) => t.priority === config.level);
 

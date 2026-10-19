@@ -13,16 +13,16 @@ import { Icon } from 'astro-icon/components';
 
 const coreFeatures = [
   {
+    title: 'Instant Cross-Device Sync & Multi-Platform Pairing (Zero-Knowledge E2EE)',
+    description:
+      'Keep all your tasks and notes synchronized in real time across your iPhone, iPad, Android phone, Mac, Windows, and Linux. Pair new devices in seconds using an instant 6-digit code—no passwords, no email drops, and zero-knowledge AES-256-GCM encryption.',
+    icon: 'tabler:devices',
+  },
+  {
     title: 'Intuitive 1-2-3 Daily Priorities (Zero Learning Curve)',
     description:
       'Focus on what truly matters today with a simple 4-tier matrix: Must Do (P1), Should Do (P2), Could Do (P3), and On Hold. Drag and drop tasks between buckets or reorder in seconds to eliminate workday overwhelm.',
     icon: 'tabler:circle-check',
-  },
-  {
-    title: 'Seamless Cross-Device Sync (Zero-Knowledge E2EE)',
-    description:
-      'Keep your tasks and notes synchronized in real-time across Mac, Windows, Linux, iPhone, iPad, and Android with instant 6-digit device pairing codes. Client-side AES-256-GCM encryption ensures your data is never readable by servers.',
-    icon: 'tabler:devices',
   },
   {
     title: 'Smart Scheduling, Clock Face Times & Calendar Sync',
@@ -187,6 +187,7 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Section -->
   <Hero
+    tagline="🔄 Real-Time Cross-Device Sync · Mac, Windows, iOS & Android"
     actions={[
       {
         variant: 'primary',
@@ -427,6 +428,53 @@ const metadata = {
       </div>
     </Fragment>
   </Hero>
+
+  <!-- Dedicated Cross-Device Sync Feature Showcase -->
+  <Content
+    tagline="Multi-Device Freedom"
+    title="Real-Time Sync Across All Your Devices"
+    items={[
+      {
+        title: 'Instant 6-Digit Device Pairing',
+        description:
+          'Pair your phone, tablet, and computer in seconds. Simply enter a generated 6-digit pairing code on your other device—no passwords to remember, no email confirmations, and no persistent login dropouts.',
+      },
+      {
+        title: 'Military-Grade AES-256-GCM Zero-Knowledge Encryption',
+        description:
+          'All tasks, subtasks, notes, and photos are encrypted directly on your local device before touching the cloud. The encryption keys remain exclusively in your possession—mathematically unreadable to servers, ISPs, or hackers.',
+      },
+      {
+        title: 'Choice of Edge Cloud or Google Drive Sync',
+        description:
+          'Enjoy blazing fast serverless synchronization powered by Cloudflare D1 edge database, or sync encrypted payloads directly to your personal Google Drive hidden AppData folder. You maintain 100% data ownership.',
+      },
+      {
+        title: 'Seamless Offline-First Synchronization',
+        description:
+          'Edit, organize, and check off tasks anywhere—even in airplanes or basements with zero internet connection. When you reconnect, all changes merge automatically and silently across your devices.',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/blog-dual-cloud-sync.jpg',
+      alt: '123 ToDo seamless real-time cross-device sync across Mac, Windows, iPhone, and Android',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2 text-balance">
+        Start on your phone, finish on your laptop
+      </h3>
+      <p class="text-lg text-balance">
+        Whether you are at your desk on macOS or Windows, on site with an iPad, or dictating rapid voice notes on an
+        iPhone or Android device, your entire productivity workspace stays in lockstep.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-gradient-to-b from-blue-50/60 to-white dark:from-slate-900/60 dark:to-slate-900">
+      </div>
+    </Fragment>
+  </Content>
 
   <!-- Dual Skins Showcase (Structured Task Manager + Voice Notes) -->
   <Content
@@ -741,6 +789,15 @@ const metadata = {
             </tr>
           </thead>
           <tbody class="divide-y divide-slate-100 dark:divide-slate-700 text-slate-700 dark:text-slate-300">
+            <tr>
+              <td class="p-4 font-semibold">Real-Time Multi-Device Sync</td>
+              <td class="p-4 font-bold text-emerald-600 dark:text-emerald-400 bg-blue-50/60 dark:bg-blue-950/40"
+                >Instant 6-Digit Pairing (Mac, Win, iOS, Android)</td
+              >
+              <td class="p-4 text-slate-500">Requires Account Login</td>
+              <td class="p-4 text-slate-500">Requires Account Login</td>
+              <td class="p-4 text-slate-500">Requires Google Account</td>
+            </tr>
             <tr>
               <td class="p-4 font-semibold">Cost &amp; Subscription</td>
               <td class="p-4 font-bold text-emerald-600 dark:text-emerald-400 bg-blue-50/60 dark:bg-blue-950/40"

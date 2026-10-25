@@ -1,4 +1,10 @@
 {
+  "3.8.11": [
+    {
+      "title": "📋 Stable Kanban Columns on Empty Board:",
+      "desc": "Fixed an issue in the desktop Kanban columns layout where clearing all tasks caused categories to collapse into a narrow strip on the left. Priority columns now remain evenly distributed across the board with dedicated drop targets and empty-state indicators. This bug fix was kindly suggested by user 'Fae'."
+    }
+  ],
   "3.8.10": [
     {
       "title": "🎨 Customizable Priority Label Colors in Settings:",

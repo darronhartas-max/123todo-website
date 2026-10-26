@@ -1,4 +1,18 @@
 {
+  "3.8.13": [
+    {
+      "title": "🎨 Polished Header Date Spacing:",
+      "desc": "Added polished breathing room and a visual spacing gap between the top date and the Tasks/Notes toggle pill in the header for a refined aesthetic."
+    },
+    {
+      "title": "📐 Uniform Line Spacing Across Collapsed Priorities:",
+      "desc": "Standardized the vertical line spacing between all collapsed priority headings (1 Must Do, 2 Should Do, 3 Could Do, On Hold, and Scheduled) for consistent visual rhythm."
+    },
+    {
+      "title": "📦 Direct Archive Opening Without Keyboard Pop-up:",
+      "desc": "Removed automatic input focusing on the Archive search bar so mobile users can immediately view recently archived tasks without the virtual keyboard obscuring the list."
+    }
+  ],
   "3.8.12": [
     {
       "title": "📅 Today's Date in Top Header:",

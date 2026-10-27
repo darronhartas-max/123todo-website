@@ -1,4 +1,10 @@
 {
+  "3.8.16": [
+    {
+      "title": "🎙️ Intuitive Recording States for Mic Icons:",
+      "desc": "Styled all voice dictation microphone icons with a soft faded red hue in idle state and vivid bright red when actively recording, creating a clear visual cue across Add Task, Edit Task, Voice Notes, and Settings."
+    }
+  ],
   "3.8.15": [
     {
       "title": "🎙️ Live Microphone Check & Audio Level Meter:",

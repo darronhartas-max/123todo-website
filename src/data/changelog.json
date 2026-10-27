@@ -1,4 +1,14 @@
 {
+  "3.8.15": [
+    {
+      "title": "🎙️ Live Microphone Check & Audio Level Meter:",
+      "desc": "Added a real-time microphone test and VU audio level meter to Settings → Voice so users can instantly verify audio capture, view connected audio devices, and receive smart diagnostics for external audio interfaces (like Focusrite Scarlett) and laptop closed-mode setups."
+    },
+    {
+      "title": "🛡️ Seamless Audio Permission & Clear Guidance:",
+      "desc": "Added proactive microphone access verification, refined permission error feedback, and clear troubleshooting instructions for web browsers and installed desktop PWAs."
+    }
+  ],
   "3.8.14": [
     {
       "title": "📐 Balanced Section Spacing & Uncramped Views:",

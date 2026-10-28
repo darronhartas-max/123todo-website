@@ -1,4 +1,10 @@
 {
+  "3.8.17": [
+    {
+      "title": "🔄 Recurring Tasks Advance in Scheduled Section (Zero Archive Clutter):",
+      "desc": "When completing or archiving a task with a recurring profile, it no longer goes into the completed Archive. Instead, it seamlessly remains in the Scheduled section with its schedule advanced to its next appearance, subtask checklists refreshed, and original attributes preserved."
+    }
+  ],
   "3.8.16": [
     {
       "title": "🎙️ Intuitive Recording States for Mic Icons:",

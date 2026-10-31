@@ -1,4 +1,14 @@
 {
+  "3.8.20": [
+    {
+      "title": "📝 Note Placement at Bottom of Priority 1 (Focus Protection):",
+      "desc": "When creating a new note in Notes mode, it is now placed at the bottom of the \"1 Must Do\" list in Tasks view (rather than jumping to the top), preserving your primary daily focus tasks while keeping notes neatly organized in Priority 1."
+    },
+    {
+      "title": "✏️ Note Editing UX Alignment & Streamlined Actions (Phase 3):",
+      "desc": "Aligned the subsequent note editing experience in Notes view with Tasks mode, featuring an action buttons row with toggleable Details and Subtasks, direct in-editor Priority selection (P1–P4), sleek themed checklist checkboxes, and a clean metadata footer."
+    }
+  ],
   "3.8.19": [
     {
       "title": "📐 Generous Notes Header Touch Spacing:",

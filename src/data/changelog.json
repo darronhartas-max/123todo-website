@@ -1,4 +1,10 @@
 {
+  "3.8.22": [
+    {
+      "title": "🧤 Gloves-Optimized Add Note Interface in Notes Mode:",
+      "desc": "Redesigned the Add Note card in Notes mode to match the streamlined Tasks mode layout while optimizing specifically for field workers and gloves wearers: placed prominent Mic and Camera shutter buttons on the right-hand side for effortless one-thumb mobile access, added a high-contrast prominent Save button (44px touch target), adopted the circular Tasks-mode cancel button, and removed redundant instruction text."
+    }
+  ],
   "3.8.21": [
     {
       "title": "🔄 Unified Task & Note Editing Interface:",

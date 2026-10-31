@@ -1,4 +1,10 @@
 {
+  "3.8.18": [
+    {
+      "title": "🎨 Native Theming & Semantic Styling in Notes (Phase 1):",
+      "desc": "Replaced legacy hardcoded colors throughout Notes view, Quick Add, Note Cards, and batch action toolbars with dynamic semantic CSS theme tokens. All note components now adapt seamlessly to Dark Mode, custom accent colors, and light-mode tones with refined typography and card padding."
+    }
+  ],
   "3.8.17": [
     {
       "title": "🔄 Recurring Tasks Advance in Scheduled Section (Zero Archive Clutter):",

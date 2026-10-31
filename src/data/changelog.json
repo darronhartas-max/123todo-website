@@ -1,4 +1,10 @@
 {
+  "3.8.23": [
+    {
+      "title": "🎙️ Far-Right Mic Button with Safe Spacing & Auto-Append Dictation:",
+      "desc": "Moved the prominent microphone button to the far right edge of the Add Note card with the circular close button safely to its left separated by 18px of touch padding to prevent accidental dismissals. In Notes view mode, starting voice dictation now automatically appends to the bottom of the note on a fresh new line, immediately focusing and placing the cursor at the end."
+    }
+  ],
   "3.8.22": [
     {
       "title": "🧤 Gloves-Optimized Add Note Interface in Notes Mode:",

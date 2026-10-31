@@ -1,4 +1,18 @@
 {
+  "3.8.19": [
+    {
+      "title": "📐 Generous Notes Header Touch Spacing:",
+      "desc": "Added generous spacing (24px gap) between the Add Note button and Settings icon in the Notes header bar, giving users comfortable touch separation and eliminating accidental clicks into Settings when adding new notes on mobile screens."
+    },
+    {
+      "title": "🎙️ Voice Dictation UI & Error Feedback Parity in Notes:",
+      "desc": "Brought Notes voice dictation into complete parity with Tasks mode, adding prominent glowing recording indicators, active \"Listening...\" states, and 1-tap direct navigation to Settings if microphone access is blocked."
+    },
+    {
+      "title": "⌨️ Command Palette in Notes Search:",
+      "desc": "Integrated the ⌘K / Ctrl+K Command Palette shortcut badge directly into the Notes search bar for instant keyboard-driven actions, searches, and navigation."
+    }
+  ],
   "3.8.18": [
     {
       "title": "🎨 Native Theming & Semantic Styling in Notes (Phase 1):",

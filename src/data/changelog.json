@@ -1,4 +1,10 @@
 {
+  "3.8.21": [
+    {
+      "title": "🔄 Unified Task & Note Editing Interface:",
+      "desc": "In Notes mode, editing an existing note or task now opens the exact same comprehensive editor modal interface as Tasks mode. Users enjoy complete feature parity including color-coded priority pickers, project selectors, voice dictation, subtask reordering, expandable notes, photo attachments, and date/time scheduling."
+    }
+  ],
   "3.8.20": [
     {
       "title": "📝 Note Placement at Bottom of Priority 1 (Focus Protection):",

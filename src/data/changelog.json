@@ -1,4 +1,10 @@
 {
+  "3.8.26": [
+    {
+      "title": "🛡️ Production Code Protection & Key Rotation:",
+      "desc": "Rotated asymmetric cryptographic public verification keys to ensure strict license integrity. Disabled production source map generation to protect proprietary client bundle logic, and isolated private licensing tools strictly to offline environments."
+    }
+  ],
   "3.8.25": [
     {
       "title": "🔒 Cryptographic Licensing Engine & Security Hardening:",

@@ -1,4 +1,10 @@
 {
+  "3.8.27": [
+    {
+      "title": "🌐 Open-Core Community Repository & Automated Synchronization:",
+      "desc": "Established the dedicated public open-source repository (darronhartas-max/123todo-core) allowing security researchers, auditors, and critics to independently verify our zero-knowledge AES-256-GCM encryption and zero-tracking privacy architecture. Added automated developer synchronization scripts to seamlessly mirror upstream improvements."
+    }
+  ],
   "3.8.26": [
     {
       "title": "🛡️ Production Code Protection & Key Rotation:",

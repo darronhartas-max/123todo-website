@@ -1,4 +1,10 @@
 {
+  "3.8.25": [
+    {
+      "title": "🔒 Cryptographic Licensing Engine & Security Hardening:",
+      "desc": "Enhanced Booster tier activation with robust asymmetric digital signature verification (ECDSA P-256 with SHA-256), ensuring secure offline software licensing for open-source distributions. Added seamless 1-click URL license activation and in-app Booster license management in Settings."
+    }
+  ],
   "3.8.24": [
     {
       "title": "⚡ Performance Tier Architecture & Booster Backend:",

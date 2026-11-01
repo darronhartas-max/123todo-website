@@ -36,7 +36,7 @@ Why do they do this? Storing massive uncompressed multi-megabyte camera photos (
 
 Rather than charging you a monthly fee or crippling the feature, we engineered a smarter, privacy-respecting client-side architecture:
 
-1. **Up to 3 Photos Per Note**: Generous enough to capture the before, during, and receipt of any task while keeping your workspace nimble and clean.
+1. **Up to 2 Photos Per Note**: Generous enough to capture reference photos or receipts for any task while keeping your workspace nimble and clean.
 2. **Intelligent Client-Side WebP Compression**: Before any photo is saved, 123 ToDo's in-browser image engine resizes it to a maximum of 2048px and converts it to modern WebP format. High-contrast document text, barcode numbers, and 4K screen grabs remain razor-sharp, while the file size is reduced from 10MB down to an ultra-lean ~150KB–250KB.
 3. **Local IndexedDB Offline Storage**: Photos are stored locally in your browser's dedicated IndexedDB storage engine (`123TodoPhotoDB`), bypassing standard `localStorage` limits and ensuring instantaneous loading even without an active internet connection.
 4. **Zero-Knowledge Encrypted Cloud Sync**: When syncing via our encrypted Cloud Sync or Google Drive, photo payloads are synchronized smoothly without server bloat.

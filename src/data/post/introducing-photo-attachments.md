@@ -1,7 +1,7 @@
 ---
 publishDate: 2026-09-07T00:00:00Z
 title: 'Introducing Photo Attachments: Capture Receipts, Site Photos & Screen Grabs in 123 ToDo'
-excerpt: 'Attach up to 3 photos per note! With camera capture on mobile, direct clipboard pasting (Cmd+V) for screen grabs on desktop, sharp client-side compression, and a full-screen Lightbox viewer — included completely free with zero ads.'
+excerpt: 'Attach up to 2 photos per note! With camera capture on mobile, direct clipboard pasting (Cmd+V) for screen grabs on desktop, sharp client-side compression, and a full-screen Lightbox viewer — included completely free with zero ads.'
 image: ~/assets/images/blog-photo-attachments.svg
 category: Announcements
 tags:
@@ -22,7 +22,7 @@ A quick task title like _"Review supplier invoice"_ or _"Fix leaking valve in ba
 - At your desk, a fast screenshot of a dashboard error, a spreadsheet formula, or a design mockup saves ten minutes of typing explanations.
 - Managing personal expenses or warranties, snapping a picture of a paper receipt or purchase order prevents lost records when tax season arrives.
 
-Today, we are thrilled to announce **Photo Attachments in 123 ToDo v3.6.0**! You can now attach up to **3 high-resolution photos or screenshots directly to any Note or Task** across all your devices — mobile, tablet, and desktop.
+Today, we are thrilled to announce **Photo Attachments in 123 ToDo v3.6.0**! You can now attach up to **2 high-resolution photos or screenshots directly to any Note or Task** across all your devices — mobile, tablet, and desktop.
 
 And in true 123 ToDo fashion, **this feature is included completely free** with no ads and zero tracking.
 

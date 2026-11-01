@@ -1,4 +1,10 @@
 {
+  "3.8.24": [
+    {
+      "title": "⚡ Performance Tier Architecture & Booster Backend:",
+      "desc": "Introduced high-performance tier architecture with optimized resource quotas for free accounts (2 photos per note, 7 custom projects, 7 subtasks per task, 60s background sync with instant pull on app launch and pull-to-refresh, and 90-day archive search indexing with complete background preservation). Integrated the underlying Booster engine providing uncapped project hierarchies, up to 15 note photos, unlimited subtasks, infinite archive history, and 8-second Turbo Sync."
+    }
+  ],
   "3.8.23": [
     {
       "title": "🎙️ Far-Right Mic Button with Safe Spacing & Auto-Append Dictation:",

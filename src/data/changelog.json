@@ -1832,5 +1832,11 @@
       "title": "📱 Instant Drag Handle, Vivid Drop Indicator & Balanced Bottom Spacing:",
       "desc": "Added a dedicated drag handle to Simple View task cards for instant touch reordering on mobile without scroll interference or hold delay, while card bodies continue supporting press-and-hold. Implemented a vivid glowing electric blue drop indicator line with anchor dot matching Normal mode that dynamically tracks top or bottom insertion. Removed wasted empty space at the bottom of Simple View, perfectly aligning the footer version line to match the container side padding."
     }
+  ],
+  "3.9.10": [
+    {
+      "title": "🔄 Sync Messaging Accuracy & Automated Changelog Hero Pipeline:",
+      "desc": "Refined cross-device synchronization descriptions across documentation and the public website to accurately reflect our 60-second automatic cloud sync baseline. Established an automated build pipeline that updates the website changelog hero graphic, live version badge, and total build count with every pushed release."
+    }
   ]
 }

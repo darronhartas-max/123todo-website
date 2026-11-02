@@ -148,7 +148,7 @@ You don't need to create an account with a password. 123 To Do uses **Zero-Knowl
 2. Select **Cloud Sync (Zero-Knowledge)** or **Google Drive Sync**.
 3. You will receive a secure **6-digit pairing code**.
 4. On your phone, open Settings ➔ Cloud Sync, enter the 6-digit code, and tap **Connect**.
-5. Your devices are now paired in real-time! All data is end-to-end encrypted with **AES-256-GCM** before leaving your phone, so nobody - not even our servers - can ever see your tasks.
+5. Your devices are now securely paired! All data is end-to-end encrypted with **AES-256-GCM** before leaving your phone, so nobody - not even our servers - can ever see your tasks.
 
 ---
 

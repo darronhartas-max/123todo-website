@@ -33,7 +33,7 @@ Unlike traditional task managers that store your private tasks, work notes, and 
 
 ### Automatic Server Backups & Daily Shadow Snapshots
 
-Data reliability is paramount. 123 ToDo combines real-time encrypted cloud sync with automatic **daily shadow backups**:
+Data reliability is paramount. 123 ToDo combines automatic encrypted cloud sync with daily shadow backups:
 
 - Every 24 hours, your local state creates an automated shadow snapshot saved safely in browser storage.
 - If you ever make an accidental mass deletion or switch devices offline, you can restore your complete workspace with a single click.

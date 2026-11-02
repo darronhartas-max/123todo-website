@@ -83,13 +83,13 @@
     <g transform="translate(620, 2)">
       <rect width="108" height="24" rx="12" fill="#064E3B" stroke="#059669" stroke-width="1" />
       <circle cx="14" cy="12" r="3.5" fill="#34D399" />
-      <text x="58" y="16" fill="#A7F3D0" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">v3.7.43 Live</text>
+      <text x="58" y="16" fill="#A7F3D0" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">v3.9.10 Live</text>
     </g>
 
     <!-- Total Releases Badge -->
     <g transform="translate(738, 2)">
       <rect width="102" height="24" rx="12" fill="#1E293B" stroke="#475569" stroke-width="1" />
-      <text x="51" y="16" fill="#CBD5E1" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="middle">170+ Builds</text>
+      <text x="51" y="16" fill="#CBD5E1" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="middle">220+ Builds</text>
     </g>
 
     <!-- MIT Open Source Badge -->
@@ -112,7 +112,7 @@
       <text x="84" y="17" fill="#34D399" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" text-anchor="middle">LATEST STABLE RELEASE</text>
 
       <rect x="180" y="0" width="82" height="26" rx="6" fill="#1E293B" stroke="#475569" stroke-width="1" />
-      <text x="221" y="17" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" text-anchor="middle">v3.7.43</text>
+      <text x="221" y="17" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" text-anchor="middle">v3.9.10</text>
     </g>
 
     <!-- Main Title of Current Era -->
@@ -193,7 +193,7 @@
       <circle cx="18" cy="18" r="8" fill="#10B981" />
       <circle cx="18" cy="18" r="4" fill="#FFFFFF" />
       <rect x="36" y="4" width="280" height="54" rx="8" fill="#064E3B" fill-opacity="0.3" stroke="#059669" stroke-width="1" />
-      <text x="48" y="24" fill="#34D399" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800">Phase 5: Modern Era (v3.5 – v3.7)</text>
+      <text x="48" y="24" fill="#34D399" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800">Phase 5: Modern Era (v3.5 - Present)</text>
       <text x="48" y="42" fill="#CBD5E1" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="500">Clock Face, Photo Receipts, Onboarding</text>
     </g>
 
@@ -202,7 +202,7 @@
       <circle cx="18" cy="18" r="7" fill="#3B82F6" />
       <circle cx="18" cy="18" r="3" fill="#FFFFFF" />
       <rect x="36" y="4" width="280" height="54" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1" />
-      <text x="48" y="24" fill="#60A5FA" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800">Phase 4: Dual-Skin OS (v3.0 – v3.4)</text>
+      <text x="48" y="24" fill="#60A5FA" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800">Phase 4: Dual-Skin OS (v3.0 - v3.4)</text>
       <text x="48" y="42" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="500">Voice Notes Skin, 5-App Migration Wizard</text>
     </g>
 
@@ -211,7 +211,7 @@
       <circle cx="18" cy="18" r="7" fill="#A855F7" />
       <circle cx="18" cy="18" r="3" fill="#FFFFFF" />
       <rect x="36" y="4" width="280" height="54" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1" />
-      <text x="48" y="24" fill="#C084FC" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800">Phase 3: Serverless Sync (v2.5 – v2.9)</text>
+      <text x="48" y="24" fill="#C084FC" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800">Phase 3: Serverless Sync (v2.5 - v2.9)</text>
       <text x="48" y="42" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="500">Cloudflare D1 E2EE Sync, Voice Dictation</text>
     </g>
 
@@ -220,7 +220,7 @@
       <circle cx="18" cy="18" r="7" fill="#F59E0B" />
       <circle cx="18" cy="18" r="3" fill="#FFFFFF" />
       <rect x="36" y="4" width="280" height="54" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1" />
-      <text x="48" y="24" fill="#FBBF24" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800">Phase 2: Power Tools (v2.0 – v2.4)</text>
+      <text x="48" y="24" fill="#FBBF24" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800">Phase 2: Power Tools (v2.0 - v2.4)</text>
       <text x="48" y="42" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="500">Desktop Kanban, Subtasks, Swipe Gestures</text>
     </g>
 
@@ -229,7 +229,7 @@
       <circle cx="18" cy="18" r="7" fill="#64748B" />
       <circle cx="18" cy="18" r="3" fill="#FFFFFF" />
       <rect x="36" y="4" width="280" height="54" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1" />
-      <text x="48" y="24" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800">Phase 1: Foundations (v1.0 – v1.4)</text>
+      <text x="48" y="24" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800">Phase 1: Foundations (v1.0 - v1.4)</text>
       <text x="48" y="42" fill="#64748B" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="500">1-2-3 Priority Matrix, LocalStorage PWA</text>
     </g>
 

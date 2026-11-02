@@ -1772,5 +1772,11 @@
       "title": "✍️ Natural Editorial Voice & Style Polish:",
       "desc": "Audited and refined copy across the app UI, modals, documentation, and marketing website to use a natural, human editorial voice, replacing all em dashes with clean spaced hyphens and standard punctuation."
     }
+  ],
+  "3.9.0": [
+    {
+      "title": "📱 Minimalist Simple View Mode (Super Clean Mobile Experience):",
+      "desc": "Introduced a dedicated Simple View Mode matching our clean mobile preview aesthetic. Features a streamlined top brand header, quick project selector, instant task creation and organization, signature rounded task cards with priority accent indicators and green completion buttons, and a one-click return to standard view."
+    }
   ]
 }

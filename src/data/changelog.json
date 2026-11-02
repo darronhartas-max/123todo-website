@@ -1790,5 +1790,11 @@
       "title": "🎨 Simple View Color Outlines, 2-Line Text & Bottom Toggle:",
       "desc": "Moved the Simple View mode selector to the top of Appearance settings, outlined all cards in Simple View with their respective project color in place of the hashtag label, expanded task descriptions to two concise lines, and added a unified segmented view mode toggle (Simple | Normal) at the bottom of both views."
     }
+  ],
+  "3.9.3": [
+    {
+      "title": "🎨 Prominent Project Outlines & Streamlined Card Layout:",
+      "desc": "Doubled the thickness of card borders in Simple View to 3px so project colors stand out clearly, and removed the redundant left-hand priority line to keep cards clean and focused since tasks are already nested within their own priority sections."
+    }
   ]
 }

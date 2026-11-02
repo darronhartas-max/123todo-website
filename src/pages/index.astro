@@ -202,48 +202,125 @@ const metadata = {
     ]}
   >
     <Fragment slot="topMedia">
-      <div
-        class="relative w-full aspect-video rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl border border-slate-200/80 dark:border-slate-800 bg-slate-950 group"
-      >
-        <video
-          id="hero-demo-video"
-          class="w-full h-full object-cover rounded-2xl md:rounded-3xl"
-          autoplay
-          muted
-          loop
-          playsinline
-          preload="metadata"
-          poster="/demo/123todo-123rule-demo-poster.jpg"
-          aria-label="123 To Do: The 1-2-3 Rule Video Demo"
+      <!-- Mobile Viewport: Upright / Tall Video (Edge-to-Edge app with no side background) -->
+      <div class="block md:hidden">
+        <div
+          class="relative w-full max-w-[320px] sm:max-w-[360px] mx-auto aspect-[27/44] rounded-2xl overflow-hidden shadow-2xl border border-slate-200/80 dark:border-slate-800 bg-slate-950 group"
         >
-          <source src="/demo/123todo-123rule-demo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <!-- Subtle Audio Control -->
-        <div class="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 z-10">
-          <button
-            id="hero-video-audio-toggle"
-            type="button"
-            class="px-3 py-1.5 rounded-full bg-slate-900/80 hover:bg-slate-900 text-white text-xs font-medium backdrop-blur-md border border-white/10 shadow-lg flex items-center gap-1.5 transition-all opacity-80 hover:opacity-100 cursor-pointer"
-            aria-label="Toggle video sound"
+          <video
+            id="hero-demo-video-mobile"
+            class="w-full h-full object-cover rounded-2xl"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="/demo/123todo-123rule-demo-mobile-poster.jpg"
+            aria-label="123 To Do: The 1-2-3 Rule Video Demo (Mobile)"
           >
-            <span id="hero-audio-icon">🔇</span>
-            <span class="hidden sm:inline" id="hero-audio-text">Unmute</span>
-          </button>
+            <source src="/demo/123todo-123rule-demo-mobile.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <!-- Subtle Audio Control -->
+          <div class="absolute bottom-3 right-3 z-10">
+            <button
+              id="hero-mobile-audio-toggle"
+              type="button"
+              class="px-3 py-1.5 rounded-full bg-slate-900/80 hover:bg-slate-900 text-white text-xs font-medium backdrop-blur-md border border-white/10 shadow-lg flex items-center gap-1.5 transition-all opacity-85 hover:opacity-100 cursor-pointer"
+              aria-label="Toggle video sound"
+            >
+              <span id="hero-mobile-audio-icon">🔇</span>
+              <span id="hero-mobile-audio-text">Unmute</span>
+            </button>
+          </div>
         </div>
       </div>
+
+      <!-- Desktop Viewport: 16:9 Landscape Video with Toned-Back Slate Background -->
+      <div class="hidden md:block">
+        <div
+          class="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl border border-slate-200/80 dark:border-slate-800 bg-slate-950 group"
+        >
+          <video
+            id="hero-demo-video-desktop"
+            class="w-full h-full object-cover rounded-3xl"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="/demo/123todo-123rule-demo-poster.jpg"
+            aria-label="123 To Do: The 1-2-3 Rule Video Demo (Desktop)"
+          >
+            <source src="/demo/123todo-123rule-demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <!-- Subtle Audio Control -->
+          <div class="absolute bottom-4 right-4 z-10">
+            <button
+              id="hero-desktop-audio-toggle"
+              type="button"
+              class="px-3 py-1.5 rounded-full bg-slate-900/80 hover:bg-slate-900 text-white text-xs font-medium backdrop-blur-md border border-white/10 shadow-lg flex items-center gap-1.5 transition-all opacity-85 hover:opacity-100 cursor-pointer"
+              aria-label="Toggle video sound"
+            >
+              <span id="hero-desktop-audio-icon">🔇</span>
+              <span id="hero-desktop-audio-text">Unmute</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
       <script is:inline>
-        const heroVideo = document.getElementById('hero-demo-video');
-        const audioToggle = document.getElementById('hero-video-audio-toggle');
-        const audioIcon = document.getElementById('hero-audio-icon');
-        const audioText = document.getElementById('hero-audio-text');
-        if (heroVideo && audioToggle) {
-          audioToggle.addEventListener('click', () => {
-            heroVideo.muted = !heroVideo.muted;
-            if (audioIcon) audioIcon.textContent = heroVideo.muted ? '🔇' : '🔊';
-            if (audioText) audioText.textContent = heroVideo.muted ? 'Unmute' : 'Mute';
-          });
-        }
+        (function () {
+          const isMobile = window.matchMedia('(max-width: 767px)').matches;
+          const activeVideo = isMobile
+            ? document.getElementById('hero-demo-video-mobile')
+            : document.getElementById('hero-demo-video-desktop');
+          const inactiveVideo = isMobile
+            ? document.getElementById('hero-demo-video-desktop')
+            : document.getElementById('hero-demo-video-mobile');
+
+          // Pause and unload inactive variant to preserve bandwidth and battery
+          if (inactiveVideo) {
+            inactiveVideo.pause();
+            inactiveVideo.removeAttribute('autoplay');
+            inactiveVideo.preload = 'none';
+          }
+
+          if (activeVideo) {
+            const playPromise = activeVideo.play();
+            if (playPromise !== undefined) {
+              playPromise.catch(function () {});
+            }
+          }
+
+          function bindAudioToggle(videoId, toggleId, iconId, textId) {
+            const video = document.getElementById(videoId);
+            const toggle = document.getElementById(toggleId);
+            const icon = document.getElementById(iconId);
+            const text = document.getElementById(textId);
+            if (video && toggle) {
+              toggle.addEventListener('click', function () {
+                video.muted = !video.muted;
+                if (icon) icon.textContent = video.muted ? '🔇' : '🔊';
+                if (text) text.textContent = video.muted ? 'Unmute' : 'Mute';
+              });
+            }
+          }
+
+          bindAudioToggle(
+            'hero-demo-video-mobile',
+            'hero-mobile-audio-toggle',
+            'hero-mobile-audio-icon',
+            'hero-mobile-audio-text'
+          );
+          bindAudioToggle(
+            'hero-demo-video-desktop',
+            'hero-desktop-audio-toggle',
+            'hero-desktop-audio-icon',
+            'hero-desktop-audio-text'
+          );
+        })();
       </script>
     </Fragment>
 

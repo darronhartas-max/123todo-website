@@ -1,4 +1,82 @@
 {
+  "3.9.11": [
+    {
+      "title": "⚡ Automated Changelog Sorting & Seamless Git Commit Sync Pipeline:",
+      "desc": "Restored automated changelog synchronization across the marketing website and repository documentation. Implemented strict descending semver sorting for all release entries in both the data pipeline and the public changelog page, ensuring newest builds always appear first at the top of the timeline."
+    }
+  ],
+  "3.9.10": [
+    {
+      "title": "📜 Fluid Mobile Scrolling & Unified Reordering System:",
+      "desc": "Emulated Normal mode actions in Simple View to ensure smooth, natural vertical scrolling on mobile touchscreens without oversensitive touch triggers or accidental task reordering. Removed intrusive gesture listeners and drag handle icons in favor of clean card presentation and unified HTML5 drag-and-drop reordering with signature glowing blue drop indicators."
+    }
+  ],
+  "3.9.9": [
+    {
+      "title": "📱 Instant Drag Handle, Vivid Drop Indicator & Balanced Bottom Spacing:",
+      "desc": "Added a dedicated drag handle to Simple View task cards for instant touch reordering on mobile without scroll interference or hold delay, while card bodies continue supporting press-and-hold. Implemented a vivid glowing electric blue drop indicator line with anchor dot matching Normal mode that dynamically tracks top or bottom insertion. Removed wasted empty space at the bottom of Simple View, perfectly aligning the footer version line to match the container side padding."
+    }
+  ],
+  "3.9.8": [
+    {
+      "title": "🎯 Unified Drag & Drop Visual System with Normal Mode:",
+      "desc": "Aligned Simple View mobile drag-and-drop directly with Normal mode. Replaced bespoke touch overlays with the proven visual system: an elegant 3px accent-colored insertion indicator line with a circular anchor dot positioned above target cards, dimmed card styling during drag, and priority section highlighting with dashed borders for empty sections and section-bottom placement. Improved touch proximity tracking so tasks drop accurately before target cards on mobile devices without falling to the bottom of the list."
+    }
+  ],
+  "3.9.7": [
+    {
+      "title": "📱 Instant Mobile Drop Line & Proximity Touch Detection:",
+      "desc": "Fixed mobile touch drag-and-drop in Simple View so the glowing insertion indicator line displays instantly as you move your finger. Added non-passive window gesture tracking to prevent screen scrolling interference, bounding-box proximity detection that smoothly spans between-card gaps and side margins, and instant local indicator state so tasks drop exactly where the line appears rather than defaulting to the bottom of the section."
+    }
+  ],
+  "3.9.6": [
+    {
+      "title": "📏 Refined Drop Indicator Line & Mobile Touch Reorder Fix:",
+      "desc": "Refined the drag-and-drop insertion indicator in Simple View into a sleek, minimalist 2px glowing line with a subtle start anchor dot, replacing heavy badges and card margin jumps for a cleaner experience on desktop. Resolved a mobile touch reordering issue by ensuring type-safe ID matching so the visual drop indicator line displays reliably across both mobile devices and desktop."
+    }
+  ],
+  "3.9.5": [
+    {
+      "title": "📍 Clear Mobile Drop Indicators & Insertion Slots:",
+      "desc": "Added high-visibility drop indicators to Simple View when moving tasks on mobile and desktop. Features a glowing insertion bar with anchor caps and an \"Insert Here\" pill, dynamic top and bottom half card detection to insert before or after, physical card parting slots, a floating touch drag avatar preview above the finger, and prominent guidance when dropping into empty sections or at the bottom of a list."
+    }
+  ],
+  "3.9.4": [
+    {
+      "title": "🔄 Task Reordering in Simple View:",
+      "desc": "Added full task reordering to Simple View across desktop and mobile touchscreens. Reorganise tasks within or across priority groups with desktop drag-and-drop or touch-and-hold mobile gestures (180ms hold with haptic vibration feedback), featuring drop indicator guides, smooth edge auto-scrolling, and accidental-click protection."
+    }
+  ],
+  "3.9.3": [
+    {
+      "title": "🎨 Prominent Project Outlines & Streamlined Card Layout:",
+      "desc": "Doubled the thickness of card borders in Simple View to 3px so project colors stand out clearly, and removed the redundant left-hand priority line to keep cards clean and focused since tasks are already nested within their own priority sections."
+    }
+  ],
+  "3.9.2": [
+    {
+      "title": "🎨 Simple View Color Outlines, 2-Line Text & Bottom Toggle:",
+      "desc": "Moved the Simple View mode selector to the top of Appearance settings, outlined all cards in Simple View with their respective project color in place of the hashtag label, expanded task descriptions to two concise lines, and added a unified segmented view mode toggle (Simple | Normal) at the bottom of both views."
+    }
+  ],
+  "3.9.1": [
+    {
+      "title": "✨ Simple View Polish & Mobile Refinements:",
+      "desc": "Enlarged the brand logo by 50%, added interactive expand and contract toggles for all priority and scheduled section headings, harmonized the projects dropdown with standard styling, refined checkboxes to clean box outlines with momentary completion ticks, added the Scheduled tasks section, broadened list side padding, and strictly clamped task descriptions to one concise line."
+    }
+  ],
+  "3.9.0": [
+    {
+      "title": "📱 Minimalist Simple View Mode (Super Clean Mobile Experience):",
+      "desc": "Introduced a dedicated Simple View Mode matching our clean mobile preview aesthetic. Features a streamlined top brand header, quick project selector, instant task creation and organization, signature rounded task cards with priority accent indicators and green completion buttons, and a one-click return to standard view."
+    }
+  ],
+  "3.8.29": [
+    {
+      "title": "✍️ Natural Editorial Voice & Style Polish:",
+      "desc": "Audited and refined copy across the app UI, modals, documentation, and marketing website to use a natural, human editorial voice, replacing all em dashes with clean spaced hyphens and standard punctuation."
+    }
+  ],
   "3.8.28": [
     {
       "title": "✨ Settings Interface Polish & Documentation Alignment:",
@@ -1765,78 +1843,6 @@
     {
       "title": "Initial Release:",
       "desc": "Initial launch of 123 To Do progressive web app with core 1-2-3 priority matrix, offline localStorage, and responsive mobile layout."
-    }
-  ],
-  "3.8.29": [
-    {
-      "title": "✍️ Natural Editorial Voice & Style Polish:",
-      "desc": "Audited and refined copy across the app UI, modals, documentation, and marketing website to use a natural, human editorial voice, replacing all em dashes with clean spaced hyphens and standard punctuation."
-    }
-  ],
-  "3.9.0": [
-    {
-      "title": "📱 Minimalist Simple View Mode (Super Clean Mobile Experience):",
-      "desc": "Introduced a dedicated Simple View Mode matching our clean mobile preview aesthetic. Features a streamlined top brand header, quick project selector, instant task creation and organization, signature rounded task cards with priority accent indicators and green completion buttons, and a one-click return to standard view."
-    }
-  ],
-  "3.9.1": [
-    {
-      "title": "✨ Simple View Polish & Mobile Refinements:",
-      "desc": "Enlarged the brand logo by 50%, added interactive expand and contract toggles for all priority and scheduled section headings, harmonized the projects dropdown with standard styling, refined checkboxes to clean box outlines with momentary completion ticks, added the Scheduled tasks section, broadened list side padding, and strictly clamped task descriptions to one concise line."
-    }
-  ],
-  "3.9.2": [
-    {
-      "title": "🎨 Simple View Color Outlines, 2-Line Text & Bottom Toggle:",
-      "desc": "Moved the Simple View mode selector to the top of Appearance settings, outlined all cards in Simple View with their respective project color in place of the hashtag label, expanded task descriptions to two concise lines, and added a unified segmented view mode toggle (Simple | Normal) at the bottom of both views."
-    }
-  ],
-  "3.9.3": [
-    {
-      "title": "🎨 Prominent Project Outlines & Streamlined Card Layout:",
-      "desc": "Doubled the thickness of card borders in Simple View to 3px so project colors stand out clearly, and removed the redundant left-hand priority line to keep cards clean and focused since tasks are already nested within their own priority sections."
-    }
-  ],
-  "3.9.4": [
-    {
-      "title": "🔄 Task Reordering in Simple View:",
-      "desc": "Added full task reordering to Simple View across desktop and mobile touchscreens. Reorganise tasks within or across priority groups with desktop drag-and-drop or touch-and-hold mobile gestures (180ms hold with haptic vibration feedback), featuring drop indicator guides, smooth edge auto-scrolling, and accidental-click protection."
-    }
-  ],
-  "3.9.5": [
-    {
-      "title": "📍 Clear Mobile Drop Indicators & Insertion Slots:",
-      "desc": "Added high-visibility drop indicators to Simple View when moving tasks on mobile and desktop. Features a glowing insertion bar with anchor caps and an \"Insert Here\" pill, dynamic top and bottom half card detection to insert before or after, physical card parting slots, a floating touch drag avatar preview above the finger, and prominent guidance when dropping into empty sections or at the bottom of a list."
-    }
-  ],
-  "3.9.6": [
-    {
-      "title": "📏 Refined Drop Indicator Line & Mobile Touch Reorder Fix:",
-      "desc": "Refined the drag-and-drop insertion indicator in Simple View into a sleek, minimalist 2px glowing line with a subtle start anchor dot, replacing heavy badges and card margin jumps for a cleaner experience on desktop. Resolved a mobile touch reordering issue by ensuring type-safe ID matching so the visual drop indicator line displays reliably across both mobile devices and desktop."
-    }
-  ],
-  "3.9.7": [
-    {
-      "title": "📱 Instant Mobile Drop Line & Proximity Touch Detection:",
-      "desc": "Fixed mobile touch drag-and-drop in Simple View so the glowing insertion indicator line displays instantly as you move your finger. Added non-passive window gesture tracking to prevent screen scrolling interference, bounding-box proximity detection that smoothly spans between-card gaps and side margins, and instant local indicator state so tasks drop exactly where the line appears rather than defaulting to the bottom of the section."
-    }
-  ],
-  "3.9.8": [
-    {
-      "title": "🎯 Unified Drag & Drop Visual System with Normal Mode:",
-      "desc": "Aligned Simple View mobile drag-and-drop directly with Normal mode. Replaced bespoke touch overlays with the proven visual system: an elegant 3px accent-colored insertion indicator line with a circular anchor dot positioned above target cards, dimmed card styling during drag, and priority section highlighting with dashed borders for empty sections and section-bottom placement. Improved touch proximity tracking so tasks drop accurately before target cards on mobile devices without falling to the bottom of the list."
-    }
-  ],
-  "3.9.9": [
-    {
-      "title": "📱 Instant Drag Handle, Vivid Drop Indicator & Balanced Bottom Spacing:",
-      "desc": "Added a dedicated drag handle to Simple View task cards for instant touch reordering on mobile without scroll interference or hold delay, while card bodies continue supporting press-and-hold. Implemented a vivid glowing electric blue drop indicator line with anchor dot matching Normal mode that dynamically tracks top or bottom insertion. Removed wasted empty space at the bottom of Simple View, perfectly aligning the footer version line to match the container side padding."
-    }
-  ],
-  "3.9.10": [
-    {
-      "title": "🔄 Sync Messaging Accuracy & Automated Changelog Hero Pipeline:",
-      "desc": "Refined cross-device synchronization descriptions across documentation and the public website to accurately reflect our 60-second automatic cloud sync baseline. Established an automated build pipeline that updates the website changelog hero graphic, live version badge, and total build count with every pushed release."
     }
   ]
 }

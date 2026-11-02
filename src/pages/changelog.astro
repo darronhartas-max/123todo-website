@@ -13,8 +13,17 @@ const metadata = {
 type ReleaseItem = { title: string; desc: string };
 type ReleaseEntry = [string, ReleaseItem[]];
 
-const entries = Object.entries(changelogData) as ReleaseEntry[];
-const latestVersion = entries[0]?.[0] || '3.7.4';
+function compareSemverDesc(a: string, b: string) {
+  const [aMaj = 0, aMin = 0, aPatch = 0] = a.split('.').map(Number);
+  const [bMaj = 0, bMin = 0, bPatch = 0] = b.split('.').map(Number);
+  if (aMaj !== bMaj) return bMaj - aMaj;
+  if (aMin !== bMin) return bMin - aMin;
+  return bPatch - aPatch;
+}
+
+const rawEntries = Object.entries(changelogData) as ReleaseEntry[];
+const entries = rawEntries.sort(([verA], [verB]) => compareSemverDesc(verA, verB));
+const latestVersion = entries[0]?.[0] || '3.9.11';
 const totalReleases = entries.length;
 
 const phases = [
@@ -24,7 +33,7 @@ const phases = [
     range: 'v3.5.0 - Present',
     badge: 'Latest Era',
     description:
-      'Clock face time scheduling & Google/Apple Calendar (.ics) export, photo attachments with WebP compression & Lightbox viewer, gamified Achievements Hub with 10-tier level progression, continuous voice dictation across natural pauses, button display modes, and silent background PWA updating.',
+      'Clock face time scheduling & Calendar (.ics) export, photo attachments with WebP compression & Lightbox viewer, customizable priority colors, instant touch mobile drag handles, gamified Achievements Hub, continuous voice dictation, button display modes, and automatic cloud sync.',
     borderClass: 'border-emerald-500/30 dark:border-emerald-500/20',
     bgClass: 'from-emerald-500/5 to-transparent',
     badgeClass: 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/20',

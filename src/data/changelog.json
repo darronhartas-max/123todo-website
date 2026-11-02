@@ -1802,5 +1802,11 @@
       "title": "🔄 Task Reordering in Simple View:",
       "desc": "Added full task reordering to Simple View across desktop and mobile touchscreens. Reorganise tasks within or across priority groups with desktop drag-and-drop or touch-and-hold mobile gestures (180ms hold with haptic vibration feedback), featuring drop indicator guides, smooth edge auto-scrolling, and accidental-click protection."
     }
+  ],
+  "3.9.5": [
+    {
+      "title": "📍 Clear Mobile Drop Indicators & Insertion Slots:",
+      "desc": "Added high-visibility drop indicators to Simple View when moving tasks on mobile and desktop. Features a glowing insertion bar with anchor caps and an \"Insert Here\" pill, dynamic top and bottom half card detection to insert before or after, physical card parting slots, a floating touch drag avatar preview above the finger, and prominent guidance when dropping into empty sections or at the bottom of a list."
+    }
   ]
 }

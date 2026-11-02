@@ -1778,5 +1778,11 @@
       "title": "📱 Minimalist Simple View Mode (Super Clean Mobile Experience):",
       "desc": "Introduced a dedicated Simple View Mode matching our clean mobile preview aesthetic. Features a streamlined top brand header, quick project selector, instant task creation and organization, signature rounded task cards with priority accent indicators and green completion buttons, and a one-click return to standard view."
     }
+  ],
+  "3.9.1": [
+    {
+      "title": "✨ Simple View Polish & Mobile Refinements:",
+      "desc": "Enlarged the brand logo by 50%, added interactive expand and contract toggles for all priority and scheduled section headings, harmonized the projects dropdown with standard styling, refined checkboxes to clean box outlines with momentary completion ticks, added the Scheduled tasks section, broadened list side padding, and strictly clamped task descriptions to one concise line."
+    }
   ]
 }

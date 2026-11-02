@@ -18,7 +18,7 @@ On a bustling construction job site, electrical installation, or fast-paced fiel
 
 Whether you are wearing heavy work gloves, holding measuring tools, or walking between site inspections, traditional task apps force you to navigate nested drop-down menus, pick categories upfront, and fiddle with tiny keyboards.
 
-That is why **123 ToDo** introduced **Simple Voice Notes Mode** — a high-contrast, large-text skin designed specifically for hands-free dictation on the move.
+That is why **123 ToDo** introduced **Simple Voice Notes Mode** - a high-contrast, large-text skin designed specifically for hands-free dictation on the move.
 
 ---
 
@@ -68,7 +68,7 @@ Made a mistake while dictating? You don't need to touch the keyboard:
 123 ToDo uses a **Unified Data Engine** where Notes and Tasks live in the exact same underlying database:
 
 1. **On the Job Site**: Dictate quick thoughts, measurements, and action items rapidly into your **Unassigned Inbox** without worrying about folder organization or priority levels upfront.
-2. **Back at Your Desk**: Tap the header toggle back to **Task Manager Mode**. Your voice notes appear ready for triaging — assign priority matrix levels (P1 Must Do, P2 Should Do, P3 Could Do, P4 On Hold), attach subtask checklists, or categorize into color-coded Project folders in seconds.
+2. **Back at Your Desk**: Tap the header toggle back to **Task Manager Mode**. Your voice notes appear ready for triaging - assign priority matrix levels (P1 Must Do, P2 Should Do, P3 Could Do, P4 On Hold), attach subtask checklists, or categorize into color-coded Project folders in seconds.
 
 ---
 

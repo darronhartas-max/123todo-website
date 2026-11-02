@@ -26,7 +26,7 @@ For web-based applications that rely purely on volatile in-memory state or unsta
 
 Many web apps hold your edits in temporary computer memory (RAM) and only sync or save when you click "Save" or at delayed time intervals. If your laptop battery dies, your phone restarts, or your browser crashes, unsaved edits vanish.
 
-In 123 ToDo, every single action—typing a task, adding a note, checking off a checklist step, or reordering priorities—is committed **synchronously and immediately** to physical local disk storage (`localStorage` and `IndexedDB`). The exact millisecond you interact with the app, your work is saved.
+In 123 ToDo, every single action - typing a task, adding a note, checking off a checklist step, or reordering priorities - is committed **synchronously and immediately** to physical local disk storage (`localStorage` and `IndexedDB`). The exact millisecond you interact with the app, your work is saved.
 
 ---
 
@@ -59,7 +59,7 @@ A common fear among web app users is: _"What happens when Chrome, Safari, or Win
 
 **Your 123 ToDo data is completely safe.** Here is why:
 
-1. **Profile Storage Separation**: When Google Chrome, Apple Safari, Microsoft Edge, or Mozilla Firefox update (silently in the background or upon reboot), the updater only touches the browser's application binary files. Your personal **User Profile Directory**—which houses LocalStorage, IndexedDB databases, cookies, and installed PWA containers—is strictly preserved and never reset.
+1. **Profile Storage Separation**: When Google Chrome, Apple Safari, Microsoft Edge, or Mozilla Firefox update (silently in the background or upon reboot), the updater only touches the browser's application binary files. Your personal **User Profile Directory** - which houses LocalStorage, IndexedDB databases, cookies, and installed PWA containers - is strictly preserved and never reset.
 2. **HTML5 Persistent Storage API**: On startup, 123 ToDo automatically requests persistent storage permissions via `navigator.storage.persist()`. When granted, the operating system is instructed never to evict 123 ToDo's storage during low-disk-space maintenance sweeps.
 3. **Dedicated PWA Container (iOS & Android)**: When installed to your Home Screen as a Progressive Web App, iOS WebKit and Android Chromium place 123 ToDo into an isolated standalone sandbox, decoupling it from regular browser tab cleanup policies (such as Safari's 7-day inactive tab cache capping).
 
@@ -73,7 +73,7 @@ If you ever make an accidental mass task deletion or want to roll back a mistake
 2. Select **Restore Shadow Backup**.
 3. Preview the snapshot timestamp and total task count, then click **Restore Snapshot**.
 
-Your entire workspace rolls back to your last known good state in milliseconds—with zero internet connection or customer support tickets required.
+Your entire workspace rolls back to your last known good state in milliseconds - with zero internet connection or customer support tickets required.
 
 ---
 

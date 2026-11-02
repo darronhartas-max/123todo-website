@@ -12,3 +12,12 @@ The public changelog data resides in `src/data/changelog.json` and is rendered d
 # Service Worker Caching Context
 
 The domain `www.123todo.com` was previously used to host the 123todo React app, which installed a service worker. Because of this, returning visitors may have a rogue service worker intercepting navigation requests (like `/blog`) and improperly rendering the React app instead of the Astro website. An inline script in `Layout.astro` handles unregistering it, but keep this context in mind if cache issues are reported.
+
+# Writing Style & Copy Guidelines (NEVER USE EM DASHES)
+
+> [!IMPORTANT]
+> **NEVER USE EM DASHES (`—`) TO JOIN WORDS OR CLAUSES.**
+>
+> - Using em dashes (`—`) looks AI-generated and is a dead giveaway.
+> - Never use `—` in website pages, blog posts, headings, titles, changelogs, UI copy, or documentation.
+> - Always use a spaced hyphen (`-`) or standard punctuation (commas, parentheses, colons) instead.

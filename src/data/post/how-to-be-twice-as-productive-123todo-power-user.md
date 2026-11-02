@@ -20,7 +20,7 @@ metadata:
 
 If you're like most ambitious professionals, you've tried virtually every task management tool on the market: Todoist, TickTick, Notion, Asana, Monday, and Apple Reminders.
 
-Yet despite spending hours configuring multi-level tag taxonomies, custom relational databases, automated Zapier webhooks, and complex color-coded Kanban boards, you still find yourself at 5:00 PM wondering where the day went — with your most important work untouched.
+Yet despite spending hours configuring multi-level tag taxonomies, custom relational databases, automated Zapier webhooks, and complex color-coded Kanban boards, you still find yourself at 5:00 PM wondering where the day went - with your most important work untouched.
 
 This is **The Productivity Paradox**: _The more time and mental bandwidth you spend organizing, managing, and categorizing your to-do list, the less energy you have left to actually execute._
 
@@ -28,7 +28,7 @@ Mainstream productivity software has become bloated with enterprise features you
 
 - **Form fatigue**: Forcing you to fill out 8 dropdown fields (due date, priority, project, label, estimated hours, assignee) just to jot down a 30-second idea.
 - **Decision paralysis**: Staring at a single unranked list of 75 mixed tasks and wasting 15 minutes deciding which fire to put out first.
-- **Paywall friction**: Discovering that basic essentials — like attaching a photo of a receipt, pasting a screenshot, or exporting your own data — require a \$5-a-month recurring subscription.
+- **Paywall friction**: Discovering that basic essentials - like attaching a photo of a receipt, pasting a screenshot, or exporting your own data - require a \$5-a-month recurring subscription.
 
 **123 ToDo was designed from first principles to break this cycle.** By stripping away software bloat and implementing deliberate structural constraints, 123 ToDo forces laser-sharp focus so you can get twice as much done in half the time.
 
@@ -81,7 +81,7 @@ In 123 ToDo:
 
 1. Capture a screen snippet with **`Cmd+Shift+4`** (Mac) or **`Win+Shift+S`** (Windows).
 2. Click into any task or note and press **`Cmd+V`** (or **`Ctrl+V`**).
-3. The image is parsed directly from your clipboard, compressed client-side into modern WebP format, and attached in milliseconds — with zero files cluttering your desktop!
+3. The image is parsed directly from your clipboard, compressed client-side into modern WebP format, and attached in milliseconds - with zero files cluttering your desktop!
 
 ### 2. Actionable Single-Click Phone Numbers, Emails & URLs
 
@@ -169,7 +169,7 @@ Sync your phone, laptop, and tablet in seconds:
 
 Ever accidentally deleted a complex project plan or checklist? In 123 ToDo, you have an autonomous local safety net.
 
-Every 24 hours, the app records an immutable snapshot of your entire workspace into local browser storage. If a mistake occurs, open **Settings ⚙️ ➔ Recovery & Backups** and restore yesterday's state in a single click — no internet connection required.
+Every 24 hours, the app records an immutable snapshot of your entire workspace into local browser storage. If a mistake occurs, open **Settings ⚙️ ➔ Recovery & Backups** and restore yesterday's state in a single click - no internet connection required.
 
 ---
 

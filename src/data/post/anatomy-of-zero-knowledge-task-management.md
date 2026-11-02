@@ -54,7 +54,7 @@ In a **Zero-Knowledge Architecture**:
 
 ## 3. Why Privacy Matters in Daily Task Management
 
-Confidentiality isn't just for enterprise security teams — it protects everyday productivity:
+Confidentiality isn't just for enterprise security teams - it protects everyday productivity:
 
 - **Intellectual Property**: Draft product ideas, patent concepts, and marketing launches stay private.
 - **Client & Legal Work**: Keep sensitive client names, case notes, and billing targets protected from data mining.
@@ -64,6 +64,6 @@ Confidentiality isn't just for enterprise security teams — it protects everyda
 
 ## Complete Data Ownership & Freedom
 
-Privacy and freedom go hand in hand. 123 ToDo includes a **Zero Lock-In Guarantee** — export your complete encrypted or unencrypted workspace dataset as a `.json` backup file anytime in 3 clicks (`Settings ⚙️ ➔ Export Backup Data`).
+Privacy and freedom go hand in hand. 123 ToDo includes a **Zero Lock-In Guarantee** - export your complete encrypted or unencrypted workspace dataset as a `.json` backup file anytime in 3 clicks (`Settings ⚙️ ➔ Export Backup Data`).
 
 👉 **[Experience zero-knowledge privacy for free at app.123todo.com](https://app.123todo.com)**

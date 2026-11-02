@@ -16,9 +16,9 @@ metadata:
 
 ## Two Skins, One Seamless System
 
-We built 123 ToDo to help people organize their days with zero stress and total privacy. Over time, our users—especially tradespeople, builders, site managers, and busy field professionals—told us how much they love our continuous voice dictation feature. But they needed something even faster while on the job site.
+We built 123 ToDo to help people organize their days with zero stress and total privacy. Over time, our users - especially tradespeople, builders, site managers, and busy field professionals - told us how much they love our continuous voice dictation feature. But they needed something even faster while on the job site.
 
-When you're wearing work gloves on a building site or moving between meetings, you don't want to navigate priority matrices, set due dates, or assign project tags upfront. You just want to **take a quick note**—hands-free—and deal with organizing it later.
+When you're wearing work gloves on a building site or moving between meetings, you don't want to navigate priority matrices, set due dates, or assign project tags upfront. You just want to **take a quick note** - hands-free - and deal with organizing it later.
 
 Today, we're thrilled to launch **123 ToDo v3.0**, featuring our brand-new **Dual Skin Operating System**!
 

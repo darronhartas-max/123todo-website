@@ -1,7 +1,7 @@
 ---
 publishDate: 2026-10-13T00:00:00Z
 title: "Getting Started with 123 To Do: The Simple 3-Minute Beginner's Guide"
-excerpt: 'New to 123 To Do? Here are the absolute basics to get organized today—how the 1-2-3 rule works, why your data is 100% private and automatically saved, and how to put the app on your phone in one tap.'
+excerpt: 'New to 123 To Do? Here are the absolute basics to get organized today - how the 1-2-3 rule works, why your data is 100% private and automatically saved, and how to put the app on your phone in one tap.'
 image: ~/assets/images/blog-getting-started-guide.svg
 category: Tutorials
 tags:
@@ -17,7 +17,7 @@ metadata:
 
 ## Welcome: Take a Deep Breath, You're Safe Here
 
-If you’ve just arrived at **123 To Do**—perhaps recommended by a friend or found while searching for a simpler way to manage your day—welcome.
+If you’ve just arrived at **123 To Do** - perhaps recommended by a friend or found while searching for a simpler way to manage your day - welcome.
 
 Before we do anything else, here is the most important thing you need to know:
 
@@ -148,7 +148,7 @@ You don't need to create an account with a password. 123 To Do uses **Zero-Knowl
 2. Select **Cloud Sync (Zero-Knowledge)** or **Google Drive Sync**.
 3. You will receive a secure **6-digit pairing code**.
 4. On your phone, open Settings ➔ Cloud Sync, enter the 6-digit code, and tap **Connect**.
-5. Your devices are now paired in real-time! All data is end-to-end encrypted with **AES-256-GCM** before leaving your phone, so nobody—not even our servers—can ever see your tasks.
+5. Your devices are now paired in real-time! All data is end-to-end encrypted with **AES-256-GCM** before leaving your phone, so nobody - not even our servers - can ever see your tasks.
 
 ---
 

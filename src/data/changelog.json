@@ -1096,7 +1096,7 @@
   "3.0.0": [
     {
       "title": "🎙️ Dual Skin Operating System & Simple Voice Notes Mode:",
-      "desc": "Introduced a second skin for 123 ToDo! Switch between structured Task Manager Mode (P1-P4 matrix) and Simple Voice Notes Mode featuring extra large builder-friendly text, hands-free continuous dictation, unassigned inbox capture, deferred project assignment, and 1-tap task conversion — all backed by the same unified dataset and zero-knowledge sync engine."
+      "desc": "Introduced a second skin for 123 ToDo! Switch between structured Task Manager Mode (P1-P4 matrix) and Simple Voice Notes Mode featuring extra large builder-friendly text, hands-free continuous dictation, unassigned inbox capture, deferred project assignment, and 1-tap task conversion - all backed by the same unified dataset and zero-knowledge sync engine."
     }
   ],
   "2.9.0": [
@@ -1765,6 +1765,12 @@
     {
       "title": "Initial Release:",
       "desc": "Initial launch of 123 To Do progressive web app with core 1-2-3 priority matrix, offline localStorage, and responsive mobile layout."
+    }
+  ],
+  "3.8.29": [
+    {
+      "title": "✍️ Natural Editorial Voice & Style Polish:",
+      "desc": "Audited and refined copy across the app UI, modals, documentation, and marketing website to use a natural, human editorial voice, replacing all em dashes with clean spaced hyphens and standard punctuation."
     }
   ]
 }

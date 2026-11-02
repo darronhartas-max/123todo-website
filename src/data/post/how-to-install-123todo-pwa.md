@@ -19,7 +19,7 @@ Have you ever wondered why **123 ToDo** feels so fast, clean, and responsive? Or
 
 The answer is that 123 ToDo is built using modern **Progressive Web App (PWA)** technology.
 
-If you've never come across the term "PWA" before, you're not alone—most people haven't! In this simple guide, we’ll explain what a PWA is in plain English, why installing it is vastly superior to keeping a cluttered browser tab open, and exactly how to download and install it on your device in under 10 seconds.
+If you've never come across the term "PWA" before, you're not alone - most people haven't! In this simple guide, we’ll explain what a PWA is in plain English, why installing it is vastly superior to keeping a cluttered browser tab open, and exactly how to download and install it on your device in under 10 seconds.
 
 ---
 
@@ -28,11 +28,11 @@ If you've never come across the term "PWA" before, you're not alone—most peopl
 Think of a **Progressive Web App** as the best of both worlds:
 
 - It looks, feels, and works like a **native app** you downloaded from an app store.
-- But it installs **instantly and directly from your web browser**—with no 300MB downloads, no Apple ID passwords, no app store credit card prompts, and zero tracking.
+- But it installs **instantly and directly from your web browser** - with no 300MB downloads, no Apple ID passwords, no app store credit card prompts, and zero tracking.
 
 When you install 123 ToDo on your phone, tablet, or computer, it gets its own dedicated **app icon on your Home Screen, Dock, or Start Menu**.
 
-When you tap it, it launches in full screen—without browser address bars, tabs, or bookmarks. To you, it feels 100% like a normal app, but with none of the typical app store baggage.
+When you tap it, it launches in full screen - without browser address bars, tabs, or bookmarks. To you, it feels 100% like a normal app, but with none of the typical app store baggage.
 
 ---
 
@@ -60,7 +60,7 @@ Browsers are known to occasionally wipe website storage if a tab hasn’t been v
 
 ### 5. Zero App Store Bloat & Instant Background Updates
 
-Traditional to-do apps from app stores often weigh 150MB to 300MB and require manual updates through the App Store. 123 ToDo takes up less than **1MB** of space and updates itself silently in the background whenever a new version is released—no waiting, no downloads.
+Traditional to-do apps from app stores often weigh 150MB to 300MB and require manual updates through the App Store. 123 ToDo takes up less than **1MB** of space and updates itself silently in the background whenever a new version is released - no waiting, no downloads.
 
 ---
 

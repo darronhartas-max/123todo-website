@@ -20,7 +20,7 @@ metadata:
 
 In today’s corporate, small business, and personal productivity landscape, "software fatigue" has become a genuine bottleneck. Business owners, managers, freelancers, and field professionals routinely find themselves spending more time configuring complex database schemas, managing heavy project boards, and troubleshooting sync errors than actually completing real, meaningful work.
 
-Enter **123ToDo** (now in version 3.3.1) — a lightweight yet remarkably sophisticated task management application designed to strip away administrative bloat while equipping users with the exact tools needed to master their daily agendas.
+Enter **123ToDo** (now in version 3.3.1) - a lightweight yet remarkably sophisticated task management application designed to strip away administrative bloat while equipping users with the exact tools needed to master their daily agendas.
 
 What makes 123ToDo particularly compelling for both personal and professional users is its accessibility: **it is completely free to use**. However, unlike typical free applications that monetize user data or restrict essential capabilities behind aggressive subscription paywalls, 123ToDo operates on a privacy-first, zero-knowledge architectural model.
 
@@ -62,7 +62,7 @@ Each category is color-coded and organized cleanly, allowing users to collapse o
 #### **User Benefit**
 
 - **Adapts to Field & Desk Work**: Capture quick site measurements or thoughts hands-free while on the move, then triage them into structured tasks and projects when back at your desk.
-- **Unified Data Model**: Switching skins is instantaneous — notes added in Notes view are stored directly as Tasks in the unified engine, from which you can attach additional notes, subtask checklists, set priority levels, or assign projects.
+- **Unified Data Model**: Switching skins is instantaneous - notes added in Notes view are stored directly as Tasks in the unified engine, from which you can attach additional notes, subtask checklists, set priority levels, or assign projects.
 
 ---
 
@@ -225,6 +225,6 @@ Under **Settings ➔ Appearance**, users can fine-tune text sizing (8pt to 20pt)
 
 With the addition of the **Universal Multi-Competitor Import Wizard**, **Set & Forget Cloud Sync**, and **Zero Data Lock-In Exports**, 123ToDo is one of the most polished, reliable, and well-designed productivity tools available today.
 
-**VERDICT RATING**: ⭐️⭐️⭐️⭐️⭐️ **9.9 / 10 — Editor's Choice**
+**VERDICT RATING**: ⭐️⭐️⭐️⭐️⭐️ **9.9 / 10 - Editor's Choice**
 
 > **Try 123ToDo for free today at [app.123todo.com](https://app.123todo.com)**. No registration or credit card required.

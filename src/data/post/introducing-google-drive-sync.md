@@ -21,8 +21,8 @@ When we first built **123 ToDo**, our mission was simple: deliver a fast, priori
 
 We originally introduced **Google Drive AppData Sync** as a privacy-first way to keep your tasks in sync without storing your personal data on third-party servers. Today, 123 ToDo offers a **Dual-Engine Encrypted Cloud Sync Architecture**:
 
-1. **123ToDo Cloud Sync (Default & Recommended)** — Powered by Cloudflare D1 Serverless E2E Zero-Knowledge Encryption with instant 6-digit device pairing and zero session expiration drops.
-2. **Google Drive AppData Sync** — Client-side encrypted sync directly to your personal Google Drive hidden app container.
+1. **123ToDo Cloud Sync (Default & Recommended)** - Powered by Cloudflare D1 Serverless E2E Zero-Knowledge Encryption with instant 6-digit device pairing and zero session expiration drops.
+2. **Google Drive AppData Sync** - Client-side encrypted sync directly to your personal Google Drive hidden app container.
 
 Here is a complete breakdown of both sync options, how they protect your data, and how to choose the best option for your workflow.
 

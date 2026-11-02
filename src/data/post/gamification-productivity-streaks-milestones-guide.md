@@ -24,13 +24,13 @@ Traditional to-do apps act like passive digital filing cabinets. They store your
 
 In **123 ToDo**, we approached productivity from a completely different angle: **What if your daily task manager made consistency feel genuinely exciting, measurable, and rewarding?**
 
-Introducing the **Productivity & Achievements Hub** in 123 ToDo — featuring an intuitive **Productivity Points engine**, an elite **10-Tier Level Hierarchy**, **Daily Streaks**, and **Unlockable Milestone Badges**.
+Introducing the **Productivity & Achievements Hub** in 123 ToDo - featuring an intuitive **Productivity Points engine**, an elite **10-Tier Level Hierarchy**, **Daily Streaks**, and **Unlockable Milestone Badges**.
 
 ---
 
 ## The Neuroscience of Productivity Points: Why Gamified Focus Works
 
-Human brains are hardwired for immediate feedback loops. When you complete an action and receive clear visual recognition, your brain releases a micro-dose of dopamine — the neurotransmitter responsible for motivation, habit formation, and goal pursuit.
+Human brains are hardwired for immediate feedback loops. When you complete an action and receive clear visual recognition, your brain releases a micro-dose of dopamine - the neurotransmitter responsible for motivation, habit formation, and goal pursuit.
 
 In 123 ToDo, every productive action earns **Productivity Points**:
 

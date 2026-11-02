@@ -1,7 +1,7 @@
 ---
 publishDate: 2026-10-13T00:00:00Z
 title: 'The Complete 123 To Do Feature Guide: From Daily Focus to Power User'
-excerpt: 'Master every feature of 123 To Do in order of importance—from midnight rollovers and interactive clock face scheduling to encrypted sync, voice dictation, and the Pro/Lite dual skins.'
+excerpt: 'Master every feature of 123 To Do in order of importance - from midnight rollovers and interactive clock face scheduling to encrypted sync, voice dictation, and the Pro/Lite dual skins.'
 image: ~/assets/images/blog-feature-mastery-guide.svg
 category: Tutorials
 tags:
@@ -19,7 +19,7 @@ metadata:
 
 Once you've mastered the foundational **1-2-3 Rule** (1 High priority task, 2 Medium tasks, and 3 Low tasks), you quickly discover that **123 To Do** is far more than a basic checklist. Underneath its deceptively clean and calm surface lies a suite of thoughtfully engineered productivity tools designed for professionals, deep-work thinkers, and anyone who wants to conquer their day without digital clutter.
 
-To help you get the most out of your workflow without feeling overwhelmed, we’ve structured this guide by **perceived value and impact**—starting with the game-changing daily routines and moving into advanced power tools.
+To help you get the most out of your workflow without feeling overwhelmed, we’ve structured this guide by **perceived value and impact** - starting with the game-changing daily routines and moving into advanced power tools.
 
 Here is your master walkthrough.
 
@@ -32,7 +32,7 @@ The biggest failure mode of traditional to-do lists is **task debt**. When you e
 ### How Rollover Works in 123 To Do
 
 - **Automatic Midnight Reset**: When midnight arrives in your local time zone, completed tasks are gracefully archived into your history log, freeing up your daily quota.
-- **Unfinished Tasks Carry Over**: Any incomplete tasks gently roll over into the new day. You don't have to re-enter them or feel guilty—they simply remain in their priority tier so you can tackle them first.
+- **Unfinished Tasks Carry Over**: Any incomplete tasks gently roll over into the new day. You don't have to re-enter them or feel guilty - they simply remain in their priority tier so you can tackle them first.
 - **Zero-Friction Morning Review**: In the morning, you open 123 To Do to find a clean slate with your carried-over priorities ready for review. You can re-prioritize or reassign them with a single swipe or drag.
 - **Streak & Consistency Counter**: Every day you complete your core tasks, your streak increments. Consistency beats intensity every single time.
 
@@ -87,7 +87,7 @@ Sometimes words alone aren't enough to capture the full context of a task.
 
 - **Attach Photos & Screenshots**: Upload whiteboard photos, receipt images, sketches, or reference documents directly to notes and tasks.
 - **Instant Desktop Paste (⌘V / Ctrl+V)**: Take a quick screenshot on your Mac or PC, hit paste, and the image attaches immediately without saving a file to your desktop first.
-- **Offline & On-Device Storage**: Attachments are compressed on-device and stored locally within your browser's persistent IndexedDB storage—never eating cloud limits or risking privacy.
+- **Offline & On-Device Storage**: Attachments are compressed on-device and stored locally within your browser's persistent IndexedDB storage - never eating cloud limits or risking privacy.
 - **Full-Screen Lightbox**: Tap any thumbnail to zoom in with high-resolution clarity.
 
 ---
@@ -111,7 +111,7 @@ Productivity is personal, and the environment you work in shapes your focus. 123
 
 ## 7. Projects, Tags & Desktop Kanban Columns (Impact: ⭐⭐⭐)
 
-You can create and view as many tasks as you need—there are no artificial limits or caps. While the 1-2-3 framework is designed to help you prioritize your top tasks each day, real-world productivity often involves tracking dozens of ongoing initiatives, backlogged ideas, and multi-week projects.
+You can create and view as many tasks as you need - there are no artificial limits or caps. While the 1-2-3 framework is designed to help you prioritize your top tasks each day, real-world productivity often involves tracking dozens of ongoing initiatives, backlogged ideas, and multi-week projects.
 
 ### Managing Projects & Kanban Boards
 
@@ -127,7 +127,7 @@ No one wants to copy and paste phone numbers or email addresses into a separate 
 ### One-Click Communication
 
 - **Clickable Contact Info**: Phone numbers (`tel:`), email addresses (`mailto:`), and URLs inside task descriptions and notes are automatically detected and styled as actionable links.
-- **Zero Friction**: Clicking a phone number instantly dials on mobile; clicking an email launches your preferred email client; clicking a web link opens the browser—all without opening an edit modal.
+- **Zero Friction**: Clicking a phone number instantly dials on mobile; clicking an email launches your preferred email client; clicking a web link opens the browser - all without opening an edit modal.
 
 ---
 
@@ -171,6 +171,6 @@ Staying consistent is hard. 123 To Do turns daily focus into a fun, rewarding ha
 
 You don’t have to enable all of these features on day one. In fact, we recommend starting with just the basic **1-2-3 list** for your first three days.
 
-Once the habit of daily focus is locked in, use the Clock Face to plan your schedule, switch on device sync, or explore Notes mode. 123 To Do is ready to grow with you—staying delightfully fast, strictly private, and completely free of distraction.
+Once the habit of daily focus is locked in, use the Clock Face to plan your schedule, switch on device sync, or explore Notes mode. 123 To Do is ready to grow with you - staying delightfully fast, strictly private, and completely free of distraction.
 
 👉 **[Launch 123 To Do Now](https://app.123todo.com)** or explore our [Getting Started Beginner's Guide](/getting-started-with-123-todo).

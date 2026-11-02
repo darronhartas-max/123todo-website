@@ -129,7 +129,7 @@ Grab your phone, open 123 ToDo (or paper if you prefer), and just start listing:
 
 **Don't organize yet. Don't prioritize. Just capture.**
 
-💡 **Pro-Tip**: Use 123ToDo's built-in **Voice Dictation** to complete your brain dump hands-free! Tap the microphone icon and speak your tasks out loud — 123ToDo automatically formats spoken punctuation, lets you edit live with _"scratch that"_, and saves tasks hands-free when you dictate _"add task"_.
+💡 **Pro-Tip**: Use 123ToDo's built-in **Voice Dictation** to complete your brain dump hands-free! Tap the microphone icon and speak your tasks out loud - 123ToDo automatically formats spoken punctuation, lets you edit live with _"scratch that"_, and saves tasks hands-free when you dictate _"add task"_.
 
 You'll feel immediate relief. That cluttered, overwhelmed feeling? It's already diminishing because your brain recognizes it doesn't have to hold all this anymore.
 

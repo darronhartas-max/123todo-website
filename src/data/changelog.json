@@ -1826,5 +1826,11 @@
       "title": "🎯 Unified Drag & Drop Visual System with Normal Mode:",
       "desc": "Aligned Simple View mobile drag-and-drop directly with Normal mode. Replaced bespoke touch overlays with the proven visual system: an elegant 3px accent-colored insertion indicator line with a circular anchor dot positioned above target cards, dimmed card styling during drag, and priority section highlighting with dashed borders for empty sections and section-bottom placement. Improved touch proximity tracking so tasks drop accurately before target cards on mobile devices without falling to the bottom of the list."
     }
+  ],
+  "3.9.9": [
+    {
+      "title": "📱 Instant Drag Handle, Vivid Drop Indicator & Balanced Bottom Spacing:",
+      "desc": "Added a dedicated drag handle to Simple View task cards for instant touch reordering on mobile without scroll interference or hold delay, while card bodies continue supporting press-and-hold. Implemented a vivid glowing electric blue drop indicator line with anchor dot matching Normal mode that dynamically tracks top or bottom insertion. Removed wasted empty space at the bottom of Simple View, perfectly aligning the footer version line to match the container side padding."
+    }
   ]
 }

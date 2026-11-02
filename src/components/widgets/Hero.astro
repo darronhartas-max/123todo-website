@@ -36,6 +36,13 @@ const isLottie = !!(
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
     <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
     <div class="py-4 md:py-6">
+      {
+        Astro.slots.has('topMedia') ? (
+          <div class="relative m-auto max-w-5xl mb-8 md:mb-10 intersect-once intersect-no-queue intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
+            <slot name="topMedia" />
+          </div>
+        ) : null
+      }
       <div class="text-center pb-4 md:pb-6 max-w-5xl mx-auto">
         {
           tagline && (

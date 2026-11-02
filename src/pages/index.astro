@@ -201,6 +201,52 @@ const metadata = {
       },
     ]}
   >
+    <Fragment slot="topMedia">
+      <div
+        class="relative w-full aspect-video rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl border border-slate-200/80 dark:border-slate-800 bg-slate-950 group"
+      >
+        <video
+          id="hero-demo-video"
+          class="w-full h-full object-cover rounded-2xl md:rounded-3xl"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="/demo/123todo-123rule-demo-poster.jpg"
+          aria-label="123 To Do: The 1-2-3 Rule Video Demo"
+        >
+          <source src="/demo/123todo-123rule-demo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <!-- Subtle Audio Control -->
+        <div class="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 z-10">
+          <button
+            id="hero-video-audio-toggle"
+            type="button"
+            class="px-3 py-1.5 rounded-full bg-slate-900/80 hover:bg-slate-900 text-white text-xs font-medium backdrop-blur-md border border-white/10 shadow-lg flex items-center gap-1.5 transition-all opacity-80 hover:opacity-100 cursor-pointer"
+            aria-label="Toggle video sound"
+          >
+            <span id="hero-audio-icon">🔇</span>
+            <span class="hidden sm:inline" id="hero-audio-text">Unmute</span>
+          </button>
+        </div>
+      </div>
+      <script is:inline>
+        const heroVideo = document.getElementById('hero-demo-video');
+        const audioToggle = document.getElementById('hero-video-audio-toggle');
+        const audioIcon = document.getElementById('hero-audio-icon');
+        const audioText = document.getElementById('hero-audio-text');
+        if (heroVideo && audioToggle) {
+          audioToggle.addEventListener('click', () => {
+            heroVideo.muted = !heroVideo.muted;
+            if (audioIcon) audioIcon.textContent = heroVideo.muted ? '🔇' : '🔊';
+            if (audioText) audioText.textContent = heroVideo.muted ? 'Unmute' : 'Mute';
+          });
+        }
+      </script>
+    </Fragment>
+
     <Fragment slot="title">
       123 ToDo — The Free, Private<br class="hidden sm:inline" />
       <span class="text-accent dark:text-white highlight inline-block">Task Manager &amp; To-Do List&nbsp;App</span>

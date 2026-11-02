@@ -1796,5 +1796,11 @@
       "title": "🎨 Prominent Project Outlines & Streamlined Card Layout:",
       "desc": "Doubled the thickness of card borders in Simple View to 3px so project colors stand out clearly, and removed the redundant left-hand priority line to keep cards clean and focused since tasks are already nested within their own priority sections."
     }
+  ],
+  "3.9.4": [
+    {
+      "title": "🔄 Task Reordering in Simple View:",
+      "desc": "Added full task reordering to Simple View across desktop and mobile touchscreens. Reorganise tasks within or across priority groups with desktop drag-and-drop or touch-and-hold mobile gestures (180ms hold with haptic vibration feedback), featuring drop indicator guides, smooth edge auto-scrolling, and accidental-click protection."
+    }
   ]
 }

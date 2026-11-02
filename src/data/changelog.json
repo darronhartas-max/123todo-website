@@ -1808,5 +1808,11 @@
       "title": "📍 Clear Mobile Drop Indicators & Insertion Slots:",
       "desc": "Added high-visibility drop indicators to Simple View when moving tasks on mobile and desktop. Features a glowing insertion bar with anchor caps and an \"Insert Here\" pill, dynamic top and bottom half card detection to insert before or after, physical card parting slots, a floating touch drag avatar preview above the finger, and prominent guidance when dropping into empty sections or at the bottom of a list."
     }
+  ],
+  "3.9.6": [
+    {
+      "title": "📏 Refined Drop Indicator Line & Mobile Touch Reorder Fix:",
+      "desc": "Refined the drag-and-drop insertion indicator in Simple View into a sleek, minimalist 2px glowing line with a subtle start anchor dot, replacing heavy badges and card margin jumps for a cleaner experience on desktop. Resolved a mobile touch reordering issue by ensuring type-safe ID matching so the visual drop indicator line displays reliably across both mobile devices and desktop."
+    }
   ]
 }

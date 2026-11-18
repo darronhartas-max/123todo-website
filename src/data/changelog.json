@@ -1,4 +1,10 @@
 {
+  "3.9.14": [
+    {
+      "title": "✅ Standardised Task Checkbox Styling Across Views:",
+      "desc": "Standardised the archive and completion checkbox size, shape, and interactions across both Normal and Simple view modes. Both modes now share consistent 18px icons in comfortable 32px touch targets, featuring clean outline squares and vibrant emerald checkmarks upon completion for a uniform, minimalist experience."
+    }
+  ],
   "3.9.13": [
     {
       "title": "✨ Minimalist Schedule Icon Styling & Refined Simple View Borders:",

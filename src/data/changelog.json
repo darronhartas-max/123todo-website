@@ -1,4 +1,10 @@
 {
+  "3.9.15": [
+    {
+      "title": "➕ Standardised Add Task Button & Comfortable Spacing:",
+      "desc": "Standardised the primary + Add Task button across Normal and Simple view modes with a refined, high-visibility Priority-1 red aesthetic. Designed for effortless identification in low-light environments with subtle ambient depth, crisp white geometry, and smooth hover scaling. Expanded spacing between the Add Task button and the Settings cog to 22px, eliminating accidental mis-taps."
+    }
+  ],
   "3.9.14": [
     {
       "title": "✅ Standardised Task Checkbox Styling Across Views:",

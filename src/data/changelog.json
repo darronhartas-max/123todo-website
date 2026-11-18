@@ -1,4 +1,10 @@
 {
+  "3.9.12": [
+    {
+      "title": "📅 Schedule Icon Repositioning & Seamless Text Flow:",
+      "desc": "Moved the schedule and recurring icons from the right side of tasks to the left, appearing immediately before the task description text. This eliminates proximity crowding next to the archive checkbox, while allowing multi-line descriptions to wrap naturally underneath the icon flush to the left margin with zero wasted space."
+    }
+  ],
   "3.9.11": [
     {
       "title": "⚡ Automated Changelog Sorting & Seamless Git Commit Sync Pipeline:",

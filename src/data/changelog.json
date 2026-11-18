@@ -1,4 +1,10 @@
 {
+  "3.9.13": [
+    {
+      "title": "✨ Minimalist Schedule Icon Styling & Refined Simple View Borders:",
+      "desc": "Refined the repositioned schedule and recurring icons with a clean, borderless inline aesthetic that floats naturally before the task description text. Also slimmed down the color-coded project borders on task cards in Simple View from 3px to an elegant 1.5px, delivering a cohesive, distraction-free minimalist look across all views."
+    }
+  ],
   "3.9.12": [
     {
       "title": "📅 Schedule Icon Repositioning & Seamless Text Flow:",

@@ -1,4 +1,10 @@
 {
+  "3.9.17": [
+    {
+      "title": "🔑 Seamless Vault Credential Migration & Reset Helper:",
+      "desc": "Added seamless auto-migration for legacy default admin credential hashes across cloud sync datasets and local storage. Included a 1-tap reset credentials shortcut to ensure instant access to the private admin command center without locked sessions."
+    }
+  ],
   "3.9.16": [
     {
       "title": "📊 Desktop Command Center & Global Privacy-First Telemetry:",

@@ -1,4 +1,10 @@
 {
+  "3.9.16": [
+    {
+      "title": "📊 Desktop Command Center & Global Privacy-First Telemetry:",
+      "desc": "Expanded the private analytics dashboard into a wide-screen desktop command center with 7-Day, 30-Day, Past 12 Months, and All Time timeframes, customizable widget visibility and ordering, hardened cryptographic vault access, and zero-cookie anonymous global counters across cloud sync users, visitor retention, device form factors, and feature adoption."
+    }
+  ],
   "3.9.15": [
     {
       "title": "➕ Standardised Add Task Button & Comfortable Spacing:",

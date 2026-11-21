@@ -1,4 +1,10 @@
 {
+  "3.9.19": [
+    {
+      "title": "🔐 Cloudflare Worker Admin Auth Hash Alignment:",
+      "desc": "Aligned the Cloudflare Worker SHA-256 admin hash with the hardened vault credential so live D1 sync account counts and cross-site telemetry authenticate seamlessly."
+    }
+  ],
   "3.9.18": [
     {
       "title": "🌐 Separate App & Website Telemetry Filtering:",

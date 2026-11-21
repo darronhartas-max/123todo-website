@@ -11,3 +11,57 @@ import { ANALYTICS } from 'astrowind:config';
     />
   ) : null
 }
+
+<!-- Privacy-First Zero-Cookie Anonymous Aggregate Telemetry for www.123todo.com -->
+<script is:inline>
+  (function () {
+    try {
+      const host = window.location.hostname;
+      if (!host || host === 'localhost' || host === '127.0.0.1') return;
+      if (sessionStorage.getItem('123todo_www_session')) return;
+      sessionStorage.setItem('123todo_www_session', '1');
+
+      let isReturning = false;
+      try {
+        isReturning = Boolean(localStorage.getItem('123todo_www_seen'));
+        localStorage.setItem('123todo_www_seen', '1');
+      } catch {
+        // Ignore storage restrictions
+      }
+
+      const ua = navigator.userAgent || '';
+      const isMobile = window.innerWidth <= 768 || /Mobi|Android|iPhone|iPad/i.test(ua);
+      let platform = 'Other';
+      if (/iPhone|iPad|iPod/i.test(ua)) platform = 'iOS';
+      else if (/Android/i.test(ua)) platform = 'Android';
+      else if (/Mac/i.test(ua)) platform = 'macOS';
+      else if (/Win/i.test(ua)) platform = 'Windows';
+      else if (/Linux/i.test(ua)) platform = 'Linux';
+
+      const now = new Date();
+      const dateStr =
+        now.getFullYear() +
+        '-' +
+        String(now.getMonth() + 1).padStart(2, '0') +
+        '-' +
+        String(now.getDate()).padStart(2, '0');
+
+      fetch('https://123todo-sync-worker.darron-hartas.workers.dev/api/telemetry/ping', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          date: dateStr,
+          site: 'www',
+          visits: 1,
+          returningVisits: isReturning ? 1 : 0,
+          mobileVisits: isMobile ? 1 : 0,
+          desktopVisits: isMobile ? 0 : 1,
+          platform: platform,
+        }),
+        keepalive: true,
+      }).catch(function () {});
+    } catch {
+      // Ignore telemetry errors
+    }
+  })();
+</script>

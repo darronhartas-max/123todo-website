@@ -1,4 +1,10 @@
 {
+  "3.9.18": [
+    {
+      "title": "🌐 Separate App & Website Telemetry Filtering:",
+      "desc": "Added property-level filtering and side-by-side comparison cards in the private Admin Command Center to view traffic separately for app.123todo.com and www.123todo.com, plus live Cloudflare Worker deployment status detection."
+    }
+  ],
   "3.9.17": [
     {
       "title": "🔑 Seamless Vault Credential Migration & Reset Helper:",

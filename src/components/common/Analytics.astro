@@ -46,6 +46,20 @@ import { ANALYTICS } from 'astrowind:config';
         '-' +
         String(now.getDate()).padStart(2, '0');
 
+      let referrerDomain = 'Direct / Bookmark';
+      try {
+        if (document.referrer) {
+          const refHost = new URL(document.referrer).hostname.replace(/^www\./, '').toLowerCase();
+          if (refHost && refHost !== '123todo.com' && !refHost.endsWith('.123todo.com')) {
+            referrerDomain = refHost.slice(0, 60);
+          }
+        }
+      } catch {
+        // Ignore invalid referrer URLs
+      }
+
+      const landingPage = (window.location.pathname || '/').slice(0, 60);
+
       fetch('https://123todo-sync-worker.darron-hartas.workers.dev/api/telemetry/ping', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -57,6 +71,8 @@ import { ANALYTICS } from 'astrowind:config';
           mobileVisits: isMobile ? 1 : 0,
           desktopVisits: isMobile ? 0 : 1,
           platform: platform,
+          referrer: referrerDomain,
+          landingPage: landingPage,
         }),
         keepalive: true,
       }).catch(function () {});

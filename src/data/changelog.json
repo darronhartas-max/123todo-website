@@ -1,4 +1,10 @@
 {
+  "3.9.21": [
+    {
+      "title": "💼 Investor & Growth Readiness Metrics + Acquisition Referrers:",
+      "desc": "Added Web-to-App conversion rate, 7d/30d sync stickiness ratio, PWA install rate, engagement depth, multi-device pairing count, error-free reliability score, domain-only acquisition referrers, top marketing landing pages, and a 1-click Copy Investor Summary export."
+    }
+  ],
   "3.9.20": [
     {
       "title": "🔄 Refresh Stats Visual Feedback & Sync Timestamp:",

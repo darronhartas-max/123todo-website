@@ -1,4 +1,10 @@
 {
+  "3.9.20": [
+    {
+      "title": "🔄 Refresh Stats Visual Feedback & Sync Timestamp:",
+      "desc": "Added a smooth spinning refresh indicator, a 2.5-second confirmation badge, and a live last-synced timestamp to the Admin Command Center Refresh Stats button."
+    }
+  ],
   "3.9.19": [
     {
       "title": "🔐 Cloudflare Worker Admin Auth Hash Alignment:",

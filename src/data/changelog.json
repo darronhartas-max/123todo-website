@@ -1,4 +1,10 @@
 {
+  "3.9.22": [
+    {
+      "title": "🎯 Reliable Task Reordering, Bottom Drop Zones & Non-Disruptive Scheduled Tasks:",
+      "desc": "Fixed a sync race condition where rearranging tasks could jump back to their previous order during an in-flight cloud sync pull. Scheduled tasks due at the start of a new day now appear immediately across midnight and append to the bottom of their priority section so they never disrupt your existing task order. Added bottom-half card drop positioning with a bottom drop indicator line and dedicated bottom drop zones for effortless dragging to the end of any priority section list."
+    }
+  ],
   "3.9.21": [
     {
       "title": "💼 Investor & Growth Readiness Metrics + Acquisition Referrers:",

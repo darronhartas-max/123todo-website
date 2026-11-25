@@ -1,4 +1,10 @@
 {
+  "3.9.23": [
+    {
+      "title": "⭕ Fine Circular Badge Around Schedule & Repeat Icons:",
+      "desc": "Framed the inline schedule and repeat icons in listed tasks with a fine 1px circular border and subtle translucent fill so they stand out clearly from surrounding task text and elements."
+    }
+  ],
   "3.9.22": [
     {
       "title": "🎯 Reliable Task Reordering, Bottom Drop Zones & Non-Disruptive Scheduled Tasks:",

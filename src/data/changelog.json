@@ -1,4 +1,10 @@
 {
+  "3.9.30": [
+    {
+      "title": "🗑️ Delete Recurrence Trash Button in Scheduler Box:",
+      "desc": "Added a dedicated red trash can button inside the Every X Day(s)/Week(s) recurrence box in the task scheduler section so recurring schedules can be deleted with a single tap."
+    }
+  ],
   "3.9.29": [
     {
       "title": "🔁 Recurring Task Icon in Simple View Scheduled Section:",

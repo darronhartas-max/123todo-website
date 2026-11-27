@@ -1,4 +1,10 @@
 {
+  "3.9.29": [
+    {
+      "title": "🔁 Recurring Task Icon in Simple View Scheduled Section:",
+      "desc": "Ensured the emerald circular recurring task icon displays inline for every recurring task listed in the Simple View Scheduled section, matching the priority sections."
+    }
+  ],
   "3.9.28": [
     {
       "title": "📅 Smart Due-Date Schedule & Repeat Icon Lifecycle & Normal View Side Padding:",

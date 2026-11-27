@@ -1,4 +1,10 @@
 {
+  "3.9.25": [
+    {
+      "title": "🎯 Compact Schedule Circle & Clean Project Identifier:",
+      "desc": "Reduced the outer diameter and internal padding of the circular schedule and repeat icons to 18px with a crisp 11px inner glyph and zero negative top offset so they never clip against the project name above. Removed the redundant color-coded dot blob before each task project name in Normal view mode for a cleaner text identifier."
+    }
+  ],
   "3.9.24": [
     {
       "title": "✨ Clean Simple View List Display, Unified Add Task Framing & Minimalist Drag Lines:",

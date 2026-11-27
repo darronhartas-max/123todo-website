@@ -1,4 +1,10 @@
 {
+  "3.9.28": [
+    {
+      "title": "📅 Smart Due-Date Schedule & Repeat Icon Lifecycle & Normal View Side Padding:",
+      "desc": "Removed the scheduled icon from active task list views once a task reaches its scheduled date and auto-appears in the priority list (re-appearing in the Scheduled section if deferred to a future date). For recurring tasks, the repeat icon now displays in the task list view only on the actual due date when the task appears. Expanded left and right side padding around the Normal View task list to match Simple View breathing room."
+    }
+  ],
   "3.9.27": [
     {
       "title": "🎨 Tactile Completion Strikethrough, Calm Add Task Panel & Header/Archive Polish (UX Refinements 2-5):",

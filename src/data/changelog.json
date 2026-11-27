@@ -1,4 +1,10 @@
 {
+  "3.9.24": [
+    {
+      "title": "✨ Clean Simple View List Display, Unified Add Task Framing & Minimalist Drag Lines:",
+      "desc": "Removed the scheduled date subtitle from Simple View list cards for a cleaner, distraction-free display while keeping full schedule details inside the task editor. Embedded the Add Task panel directly below the Simple View controls bar with identical surface framing and background blur to Normal mode, and refined drag-and-drop visuals across all views to use crisp, minimalist 2px insertion lines without heavy dashed section borders."
+    }
+  ],
   "3.9.23": [
     {
       "title": "⭕ Fine Circular Badge Around Schedule & Repeat Icons:",

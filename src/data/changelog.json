@@ -1,4 +1,10 @@
 {
+  "3.9.26": [
+    {
+      "title": "✨ Tailored Task Card Borders, Smart Project Labels & Inline Subtask Pill (UX Refinement 1/5):",
+      "desc": "Refined Normal View task cards with a balanced 4px left project accent bar, uniform 1px perimeter borders, 8px rounded corners, and subtle elevation. Automatically hides redundant project name labels when already filtering by a specific project, and replaced the multi-line subtask progress bar with a sleek inline 1/3 checklist pill badge next to the task title."
+    }
+  ],
   "3.9.25": [
     {
       "title": "🎯 Compact Schedule Circle & Clean Project Identifier:",

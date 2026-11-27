@@ -1,4 +1,10 @@
 {
+  "3.9.27": [
+    {
+      "title": "🎨 Tactile Completion Strikethrough, Calm Add Task Panel & Header/Archive Polish (UX Refinements 2-5):",
+      "desc": "Added tactile completion micro-interactions with instant strikethrough and project-tinted checkbox hover feedback across Normal and Simple views. Calmed the Add Task panel with focus-ring textarea borders, soft neutral pill toggle chips, and 1.5px priority buttons. Updated section task count badges for high-contrast dark mode legibility, compacted empty priority placeholders in Simple View, unified the ProjectTabs bar on a clean surface background, restyled the Archive toggle into a centered pill button, and added the 18px circular schedule/repeat icon inline before Simple View task titles."
+    }
+  ],
   "3.9.26": [
     {
       "title": "✨ Tailored Task Card Borders, Smart Project Labels & Inline Subtask Pill (UX Refinement 1/5):",
